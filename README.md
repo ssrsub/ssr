@@ -1,3 +1,1 @@
-# ssr
-ssrshare
-ssr
+SSR
