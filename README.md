@@ -1,1 +1,1 @@
-SSR
+https://t.me/SSRSUB
