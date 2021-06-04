@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇨🇦 @SSRSUB-加拿大ss01-付费推荐:dlj.tf/ssrsub, server: ss1.ssrsub.one, port: 9443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大ss02-付费推荐:dlj.tf/ssrsub, server: ss2.ssrsub.one, port: 9443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大ss03-付费推荐:dlj.tf/ssrsub, server: ss3.ssrsub.one, port: 9443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大ss04-付费推荐:dlj.tf/ssrsub, server: ss4.ssrsub.one, port: 9443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大ss05-付费推荐:dlj.tf/ssrsub, server: ss5.ssrsub.one, port: 9443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}, udp: true}
-  - {name: 🇷🇺 @SSRSUB-俄罗斯ss06-付费推荐:dlj.tf/ssrsub, server: ss6.ssrsub.one, port: 9443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大ss01-付费推荐:dlj.tf/ssrsub, server: ss1.ssrsub.one, port: 5443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大ss02-付费推荐:dlj.tf/ssrsub, server: ss2.ssrsub.one, port: 5443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大ss03-付费推荐:dlj.tf/ssrsub, server: ss3.ssrsub.one, port: 5443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大ss04-付费推荐:dlj.tf/ssrsub, server: ss4.ssrsub.one, port: 5443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大ss05-付费推荐:dlj.tf/ssrsub, server: ss5.ssrsub.one, port: 5443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}, udp: true}
+  - {name: 🇷🇺 @SSRSUB-俄罗斯ss06-付费推荐:dlj.tf/ssrsub, server: ss6.ssrsub.one, port: 5443, type: ss, cipher: aes-128-gcm, password: suo.yt/ssrsub, plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}, udp: true}
   - {name: 🇨🇳 @SSRSUB-中国ss07-付费推荐:dlj.tf/ssrsub, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123, udp: true}
   - {name: 🇦🇺 @SSRSUB-澳大利亚ss08-付费推荐:dlj.tf/ssrsub, server: ss.au.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: kRAxb8hPUxS0, udp: true}
   - {name: 🇨🇦 @SSRSUB-加拿大ss09-付费推荐:dlj.tf/ssrsub, server: ss.ca.sshmax.net, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: r4TeEt5bK0UD, udp: true}
@@ -23,73 +23,74 @@ proxies:
   - {name: 🇬🇧 @SSRSUB-英国ss16-付费推荐:dlj.tf/ssrsub, server: ss.uk.sshmax.net, port: 57478, type: ss, cipher: chacha20-ietf-poly1305, password: HgVDIN05O6bH, udp: true}
   - {name: 🇩🇪 @SSRSUB-德国ss17-付费推荐:dlj.tf/ssrsub, server: ss.de.sshmax.net, port: 21474, type: ss, cipher: chacha20-ietf-poly1305, password: cWv8FcJk0VpS, udp: true}
   - {name: 🇮🇳 @SSRSUB-印度ss18-付费推荐:dlj.tf/ssrsub, server: ss.id.sshmax.net, port: 57478, type: ss, cipher: chacha20-ietf-poly1305, password: ku382YXK8cLE, udp: true}
-  - {name: 🇺🇲 @SSRSUB-美国ss19-付费推荐:dlj.tf/ssrsub, server: 194.53.108.130, port: 8443, type: ss, cipher: aes-256-gcm, password: mtproto.cc2021, udp: true}
-  - {name: 🇺🇲 @SSRSUB-美国ss20-付费推荐:dlj.tf/ssrsub, server: 141.98.134.21, port: 8443, type: ss, cipher: chacha20-ietf-poly1305, password: 205hsohfsNFHG2342523, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大ssr01-付费推荐:suo.yt/ssrsub, server: ssr1.ssrsub.one, port: 57480, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大ssr02-付费推荐:suo.yt/ssrsub, server: ssr2.ssrsub.one, port: 57480, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大ssr03-付费推荐:suo.yt/ssrsub, server: ssr3.ssrsub.one, port: 57480, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大ssr04-付费推荐:suo.yt/ssrsub, server: ssr4.ssrsub.one, port: 57480, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大ssr05-付费推荐:suo.yt/ssrsub, server: ssr5.ssrsub.one, port: 57480, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub, udp: true}
-  - {name: 🇷🇺 @SSRSUB-俄罗斯ssr06-付费推荐:suo.yt/ssrsub, server: ssr6.ssrsub.one, port: 57480, type: ss, cipher: aes-256-cfb, password: https://dlj.tf/ssrsub, udp: true}
   - {name: 🇨🇳 @SSRSUB-中国ssr07-付费推荐:suo.yt/ssrsub, server: android.ufunr.me, port: 8888, type: ss, cipher: aes-256-cfb, password: !<str> 123, udp: true}
-  - {name: "@SSRSUB-SS1-付费推荐:dlj.tf/ssrsub", server: 167.88.63.29, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: "@SSRSUB-SS2-付费推荐:dlj.tf/ssrsub", server: 135.125.248.215, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: "@SSRSUB-SS3-付费推荐:dlj.tf/ssrsub", server: 146.59.3.33, port: 1443, type: ss, cipher: chacha20-ietf-poly1305, password: M1LCZAlfz1bV, udp: true}
-  - {name: "@SSRSUB-SS4-付费推荐:dlj.tf/ssrsub", server: 91.90.121.163, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA, udp: true}
-  - {name: "@SSRSUB-SS5-付费推荐:dlj.tf/ssrsub", server: 139.28.176.53, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA, udp: true}
-  - {name: "@SSRSUB-SS6-付费推荐:dlj.tf/ssrsub", server: 188.92.78.145, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq, udp: true}
-  - {name: "@SSRSUB-SS7-付费推荐:dlj.tf/ssrsub", server: 45.89.173.205, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6, udp: true}
-  - {name: "@SSRSUB-SS8-付费推荐:dlj.tf/ssrsub", server: 104.200.131.165, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6, udp: true}
-  - {name: "@SSRSUB-SS9-付费推荐:dlj.tf/ssrsub", server: 45.89.173.205, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe, udp: true}
-  - {name: "@SSRSUB-SS10-付费推荐:dlj.tf/ssrsub", server: 207.244.67.149, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna, udp: true}
-  - {name: "@SSRSUB-SS11-付费推荐:dlj.tf/ssrsub", server: 85.10.50.164, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD, udp: true}
-  - {name: "@SSRSUB-SS12-付费推荐:dlj.tf/ssrsub", server: 188.92.78.145, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD, udp: true}
-  - {name: "@SSRSUB-SS13-付费推荐:dlj.tf/ssrsub", server: 85.10.50.164, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp, udp: true}
-  - {name: "@SSRSUB-SS14-付费推荐:dlj.tf/ssrsub", server: 207.244.67.149, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大T1-付费推荐:dlj.tf/ssrsub, server: t1.ssrsub.one, port: 8443, type: trojan, password: O1nwKkP9, sni: t1.ssrsub.one, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大T2-付费推荐:dlj.tf/ssrsub, server: t2.ssrsub.one, port: 8443, type: trojan, password: PQ3MWj5G, sni: t2.ssrsub.one, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大T3-付费推荐:dlj.tf/ssrsub, server: t3.ssrsub.one, port: 8443, type: trojan, password: f9KwQlaR, sni: t3.ssrsub.one, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大T4-付费推荐:dlj.tf/ssrsub, server: t4.ssrsub.one, port: 8443, type: trojan, password: neAgYIzQ, sni: t4.ssrsub.one, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大T5-付费推荐:dlj.tf/ssrsub, server: t5.ssrsub.one, port: 8443, type: trojan, password: kbzMu9lE, sni: t5.ssrsub.one, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 @SSRSUB-俄罗斯T6-付费推荐:dlj.tf/ssrsub, server: t6.ssrsub.one, port: 8443, type: trojan, password: bQENkMu9, sni: t6.ssrsub.one, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇲 @SSRSUB-美国T7-付费推荐:dlj.tf/ssrsub, server: t7.ssrsub.one, port: 8443, type: trojan, password: zoAIDgHp, sni: t7.ssrsub.one, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇲 @SSRSUB-美国T8-付费推荐:dlj.tf/ssrsub, server: t8.ssrsub.one, port: 8443, type: trojan, password: yFQeXk7P, sni: t8.ssrsub.one, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大A1-付费推荐:suo.yt/ssrsub, server: 45.62.245.20, port: 443, type: vmess, uuid: a106688c-c1e1-11eb-b58f-0050569b799a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /2fMz3Seh/, ws-headers: {Host: a1.ssrsub.one}, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大A2-付费推荐:suo.yt/ssrsub, server: 45.62.233.34, port: 443, type: vmess, uuid: b6b44b86-c1e1-11eb-85a3-0050569b8c57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /IfRHiCow/, ws-headers: {Host: a2.ssrsub.one}, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大A3-付费推荐:suo.yt/ssrsub, server: 45.62.233.142, port: 443, type: vmess, uuid: bf53c406-c1e1-11eb-a686-0050569bb8c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /hBozMgCA/, ws-headers: {Host: a3.ssrsub.one}, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大A4-付费推荐:suo.yt/ssrsub, server: 142.47.219.13, port: 443, type: vmess, uuid: bce319a6-c1e1-11eb-8936-0050569b2f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /OW1k0fXV/, ws-headers: {Host: a4.ssrsub.one}, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大A5-付费推荐:suo.yt/ssrsub, server: 45.62.229.13, port: 443, type: vmess, uuid: d5553168-c1e1-11eb-939f-0050569b7bb6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /a4mZxFoR/, ws-headers: {Host: a5.ssrsub.one}, udp: true}
-  - {name: 🇷🇺 @SSRSUB-俄罗斯A6-付费推荐:suo.yt/ssrsub, server: 194.5.79.73, port: 443, type: vmess, uuid: d29451de-c1e1-11eb-bd4a-f628f75307c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /HPyTpQEG/, ws-headers: {Host: a6.ssrsub.one}, udp: true}
-  - {name: 🇺🇲 @SSRSUB-美国A7-付费推荐:suo.yt/ssrsub, server: 205.185.122.222, port: 443, type: vmess, uuid: ddbdb168-c1e1-11eb-bed0-001683f0971e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ST1RspvZ/, ws-headers: {Host: a7.ssrsub.one}, udp: true}
-  - {name: 🇺🇲 @SSRSUB-美国A8-付费推荐:suo.yt/ssrsub, server: 213.59.118.168, port: 443, type: vmess, uuid: e4ddb13c-c1e1-11eb-aa85-a65deda42d21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /cyZhWXo9/, ws-headers: {Host: a8.ssrsub.one}, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大B1-付费推荐:suo.yt/ssrsub, server: b1.ssrsub.one, port: 2053, type: vmess, uuid: a59ad874-c1e1-11eb-b58f-0050569b799a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大B2-付费推荐:suo.yt/ssrsub, server: b2.ssrsub.one, port: 2053, type: vmess, uuid: b9ad8348-c1e1-11eb-85a3-0050569b8c57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大B3-付费推荐:suo.yt/ssrsub, server: b3.ssrsub.one, port: 2053, type: vmess, uuid: c232db76-c1e1-11eb-a686-0050569bb8c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大B4-付费推荐:suo.yt/ssrsub, server: b4.ssrsub.one, port: 2053, type: vmess, uuid: bf71d400-c1e1-11eb-8936-0050569b2f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大B5-付费推荐:suo.yt/ssrsub, server: b5.ssrsub.one, port: 2053, type: vmess, uuid: d7f490e4-c1e1-11eb-939f-0050569b7bb6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 @SSRSUB-俄罗斯B6-付费推荐:suo.yt/ssrsub, server: b6.ssrsub.one, port: 2053, type: vmess, uuid: d81bc61e-c1e1-11eb-bd4a-f628f75307c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇲 @SSRSUB-美国B7-付费推荐:suo.yt/ssrsub, server: b7.ssrsub.one, port: 2053, type: vmess, uuid: e02cb994-c1e1-11eb-bed0-001683f0971e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇲 @SSRSUB-美国B8-付费推荐:suo.yt/ssrsub, server: b8.ssrsub.one, port: 2053, type: vmess, uuid: e74604c4-c1e1-11eb-aa85-a65deda42d21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V1-付费推荐:suo.yt/ssrsub", server: 3.8.127.0, port: 29969, type: vmess, uuid: 30c50cf4-5e08-461b-b9b5-dd0b8ab2e2d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V2-付费推荐:suo.yt/ssrsub", server: 139.226.50.32, port: 10002, type: vmess, uuid: d534be6b-0793-42d1-be19-e5bc4abe7a72, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V3-付费推荐:suo.yt/ssrsub", server: 35.72.14.68, port: 55742, type: vmess, uuid: 4ffa6bc5-68bd-42aa-b840-b58ca45a5012, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V4-付费推荐:suo.yt/ssrsub", server: 139.226.50.32, port: 10001, type: vmess, uuid: d534be6b-0793-42d1-be19-e5bc4abe7a72, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V5-付费推荐:suo.yt/ssrsub", server: 139.226.50.32, port: 10005, type: vmess, uuid: d534be6b-0793-42d1-be19-e5bc4abe7a72, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V6-付费推荐:suo.yt/ssrsub", server: 35.182.226.230, port: 28868, type: vmess, uuid: f99050db-bfea-4657-825f-74d9129680bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V7-付费推荐:suo.yt/ssrsub", server: 139.226.50.32, port: 10004, type: vmess, uuid: d534be6b-0793-42d1-be19-e5bc4abe7a72, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V8-付费推荐:suo.yt/ssrsub", server: 116.192.164.217, port: 52012, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V9-付费推荐:suo.yt/ssrsub", server: 183.236.57.18, port: 10005, type: vmess, uuid: d534be6b-0793-42d1-be19-e5bc4abe7a72, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V10-付费推荐:suo.yt/ssrsub", server: 183.236.55.216, port: 52012, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V11-付费推荐:suo.yt/ssrsub", server: 116.192.164.217, port: 52002, type: vmess, uuid: 35cfbca1-385e-405f-9f1f-8b5402ef7999, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V12-付费推荐:suo.yt/ssrsub", server: 139.226.50.32, port: 10002, type: vmess, uuid: d534be6b-0793-42d1-be19-e5bc4abe7a72, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V13-付费推荐:suo.yt/ssrsub", server: 104.18.6.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}, udp: true}
-  - {name: "@SSRSUB-V14-付费推荐:suo.yt/ssrsub", server: 104.21.48.161, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}, udp: true}
-  - {name: "@SSRSUB-V15-付费推荐:suo.yt/ssrsub", server: cdnde.irteyz.today, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}, udp: true}
-  - {name: "@SSRSUB-V16-付费推荐:suo.yt/ssrsub", server: 104.18.7.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}, udp: true}
-  - {name: "@SSRSUB-V17-付费推荐:suo.yt/ssrsub", server: 45.147.201.94, port: 21799, type: vmess, uuid: 77a8f6bb-ace4-4283-a865-b8feabf5312d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V18-付费推荐:suo.yt/ssrsub", server: 139.226.50.32, port: 10001, type: vmess, uuid: d534be6b-0793-42d1-be19-e5bc4abe7a72, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V19-付费推荐:suo.yt/ssrsub", server: 139.226.50.32, port: 10004, type: vmess, uuid: d534be6b-0793-42d1-be19-e5bc4abe7a72, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "@SSRSUB-V20-付费推荐:suo.yt/ssrsub", server: 172.67.154.85, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}, udp: true}
+  - {name: 🇨🇳 @SSRSUB-台湾ssr08-付费推荐:suo.yt/ssrsub, server: 117.28.243.187, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!, udp: true}
+  - {name: 🇨🇳 @SSRSUB-台湾ssr09-付费推荐:suo.yt/ssrsub, server: p5.22332e.com, port: 8333, type: ss, cipher: rc4-md5, password: passfw2xs4e!, udp: true}
+  - {name: "@SSRSUB-SS1-付费推荐:dlj.tf/ssrsub", server: 91.90.121.187, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6, udp: true}
+  - {name: "@SSRSUB-SS2-付费推荐:dlj.tf/ssrsub", server: 89.46.223.239, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD, udp: true}
+  - {name: "@SSRSUB-SS3-付费推荐:dlj.tf/ssrsub", server: 89.187.163.215, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6, udp: true}
+  - {name: "@SSRSUB-SS4-付费推荐:dlj.tf/ssrsub", server: 84.17.35.86, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD, udp: true}
+  - {name: "@SSRSUB-SS5-付费推荐:dlj.tf/ssrsub", server: 84.17.35.78, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6, udp: true}
+  - {name: "@SSRSUB-SS6-付费推荐:dlj.tf/ssrsub", server: 84.17.35.118, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ, udp: true}
+  - {name: "@SSRSUB-SS7-付费推荐:dlj.tf/ssrsub", server: 84.17.35.118, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB, udp: true}
+  - {name: "@SSRSUB-SS8-付费推荐:dlj.tf/ssrsub", server: 51.195.149.30, port: 57478, type: ss, cipher: chacha20-ietf-poly1305, password: HgVDIN05O6bH, udp: true}
+  - {name: "@SSRSUB-SS9-付费推荐:dlj.tf/ssrsub", server: 23.82.11.49, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd, udp: true}
+  - {name: "@SSRSUB-SS10-付费推荐:dlj.tf/ssrsub", server: 23.82.11.49, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD, udp: true}
+  - {name: "@SSRSUB-SS11-付费推荐:dlj.tf/ssrsub", server: 212.102.44.83, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD, udp: true}
+  - {name: "@SSRSUB-SS12-付费推荐:dlj.tf/ssrsub", server: 212.102.44.83, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp, udp: true}
+  - {name: "@SSRSUB-SS13-付费推荐:dlj.tf/ssrsub", server: 212.102.44.81, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6, udp: true}
+  - {name: "@SSRSUB-SS14-付费推荐:dlj.tf/ssrsub", server: 212.102.35.218, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA, udp: true}
+  - {name: "@SSRSUB-SS15-付费推荐:dlj.tf/ssrsub", server: 207.244.67.149, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6, udp: true}
+  - {name: "@SSRSUB-SS16-付费推荐:dlj.tf/ssrsub", server: 207.244.67.149, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe, udp: true}
+  - {name: "@SSRSUB-SS17-付费推荐:dlj.tf/ssrsub", server: 198.147.22.87, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD, udp: true}
+  - {name: "@SSRSUB-SS18-付费推荐:dlj.tf/ssrsub", server: 198.147.22.87, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp, udp: true}
+  - {name: "@SSRSUB-SS19-付费推荐:dlj.tf/ssrsub", server: 143.244.42.71, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA, udp: true}
+  - {name: "@SSRSUB-SS20-付费推荐:dlj.tf/ssrsub", server: 138.199.16.152, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大T1-付费推荐:dlj.tf/ssrsub, server: t1.ssrsub.one, port: 8443, type: trojan, password: upfdQ5t4, sni: t1.ssrsub.one, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大T2-付费推荐:dlj.tf/ssrsub, server: t2.ssrsub.one, port: 8443, type: trojan, password: CNd95TWH, sni: t2.ssrsub.one, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大T3-付费推荐:dlj.tf/ssrsub, server: t3.ssrsub.one, port: 8443, type: trojan, password: rvAjK7R2, sni: t3.ssrsub.one, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大T4-付费推荐:dlj.tf/ssrsub, server: t4.ssrsub.one, port: 8443, type: trojan, password: KTxHfpze, sni: t4.ssrsub.one, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大T5-付费推荐:dlj.tf/ssrsub, server: t5.ssrsub.one, port: 8443, type: trojan, password: JIwQySqZ, sni: t5.ssrsub.one, skip-cert-verify: false, udp: true}
+  - {name: 🇷🇺 @SSRSUB-俄罗斯T6-付费推荐:dlj.tf/ssrsub, server: t6.ssrsub.one, port: 8443, type: trojan, password: GUulsP45, sni: t6.ssrsub.one, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇲 @SSRSUB-美国T7-付费推荐:dlj.tf/ssrsub, server: t7.ssrsub.one, port: 8443, type: trojan, password: ynPDaGEx, sni: t7.ssrsub.one, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大A1-付费推荐:suo.yt/ssrsub, server: 45.62.245.20, port: 2096, type: vmess, uuid: a106688c-c1e1-11eb-b58f-0050569b799a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /2fMz3Seh/, ws-headers: {Host: a1.ssrsub.one}, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大A2-付费推荐:suo.yt/ssrsub, server: 45.62.233.34, port: 2096, type: vmess, uuid: b6b44b86-c1e1-11eb-85a3-0050569b8c57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /IfRHiCow/, ws-headers: {Host: a2.ssrsub.one}, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大A3-付费推荐:suo.yt/ssrsub, server: 45.62.233.142, port: 2096, type: vmess, uuid: bf53c406-c1e1-11eb-a686-0050569bb8c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /hBozMgCA/, ws-headers: {Host: a3.ssrsub.one}, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大A4-付费推荐:suo.yt/ssrsub, server: 142.47.219.13, port: 2096, type: vmess, uuid: bce319a6-c1e1-11eb-8936-0050569b2f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /OW1k0fXV/, ws-headers: {Host: a4.ssrsub.one}, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大A5-付费推荐:suo.yt/ssrsub, server: 45.62.233.124, port: 2096, type: vmess, uuid: 2fa32b4c-c526-11eb-a8de-0050569b1c48, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /rLwU3z5p/, ws-headers: {Host: a5.ssrsub.one}, udp: true}
+  - {name: 🇷🇺 @SSRSUB-俄罗斯A6-付费推荐:suo.yt/ssrsub, server: 194.5.79.73, port: 2096, type: vmess, uuid: d29451de-c1e1-11eb-bd4a-f628f75307c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /HPyTpQEG/, ws-headers: {Host: a6.ssrsub.one}, udp: true}
+  - {name: 🇺🇲 @SSRSUB-美国A7-付费推荐:suo.yt/ssrsub, server: 205.185.122.222, port: 2096, type: vmess, uuid: ddbdb168-c1e1-11eb-bed0-001683f0971e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ST1RspvZ/, ws-headers: {Host: a7.ssrsub.one}, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大B1-付费推荐:suo.yt/ssrsub, server: b1.ssrsub.one, port: 2083, type: vmess, uuid: 7891f914-c526-11eb-9cf1-0050569b799a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /Cs8LdnNv/, ws-headers: {Host: b1.ssrsub.one}, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大B2-付费推荐:suo.yt/ssrsub, server: b2.ssrsub.one, port: 2083, type: vmess, uuid: 83d941a6-c526-11eb-9988-0050569b8c57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /3RrwIfy5/, ws-headers: {Host: b2.ssrsub.one}, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大B3-付费推荐:suo.yt/ssrsub, server: b3.ssrsub.one, port: 2083, type: vmess, uuid: 84758fb6-c526-11eb-b2c2-0050569bb8c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /9GXHAucm/, ws-headers: {Host: b3.ssrsub.one}, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大B4-付费推荐:suo.yt/ssrsub, server: b4.ssrsub.one, port: 2083, type: vmess, uuid: 86231798-c526-11eb-9fd1-0050569b2f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /wkdgWCuL/, ws-headers: {Host: b4.ssrsub.one}, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大B5-付费推荐:suo.yt/ssrsub, server: b5.ssrsub.one, port: 2083, type: vmess, uuid: 7ceb6144-c526-11eb-a8de-0050569b1c48, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /kwe9VlGP/, ws-headers: {Host: b5.ssrsub.one}, udp: true}
+  - {name: 🇷🇺 @SSRSUB-俄罗斯B6-付费推荐:suo.yt/ssrsub, server: c6.ssrsub.one, port: 2083, type: vmess, uuid: 7e162f2c-c526-11eb-b04e-f628f75307c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /NFaEKH5t/, ws-headers: {Host: c6.ssrsub.one}, udp: true}
+  - {name: 🇺🇲 @SSRSUB-美国B7-付费推荐:suo.yt/ssrsub, server: b7.ssrsub.one, port: 2083, type: vmess, uuid: 7f6ffdda-c526-11eb-bb36-001683f0971e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /obSf4CHN/, ws-headers: {Host: b7.ssrsub.one}, udp: true}
+  - {name: "@SSRSUB-V1-付费推荐:suo.yt/ssrsub", server: ac2088.herokuapp.com, port: 443, type: vmess, uuid: d1babe08-f8ac-490b-b66f-9be27467f3cc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /d1babe08-f8ac-490b-b66f-9be27467f3cc-vmess, ws-headers: {Host: ac2088.herokuapp.com}, udp: true}
+  - {name: "@SSRSUB-V2-付费推荐:suo.yt/ssrsub", server: 13.124.12.209, port: 37894, type: vmess, uuid: ea745949-0606-40be-b809-ac9c31bae941, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "@SSRSUB-V3-付费推荐:suo.yt/ssrsub", server: 23.224.164.100, port: 443, type: vmess, uuid: 4fa614c3-a180-4e46-bb8f-1cd17f2efac9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/292026011205, ws-headers: {Host: www.09025120.xyz}, udp: true}
+  - {name: "@SSRSUB-V4-付费推荐:suo.yt/ssrsub", server: 23.224.31.203, port: 443, type: vmess, uuid: d92d48b1-bad9-42db-9d07-880fa14380f0, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/292026011205, ws-headers: {Host: www.28057431.xyz}, udp: true}
+  - {name: "@SSRSUB-V5-付费推荐:suo.yt/ssrsub", server: 23.224.158.170, port: 443, type: vmess, uuid: aa6449c1-9557-415e-9681-08701767d56e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/292026011205, ws-headers: {Host: www.58245542.xyz}, udp: true}
+  - {name: "@SSRSUB-V6-付费推荐:suo.yt/ssrsub", server: 23.224.30.43, port: 443, type: vmess, uuid: 0ee25280-a5e2-41b0-9649-c837ca69ecc2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/292026011205, ws-headers: {Host: www.65187662.xyz}, udp: true}
+  - {name: "@SSRSUB-V7-付费推荐:suo.yt/ssrsub", server: 23.224.69.18, port: 443, type: vmess, uuid: fb7a6094-a99b-4b91-a70d-25244f5f6ac8, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: www.76126449.xyz}, udp: true}
+  - {name: "@SSRSUB-V8-付费推荐:suo.yt/ssrsub", server: 23.224.8.91, port: 443, type: vmess, uuid: 116dbc8a-ec13-49a5-b954-d49f65630ba4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: www.10925848.xyz}, udp: true}
+  - {name: "@SSRSUB-V9-付费推荐:suo.yt/ssrsub", server: 23.225.165.242, port: 443, type: vmess, uuid: 116dbc8a-ec13-49a5-b954-d49f65630ba4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/292026011205, ws-headers: {Host: www.10925848.xyz}, udp: true}
+  - {name: "@SSRSUB-V10-付费推荐:suo.yt/ssrsub", server: 137.175.20.29, port: 443, type: vmess, uuid: ed2d308b-10f3-4881-aada-f6d08917dfbd, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/292026011205, ws-headers: {Host: www.07188351.xyz}, udp: true}
+  - {name: "@SSRSUB-V11-付费推荐:suo.yt/ssrsub", server: 23.225.210.195, port: 443, type: vmess, uuid: dd36ec60-04bd-4cfe-bbf1-f4d591265202, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/292026011205, ws-headers: {Host: www.40296182.xyz}, udp: true}
+  - {name: "@SSRSUB-V12-付费推荐:suo.yt/ssrsub", server: 154.84.1.49, port: 443, type: vmess, uuid: 5a8460d8-6379-4c01-af07-8f8998be401f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/292026011205, ws-headers: {Host: www.84845854.xyz}, udp: true}
+  - {name: "@SSRSUB-V13-付费推荐:suo.yt/ssrsub", server: 154.84.1.217, port: 443, type: vmess, uuid: d03a8fbf-7d51-46c3-b02d-17ff0b32e4c5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: www.53103739.xyz}, udp: true}
+  - {name: "@SSRSUB-V14-付费推荐:suo.yt/ssrsub", server: 154.84.1.55, port: 443, type: vmess, uuid: 9636de2d-8772-4d21-b1c1-a0e065905246, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/292026011205, ws-headers: {Host: www.04887294.xyz}, udp: true}
+  - {name: "@SSRSUB-V15-付费推荐:suo.yt/ssrsub", server: 154.84.1.100, port: 443, type: vmess, uuid: 7c5895e5-97f7-45e9-adc3-004eee90d884, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/292026011205, ws-headers: {Host: www.90859292.xyz}, udp: true}
+  - {name: "@SSRSUB-V16-付费推荐:suo.yt/ssrsub", server: 154.84.1.116, port: 443, type: vmess, uuid: b349f65b-4b19-4255-9ee2-b679990540e7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: www.25936911.xyz}, udp: true}
+  - {name: "@SSRSUB-V17-付费推荐:suo.yt/ssrsub", server: 154.84.1.199, port: 443, type: vmess, uuid: 3268727a-7556-4211-8a49-2cf5c5096da4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: www.79570456.xyz}, udp: true}
+  - {name: "@SSRSUB-V18-付费推荐:suo.yt/ssrsub", server: 154.84.1.106, port: 443, type: vmess, uuid: a8089885-9602-4052-b1a3-1c9e02df635d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: www.63681459.xyz}, udp: true}
+  - {name: "@SSRSUB-V19-付费推荐:suo.yt/ssrsub", server: 46.182.107.3, port: 443, type: vmess, uuid: b2aa7a8a-ab88-4c0f-a310-0b9456c69420, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /footers, ws-headers: {Host: www.33960870.xyz}, udp: true}
+  - {name: "@SSRSUB-V20-付费推荐:suo.yt/ssrsub", server: 173.230.153.162, port: 3688, type: vmess, uuid: d2cb2a8b-d2aa-4524-ae7c-2a954a88e96c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 173.230.153.162}, udp: true}
+  - {name: "@SSRSUB-V21-付费推荐:suo.yt/ssrsub", server: 35.178.68.152, port: 47611, type: vmess, uuid: 97a4d167-b361-48b8-b004-8bc45669e334, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "@SSRSUB-V22-付费推荐:suo.yt/ssrsub", server: auto.freev2.top, port: 34289, type: vmess, uuid: 9a3371d9-bd30-43d1-9a05-340e2446c4cf, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "@SSRSUB-V23-付费推荐:suo.yt/ssrsub", server: 104.19.64.83, port: 443, type: vmess, uuid: e1934f6e-ae2c-41e7-8877-844152137c1e, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /xrayvws, ws-headers: {Host: buy.1808.cf}, udp: true}
+  - {name: "@SSRSUB-V24-付费推荐:suo.yt/ssrsub", server: 104.16.249.130, port: 443, type: vmess, uuid: e6397eda-dd27-4832-a693-b3fb156ec0f3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /233blog, ws-headers: {Host: rn.man-one.club}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -114,15 +115,9 @@ proxy-groups:
       - 🇬🇧 @SSRSUB-英国ss16-付费推荐:dlj.tf/ssrsub
       - 🇩🇪 @SSRSUB-德国ss17-付费推荐:dlj.tf/ssrsub
       - 🇮🇳 @SSRSUB-印度ss18-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国ss19-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国ss20-付费推荐:dlj.tf/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr01-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr02-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr03-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr04-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr05-付费推荐:suo.yt/ssrsub
-      - 🇷🇺 @SSRSUB-俄罗斯ssr06-付费推荐:suo.yt/ssrsub
       - 🇨🇳 @SSRSUB-中国ssr07-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr08-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr09-付费推荐:suo.yt/ssrsub
       - "@SSRSUB-SS1-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS2-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS3-付费推荐:dlj.tf/ssrsub"
@@ -137,6 +132,12 @@ proxy-groups:
       - "@SSRSUB-SS12-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS13-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS14-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS15-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS16-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS17-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS18-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS19-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS20-付费推荐:dlj.tf/ssrsub"
       - 🇨🇦 @SSRSUB-加拿大T1-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大T2-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大T3-付费推荐:dlj.tf/ssrsub
@@ -144,7 +145,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大T5-付费推荐:dlj.tf/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯T6-付费推荐:dlj.tf/ssrsub
       - 🇺🇲 @SSRSUB-美国T7-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国T8-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A1-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A2-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A3-付费推荐:suo.yt/ssrsub
@@ -152,7 +152,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大A5-付费推荐:suo.yt/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯A6-付费推荐:suo.yt/ssrsub
       - 🇺🇲 @SSRSUB-美国A7-付费推荐:suo.yt/ssrsub
-      - 🇺🇲 @SSRSUB-美国A8-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B1-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B2-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B3-付费推荐:suo.yt/ssrsub
@@ -160,7 +159,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大B5-付费推荐:suo.yt/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯B6-付费推荐:suo.yt/ssrsub
       - 🇺🇲 @SSRSUB-美国B7-付费推荐:suo.yt/ssrsub
-      - 🇺🇲 @SSRSUB-美国B8-付费推荐:suo.yt/ssrsub
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
@@ -181,6 +179,10 @@ proxy-groups:
       - "@SSRSUB-V18-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -204,15 +206,9 @@ proxy-groups:
       - 🇬🇧 @SSRSUB-英国ss16-付费推荐:dlj.tf/ssrsub
       - 🇩🇪 @SSRSUB-德国ss17-付费推荐:dlj.tf/ssrsub
       - 🇮🇳 @SSRSUB-印度ss18-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国ss19-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国ss20-付费推荐:dlj.tf/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr01-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr02-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr03-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr04-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr05-付费推荐:suo.yt/ssrsub
-      - 🇷🇺 @SSRSUB-俄罗斯ssr06-付费推荐:suo.yt/ssrsub
       - 🇨🇳 @SSRSUB-中国ssr07-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr08-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr09-付费推荐:suo.yt/ssrsub
       - "@SSRSUB-SS1-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS2-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS3-付费推荐:dlj.tf/ssrsub"
@@ -227,6 +223,12 @@ proxy-groups:
       - "@SSRSUB-SS12-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS13-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS14-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS15-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS16-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS17-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS18-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS19-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS20-付费推荐:dlj.tf/ssrsub"
       - 🇨🇦 @SSRSUB-加拿大T1-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大T2-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大T3-付费推荐:dlj.tf/ssrsub
@@ -234,7 +236,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大T5-付费推荐:dlj.tf/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯T6-付费推荐:dlj.tf/ssrsub
       - 🇺🇲 @SSRSUB-美国T7-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国T8-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A1-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A2-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A3-付费推荐:suo.yt/ssrsub
@@ -242,7 +243,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大A5-付费推荐:suo.yt/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯A6-付费推荐:suo.yt/ssrsub
       - 🇺🇲 @SSRSUB-美国A7-付费推荐:suo.yt/ssrsub
-      - 🇺🇲 @SSRSUB-美国A8-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B1-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B2-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B3-付费推荐:suo.yt/ssrsub
@@ -250,7 +250,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大B5-付费推荐:suo.yt/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯B6-付费推荐:suo.yt/ssrsub
       - 🇺🇲 @SSRSUB-美国B7-付费推荐:suo.yt/ssrsub
-      - 🇺🇲 @SSRSUB-美国B8-付费推荐:suo.yt/ssrsub
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
@@ -271,6 +270,10 @@ proxy-groups:
       - "@SSRSUB-V18-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -295,15 +298,9 @@ proxy-groups:
       - 🇬🇧 @SSRSUB-英国ss16-付费推荐:dlj.tf/ssrsub
       - 🇩🇪 @SSRSUB-德国ss17-付费推荐:dlj.tf/ssrsub
       - 🇮🇳 @SSRSUB-印度ss18-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国ss19-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国ss20-付费推荐:dlj.tf/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr01-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr02-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr03-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr04-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr05-付费推荐:suo.yt/ssrsub
-      - 🇷🇺 @SSRSUB-俄罗斯ssr06-付费推荐:suo.yt/ssrsub
       - 🇨🇳 @SSRSUB-中国ssr07-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr08-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr09-付费推荐:suo.yt/ssrsub
       - "@SSRSUB-SS1-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS2-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS3-付费推荐:dlj.tf/ssrsub"
@@ -318,6 +315,12 @@ proxy-groups:
       - "@SSRSUB-SS12-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS13-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS14-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS15-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS16-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS17-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS18-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS19-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS20-付费推荐:dlj.tf/ssrsub"
       - 🇨🇦 @SSRSUB-加拿大T1-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大T2-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大T3-付费推荐:dlj.tf/ssrsub
@@ -325,7 +328,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大T5-付费推荐:dlj.tf/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯T6-付费推荐:dlj.tf/ssrsub
       - 🇺🇲 @SSRSUB-美国T7-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国T8-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A1-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A2-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A3-付费推荐:suo.yt/ssrsub
@@ -333,7 +335,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大A5-付费推荐:suo.yt/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯A6-付费推荐:suo.yt/ssrsub
       - 🇺🇲 @SSRSUB-美国A7-付费推荐:suo.yt/ssrsub
-      - 🇺🇲 @SSRSUB-美国A8-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B1-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B2-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B3-付费推荐:suo.yt/ssrsub
@@ -341,7 +342,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大B5-付费推荐:suo.yt/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯B6-付费推荐:suo.yt/ssrsub
       - 🇺🇲 @SSRSUB-美国B7-付费推荐:suo.yt/ssrsub
-      - 🇺🇲 @SSRSUB-美国B8-付费推荐:suo.yt/ssrsub
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
@@ -362,11 +362,17 @@ proxy-groups:
       - "@SSRSUB-V18-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 🇨🇳 @SSRSUB-台湾ssr08-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr09-付费推荐:suo.yt/ssrsub
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -390,15 +396,9 @@ proxy-groups:
       - 🇬🇧 @SSRSUB-英国ss16-付费推荐:dlj.tf/ssrsub
       - 🇩🇪 @SSRSUB-德国ss17-付费推荐:dlj.tf/ssrsub
       - 🇮🇳 @SSRSUB-印度ss18-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国ss19-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国ss20-付费推荐:dlj.tf/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr01-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr02-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr03-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr04-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr05-付费推荐:suo.yt/ssrsub
-      - 🇷🇺 @SSRSUB-俄罗斯ssr06-付费推荐:suo.yt/ssrsub
       - 🇨🇳 @SSRSUB-中国ssr07-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr08-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr09-付费推荐:suo.yt/ssrsub
       - "@SSRSUB-SS1-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS2-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS3-付费推荐:dlj.tf/ssrsub"
@@ -413,6 +413,12 @@ proxy-groups:
       - "@SSRSUB-SS12-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS13-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS14-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS15-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS16-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS17-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS18-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS19-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS20-付费推荐:dlj.tf/ssrsub"
       - 🇨🇦 @SSRSUB-加拿大T1-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大T2-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大T3-付费推荐:dlj.tf/ssrsub
@@ -420,7 +426,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大T5-付费推荐:dlj.tf/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯T6-付费推荐:dlj.tf/ssrsub
       - 🇺🇲 @SSRSUB-美国T7-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国T8-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A1-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A2-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A3-付费推荐:suo.yt/ssrsub
@@ -428,7 +433,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大A5-付费推荐:suo.yt/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯A6-付费推荐:suo.yt/ssrsub
       - 🇺🇲 @SSRSUB-美国A7-付费推荐:suo.yt/ssrsub
-      - 🇺🇲 @SSRSUB-美国A8-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B1-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B2-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B3-付费推荐:suo.yt/ssrsub
@@ -436,7 +440,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大B5-付费推荐:suo.yt/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯B6-付费推荐:suo.yt/ssrsub
       - 🇺🇲 @SSRSUB-美国B7-付费推荐:suo.yt/ssrsub
-      - 🇺🇲 @SSRSUB-美国B8-付费推荐:suo.yt/ssrsub
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
@@ -457,6 +460,10 @@ proxy-groups:
       - "@SSRSUB-V18-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
   - name: 📲 电报信息
     type: select
     proxies:
@@ -479,15 +486,9 @@ proxy-groups:
       - 🇬🇧 @SSRSUB-英国ss16-付费推荐:dlj.tf/ssrsub
       - 🇩🇪 @SSRSUB-德国ss17-付费推荐:dlj.tf/ssrsub
       - 🇮🇳 @SSRSUB-印度ss18-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国ss19-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国ss20-付费推荐:dlj.tf/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr01-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr02-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr03-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr04-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr05-付费推荐:suo.yt/ssrsub
-      - 🇷🇺 @SSRSUB-俄罗斯ssr06-付费推荐:suo.yt/ssrsub
       - 🇨🇳 @SSRSUB-中国ssr07-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr08-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr09-付费推荐:suo.yt/ssrsub
       - "@SSRSUB-SS1-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS2-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS3-付费推荐:dlj.tf/ssrsub"
@@ -502,6 +503,12 @@ proxy-groups:
       - "@SSRSUB-SS12-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS13-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS14-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS15-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS16-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS17-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS18-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS19-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS20-付费推荐:dlj.tf/ssrsub"
       - 🇨🇦 @SSRSUB-加拿大T1-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大T2-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大T3-付费推荐:dlj.tf/ssrsub
@@ -509,7 +516,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大T5-付费推荐:dlj.tf/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯T6-付费推荐:dlj.tf/ssrsub
       - 🇺🇲 @SSRSUB-美国T7-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国T8-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A1-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A2-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A3-付费推荐:suo.yt/ssrsub
@@ -517,7 +523,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大A5-付费推荐:suo.yt/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯A6-付费推荐:suo.yt/ssrsub
       - 🇺🇲 @SSRSUB-美国A7-付费推荐:suo.yt/ssrsub
-      - 🇺🇲 @SSRSUB-美国A8-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B1-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B2-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B3-付费推荐:suo.yt/ssrsub
@@ -525,7 +530,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大B5-付费推荐:suo.yt/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯B6-付费推荐:suo.yt/ssrsub
       - 🇺🇲 @SSRSUB-美国B7-付费推荐:suo.yt/ssrsub
-      - 🇺🇲 @SSRSUB-美国B8-付费推荐:suo.yt/ssrsub
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
@@ -546,6 +550,10 @@ proxy-groups:
       - "@SSRSUB-V18-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
       - 🎯 全球直连
   - name: 🍎 苹果服务
     type: select
@@ -571,15 +579,9 @@ proxy-groups:
       - 🇬🇧 @SSRSUB-英国ss16-付费推荐:dlj.tf/ssrsub
       - 🇩🇪 @SSRSUB-德国ss17-付费推荐:dlj.tf/ssrsub
       - 🇮🇳 @SSRSUB-印度ss18-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国ss19-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国ss20-付费推荐:dlj.tf/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr01-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr02-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr03-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr04-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr05-付费推荐:suo.yt/ssrsub
-      - 🇷🇺 @SSRSUB-俄罗斯ssr06-付费推荐:suo.yt/ssrsub
       - 🇨🇳 @SSRSUB-中国ssr07-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr08-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr09-付费推荐:suo.yt/ssrsub
       - "@SSRSUB-SS1-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS2-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS3-付费推荐:dlj.tf/ssrsub"
@@ -594,6 +596,12 @@ proxy-groups:
       - "@SSRSUB-SS12-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS13-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS14-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS15-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS16-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS17-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS18-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS19-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS20-付费推荐:dlj.tf/ssrsub"
       - 🇨🇦 @SSRSUB-加拿大T1-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大T2-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大T3-付费推荐:dlj.tf/ssrsub
@@ -601,7 +609,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大T5-付费推荐:dlj.tf/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯T6-付费推荐:dlj.tf/ssrsub
       - 🇺🇲 @SSRSUB-美国T7-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国T8-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A1-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A2-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A3-付费推荐:suo.yt/ssrsub
@@ -609,7 +616,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大A5-付费推荐:suo.yt/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯A6-付费推荐:suo.yt/ssrsub
       - 🇺🇲 @SSRSUB-美国A7-付费推荐:suo.yt/ssrsub
-      - 🇺🇲 @SSRSUB-美国A8-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B1-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B2-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B3-付费推荐:suo.yt/ssrsub
@@ -617,7 +623,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大B5-付费推荐:suo.yt/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯B6-付费推荐:suo.yt/ssrsub
       - 🇺🇲 @SSRSUB-美国B7-付费推荐:suo.yt/ssrsub
-      - 🇺🇲 @SSRSUB-美国B8-付费推荐:suo.yt/ssrsub
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
@@ -638,6 +643,10 @@ proxy-groups:
       - "@SSRSUB-V18-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -671,15 +680,9 @@ proxy-groups:
       - 🇬🇧 @SSRSUB-英国ss16-付费推荐:dlj.tf/ssrsub
       - 🇩🇪 @SSRSUB-德国ss17-付费推荐:dlj.tf/ssrsub
       - 🇮🇳 @SSRSUB-印度ss18-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国ss19-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国ss20-付费推荐:dlj.tf/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr01-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr02-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr03-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr04-付费推荐:suo.yt/ssrsub
-      - 🇨🇦 @SSRSUB-加拿大ssr05-付费推荐:suo.yt/ssrsub
-      - 🇷🇺 @SSRSUB-俄罗斯ssr06-付费推荐:suo.yt/ssrsub
       - 🇨🇳 @SSRSUB-中国ssr07-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr08-付费推荐:suo.yt/ssrsub
+      - 🇨🇳 @SSRSUB-台湾ssr09-付费推荐:suo.yt/ssrsub
       - "@SSRSUB-SS1-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS2-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS3-付费推荐:dlj.tf/ssrsub"
@@ -694,6 +697,12 @@ proxy-groups:
       - "@SSRSUB-SS12-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS13-付费推荐:dlj.tf/ssrsub"
       - "@SSRSUB-SS14-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS15-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS16-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS17-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS18-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS19-付费推荐:dlj.tf/ssrsub"
+      - "@SSRSUB-SS20-付费推荐:dlj.tf/ssrsub"
       - 🇨🇦 @SSRSUB-加拿大T1-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大T2-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大T3-付费推荐:dlj.tf/ssrsub
@@ -701,7 +710,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大T5-付费推荐:dlj.tf/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯T6-付费推荐:dlj.tf/ssrsub
       - 🇺🇲 @SSRSUB-美国T7-付费推荐:dlj.tf/ssrsub
-      - 🇺🇲 @SSRSUB-美国T8-付费推荐:dlj.tf/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A1-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A2-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大A3-付费推荐:suo.yt/ssrsub
@@ -709,7 +717,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大A5-付费推荐:suo.yt/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯A6-付费推荐:suo.yt/ssrsub
       - 🇺🇲 @SSRSUB-美国A7-付费推荐:suo.yt/ssrsub
-      - 🇺🇲 @SSRSUB-美国A8-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B1-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B2-付费推荐:suo.yt/ssrsub
       - 🇨🇦 @SSRSUB-加拿大B3-付费推荐:suo.yt/ssrsub
@@ -717,7 +724,6 @@ proxy-groups:
       - 🇨🇦 @SSRSUB-加拿大B5-付费推荐:suo.yt/ssrsub
       - 🇷🇺 @SSRSUB-俄罗斯B6-付费推荐:suo.yt/ssrsub
       - 🇺🇲 @SSRSUB-美国B7-付费推荐:suo.yt/ssrsub
-      - 🇺🇲 @SSRSUB-美国B8-付费推荐:suo.yt/ssrsub
       - "@SSRSUB-V1-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V2-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V3-付费推荐:suo.yt/ssrsub"
@@ -738,6 +744,10 @@ proxy-groups:
       - "@SSRSUB-V18-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V19-付费推荐:suo.yt/ssrsub"
       - "@SSRSUB-V20-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V21-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V22-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V23-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V24-付费推荐:suo.yt/ssrsub"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
