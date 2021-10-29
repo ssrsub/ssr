@@ -27,18 +27,18 @@ proxies:
   - {name: 付费推荐:dlj.tf/ssrsub__20, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: 付费推荐:dlj.tf/ssrsub__21, server: 172.105.55.72, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: 付费推荐:dlj.tf/ssrsub__22, server: 167.88.63.11, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇷🇺 @SSRSUB-俄罗斯S1-付费推荐::suo.yt/ssrsub, server: 45.89.229.223, port: 153, type: ss, cipher: aes-128-gcm, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, udp: true}
-  - {name: 🇷🇺 @SSRSUB-俄罗斯S2-付费推荐::suo.yt/ssrsub, server: 193.38.51.192, port: 153, type: ss, cipher: aes-128-gcm, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, udp: true}
-  - {name: 🇷🇺 @SSRSUB-俄罗斯S3-付费推荐::suo.yt/ssrsub, server: 2.59.214.204, port: 153, type: ss, cipher: aes-128-gcm, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大S4-付费推荐::suo.yt/ssrsub, server: 45.62.231.180, port: 153, type: ss, cipher: aes-128-gcm, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大S5-付费推荐::suo.yt/ssrsub, server: 45.62.231.181, port: 153, type: ss, cipher: aes-128-gcm, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大S6-付费推荐::suo.yt/ssrsub, server: 45.62.250.78, port: 153, type: ss, cipher: aes-128-gcm, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, udp: true}
-  - {name: 🇷🇺 @SSRSUB-俄罗斯S7-付费推荐::suo.yt/ssrsub, server: 45.89.229.223, port: 153, type: ss, cipher: aes-128-gcm, password: 52f31fcb-f948-4f71-bca8-795fdcf7b754, udp: true}
-  - {name: 🇷🇺 @SSRSUB-俄罗斯S8-付费推荐::suo.yt/ssrsub, server: 193.38.51.192, port: 153, type: ss, cipher: aes-128-gcm, password: 52f31fcb-f948-4f71-bca8-795fdcf7b754, udp: true}
-  - {name: 🇷🇺 @SSRSUB-俄罗斯S9-付费推荐::suo.yt/ssrsub, server: 2.59.214.204, port: 153, type: ss, cipher: aes-128-gcm, password: 52f31fcb-f948-4f71-bca8-795fdcf7b754, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大S10-付费推荐::suo.yt/ssrsub, server: 45.62.231.180, port: 153, type: ss, cipher: aes-128-gcm, password: 52f31fcb-f948-4f71-bca8-795fdcf7b754, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大S11-付费推荐::suo.yt/ssrsub, server: 45.62.231.181, port: 153, type: ss, cipher: aes-128-gcm, password: 52f31fcb-f948-4f71-bca8-795fdcf7b754, udp: true}
-  - {name: 🇨🇦 @SSRSUB-加拿大S12-付费推荐::suo.yt/ssrsub, server: 45.62.250.78, port: 153, type: ss, cipher: aes-128-gcm, password: 52f31fcb-f948-4f71-bca8-795fdcf7b754, udp: true}
+  - {name: 🇷🇺 @SSRSUB-俄罗斯S1-付费推荐::suo.yt/ssrsub, server: 45.89.229.223, port: 153, type: ss, cipher: aes-128-gcm, password: 52f31fcb-f948-4f71-bca8-795fdcf7b754, udp: true}
+  - {name: 🇷🇺 @SSRSUB-俄罗斯S2-付费推荐::suo.yt/ssrsub, server: 193.38.51.192, port: 153, type: ss, cipher: aes-128-gcm, password: 52f31fcb-f948-4f71-bca8-795fdcf7b754, udp: true}
+  - {name: 🇷🇺 @SSRSUB-俄罗斯S3-付费推荐::suo.yt/ssrsub, server: 2.59.214.204, port: 153, type: ss, cipher: aes-128-gcm, password: 52f31fcb-f948-4f71-bca8-795fdcf7b754, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大S4-付费推荐::suo.yt/ssrsub, server: 45.62.231.180, port: 153, type: ss, cipher: aes-128-gcm, password: 52f31fcb-f948-4f71-bca8-795fdcf7b754, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大S5-付费推荐::suo.yt/ssrsub, server: 45.62.233.134, port: 153, type: ss, cipher: aes-128-gcm, password: 52f31fcb-f948-4f71-bca8-795fdcf7b754, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大S6-付费推荐::suo.yt/ssrsub, server: 45.62.246.171, port: 153, type: ss, cipher: aes-128-gcm, password: 52f31fcb-f948-4f71-bca8-795fdcf7b754, udp: true}
+  - {name: 🇷🇺 @SSRSUB-俄罗斯S7-付费推荐::suo.yt/ssrsub, server: 45.89.229.223, port: 153, type: ss, cipher: aes-128-gcm, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, udp: true}
+  - {name: 🇷🇺 @SSRSUB-俄罗斯S8-付费推荐::suo.yt/ssrsub, server: 193.38.51.192, port: 153, type: ss, cipher: aes-128-gcm, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, udp: true}
+  - {name: 🇷🇺 @SSRSUB-俄罗斯S9-付费推荐::suo.yt/ssrsub, server: 2.59.214.204, port: 153, type: ss, cipher: aes-128-gcm, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大S10-付费推荐::suo.yt/ssrsub, server: 45.62.231.180, port: 153, type: ss, cipher: aes-128-gcm, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大S11-付费推荐::suo.yt/ssrsub, server: 45.62.233.134, port: 153, type: ss, cipher: aes-128-gcm, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, udp: true}
+  - {name: 🇨🇦 @SSRSUB-加拿大S12-付费推荐::suo.yt/ssrsub, server: 45.62.246.171, port: 153, type: ss, cipher: aes-128-gcm, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, udp: true}
   - {name: 🇺🇲 @SSRSUB-美国T1-付费推荐:dlj.tf/ssrsub, server: t1.ssrsub.com, port: 844, type: trojan, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, sni: t1.ssrsub.com, skip-cert-verify: false, udp: true}
   - {name: 🇺🇲 @SSRSUB-美国T2-付费推荐:dlj.tf/ssrsub, server: t2.ssrsub.com, port: 844, type: trojan, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, sni: t2.ssrsub.com, skip-cert-verify: false, udp: true}
   - {name: 🇷🇺 @SSRSUB-俄罗斯T3-付费推荐:dlj.tf/ssrsub, server: t3.ssrsub.com, port: 844, type: trojan, password: f5487ee3-aef5-436f-adf9-673b1afe2ff7, sni: t3.ssrsub.com, skip-cert-verify: false, udp: true}
