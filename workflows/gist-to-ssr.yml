@@ -1,0 +1,33 @@
+name: Push Gist to SSR Repo
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  push-to-ssr-repo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone target repository
+        uses: actions/checkout@v4
+        with:
+          repository: ssrsub/ssr
+          token: ${{ secrets.SSR_PUSH_TOKEN }}
+          ref: master
+
+      - name: Download Gist Files
+        run: |
+          mkdir -p ssr
+          curl -sL "https://gist.githubusercontent.com/Dafeide/ccb461e88dd99eb4a95a442dbb328064/raw/ee548e352d55b97cf9aa514a4038644fd291d267/clash.yaml" -o ssr/clash.yaml
+          curl -sL "https://gist.githubusercontent.com/Dafeide/ccb461e88dd99eb4a95a442dbb328064/raw/ee548e352d55b97cf9aa514a4038644fd291d267/sing-box.json" -o ssr/sing-box.json
+          curl -sL "https://gist.githubusercontent.com/Dafeide/ccb461e88dd99eb4a95a442dbb328064/raw/ee548e352d55b97cf9aa514a4038644fd291d267/v2ray" -o ssr/v2ray
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ssr
+          git diff --cached --quiet || git commit -m "Auto-sync Gist to SSR repo at $(date -u)"
+          git push origin master
