@@ -54,5 +54,5 @@
 
 ## 🗺 Telegram 汉化语言包设置
 
-- [简体中文](https://t.me/setlanguage/zhcncc)
-- [繁體中文](tg://setlanguage?lang=zh-hant-raw)
+- [简体中文](https://t.me/setlanguage/zh-hans-beta)
+- [繁體中文](https://t.me/setlanguage/zh-hant-raw)
