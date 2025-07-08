@@ -2,8 +2,8 @@ name: Push Gist to SSR Repo
 
 on:
   schedule:
-    - cron: '0 * * * *'
-  workflow_dispatch:
+    - cron: '0 * * * *'  # 每小时同步
+  workflow_dispatch:      # 支持手动触发
 
 jobs:
   push-to-ssr-repo:
@@ -17,17 +17,16 @@ jobs:
           token: ${{ secrets.SSR_PUSH_TOKEN }}
           ref: master
 
-      - name: Download Gist Files
+      - name: Download Gist Files to root
         run: |
-          mkdir -p ssr
-          curl -sL "https://gist.githubusercontent.com/Dafeide/ccb461e88dd99eb4a95a442dbb328064/raw/clash.yaml" -o ssr/clash.yaml
-          curl -sL "https://gist.githubusercontent.com/Dafeide/ccb461e88dd99eb4a95a442dbb328064/raw/sing-box.json" -o ssr/sing-box.json
-          curl -sL "https://gist.githubusercontent.com/Dafeide/ccb461e88dd99eb4a95a442dbb328064/raw/v2ray" -o ssr/v2ray
+          curl -sL "https://gist.githubusercontent.com/Dafeide/ccb461e88dd99eb4a95a442dbb328064/raw/clash.yaml" -o Clash.yaml
+          curl -sL "https://gist.githubusercontent.com/Dafeide/ccb461e88dd99eb4a95a442dbb328064/raw/sing-box.json" -o SingBox.json
+          curl -sL "https://gist.githubusercontent.com/Dafeide/ccb461e88dd99eb4a95a442dbb328064/raw/v2ray" -o V2ray
 
       - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add ssr
-          git diff --cached --quiet || git commit -m "Auto-sync Gist to SSR repo at $(date -u)"
+          git add Clash.yaml SingBox.json V2ray
+          git diff --cached --quiet || git commit -m "Update configs from Gist at $(date -u)"
           git push origin master
