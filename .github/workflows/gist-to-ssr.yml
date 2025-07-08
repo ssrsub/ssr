@@ -20,13 +20,13 @@ jobs:
       - name: Download Gist Files to root
         run: |
           curl -sL "https://gist.githubusercontent.com/Dafeide/ccb461e88dd99eb4a95a442dbb328064/raw/clash.yaml" -o clash.yaml
-          curl -sL "https://gist.githubusercontent.com/Dafeide/ccb461e88dd99eb4a95a442dbb328064/raw/sing-box.json" -o singBox.json
+          curl -sL "https://gist.githubusercontent.com/Dafeide/ccb461e88dd99eb4a95a442dbb328064/raw/sing-box.json" -o singbox.json
           curl -sL "https://gist.githubusercontent.com/Dafeide/ccb461e88dd99eb4a95a442dbb328064/raw/v2ray" -o v2ray
 
       - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add clash.yaml singBox.json v2ray
+          git add clash.yaml singbox.json v2ray
           git diff --cached --quiet || git commit -m "Update configs from Gist at $(date -u)"
           git push origin master
