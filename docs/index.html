@@ -1,69 +1,109 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SSRSub 科学上网订阅</title>
   <style>
-    body { font-family: sans-serif; max-width: 720px; margin: 2rem auto; padding: 1rem; line-height: 1.8; }
+    body { font-family: sans-serif; max-width: 800px; margin: 2rem auto; padding: 1rem; line-height: 1.8; }
     h1, h2 { color: #333; }
-    code { background: #f2f2f2; padding: 2px 6px; border-radius: 4px; }
     a { color: #0077cc; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    section { margin-bottom: 2rem; }
+    code { display: block; background: #f7f7f7; padding: 0.75rem; border: 1px solid #ccc; border-radius: 6px; word-break: break-all; }
+    .link-box { position: relative; margin-bottom: 1rem; }
+    .copy-btn {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .copy-btn:hover {
+      background: #0056b3;
+    }
   </style>
 </head>
 <body>
-  <h1>SSRSub 科学上网订阅 & 工具导航</h1>
 
-  <section>
-    <h2>📦 客户端下载</h2>
-    <ul>
-      <li><a href="https://dafei.de/">客户端下载 @Telegram</a></li>
-      <li><a href="https://t.me/SSRSUB/891">备用下载链接 @Telegram</a></li>
-    </ul>
-  </section>
+  <h1>SSRSub 配置订阅 & 工具导航</h1>
 
-  <section>
-    <h2>🌐 科学上网订阅（无需代理）</h2>
-    <ul>
-      <li>V2Ray：<code>https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/V2ray</code></li>
-      <li>Clash：<code>https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/Clash.yaml</code></li>
-      <li>Sing-box：<code>https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/SingBox.json</code></li>
-    </ul>
-  </section>
+  <h2>📦 客户端下载</h2>
+  <ul>
+    <li><a href="https://dafei.de/">客户端下载 @Telegram</a></li>
+    <li><a href="https://t.me/SSRSUB/891">备用下载链接 @Telegram</a></li>
+  </ul>
 
-  <section>
-    <h2>📡 订阅地址（需代理）</h2>
-    <ul>
-      <li>V2Ray：<code>https://raw.githubusercontent.com/ssrsub/ssr/master/V2ray</code></li>
-      <li>Clash：<code>https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yaml</code></li>
-      <li>Sing-box：<code>https://raw.githubusercontent.com/ssrsub/ssr/master/SingBox.json</code></li>
-    </ul>
-  </section>
+  <h2>🌐 科学上网 & 机场推荐</h2>
+  <ul>
+    <li><a href="https://www.evernote.com/l/AaF79psMKRZAOLA0IOrV8CQfjdssm_1f9N4/">SS/SSR/V2Ray 机场推荐（Evernote）</a></li>
+  </ul>
 
-  <section>
-    <h2>🛠 工具 & 资源</h2>
-    <ul>
-      <li><a href="https://t.me/SSRSUB/893">订阅转换器 @Telegram</a></li>
-      <li><a href="https://t.me/dafei_de">机场测速工具 @Telegram</a></li>
-      <li><a href="https://t.me/SSRSUB/892">更多资源 @Telegram</a></li>
-    </ul>
-  </section>
+  <h2>🚀 科学上网订阅分享</h2>
 
-  <section>
-    <h2>❤️ 公益机场</h2>
-    <ul>
-      <li><a href="https://ssrsub.de">注册地址（公益机场）</a></li>
-    </ul>
-  </section>
+  <p>✅ 推荐使用以下链接，无需代理即可更新配置：</p>
 
-  <section>
-    <h2>🌏 Telegram 汉化设置</h2>
-    <ul>
-      <li><a href="https://t.me/setlanguage/zhcncc">简体中文</a></li>
-      <li><a href="tg://setlanguage?lang=zh-hant-raw">繁體中文</a></li>
-    </ul>
-  </section>
+  <div class="link-box">
+    <code id="v2ray-gh">https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/V2ray</code>
+    <button class="copy-btn" onclick="copyText('v2ray-gh')">复制</button>
+  </div>
+
+  <div class="link-box">
+    <code id="clash-gh">https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/Clash.yaml</code>
+    <button class="copy-btn" onclick="copyText('clash-gh')">复制</button>
+  </div>
+
+  <div class="link-box">
+    <code id="singbox-gh">https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/SingBox.json</code>
+    <button class="copy-btn" onclick="copyText('singbox-gh')">复制</button>
+  </div>
+
+  <p>🧩 已连接代理时，可使用以下原始地址（速度更快）：</p>
+
+  <div class="link-box">
+    <code id="v2ray-raw">https://raw.githubusercontent.com/ssrsub/ssr/master/V2ray</code>
+    <button class="copy-btn" onclick="copyText('v2ray-raw')">复制</button>
+  </div>
+
+  <div class="link-box">
+    <code id="clash-raw">https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yaml</code>
+    <button class="copy-btn" onclick="copyText('clash-raw')">复制</button>
+  </div>
+
+  <div class="link-box">
+    <code id="singbox-raw">https://raw.githubusercontent.com/ssrsub/ssr/master/SingBox.json</code>
+    <button class="copy-btn" onclick="copyText('singbox-raw')">复制</button>
+  </div>
+
+  <h2>❤️ 公益机场推荐</h2>
+  <ul>
+    <li><a href="https://ssrsub.de">注册地址（公益机场）</a></li>
+  </ul>
+
+  <h2>🛠 工具与资源导航</h2>
+  <ul>
+    <li><a href="https://t.me/SSRSUB/893">订阅转换器 @Telegram</a></li>
+    <li><a href="https://t.me/dafei_de">机场测速工具 @Telegram</a></li>
+    <li><a href="https://t.me/SSRSUB/892">更多资源更新 @Telegram</a></li>
+  </ul>
+
+  <h2>🗺 Telegram 汉化语言包设置</h2>
+  <ul>
+    <li><a href="https://t.me/setlanguage/zh-hans-beta">简体中文</a></li>
+    <li><a href="tg://setlanguage?lang=zh-hant-raw">繁體中文</a></li>
+  </ul>
+
+  <script>
+    function copyText(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text)
+        .then(() => alert('已复制：' + text))
+        .catch(() => alert('复制失败，请手动复制'));
+    }
+  </script>
+
 </body>
 </html>
