@@ -20,21 +20,21 @@
 > ✅ 推荐使用以下链接，无需代理即可更新配置：
 
 - **V2Ray 订阅地址**  
-  [`https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/V2ray`](https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/V2ray)
+  [`https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/v2ray`](https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/v2ray)
 
 - **Clash 配置地址**  
-  [`https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/Clash.yaml`](https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/Clash.yaml)
+  [`https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/clash.yaml`](https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/clash.yaml)
 
-- **Sing-box 配置地址**  
-  [`https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/SingBox.json`](https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/SingBox.json)
+- **Singbox 配置地址**  
+  [`https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/singbox.json`](https://gh-proxy.com/raw.githubusercontent.com/ssrsub/ssr/master/singbox.json)
 
 ---
 
 > 🧩 如果你已经连接代理，也可使用以下原始地址（速度更快）：
 
-- [https://raw.githubusercontent.com/ssrsub/ssr/master/V2ray](https://raw.githubusercontent.com/ssrsub/ssr/master/V2ray)
-- [https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yaml](https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yaml)
-- [https://raw.githubusercontent.com/ssrsub/ssr/master/SingBox.json](https://raw.githubusercontent.com/ssrsub/ssr/master/SingBox.json)
+- [https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray](https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray)
+- [https://raw.githubusercontent.com/ssrsub/ssr/master/clash.yaml](https://raw.githubusercontent.com/ssrsub/ssr/master/clash.yaml)
+- [https://raw.githubusercontent.com/ssrsub/ssr/master/singbox.json](https://raw.githubusercontent.com/ssrsub/ssr/master/singbox.json)
 
 ---
 
