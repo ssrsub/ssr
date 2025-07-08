@@ -32,9 +32,9 @@
 
 > 🧩 如果你已经连接代理，也可使用以下原始地址（速度更快）：
 
-- `https://raw.githubusercontent.com/ssrsub/ssr/master/V2ray`
-- `https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yaml`
-- `https://raw.githubusercontent.com/ssrsub/ssr/master/SingBox.json`
+- [https://raw.githubusercontent.com/ssrsub/ssr/master/V2ray](https://raw.githubusercontent.com/ssrsub/ssr/master/V2ray)
+- [https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yaml](https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yaml)
+- [https://raw.githubusercontent.com/ssrsub/ssr/master/SingBox.json](https://raw.githubusercontent.com/ssrsub/ssr/master/SingBox.json)
 
 ---
 
