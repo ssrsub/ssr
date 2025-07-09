@@ -88,37 +88,41 @@ proxies:
       path: /Telegram@vpnAndroid2/?ed=2560
     client-fingerprint: chrome
   - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 07"
-    server: zz.xn--2vxn29amga.com
-    port: 8095
-    type: ss
-    cipher: 2022-blake3-aes-128-gcm
-    password: 'Njk3MDY0MzIwNTE0ZGQzMA==:MDQ4Yzg5ZWMtMWI3Yi00ZQ=='
-    udp: true
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 08"
-    server: uk.xn--2vxn29amga.com
-    port: 21169
+    server: uk.xn--mes91t7ofgnw.com
+    port: 20274
     type: hysteria2
-    password: e9802602-61e8-4dc4-af8f-b7e2baac4aad
-    auth: e9802602-61e8-4dc4-af8f-b7e2baac4aad
+    password: d6f2dd95-9dd5-4ea7-98bb-0527c2ceb36d
+    auth: d6f2dd95-9dd5-4ea7-98bb-0527c2ceb36d
     skip-cert-verify: false
     udp: true
-    sni: uk.xn--2vxn29amga.com
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 09"
+    sni: uk.xn--mes91t7ofgnw.com
+  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 08"
     server: zz.xn--mes91t7ofgnw.com
     port: 8085
     type: ss
     cipher: 2022-blake3-aes-128-gcm
-    password: 'Zjk2M2ZjNTRhZmYwZDliMw==:ZDZmMmRkOTUtOWRkNS00ZQ=='
+    password: 'Zjk2M2ZjNTRhZmYwZDliMw==:ODE1ZjZjOGYtN2FlOS00MQ=='
+    udp: true
+  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 09"
+    server: haa.dashuai.cyou
+    port: 45066
+    type: vmess
+    uuid: 88d1513c-59f2-4768-b028-772e27d0d985
+    alterId: 0
+    cipher: auto
+    tls: false
     udp: true
   - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 10"
-    server: uk.xn--2vxn29amga.com
-    port: 21180
+    server: flyyg.flylink.cyou
+    port: 35240
     type: hysteria2
-    password: 048c89ec-1b7b-4e16-9739-6f9994a049c5
-    auth: 048c89ec-1b7b-4e16-9739-6f9994a049c5
-    skip-cert-verify: false
+    password: 74332878-d170-41cc-be22-e08e0527a9b8
+    auth: 74332878-d170-41cc-be22-e08e0527a9b8
+    sni: flyyg.flylink.cyou
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
     udp: true
-    sni: uk.xn--2vxn29amga.com
   - cipher: aes-256-gcm
     name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 01"
     password: 0b191076d18f
@@ -152,6 +156,16 @@ proxies:
     type: ss
     client-fingerprint: chrome
   - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 03"
+    server: 120.232.153.40
+    port: 32209
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 04"
     server: 155.117.228.70
     port: 26193
     client-fingerprint: chrome
@@ -159,7 +173,7 @@ proxies:
     password: 7367d04e-4c59-4dff-a50e-12e730a09891
     skip-cert-verify: true
   - cipher: aes-256-gcm
-    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 04"
+    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 05"
     password: 941cbc4237e0
     plugin: v2ray-plugin
     plugin-opts:
@@ -174,24 +188,22 @@ proxies:
     tfo: false
     type: ss
     client-fingerprint: chrome
-  - cipher: aes-256-gcm
-    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 05"
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 06"
+    server: 43.226.17.8
+    port: 636
+    type: ss
+    cipher: aes-256-gcm
     password: 1ad90a422096
     plugin: v2ray-plugin
     plugin-opts:
-      host: kr6v1.dashengjs.net
       mode: websocket
-      mux: true
+      host: kr6v1.dashengjs.net
       path: /jwuctcuhriiw
-      skip-cert-verify: false
       tls: true
-    port: 636
-    server: 43.226.17.8
-    tfo: false
-    type: ss
-    client-fingerprint: chrome
+      mux: true
+    udp: true
   - cipher: aes-256-gcm
-    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 06"
+    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 07"
     password: 23d03aa704c7
     plugin: v2ray-plugin
     plugin-opts:
@@ -206,7 +218,7 @@ proxies:
     tfo: false
     type: ss
     client-fingerprint: chrome
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 07"
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 08"
     network: ws
     port: 5320
     server: 46.3.109.215
@@ -224,7 +236,7 @@ proxies:
       v2ray-http-upgrade-fast-open: true
     client-fingerprint: chrome
     servername: sgsgsgsgsg.eessgrgrgrgr.cloudns.nz
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 08"
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 09"
     server: 103.103.245.158
     port: 636
     client-fingerprint: chrome
@@ -240,7 +252,7 @@ proxies:
       tls: true
       mux: true
       skip-cert-verify: false
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 09"
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 10"
     network: ws
     port: 60565
     server: 46.3.104.7
@@ -260,7 +272,7 @@ proxies:
     servername: sgsgsgsgsg.eessgrgrgrgr.cloudns.nz
   - client-fingerprint: ios
     flow: xtls-rprx-vision
-    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 10"
+    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 11"
     network: tcp
     port: 43000
     reality-opts:
@@ -272,7 +284,7 @@ proxies:
     udp: true
     uuid: 3e33f29c-44aa-49aa-94f7-fac8fd018b9e
     servername: www.hkust.edu.hk
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 11"
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 12"
     obfs: salamander
     obfs-password: rPvCrCom7ETCNOvA
     password: 0c4c1a89-5645-4fc2-9e3b-ab09aa44e933
@@ -282,7 +294,7 @@ proxies:
     sni: h2.gzcloud.shop
     type: hysteria2
     client-fingerprint: chrome
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 12"
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 13"
     server: 38.147.188.234
     port: 50170
     client-fingerprint: chrome
@@ -293,7 +305,7 @@ proxies:
     tls: false
     tfo: false
     skip-cert-verify: false
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 13"
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 14"
     server: 36.151.192.27
     port: 51083
     client-fingerprint: chrome
@@ -301,7 +313,7 @@ proxies:
     password: d0d08cddacc3190ea81b1b792e1b5fde
     sni: www.baidu.com
     skip-cert-verify: true
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 14"
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 15"
     server: 36.151.192.27
     port: 444
     client-fingerprint: chrome
@@ -309,113 +321,73 @@ proxies:
     password: d0d08cddacc3190ea81b1b792e1b5fde
     sni: www.baidu.com
     skip-cert-verify: true
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 15"
-    server: hk.xn--mes91t7ofgnw.com
-    port: 20254
-    type: hysteria2
-    password: 3a6fc7b4-ceb1-43a0-aad5-f58114ce4552
-    auth: 3a6fc7b4-ceb1-43a0-aad5-f58114ce4552
-    skip-cert-verify: false
-    udp: true
-    sni: hk.xn--mes91t7ofgnw.com
   - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 16"
-    server: w72tapyb.slashdevslashnetslashtun.net
-    port: 15012
-    type: ss
-    cipher: aes-256-gcm
-    password: X9N2DXNC560PMTYO
-    udp: true
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 17"
-    server: flyxg.flylink.cyou
-    port: 10086
-    type: vless
-    uuid: 86091081-f701-4307-80fb-171f26240e6f
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: o0qeFNqPD24m-OTwXs_Bs7_FNcR-caK7lNP1-zcUIho
-      short-id: d31616e2
-    client-fingerprint: chrome
-    network: tcp
-    udp: true
-    servername: www.amazon.com
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 18"
-    server: w72tapyb.slashdevslashnetslashtun.net
-    port: 15008
-    type: ss
-    cipher: aes-256-gcm
-    password: H2PC4KPGWGTPXVAN
-    udp: true
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 19"
-    server: 8tv68qhq.slashdevslashnetslashtun.net
-    port: 15013
-    type: ss
-    cipher: aes-256-gcm
-    password: Q5CK3OH9XTIWPVV2
-    udp: true
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 20"
-    server: hk.xn--2vxn29amga.com
-    port: 21197
-    type: hysteria2
-    password: ffd51f98-6553-43fe-b051-b86905d678f9
-    auth: ffd51f98-6553-43fe-b051-b86905d678f9
-    skip-cert-verify: false
-    udp: true
-    sni: hk.xn--2vxn29amga.com
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 21"
-    server: hk.xn--2vxn29amga.com
-    port: 21110
-    type: hysteria2
-    password: ffd51f98-6553-43fe-b051-b86905d678f9
-    auth: ffd51f98-6553-43fe-b051-b86905d678f9
-    skip-cert-verify: false
-    udp: true
-    sni: hk.xn--2vxn29amga.com
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 22"
-    server: zz.xn--mes91t7ofgnw.com
-    port: 8081
-    type: ss
-    cipher: 2022-blake3-aes-128-gcm
-    password: 'Yzg1YmEyOWM5YjgyODg1Yg==:M2E2ZmM3YjQtY2ViMS00Mw=='
-    udp: true
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 23"
-    server: 8tv68qhq.slashdevslashnetslashtun.net
-    port: 15010
-    type: ss
-    cipher: aes-256-gcm
-    password: CNWEEWL9E1XA8D7Y
-    udp: true
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 24"
     server: ali.xiao666666.site
     port: 50000
     type: hysteria2
-    password: 327db146-c993-4a06-ad86-c2ca53d00e84
-    auth: 327db146-c993-4a06-ad86-c2ca53d00e84
+    password: f34c5ebf-1af1-4786-ab71-2e96ee67aabd
+    auth: f34c5ebf-1af1-4786-ab71-2e96ee67aabd
     sni: ali.xiao666666.site
     up: 120
     down: 120
     skip-cert-verify: true
     udp: true
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 25"
-    server: 154.204.181.230
-    port: 50256
-    type: hysteria2
-    password: cc83a02b-90ea-403b-9c76-27e4be95f637
-    auth: cc83a02b-90ea-403b-9c76-27e4be95f637
-    sni: www.bing.com
-    skip-cert-verify: true
-    alpn:
-      - h3
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 17"
+    server: console.01.aliyun.aq.kunlunaqs.com
+    port: 45901
+    type: ss
+    cipher: aes-128-gcm
+    password: 7338d988d71591d76b3f
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 4be5dcc8d73c771e331b.microsoft.com
     udp: true
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 26"
-    server: hk.xn--mes91t7ofgnw.com
-    port: 20244
-    type: hysteria2
-    password: d6f2dd95-9dd5-4ea7-98bb-0527c2ceb36d
-    auth: d6f2dd95-9dd5-4ea7-98bb-0527c2ceb36d
-    skip-cert-verify: false
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 18"
+    server: 0f7ee987-sz8sg0-tfvcxz-1nq4g.hk3.p5pv.com
+    port: 80
+    type: vmess
+    uuid: 80aa5178-f936-11ed-8ce6-f23c91369f2d
+    alterId: 2
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
     udp: true
-    sni: hk.xn--mes91t7ofgnw.com
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 19"
+    server: 156.230.12.71
+    port: 443
+    type: vless
+    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+    tls: true
+    network: ws
+    ws-opts:
+      path: "/Telegram\U0001F1E8\U0001F1F3 @pgkj666 /?ed=2560"
+      headers:
+        Host: steep.skyfigure.top
+    udp: true
+    servername: steep.skyfigure.top
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 20"
+    server: console.01.aliyun.aq.kunlunaqs.com
+    port: 45902
+    type: ss
+    cipher: aes-128-gcm
+    password: 0a74c9e4565e935cf1ac
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 4be5dcc8d73c771e331b.microsoft.com
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 21"
+    server: w72tapyb.slashdevslashnetslashtun.net
+    port: 15016
+    type: ss
+    cipher: aes-256-gcm
+    password: L6M51W4GOF7F5QFU
+    udp: true
   - alterId: 0
     cipher: chacha20-ietf-poly1305
     name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 01"
@@ -426,6 +398,15 @@ proxies:
     tls: true
     type: ss
     client-fingerprint: chrome
+  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 02"
+    server: haa.dashuai.cyou
+    port: 45072
+    type: vmess
+    uuid: 9e600bb2-5e2b-435b-a9a7-a35e8d0cd0d9
+    alterId: 0
+    cipher: auto
+    tls: false
+    udp: true
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 01"
     network: ws
     password: 13253e6e-a1f7-4090-801f-a8dc2b083bef
@@ -507,6 +488,32 @@ proxies:
     client-fingerprint: chrome
     auth-str: dongtaiwang.com
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 07"
+    server: 45.131.208.208
+    port: 8880
+    type: vless
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    tls: false
+    network: ws
+    ws-opts:
+      path: /@ShadowProxy66?ed=2560
+      headers:
+        Host: reedfree8mahsang2.redorg.ir
+    udp: true
+    servername: reedfree8mahsang2.redorg.ir
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 08"
+    server: 103.169.142.80
+    port: 8880
+    type: vless
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    tls: false
+    network: ws
+    ws-opts:
+      path: '/Channel id: @ShadowProxy66?ed=2560'
+      headers:
+        Host: reedfree8mahsang2.redorg.ir
+    udp: true
+    servername: reedfree8mahsang2.redorg.ir
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 09"
     network: ws
     password: 509ed9b7-8d64-4204-8ec8-6b749020ac3f
     port: 443
@@ -520,23 +527,35 @@ proxies:
         Host: CcCVfGTyU.89060004.Xyz
       path: /5MkU0nARgHwk3aXBStn7
     client-fingerprint: chrome
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 08"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 10"
     server: 143.14.220.111
     port: 25888
     type: vless
-    uuid: d512b0d1-a202-44eb-a072-439e13d5a7d1
+    uuid: d0692b86-c555-421e-b42d-023835545e67
     tls: true
     flow: xtls-rprx-vision
     reality-opts:
       public-key: eHaAkgZIfsYhrH_0HCj07-Vbd7nrMHnnAa663_969DA
       short-id: be1be5fc
-    client-fingerprint: safari
+    client-fingerprint: ios
     network: tcp
     udp: true
     servername: www.samsung.com
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 11"
+    server: 185.174.138.0
+    port: 8880
+    type: vless
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    tls: false
+    network: ws
+    ws-opts:
+      path: /@ShadowProxy66?ed=2560
+      headers:
+        Host: reedfree8mahsang2.redorg.ir
+    udp: true
   - alpn:
       - h3
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 09"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 12"
     network: ws
     password: bpb-trojan
     port: 443
@@ -550,15 +569,28 @@ proxies:
         Host: mashdt.pages.dev
       path: /tr?ed=2560
     client-fingerprint: chrome
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 10"
-    server: 4772a36e-sytz40-szi8d6-1ro8s.hy2.gotochinatown.net
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 13"
+    server: 31.43.179.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    network: ws
+    ws-opts:
+      path: /TelegramрЯЗ®рЯЗ≥ @WangCai2 /?ed=2560
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    servername: ip.langmanshanxi.top
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 14"
+    server: 6b8fb9b0-sz1ds0-szi8d6-1ro8s.hy2.gotochinatown.net
     port: 8443
     type: hysteria2
     password: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
     auth: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
     udp: true
-    sni: 4772a36e-sytz40-szi8d6-1ro8s.hy2.gotochinatown.net
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 11"
+    sni: 6b8fb9b0-sz1ds0-szi8d6-1ro8s.hy2.gotochinatown.net
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 15"
     network: ws
     password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2
     port: 443
@@ -572,7 +604,7 @@ proxies:
         Host: RFgTHYu7.999836.Xyz
       path: /mFvK3LJyIAe8ydvnmRKWDa8
     client-fingerprint: chrome
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 12"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 16"
     network: ws
     port: 8880
     server: 45.159.218.20
@@ -588,7 +620,7 @@ proxies:
   - alpn:
       - http/1.1
     client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 13"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 17"
     network: ws
     port: 443
     server: 104.21.66.157
@@ -602,7 +634,20 @@ proxies:
         Host: eeEEEeR.666470.xYZ
       path: /6DuxYMYmrGrnGKRtF5UvWyyVQu
     servername: eeEEEeR.666470.xYZ
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 14"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 18"
+    server: 188.42.89.100
+    port: 8880
+    type: vless
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    tls: false
+    network: ws
+    ws-opts:
+      path: '/Channel id: @ShadowProxy66?ed=2560'
+      headers:
+        Host: reedfree8mahsang2.redorg.ir
+    udp: true
+    servername: reedfree8mahsang2.redorg.ir
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 19"
     server: 111.26.109.79
     port: 30828
     client-fingerprint: chrome
@@ -621,7 +666,7 @@ proxies:
   - alpn:
       - http/1.1
     client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 15"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 20"
     network: ws
     port: 443
     server: 172.67.162.74
@@ -636,7 +681,7 @@ proxies:
       path: /W02wBrOOqlSUywV3ibrzzKXJGy3S1
     servername: xxsCDfr5.IRAN.pP.UA
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 16"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 21"
     network: ws
     port: 8880
     server: 155.46.167.177
@@ -654,7 +699,7 @@ proxies:
       - h2
       - http/1.1
     client-fingerprint: randomized
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 17"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 22"
     network: ws
     password: 'T@_WvT8Ho@LW%w_,'
     port: 2053
@@ -669,7 +714,7 @@ proxies:
           Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like
           Gecko) Chrome/26.0.1410.64 Safari/537.31
       path: /trGPZDfetEwuO25SAs?ed=2560
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 18"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 23"
     network: ws
     port: 23232
     server: 154.17.2.22
@@ -688,7 +733,7 @@ proxies:
     client-fingerprint: chrome
     servername: iuhsdofsdfsdfsdfsdfsdf.eessgrgrgrgr.cloudns.nz
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 19"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 24"
     network: ws
     port: 8880
     server: 92.53.190.177
@@ -705,7 +750,7 @@ proxies:
   - alpn:
       - http/1.1
     client-fingerprint: randomized
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 20"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 25"
     network: ws
     port: 2087
     server: 172.67.171.131
@@ -719,24 +764,7 @@ proxies:
         Host: invINCIBLE.FAfa20.SHOp
       path: /FnxOCItzWpgMrgmD/NzguNDYuNTYuNDI=?ed=2560
     servername: invINCIBLE.FAfa20.SHOp
-  - alpn:
-      - http/1.1
-    client-fingerprint: randomized
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 21"
-    network: ws
-    port: 2053
-    server: 172.67.171.131
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    udp: true
-    uuid: 376734bc-4db8-4317-b451-af0262cb01c7
-    ws-opts:
-      headers:
-        Host: inVINCIble.fAFA20.Shop
-      path: /yRVRnY2jDtjg67UV/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560
-    servername: inVINCIble.fAFA20.Shop
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 22"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 26"
     network: ws
     port: 80
     server: 66.81.247.82
@@ -751,7 +779,7 @@ proxies:
       path: '/Channel id: @ShadowProxy66/?ed=2560'
     client-fingerprint: chrome
     servername: reedfree8mahsang2.redorg.ir
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 23"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 27"
     type: trojan
     server: 172.67.220.32
     port: 443
@@ -763,24 +791,11 @@ proxies:
       path: /XmTzATQPJv9RO3xr1D40NK
       headers:
         Host: eeefgty6.999836.xyz
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 24"
-    server: 154.17.24.83
-    port: 52620
-    type: vless
-    uuid: b25fb1a1-b04c-4b6f-89cb-5300d072030c
-    tls: true
-    network: ws
-    ws-opts:
-      path: /sdiohfiosdhfuiosghfuhse
-      headers:
-        Host: ususususus.eessgrgrgrgr.cloudns.nz
-    udp: true
-    servername: ususususus.eessgrgrgrgr.cloudns.nz
   - alpn:
       - h2
       - http/1.1
     client-fingerprint: randomized
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 25"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 28"
     network: ws
     password: '8r<[9''l6hAO#8ZQi'
     port: 8443
@@ -795,7 +810,7 @@ proxies:
           Mozilla/5.0 (X11; U; Linux i586; en-US) AppleWebKit/533.2 (KHTML, like
           Gecko) Chrome/5.0.342.1 Safari/533.2
       path: /tro8sFW1S91B6sZrM1?ed=2560
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 26"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 29"
     network: ws
     port: 80
     server: 66.81.247.217
@@ -813,7 +828,7 @@ proxies:
   - alpn:
       - http/1.1
     client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 27"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 30"
     network: ws
     port: 443
     server: 104.21.9.71
@@ -827,23 +842,10 @@ proxies:
         Host: ddDDdDDdDDF.777198.XyZ
       path: /OjdW89Bpg4ykd4O
     servername: ddDDdDDdDDF.777198.XyZ
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 28"
-    server: 45.80.111.134
-    port: 80
-    type: vless
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    tls: false
-    network: ws
-    ws-opts:
-      path: '/Channel id: @ShadowProxy66/?ed=2560'
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-    udp: true
-    servername: reedfree8mahsang2.redorg.ir
   - alpn:
       - http/1.1
     client-fingerprint: randomized
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 29"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 31"
     network: ws
     port: 2087
     server: 104.21.95.229
@@ -857,7 +859,7 @@ proxies:
         Host: invINCIBLE.FAfa20.SHOp
       path: /FnxOCItzWpgMrgmD/NzguNDYuNTYuNDI=?ed=2560
     servername: invINCIBLE.FAfa20.SHOp
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 30"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 32"
     network: ws
     port: 31861
     server: 154.17.22.88
@@ -877,7 +879,7 @@ proxies:
     servername: ususususus.eessgrgrgrgr.cloudns.nz
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 31"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 33"
     network: tcp
     port: 7885
     reality-opts:
@@ -888,7 +890,7 @@ proxies:
     type: vless
     uuid: 82f6a148-5c4a-48f9-931a-e3b26777ffa2
     servername: www.yahoo.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 32"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 34"
     network: ws
     password: fa050497-fc2a-45ee-89c0-96670c4ecb65
     port: 443
@@ -904,7 +906,7 @@ proxies:
   - alpn:
       - http/1.1
     client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 33"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 35"
     network: ws
     port: 443
     server: 172.67.206.152
@@ -918,7 +920,7 @@ proxies:
         Host: EDfrT.frEEvPNatm2025.DPdNS.oRG
       path: /O9jlBCbIm3xr1D40NK
     servername: EDfrT.frEEvPNatm2025.DPdNS.oRG
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 34"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 36"
     network: ws
     password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2
     port: 443
@@ -935,7 +937,7 @@ proxies:
   - alpn:
       - http/1.1
     client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 35"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 37"
     network: ws
     port: 443
     server: 104.21.90.226
@@ -949,26 +951,24 @@ proxies:
         Host: eEedFR5.7777155.Xyz
       path: /6OWLjRc26b0nHYr5hYXD
     servername: eEedFR5.7777155.Xyz
-  - alpn:
-      - http/1.1
-    client-fingerprint: randomized
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 36"
-    network: ws
-    port: 2053
-    server: 188.114.99.16
-    tls: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 38"
+    server: 185.148.107.177
+    port: 8880
     type: vless
-    udp: true
-    uuid: 54f6e78c-b497-4db7-ba48-38c4cf81d5ef
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    client-fingerprint: chrome
+    network: ws
     ws-opts:
+      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
       headers:
-        Host: 019309b7.xyz0.pages.dev
-      path: /YzeJFTQqvmhtzTlE?ed=2560
-    servername: 019309B7.XyZ0.PaGeS.dEV
+        Host: ip.langmanshanxi.top
+    udp: true
+    servername: Telegram-channel-WangCai2
   - alpn:
       - http/1.1
     client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 37"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 39"
     network: ws
     port: 443
     server: 172.67.161.129
@@ -985,7 +985,7 @@ proxies:
   - alpn:
       - h2
       - http/1.1
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 38"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 40"
     network: ws
     port: 2087
     server: 172.66.44.225
@@ -1001,7 +1001,7 @@ proxies:
     client-fingerprint: chrome
     servername: nEwMTPROxI.PAGes.DEv
   - auth: dongtaiwang.com
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 39"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 41"
     password: dongtaiwang.com
     port: 4710
     server: 108.181.5.130
@@ -1010,24 +1010,20 @@ proxies:
     type: hysteria2
     udp: true
     client-fingerprint: chrome
-  - alpn:
-      - h3
-    client-fingerprint: randomized
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 40"
-    network: ws
-    port: 443
-    server: 104.21.35.171
-    skip-cert-verify: false
-    tls: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 42"
+    server: www.gco.gov.qa
+    port: 8443
     type: vless
-    udp: true
-    uuid: 252df5e8-0428-4345-b236-a6dae7b3457d
+    uuid: 0343e230-5132-4e98-844e-b42ad1a6a273
+    tls: true
+    network: ws
     ws-opts:
+      path: /?ed=2560
       headers:
-        Host: MaIncrafT.dPdnS.OrG
-      path: /HcFmPxmQkiv44jMu?ed=2560
-    servername: MaIncrafT.dPdnS.OrG
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 41"
+        Host: nptian.xiaotianvpn.sbs
+    udp: true
+    servername: nptian.xiaotianvpn.sbs
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 43"
     network: ws
     port: 8080
     server: 141.101.121.108
@@ -1040,22 +1036,10 @@ proxies:
         Host: 1750293123492.china.baidu.bilibili.china.aeko.cn
       path: /?ed=2048
     client-fingerprint: chrome
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 42"
-    server: 45.131.7.174
-    port: 8880
-    type: vless
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram@ShadowProxy66/?ed=2560
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-    udp: true
   - alpn:
       - http/1.1
     client-fingerprint: randomized
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 43"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 44"
     network: ws
     port: 2053
     server: 188.114.97.183
@@ -1071,7 +1055,7 @@ proxies:
     servername: nOCTYq.pAGES.DEV
   - alpn:
       - http/1.1
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 44"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 45"
     network: ws
     password: 07a3df8f-2a2c-42f8-ad92-65889d90f3bf
     port: 443
@@ -1085,7 +1069,7 @@ proxies:
         Host: rrrRrRRrT.459.pp.ua
       path: /znQImc22ijDwVOkZfoq
     client-fingerprint: chrome
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 45"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 46"
     network: ws
     password: f108e0e2-5f12-42b6-9e67-1b2f073ffb2b
     port: 443
@@ -1099,7 +1083,28 @@ proxies:
         Host: CCcvfgt6.852224.dpdns.org
       path: /CA5bMmr2JMum8sDKRwvFCJq
     client-fingerprint: chrome
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 46"
+  - alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: randomized
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 47"
+    network: ws
+    port: 443
+    server: 104.26.13.31
+    tls: true
+    type: vless
+    udp: true
+    uuid: 3130e111-a06c-4388-aeda-4b43f6e8e51f
+    ws-opts:
+      headers:
+        Host: finland-a3r.pages.dev
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/51.0.2704.63 Safari/537.36
+      path: /Tel-@V2ray_Alpha/?ed=2560
+    xudp: true
+    servername: FinLAnd-A3r.pAgES.dEv
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 48"
     network: ws
     password: 288124da-0d68-42f4-9f48-70dc4dcc55a6
     port: 443
@@ -1116,7 +1121,7 @@ proxies:
   - alpn:
       - http/1.1
     client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 47"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 49"
     network: ws
     port: 443
     server: 104.21.44.248
@@ -1130,20 +1135,13 @@ proxies:
         Host: EDfrT.frEEvPNatm2025.DPdNS.oRG
       path: /O9jlBCbIm3xr1D40NK
     servername: EDfrT.frEEvPNatm2025.DPdNS.oRG
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 48"
-    type: vmess
-    server: 172.67.209.79
-    port: 80
-    cipher: auto
-    uuid: 512d9674-db12-44ca-a1b5-654244549b65
-    alterId: 0
-    tls: false
-    network: ws
-    ws-opts:
-      path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm
-      headers:
-        Host: xcccvvbnmj.999834.xyz
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 49"
+  - type: ss
+    server: 45.158.171.141
+    port: 8080
+    cipher: chacha20-ietf-poly1305
+    password: 4a2rfixophdjffa8KVA4Aa
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 50"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 51"
     server: cn01.efan8867801.xyz
     port: 8774
     client-fingerprint: chrome
@@ -1155,7 +1153,7 @@ proxies:
     plugin-opts:
       mode: http
       host: 202507031938065-U5JTftURXP.download.microsoft.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 50"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 52"
     server: 36.151.192.27
     port: 4447
     client-fingerprint: chrome
@@ -1163,7 +1161,7 @@ proxies:
     password: d0d08cddacc3190ea81b1b792e1b5fde
     sni: www.baidu.com
     skip-cert-verify: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 51"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 53"
     server: 36.156.102.123
     port: 8657
     client-fingerprint: chrome
@@ -1171,13 +1169,13 @@ proxies:
     password: d0d08cddacc3190ea81b1b792e1b5fde
     sni: www.baidu.com
     skip-cert-verify: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 52"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 54"
     type: ss
     server: 85.210.120.237
     port: 443
     cipher: chacha20-ietf-poly1305
     password: Bog0ELmMM9DSxDdQ
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 53"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 55"
     server: 5.10.214.78
     port: 8880
     type: vless
@@ -1191,7 +1189,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 54"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 56"
     server: 5.10.215.78
     port: 8880
     type: vless
@@ -1205,7 +1203,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 55"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 57"
     server: 5.10.244.78
     port: 8880
     type: vless
@@ -1219,7 +1217,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 56"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 58"
     server: 5.10.245.78
     port: 8880
     type: vless
@@ -1233,7 +1231,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 57"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 59"
     server: 5.10.246.78
     port: 8880
     type: vless
@@ -1247,7 +1245,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 58"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 60"
     server: 5.10.247.78
     port: 8880
     type: vless
@@ -1261,7 +1259,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 59"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 61"
     server: 5.175.141.78
     port: 8880
     type: vless
@@ -1275,7 +1273,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 60"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 62"
     server: 5.182.34.78
     port: 8880
     type: vless
@@ -1289,7 +1287,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 61"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 63"
     server: 5.182.84.78
     port: 8880
     type: vless
@@ -1303,7 +1301,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 62"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 64"
     server: 5.182.85.78
     port: 8880
     type: vless
@@ -1317,7 +1315,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 63"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 65"
     server: 14.102.228.78
     port: 8880
     type: vless
@@ -1331,7 +1329,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 64"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 66"
     server: 14.102.229.78
     port: 8880
     type: vless
@@ -1345,7 +1343,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 65"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 67"
     server: 23.227.38.78
     port: 8880
     type: vless
@@ -1359,7 +1357,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 66"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 68"
     server: 23.227.39.78
     port: 8880
     type: vless
@@ -1373,7 +1371,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 67"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 69"
     server: 23.227.60.78
     port: 8880
     type: vless
@@ -1387,7 +1385,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 68"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 70"
     server: 25.25.25.78
     port: 8880
     type: vless
@@ -1401,7 +1399,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 69"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 71"
     server: 25.26.27.78
     port: 8880
     type: vless
@@ -1415,7 +1413,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 70"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 72"
     server: 25.129.196.78
     port: 8880
     type: vless
@@ -1429,7 +1427,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 71"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 73"
     server: 25.129.197.78
     port: 8880
     type: vless
@@ -1443,7 +1441,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 72"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 74"
     server: 25.129.198.78
     port: 8880
     type: vless
@@ -1457,7 +1455,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 73"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 75"
     server: 25.129.199.78
     port: 8880
     type: vless
@@ -1471,7 +1469,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 74"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 76"
     server: 27.50.48.78
     port: 8880
     type: vless
@@ -1485,7 +1483,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 75"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 77"
     server: 27.50.49.78
     port: 8880
     type: vless
@@ -1499,7 +1497,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 76"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 78"
     server: 31.12.75.78
     port: 8880
     type: vless
@@ -1513,7 +1511,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 77"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 79"
     server: 31.43.179.78
     port: 8880
     type: vless
@@ -1527,7 +1525,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 78"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 80"
     server: 45.8.211.78
     port: 8880
     type: vless
@@ -1541,7 +1539,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 79"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 81"
     server: 45.12.30.78
     port: 8880
     type: vless
@@ -1555,7 +1553,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 80"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 82"
     server: 45.12.31.78
     port: 8880
     type: vless
@@ -1569,7 +1567,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 81"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 83"
     server: 45.67.214.78
     port: 8880
     type: vless
@@ -1583,7 +1581,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 82"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 84"
     server: 45.67.215.78
     port: 8880
     type: vless
@@ -1597,7 +1595,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 83"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 85"
     server: 45.80.108.78
     port: 8880
     type: vless
@@ -1611,7 +1609,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 84"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 86"
     server: 45.80.110.78
     port: 8880
     type: vless
@@ -1625,7 +1623,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 85"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 87"
     server: 45.80.111.78
     port: 8880
     type: vless
@@ -1639,7 +1637,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 86"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 88"
     server: 45.81.58.78
     port: 8880
     type: vless
@@ -1653,7 +1651,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 87"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 89"
     server: 45.85.118.78
     port: 8880
     type: vless
@@ -1667,7 +1665,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 88"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 90"
     server: 45.85.119.78
     port: 8880
     type: vless
@@ -1681,7 +1679,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 89"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 91"
     server: 45.131.4.78
     port: 8880
     type: vless
@@ -1695,7 +1693,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 90"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 92"
     server: 45.131.5.78
     port: 8880
     type: vless
@@ -1709,7 +1707,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 91"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 93"
     server: 45.131.6.78
     port: 8880
     type: vless
@@ -1723,7 +1721,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 92"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 94"
     server: 45.131.7.78
     port: 8880
     type: vless
@@ -1737,7 +1735,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 93"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 95"
     server: 45.131.208.78
     port: 8880
     type: vless
@@ -1751,7 +1749,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 94"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 96"
     server: 45.131.209.78
     port: 8880
     type: vless
@@ -1765,7 +1763,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 95"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 97"
     server: 45.131.210.78
     port: 8880
     type: vless
@@ -1779,7 +1777,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 96"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 98"
     server: 45.131.211.78
     port: 8880
     type: vless
@@ -1793,7 +1791,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 97"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 99"
     server: 45.135.235.78
     port: 8880
     type: vless
@@ -1807,7 +1805,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 98"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 100"
     server: 45.142.120.78
     port: 8880
     type: vless
@@ -1821,7 +1819,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 99"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 101"
     server: 45.142.255.78
     port: 8880
     type: vless
@@ -1835,7 +1833,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 100"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 102"
     server: 45.149.12.78
     port: 8880
     type: vless
@@ -1849,7 +1847,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 101"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 103"
     server: 45.150.115.78
     port: 8880
     type: vless
@@ -1863,7 +1861,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 102"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 104"
     server: 45.153.7.78
     port: 8880
     type: vless
@@ -1877,7 +1875,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 103"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 105"
     server: 45.159.216.78
     port: 8880
     type: vless
@@ -1891,7 +1889,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 104"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 106"
     server: 45.159.217.78
     port: 8880
     type: vless
@@ -1905,7 +1903,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 105"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 107"
     server: 45.159.218.78
     port: 8880
     type: vless
@@ -1919,7 +1917,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 106"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 108"
     server: 45.159.219.78
     port: 8880
     type: vless
@@ -1933,7 +1931,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 107"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 109"
     server: 45.192.222.78
     port: 8880
     type: vless
@@ -1947,7 +1945,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 108"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 110"
     server: 45.192.223.78
     port: 8880
     type: vless
@@ -1961,7 +1959,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 109"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 111"
     server: 45.192.224.78
     port: 8880
     type: vless
@@ -1975,7 +1973,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 110"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 112"
     server: 45.194.53.78
     port: 8880
     type: vless
@@ -1989,7 +1987,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 111"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 113"
     server: 45.202.113.78
     port: 8880
     type: vless
@@ -2003,7 +2001,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 112"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 114"
     server: 45.205.0.78
     port: 8880
     type: vless
@@ -2017,7 +2015,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 113"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 115"
     server: 46.202.30.78
     port: 8880
     type: vless
@@ -2031,7 +2029,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 114"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 116"
     server: 46.254.92.78
     port: 8880
     type: vless
@@ -2045,7 +2043,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 115"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 117"
     server: 46.254.93.78
     port: 8880
     type: vless
@@ -2059,7 +2057,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 116"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 118"
     server: 62.72.166.78
     port: 8880
     type: vless
@@ -2073,7 +2071,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 117"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 119"
     server: 63.141.128.78
     port: 8880
     type: vless
@@ -2087,7 +2085,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 118"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 120"
     server: 66.45.118.78
     port: 8880
     type: vless
@@ -2101,7 +2099,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 119"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 121"
     server: 66.81.247.78
     port: 8880
     type: vless
@@ -2115,7 +2113,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 120"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 122"
     server: 66.225.252.78
     port: 8880
     type: vless
@@ -2129,7 +2127,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 121"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 123"
     server: 66.235.200.78
     port: 8880
     type: vless
@@ -2143,7 +2141,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 122"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 124"
     server: 69.84.182.78
     port: 8880
     type: vless
@@ -2157,7 +2155,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 123"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 125"
     server: 74.49.214.78
     port: 8880
     type: vless
@@ -2171,7 +2169,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 124"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 126"
     server: 74.49.215.78
     port: 8880
     type: vless
@@ -2185,7 +2183,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 125"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 127"
     server: 77.37.33.78
     port: 8880
     type: vless
@@ -2199,7 +2197,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 126"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 128"
     server: 77.74.228.78
     port: 8880
     type: vless
@@ -2213,7 +2211,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 127"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 129"
     server: 77.75.199.78
     port: 8880
     type: vless
@@ -2227,7 +2225,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 128"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 130"
     server: 77.105.163.78
     port: 8880
     type: vless
@@ -2241,7 +2239,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 129"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 131"
     server: 77.232.140.78
     port: 8880
     type: vless
@@ -2255,7 +2253,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 130"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 132"
     server: 80.93.202.78
     port: 8880
     type: vless
@@ -2269,7 +2267,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 131"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 133"
     server: 86.38.214.78
     port: 8880
     type: vless
@@ -2283,7 +2281,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 132"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 134"
     server: 88.216.66.78
     port: 8880
     type: vless
@@ -2297,7 +2295,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 133"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 135"
     server: 88.216.67.78
     port: 8880
     type: vless
@@ -2311,7 +2309,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 134"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 136"
     server: 88.216.69.78
     port: 8880
     type: vless
@@ -2325,7 +2323,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 135"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 137"
     server: 89.116.46.78
     port: 8880
     type: vless
@@ -2339,7 +2337,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 136"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 138"
     server: 89.116.161.78
     port: 8880
     type: vless
@@ -2353,7 +2351,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 137"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 139"
     server: 89.116.180.78
     port: 8880
     type: vless
@@ -2367,7 +2365,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 138"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 140"
     server: 89.116.250.78
     port: 8880
     type: vless
@@ -2381,7 +2379,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 139"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 141"
     server: 89.117.112.78
     port: 8880
     type: vless
@@ -2395,7 +2393,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 140"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 142"
     server: 91.124.127.78
     port: 8880
     type: vless
@@ -2409,7 +2407,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 141"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 143"
     server: 91.209.253.78
     port: 8880
     type: vless
@@ -2423,7 +2421,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 142"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 144"
     server: 92.53.188.78
     port: 8880
     type: vless
@@ -2437,7 +2435,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 143"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 145"
     server: 92.53.189.78
     port: 8880
     type: vless
@@ -2451,7 +2449,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 144"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 146"
     server: 92.53.190.78
     port: 8880
     type: vless
@@ -2465,7 +2463,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 145"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 147"
     server: 92.53.191.78
     port: 8880
     type: vless
@@ -2479,7 +2477,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 146"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 148"
     server: 92.60.74.78
     port: 8880
     type: vless
@@ -2493,7 +2491,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 147"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 149"
     server: 92.243.74.78
     port: 8880
     type: vless
@@ -2507,7 +2505,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 148"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 150"
     server: 92.243.75.78
     port: 8880
     type: vless
@@ -2521,7 +2519,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 149"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 151"
     server: 94.140.0.78
     port: 8880
     type: vless
@@ -2535,7 +2533,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 150"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 152"
     server: 94.247.142.78
     port: 8880
     type: vless
@@ -2549,7 +2547,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 151"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 153"
     server: 102.132.188.78
     port: 8880
     type: vless
@@ -2563,7 +2561,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 152"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 154"
     server: 102.177.176.78
     port: 8880
     type: vless
@@ -2577,7 +2575,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 153"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 155"
     server: 102.177.189.78
     port: 8880
     type: vless
@@ -2591,7 +2589,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 154"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 156"
     server: 103.21.244.78
     port: 8880
     type: vless
@@ -2605,7 +2603,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 155"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 157"
     server: 103.116.7.78
     port: 8880
     type: vless
@@ -2619,7 +2617,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 156"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 158"
     server: 103.133.1.78
     port: 8880
     type: vless
@@ -2633,7 +2631,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 157"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 159"
     server: 103.160.204.78
     port: 8880
     type: vless
@@ -2647,7 +2645,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 158"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 160"
     server: 103.169.142.78
     port: 8880
     type: vless
@@ -2661,7 +2659,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 159"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 161"
     server: 103.245.228.78
     port: 8880
     type: vless
@@ -2675,7 +2673,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 160"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 162"
     server: 103.245.229.78
     port: 8880
     type: vless
@@ -2689,7 +2687,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 161"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 163"
     server: 104.31.16.78
     port: 8880
     type: vless
@@ -2703,7 +2701,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 162"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 164"
     server: 104.129.164.78
     port: 8880
     type: vless
@@ -2717,7 +2715,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 163"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 165"
     server: 104.129.165.78
     port: 8880
     type: vless
@@ -2731,7 +2729,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 164"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 166"
     server: 104.129.166.78
     port: 8880
     type: vless
@@ -2745,7 +2743,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 165"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 167"
     server: 104.129.167.78
     port: 8880
     type: vless
@@ -2759,7 +2757,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 166"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 168"
     server: 104.234.239.78
     port: 8880
     type: vless
@@ -2773,7 +2771,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 167"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 169"
     server: 104.239.72.78
     port: 8880
     type: vless
@@ -2787,7 +2785,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 168"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 170"
     server: 104.254.140.78
     port: 8880
     type: vless
@@ -2801,7 +2799,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 169"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 171"
     server: 108.162.192.78
     port: 8880
     type: vless
@@ -2815,7 +2813,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 170"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 172"
     server: 108.162.193.78
     port: 8880
     type: vless
@@ -2829,7 +2827,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 171"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 173"
     server: 108.162.194.78
     port: 8880
     type: vless
@@ -2843,7 +2841,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 172"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 174"
     server: 108.162.195.78
     port: 8880
     type: vless
@@ -2857,7 +2855,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 173"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 175"
     server: 108.162.196.78
     port: 8880
     type: vless
@@ -2871,7 +2869,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 174"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 176"
     server: 108.162.198.78
     port: 8880
     type: vless
@@ -2885,7 +2883,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 175"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 177"
     server: 108.165.152.78
     port: 8880
     type: vless
@@ -2899,7 +2897,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 176"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 178"
     server: 108.165.216.78
     port: 8880
     type: vless
@@ -2913,7 +2911,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 177"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 179"
     server: 109.176.239.78
     port: 8880
     type: vless
@@ -2927,7 +2925,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 178"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 180"
     server: 114.129.43.78
     port: 8880
     type: vless
@@ -2941,7 +2939,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 179"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 181"
     server: 130.250.137.78
     port: 8880
     type: vless
@@ -2955,7 +2953,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 180"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 182"
     server: 135.84.67.78
     port: 8880
     type: vless
@@ -2969,7 +2967,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 181"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 183"
     server: 135.84.72.78
     port: 8880
     type: vless
@@ -2983,7 +2981,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 182"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 184"
     server: 135.84.73.78
     port: 8880
     type: vless
@@ -2997,7 +2995,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 183"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 185"
     server: 135.84.74.78
     port: 8880
     type: vless
@@ -3011,7 +3009,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 184"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 186"
     server: 135.84.75.78
     port: 8880
     type: vless
@@ -3025,7 +3023,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 185"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 187"
     server: 135.84.76.78
     port: 8880
     type: vless
@@ -3039,7 +3037,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 186"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 188"
     server: 135.84.79.78
     port: 8880
     type: vless
@@ -3053,7 +3051,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 187"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 189"
     server: 139.64.235.78
     port: 8880
     type: vless
@@ -3067,7 +3065,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 188"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 190"
     server: 140.99.233.78
     port: 8880
     type: vless
@@ -3081,7 +3079,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 189"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 191"
     server: 141.11.202.78
     port: 8880
     type: vless
@@ -3095,7 +3093,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 190"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 192"
     server: 141.11.203.78
     port: 8880
     type: vless
@@ -3109,7 +3107,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 191"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 193"
     server: 141.101.113.78
     port: 8880
     type: vless
@@ -3123,7 +3121,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 192"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 194"
     server: 141.101.114.78
     port: 8880
     type: vless
@@ -3137,7 +3135,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 193"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 195"
     server: 141.101.115.78
     port: 8880
     type: vless
@@ -3151,7 +3149,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 194"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 196"
     server: 141.101.120.78
     port: 8880
     type: vless
@@ -3165,7 +3163,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 195"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 197"
     server: 141.101.121.78
     port: 8880
     type: vless
@@ -3179,7 +3177,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 196"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 198"
     server: 141.101.122.78
     port: 8880
     type: vless
@@ -3193,7 +3191,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 197"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 199"
     server: 141.101.123.78
     port: 8880
     type: vless
@@ -3207,7 +3205,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 198"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 200"
     server: 141.193.27.78
     port: 8880
     type: vless
@@ -3221,7 +3219,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 199"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 201"
     server: 141.193.213.78
     port: 8880
     type: vless
@@ -3235,7 +3233,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 200"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 202"
     server: 147.78.140.78
     port: 8880
     type: vless
@@ -3249,7 +3247,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 201"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 203"
     server: 147.185.161.78
     port: 8880
     type: vless
@@ -3263,7 +3261,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 202"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 204"
     server: 154.83.2.78
     port: 8880
     type: vless
@@ -3277,7 +3275,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 203"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 205"
     server: 154.85.99.78
     port: 8880
     type: vless
@@ -3291,7 +3289,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 204"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 206"
     server: 154.92.9.78
     port: 8880
     type: vless
@@ -3305,7 +3303,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 205"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 207"
     server: 154.194.0.78
     port: 8880
     type: vless
@@ -3319,7 +3317,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 206"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 208"
     server: 154.194.12.78
     port: 8880
     type: vless
@@ -3333,7 +3331,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 207"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 209"
     server: 154.197.64.78
     port: 8880
     type: vless
@@ -3347,7 +3345,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 208"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 210"
     server: 154.197.75.78
     port: 8880
     type: vless
@@ -3361,7 +3359,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 209"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 211"
     server: 154.197.80.78
     port: 8880
     type: vless
@@ -3375,7 +3373,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 210"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 212"
     server: 154.197.88.78
     port: 8880
     type: vless
@@ -3389,7 +3387,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 211"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 213"
     server: 154.197.108.78
     port: 8880
     type: vless
@@ -3403,7 +3401,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 212"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 214"
     server: 154.197.121.78
     port: 8880
     type: vless
@@ -3417,7 +3415,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 213"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 215"
     server: 154.198.173.78
     port: 8880
     type: vless
@@ -3431,7 +3429,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 214"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 216"
     server: 154.206.12.78
     port: 8880
     type: vless
@@ -3445,7 +3443,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 215"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 217"
     server: 154.211.8.78
     port: 8880
     type: vless
@@ -3459,7 +3457,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 216"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 218"
     server: 154.218.15.78
     port: 8880
     type: vless
@@ -3473,7 +3471,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 217"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 219"
     server: 154.219.5.78
     port: 8880
     type: vless
@@ -3487,7 +3485,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 218"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 220"
     server: 155.46.167.78
     port: 8880
     type: vless
@@ -3501,7 +3499,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 219"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 221"
     server: 155.46.213.78
     port: 8880
     type: vless
@@ -3515,7 +3513,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 220"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 222"
     server: 156.225.72.78
     port: 8880
     type: vless
@@ -3529,7 +3527,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 221"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 223"
     server: 156.238.19.78
     port: 8880
     type: vless
@@ -3543,7 +3541,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 222"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 224"
     server: 156.243.83.78
     port: 8880
     type: vless
@@ -3557,7 +3555,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 223"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 225"
     server: 156.243.246.78
     port: 8880
     type: vless
@@ -3571,7 +3569,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 224"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 226"
     server: 159.112.235.78
     port: 8880
     type: vless
@@ -3585,7 +3583,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 225"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 227"
     server: 159.242.242.78
     port: 8880
     type: vless
@@ -3599,7 +3597,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 226"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 228"
     server: 159.246.55.78
     port: 8880
     type: vless
@@ -3613,7 +3611,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 227"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 229"
     server: 160.79.104.78
     port: 8880
     type: vless
@@ -3627,7 +3625,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 228"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 230"
     server: 160.79.105.78
     port: 8880
     type: vless
@@ -3641,7 +3639,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 229"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 231"
     server: 160.153.0.78
     port: 8880
     type: vless
@@ -3655,7 +3653,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 230"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 232"
     server: 160.153.1.78
     port: 8880
     type: vless
@@ -3669,7 +3667,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 231"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 233"
     server: 160.153.137.78
     port: 8880
     type: vless
@@ -3683,7 +3681,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 232"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 234"
     server: 160.153.138.78
     port: 8880
     type: vless
@@ -3697,7 +3695,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 233"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 235"
     server: 161.145.150.78
     port: 8880
     type: vless
@@ -3711,7 +3709,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 234"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 236"
     server: 162.120.94.78
     port: 8880
     type: vless
@@ -3725,7 +3723,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 235"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 237"
     server: 162.251.82.78
     port: 8880
     type: vless
@@ -3739,7 +3737,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 236"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 238"
     server: 164.38.155.78
     port: 8880
     type: vless
@@ -3753,7 +3751,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 237"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 239"
     server: 167.68.4.78
     port: 8880
     type: vless
@@ -3767,7 +3765,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 238"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 240"
     server: 167.68.5.78
     port: 8880
     type: vless
@@ -3781,7 +3779,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 239"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 241"
     server: 167.68.11.78
     port: 8880
     type: vless
@@ -3795,7 +3793,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 240"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 242"
     server: 167.68.42.78
     port: 8880
     type: vless
@@ -3809,7 +3807,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 241"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 243"
     server: 168.100.6.78
     port: 8880
     type: vless
@@ -3823,7 +3821,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 242"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 244"
     server: 170.114.45.78
     port: 8880
     type: vless
@@ -3837,7 +3835,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 243"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 245"
     server: 170.114.46.78
     port: 8880
     type: vless
@@ -3851,7 +3849,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 244"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 246"
     server: 173.245.49.78
     port: 8880
     type: vless
@@ -3865,7 +3863,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 245"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 247"
     server: 173.245.58.78
     port: 8880
     type: vless
@@ -3879,7 +3877,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 246"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 248"
     server: 173.245.59.78
     port: 8880
     type: vless
@@ -3893,7 +3891,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 247"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 249"
     server: 176.124.223.78
     port: 8880
     type: vless
@@ -3907,7 +3905,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 248"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 250"
     server: 181.214.1.78
     port: 8880
     type: vless
@@ -3921,7 +3919,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 249"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 251"
     server: 184.174.80.78
     port: 8880
     type: vless
@@ -3935,7 +3933,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 250"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 252"
     server: 185.16.110.78
     port: 8880
     type: vless
@@ -3949,7 +3947,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 251"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 253"
     server: 185.18.184.78
     port: 8880
     type: vless
@@ -3963,7 +3961,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 252"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 254"
     server: 185.18.250.78
     port: 8880
     type: vless
@@ -3977,7 +3975,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 253"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 255"
     server: 185.59.218.78
     port: 8880
     type: vless
@@ -3991,7 +3989,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 254"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 256"
     server: 185.133.35.78
     port: 8880
     type: vless
@@ -4005,7 +4003,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 255"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 257"
     server: 185.135.9.78
     port: 8880
     type: vless
@@ -4019,7 +4017,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 256"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 258"
     server: 185.148.104.78
     port: 8880
     type: vless
@@ -4033,7 +4031,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 257"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 259"
     server: 185.148.105.78
     port: 8880
     type: vless
@@ -4047,7 +4045,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 258"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 260"
     server: 185.148.106.78
     port: 8880
     type: vless
@@ -4061,7 +4059,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 259"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 261"
     server: 185.148.107.78
     port: 8880
     type: vless
@@ -4075,7 +4073,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 260"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 262"
     server: 185.159.247.78
     port: 8880
     type: vless
@@ -4089,7 +4087,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 261"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 263"
     server: 185.162.228.78
     port: 8880
     type: vless
@@ -4103,7 +4101,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 262"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 264"
     server: 185.162.229.78
     port: 8880
     type: vless
@@ -4117,7 +4115,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 263"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 265"
     server: 185.162.230.78
     port: 8880
     type: vless
@@ -4131,7 +4129,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 264"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 266"
     server: 185.162.231.78
     port: 8880
     type: vless
@@ -4145,7 +4143,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 265"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 267"
     server: 185.170.166.78
     port: 8880
     type: vless
@@ -4159,7 +4157,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 266"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 268"
     server: 185.174.138.78
     port: 8880
     type: vless
@@ -4173,7 +4171,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 267"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 269"
     server: 185.176.24.78
     port: 8880
     type: vless
@@ -4187,7 +4185,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 268"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 270"
     server: 185.176.26.78
     port: 8880
     type: vless
@@ -4201,7 +4199,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 269"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 271"
     server: 185.193.28.78
     port: 8880
     type: vless
@@ -4215,7 +4213,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 270"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 272"
     server: 185.193.29.78
     port: 8880
     type: vless
@@ -4229,7 +4227,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 271"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 273"
     server: 185.193.30.78
     port: 8880
     type: vless
@@ -4243,7 +4241,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 272"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 274"
     server: 185.193.31.78
     port: 8880
     type: vless
@@ -4257,7 +4255,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 273"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 275"
     server: 185.207.196.78
     port: 8880
     type: vless
@@ -4271,7 +4269,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 274"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 276"
     server: 185.207.197.78
     port: 8880
     type: vless
@@ -4285,7 +4283,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 275"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 277"
     server: 185.207.198.78
     port: 8880
     type: vless
@@ -4299,7 +4297,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 276"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 278"
     server: 185.207.199.78
     port: 8880
     type: vless
@@ -4313,7 +4311,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 277"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 279"
     server: 185.221.160.78
     port: 8880
     type: vless
@@ -4327,7 +4325,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 278"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 280"
     server: 185.238.228.78
     port: 8880
     type: vless
@@ -4341,7 +4339,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 279"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 281"
     server: 185.251.80.78
     port: 8880
     type: vless
@@ -4355,7 +4353,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 280"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 282"
     server: 185.251.81.78
     port: 8880
     type: vless
@@ -4369,7 +4367,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 281"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 283"
     server: 185.251.82.78
     port: 8880
     type: vless
@@ -4383,7 +4381,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 282"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 284"
     server: 185.251.83.78
     port: 8880
     type: vless
@@ -4397,7 +4395,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 283"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 285"
     server: 188.42.88.78
     port: 8880
     type: vless
@@ -4411,7 +4409,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 284"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 286"
     server: 188.42.89.78
     port: 8880
     type: vless
@@ -4425,7 +4423,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 285"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 287"
     server: 188.42.145.78
     port: 8880
     type: vless
@@ -4439,7 +4437,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 286"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 288"
     server: 188.164.158.78
     port: 8880
     type: vless
@@ -4453,7 +4451,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 287"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 289"
     server: 188.164.159.78
     port: 8880
     type: vless
@@ -4467,7 +4465,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 288"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 290"
     server: 188.164.248.78
     port: 8880
     type: vless
@@ -4481,7 +4479,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 289"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 291"
     server: 188.244.122.78
     port: 8880
     type: vless
@@ -4495,7 +4493,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 290"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 292"
     server: 190.93.244.78
     port: 8880
     type: vless
@@ -4509,7 +4507,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 291"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 293"
     server: 190.93.245.78
     port: 8880
     type: vless
@@ -4523,7 +4521,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 292"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 294"
     server: 190.93.246.78
     port: 8880
     type: vless
@@ -4537,7 +4535,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 293"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 295"
     server: 190.93.247.78
     port: 8880
     type: vless
@@ -4551,7 +4549,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 294"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 296"
     server: 192.0.54.78
     port: 8880
     type: vless
@@ -4565,7 +4563,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 295"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 297"
     server: 192.0.63.78
     port: 8880
     type: vless
@@ -4579,7 +4577,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 296"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 298"
     server: 192.65.217.78
     port: 8880
     type: vless
@@ -4593,7 +4591,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 297"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 299"
     server: 192.200.160.78
     port: 8880
     type: vless
@@ -4607,7 +4605,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 298"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 300"
     server: 193.9.49.78
     port: 8880
     type: vless
@@ -4621,7 +4619,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 299"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 301"
     server: 193.33.87.78
     port: 8880
     type: vless
@@ -4635,7 +4633,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 300"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 302"
     server: 193.124.18.78
     port: 8880
     type: vless
@@ -4649,7 +4647,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 301"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 303"
     server: 193.124.224.78
     port: 8880
     type: vless
@@ -4663,7 +4661,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 302"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 304"
     server: 193.227.99.78
     port: 8880
     type: vless
@@ -4677,7 +4675,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 303"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 305"
     server: 193.233.21.78
     port: 8880
     type: vless
@@ -4691,7 +4689,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 304"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 306"
     server: 193.233.132.78
     port: 8880
     type: vless
@@ -4705,7 +4703,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 305"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 307"
     server: 194.36.55.78
     port: 8880
     type: vless
@@ -4719,7 +4717,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 306"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 308"
     server: 194.53.53.78
     port: 8880
     type: vless
@@ -4733,7 +4731,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 307"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 309"
     server: 194.59.5.78
     port: 8880
     type: vless
@@ -4747,7 +4745,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 308"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 310"
     server: 194.76.18.78
     port: 8880
     type: vless
@@ -4761,7 +4759,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 309"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 311"
     server: 194.152.44.78
     port: 8880
     type: vless
@@ -4775,7 +4773,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 310"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 312"
     server: 195.13.44.78
     port: 8880
     type: vless
@@ -4789,7 +4787,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 311"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 313"
     server: 195.13.45.78
     port: 8880
     type: vless
@@ -4803,7 +4801,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 312"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 314"
     server: 195.13.54.78
     port: 8880
     type: vless
@@ -4817,7 +4815,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 313"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 315"
     server: 195.13.55.78
     port: 8880
     type: vless
@@ -4831,7 +4829,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 314"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 316"
     server: 195.26.229.78
     port: 8880
     type: vless
@@ -4845,7 +4843,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 315"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 317"
     server: 195.85.23.78
     port: 8880
     type: vless
@@ -4859,7 +4857,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 316"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 318"
     server: 195.85.59.78
     port: 8880
     type: vless
@@ -4873,7 +4871,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 317"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 319"
     server: 195.245.221.78
     port: 8880
     type: vless
@@ -4887,7 +4885,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 318"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 320"
     server: 198.62.62.78
     port: 8880
     type: vless
@@ -4901,7 +4899,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 319"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 321"
     server: 198.202.211.78
     port: 8880
     type: vless
@@ -4915,7 +4913,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 320"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 322"
     server: 199.34.228.78
     port: 8880
     type: vless
@@ -4929,7 +4927,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 321"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 323"
     server: 199.34.229.78
     port: 8880
     type: vless
@@ -4943,7 +4941,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 322"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 324"
     server: 199.34.230.78
     port: 8880
     type: vless
@@ -4957,7 +4955,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 323"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 325"
     server: 199.181.197.78
     port: 8880
     type: vless
@@ -4971,7 +4969,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 324"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 326"
     server: 204.93.210.78
     port: 8880
     type: vless
@@ -4985,7 +4983,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 325"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 327"
     server: 205.233.181.78
     port: 8880
     type: vless
@@ -4999,7 +4997,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 326"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 328"
     server: 209.46.30.78
     port: 8880
     type: vless
@@ -5013,7 +5011,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 327"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 329"
     server: 209.94.90.78
     port: 8880
     type: vless
@@ -5027,7 +5025,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 328"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 330"
     server: 212.183.88.78
     port: 8880
     type: vless
@@ -5041,7 +5039,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 329"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 331"
     server: 213.109.205.78
     port: 8880
     type: vless
@@ -5055,7 +5053,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 330"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 332"
     server: 213.182.199.78
     port: 8880
     type: vless
@@ -5069,7 +5067,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 331"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 333"
     server: 213.219.247.78
     port: 8880
     type: vless
@@ -5083,7 +5081,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 332"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 334"
     server: 213.241.198.78
     port: 8880
     type: vless
@@ -5097,7 +5095,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 333"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 335"
     server: 216.24.57.78
     port: 8880
     type: vless
@@ -5111,7 +5109,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 334"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 336"
     server: 216.116.134.78
     port: 8880
     type: vless
@@ -5125,7 +5123,7 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 335"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 337"
     server: 216.205.52.78
     port: 8880
     type: vless
@@ -5139,119 +5137,105 @@ proxies:
       headers:
         Host: free.cfdns.online
     servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 336"
-    server: 5.182.85.77
-    port: 8880
-    type: vless
-    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
-    tls: false
-    network: ws
-    ws-opts:
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-      headers:
-        Host: free.cfdns.online
-    udp: true
-    servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 337"
-    server: by.xiaoqi666.xyz
-    port: 443
-    type: hysteria2
-    password: 8f699f9d-e173-4078-a39f-59a3f8723e15
-    auth: 8f699f9d-e173-4078-a39f-59a3f8723e15
-    sni: by.xiaoqi666.xyz
-    up: 250
-    down: 250
-    skip-cert-verify: true
-    udp: true
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 338"
-    server: 185.143.221.140
-    port: 23119
-    type: vmess
-    uuid: d7ae80f9-195e-424f-b694-93b47d9e8bbc
-    alterId: 0
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-    udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 339"
-    server: 45.12.30.234
-    port: 80
-    type: vless
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    tls: false
-    network: ws
-    ws-opts:
-      path: '/Telegram: @vpnAndroid2/?ed=2560'
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-    udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 340"
     server: 185.143.221.140
     port: 33079
     type: hysteria2
-    password: 45dc346a-93a5-4336-9327-c087e1376639
-    auth: 45dc346a-93a5-4336-9327-c087e1376639
-    up: 15
-    down: 15
+    password: cee3f1da-452b-4105-b6d7-b3a9f77850bc
+    auth: cee3f1da-452b-4105-b6d7-b3a9f77850bc
+    up: 100
+    down: 100
     skip-cert-verify: true
     obfs: salamander
     obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 341"
-    server: 45.131.7.203
-    port: 8880
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 339"
+    server: 104.21.77.149
+    port: 443
     type: vless
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    tls: false
+    uuid: 2d068083-2cb0-4ae3-a44a-6fc82f3039cc
+    tls: true
+    alpn:
+      - http%2F1.1
+    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: '/Channel id: @ShadowProxy66?ed=2560'
+      path: /laTDC7FYNlEa06b88JSo
       headers:
-        Host: reedfree8mahsang2.redorg.ir
+        Host: sCCcxZZZXfVG.999834.xyZ
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 342"
-    server: 103.160.204.36
-    port: 2087
+    servername: sCCcxZZZXfVG.999834.xyZ
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 340"
+    server: 104.16.93.190
+    port: 443
     type: vless
-    uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+    uuid: 8b5cf811-af1f-475a-9e61-28b93c38d309
+    tls: true
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: vpn.6662221.xyz
+    udp: true
+    servername: vpn.6662221.xyz
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 341"
+    server: bowen.ns.cloudflare.com
+    port: 443
+    type: vless
+    uuid: b1a8ceea-6601-45b5-a674-7e5b64ab6f6f
     tls: true
     client-fingerprint: randomized
     network: ws
     ws-opts:
-      path: /?ed=2560&PROT_TYPE=vless
+      path: /?ed=2560
       headers:
-        Host: vle.amclubsdns.dpdns.org
+        Host: sub.divib.dynv6.net
     udp: true
-    servername: vle.amclubsdns.dpdns.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 343"
-    server: 45.131.5.117
+    servername: sub.divib.dynv6.net
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 342"
+    server: 154.197.64.20
     port: 8880
     type: vless
     uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
     tls: false
     network: ws
     ws-opts:
-      path: /Telegram@ShadowProxy66/?ed=2560
+      path: /?ed=2560
       headers:
         Host: reedfree8mahsang2.redorg.ir
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 344"
-    server: 14.102.229.77
-    port: 8880
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 343"
+    server: www.speedtest.net
+    port: 443
     type: vless
-    uuid: 40c708ca-42e4-4224-a12d-1dbd7ef1e0b7
-    tls: false
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: true
+    alpn:
+      - h2%2Chttp%2F1.1
+    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+      path: /
       headers:
-        Host: free.cfdns.online
+        Host: jaegbsem36.cfd
     udp: true
-    servername: Telegram-channel-WangCai2
+    servername: jaegbsem36.cfd
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 344"
+    server: download.yunzhongzhuan.com
+    port: 443
+    type: trojan
+    password: vip
+    sni: heihu880.pages.dev
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: heihu880.pages.dev
+    udp: true
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 345"
-    server: 14.102.229.177
+    server: 213.109.205.177
     port: 8880
     type: vless
     uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
@@ -5265,328 +5249,98 @@ proxies:
     udp: true
     servername: Telegram-channel-WangCai2
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 346"
+    server: dylan.ns.cloudflare.com
+    port: 443
+    type: vless
+    uuid: b1a8ceea-6601-45b5-a674-7e5b64ab6f6f
+    tls: true
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.divib.dynv6.net
+    udp: true
+    servername: sub.divib.dynv6.net
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 347"
+    server: 160.79.105.177
+    port: 8880
+    type: vless
+    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    tls: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+      headers:
+        Host: ip.langmanshanxi.top
+    udp: true
+    servername: Telegram-channel-WangCai2
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 348"
+    server: 162.159.36.104
+    port: 443
+    type: vless
+    uuid: b1a8ceea-6601-45b5-a674-7e5b64ab6f6f
+    tls: true
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.divib.dynv6.net
+    udp: true
+    servername: sub.divib.dynv6.net
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 349"
+    server: 5.10.244.59
+    port: 8880
+    type: vless
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    tls: false
+    network: ws
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3
+      headers:
+        Host: reedfree8mahsang2.redorg.ir
+    udp: true
+    servername: reedfree8mahsang2.redorg.ir
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 350"
+    server: 172.67.200.11
+    port: 443
+    type: vless
+    uuid: 357b1bba-6400-4944-baff-1b933311ff28
+    tls: true
+    alpn:
+      - http%252F1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /kSIHD28dr9nkaMBYIsgt
+      headers:
+        Host: SsSSSSSsSSSD.890606.Xyz
+    udp: true
+    servername: SsSSSSSsSSSD.890606.Xyz
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 351"
     server: ti3hyra4.slashdevslashnetslashtun.net
     port: 17002
     type: ss
     cipher: aes-256-gcm
-    password: 3XCP1K8QFJZS9WT6
-    udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 347"
-    server: benedict.ns.cloudflare.com
-    port: 443
-    type: vless
-    uuid: b1a8ceea-6601-45b5-a674-7e5b64ab6f6f
-    tls: true
-    client-fingerprint: randomized
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: sub.divib.dynv6.net
-    udp: true
-    servername: sub.divib.dynv6.net
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 348"
-    server: 45.159.217.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 349"
-    server: 104.21.69.41
-    port: 443
-    type: vless
-    uuid: 07a3df8f-2a2c-42f8-ad92-65889d90f3bf
-    tls: true
-    alpn:
-      - http%2F1.1
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /5UW2C42lpZ7Dj4VDwVOkZfoq
-      headers:
-        Host: DdDFRt5.890602.xyZ
-    udp: true
-    servername: DdDFRt5.890602.xyZ
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 350"
-    server: w72tapyb.slashdevslashnetslashtun.net
-    port: 17004
-    type: ss
-    cipher: aes-256-gcm
-    password: EARM8VW8T0HGFOXZ
-    udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 351"
-    server: 45.12.30.238
-    port: 80
-    type: vless
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    tls: false
-    network: ws
-    ws-opts:
-      path: '/Telegram:@ShadowProxy66/?ed=2560'
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
+    password: 7L9GR8Y6YNIY6SL8
     udp: true
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 352"
-    server: 185.251.83.177
+    server: 185.162.229.137
     port: 8880
     type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
     tls: false
-    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+      path: /
       headers:
-        Host: ip.langmanshanxi.top
+        Host: reedfree8mahsang2.redorg.ir
     udp: true
-    servername: Telegram-channel-WangCai2
+    servername: reedfree8mahsang2.redorg.ir
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 353"
-    server: 45.131.209.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 354"
-    server: 104.17.142.12
-    port: 443
-    type: vless
-    uuid: b1a8ceea-6601-45b5-a674-7e5b64ab6f6f
-    tls: true
-    client-fingerprint: randomized
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: sub.divib.dynv6.net
-    udp: true
-    servername: sub.divib.dynv6.net
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 355"
-    server: 92.53.191.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    network: ws
-    ws-opts:
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2"
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 356"
-    server: 45.8.211.208
-    port: 8880
-    type: vless
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-    udp: true
-    servername: reedfree8mahsang2.redorg.ir
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 357"
-    server: 5.10.214.114
-    port: 8880
-    type: vless
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-    udp: true
-    servername: reedfree8mahsang2.redorg.ir
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 358"
-    server: 160.79.104.177
-    port: 8880
-    type: vless
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    tls: false
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-      headers:
-        Host: ip.langmanshanxi.top
-    udp: true
-    servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 359"
-    server: 91.193.58.240
-    port: 8880
-    type: vless
-    uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-    tls: false
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-      headers:
-        Host: kjgx.laoyoutiao.link
-    udp: true
-    servername: Telegram-channel-WangCai2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 360"
-    server: console.03.aliyun.aq.kunlunaqs.com
-    port: 45922
-    type: ss
-    cipher: aes-128-gcm
-    password: c1ee5895686790a383fb
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 4be5dcc8d73c771e331b.microsoft.com
-    udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 361"
-    server: 5.10.214.20
-    port: 8880
-    type: vless
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    tls: false
-    network: ws
-    ws-opts:
-      path: "/Telegram\U0001F1E8\U0001F1F3"
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-    udp: true
-    servername: reedfree8mahsang2.redorg.ir
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 362"
-    server: 188.164.159.18
-    port: 443
-    type: trojan
-    password: Aimer
-    sni: epml.ambercc.filegear-sg.me
-    alpn:
-      - h3
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560&proxyip=ts.hpc.tw
-      headers:
-        Host: epml.ambercc.filegear-sg.me
-    udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 363"
-    server: 188.164.159.98
-    port: 2083
-    type: trojan
-    password: Aimer
-    sni: epmk.ambercc.filegear-sg.me
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560&proxyip=ts.hpc.tw
-      headers:
-        Host: epmk.ambercc.filegear-sg.me
-    udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 364"
-    server: 104.18.156.119
-    port: 443
-    type: vless
-    uuid: 8b946375-b205-46a2-bf77-ecf0350eab5e
-    tls: true
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: rayan-top.negar.dpdns.org
-    udp: true
-    servername: rayan-top.negar.dpdns.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 365"
-    server: us.xn--2vxn29amga.com
-    port: 21186
-    type: hysteria2
-    password: e9802602-61e8-4dc4-af8f-b7e2baac4aad
-    auth: e9802602-61e8-4dc4-af8f-b7e2baac4aad
-    skip-cert-verify: false
-    udp: true
-    sni: us.xn--2vxn29amga.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 366"
-    server: 190.93.246.156
-    port: 2083
-    type: vless
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: true
-    alpn:
-      - h2%2Chttp%2F1.1
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: JAEGbSEM36.cfd
-    udp: true
-    servername: JAEGbSEM36.cfd
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 367"
-    server: 45.12.31.120
-    port: 8880
-    type: vless
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-    udp: true
-    servername: reedfree8mahsang2.redorg.ir
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 368"
-    server: 45.131.209.157
-    port: 8880
-    type: vless
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    tls: false
-    network: ws
-    ws-opts:
-      path: /Telegram@ShadowProxy66/?ed=2560
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-    udp: true
-    servername: reedfree8mahsang2.redorg.ir
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 369"
-    server: 5.10.247.80
-    port: 8880
-    type: vless
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    tls: false
-    network: ws
-    ws-opts:
-      path: "/Telegram\U0001F1E8\U0001F1F3"
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-    udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 370"
-    server: fbi.gov
-    port: 443
-    type: trojan
-    password: vip
-    sni: heihu880.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: heihu880.pages.dev
-    udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 371"
-    server: 91.193.58.226
+    server: 91.193.58.53
     port: 8880
     type: vless
     uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -5598,47 +5352,59 @@ proxies:
         Host: kjgx.laoyoutiao.link
     udp: true
     servername: kjgx.laoyoutiao.link
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 372"
-    server: 159.246.55.178
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 354"
+    server: 5.10.245.76
     port: 8880
     type: vless
     uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
     tls: false
     network: ws
     ws-opts:
-      path: '/Channel id: @ShadowProxy66?ed=2560'
+      path: /TelegramU0001F1E8U0001F1F3
       headers:
         Host: reedfree8mahsang2.redorg.ir
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 373"
-    server: 104.17.148.22
-    port: 443
+    servername: reedfree8mahsang2.redorg.ir
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 355"
+    server: 46.254.92.142
+    port: 2087
     type: trojan
-    password: redfree8
-    sni: redfree8-p1.pooriashop.ir
-    alpn:
-      - h2%2Chttp%2F1.1
-    skip-cert-verify: true
+    password: Aimer
+    sni: epml.ambercc.filegear-sg.me
     network: ws
     ws-opts:
-      path: /trTelegram@V2ray_Alpha/?ed=2560
+      path: /
       headers:
-        Host: redfree8-p1.pooriashop.ir
+        Host: epml.ambercc.filegear-sg.me
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 374"
-    server: 45.80.111.126
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 356"
+    server: 104.16.134.27
+    port: 2083
+    type: vless
+    uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+    tls: true
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /?ed=2560&PROT_TYPE=vless
+      headers:
+        Host: vle.amclubsdns.dpdns.org
+    udp: true
+    servername: vle.amclubsdns.dpdns.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 357"
+    server: 190.93.246.20
     port: 8880
     type: vless
     uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
     tls: false
     network: ws
     ws-opts:
-      path: /@ShadowProxy66?ed=2560
+      path: /?ed=2560
       headers:
         Host: reedfree8mahsang2.redorg.ir
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 375"
-    server: kyree.ns.cloudflare.com
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 358"
+    server: shopify.com
     port: 443
     type: vless
     uuid: b1a8ceea-6601-45b5-a674-7e5b64ab6f6f
@@ -5651,6 +5417,161 @@ proxies:
         Host: sub.divib.dynv6.net
     udp: true
     servername: sub.divib.dynv6.net
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 359"
+    server: 44.250.248.2
+    port: 22700
+    type: hysteria2
+    password: 1XBaoV4RvpzHzAuGIzdaQKttzME
+    auth: 1XBaoV4RvpzHzAuGIzdaQKttzME
+    sni: bing.com
+    skip-cert-verify: true
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 360"
+    server: 104.17.68.85
+    port: 443
+    type: vless
+    uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+    tls: true
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /?ed=2560&PROT_TYPE=vless
+      headers:
+        Host: vle.amclubsdns.dpdns.org
+    udp: true
+    servername: vle.amclubsdns.dpdns.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 361"
+    server: 45.8.211.77
+    port: 8880
+    type: vless
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    tls: false
+    network: ws
+    ws-opts:
+      path: /Telegram@ShadowProxy66/?ed=2560
+      headers:
+        Host: reedfree8mahsang2.redorg.ir
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 362"
+    server: us.xn--mes91t7ofgnw.com
+    port: 20266
+    type: hysteria2
+    password: f18281b8-05c8-4eed-81b4-403d36b28741
+    auth: f18281b8-05c8-4eed-81b4-403d36b28741
+    skip-cert-verify: false
+    udp: true
+    sni: us.xn--mes91t7ofgnw.com
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 363"
+    server: 5.10.247.225
+    port: 8880
+    type: vless
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/Telegram\U0001F1E8\U0001F1F3"
+      headers:
+        Host: reedfree8mahsang2.redorg.ir
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 364"
+    server: www.racknerd.com
+    port: 443
+    type: vless
+    uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51
+    tls: true
+    network: ws
+    ws-opts:
+      path: /t.me/lzjjjjjjjjjjj
+      headers:
+        Host: legend-us.lzjnb.shop
+    udp: true
+    servername: legend-us.lzjnb.shop
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 365"
+    server: 104.19.253.84
+    port: 443
+    type: vless
+    uuid: 90d7db9b-972b-4073-8738-12cf42124260
+    tls: true
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kawaiifreevpn.pages.dev
+    udp: true
+    servername: kawaiifreevpn.pages.dev
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 366"
+    server: 154.83.2.61
+    port: 8443
+    type: trojan
+    password: d6b8011a-c725-435a-9fec-bf6d3530392c
+    sni: vle.amclubsvip.dpdns.org
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /?ed=2560&PROT_TYPE=trojan
+      headers:
+        Host: vle.amclubsvip.dpdns.org
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 367"
+    server: www.4chan.org
+    port: 443
+    type: vless
+    uuid: b1a8ceea-6601-45b5-a674-7e5b64ab6f6f
+    tls: true
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.divib.dynv6.net
+    udp: true
+    servername: sub.divib.dynv6.net
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 368"
+    server: us.xn--2vxn29amga.com
+    port: 21190
+    type: hysteria2
+    password: ffd51f98-6553-43fe-b051-b86905d678f9
+    auth: ffd51f98-6553-43fe-b051-b86905d678f9
+    skip-cert-verify: false
+    udp: true
+    sni: us.xn--2vxn29amga.com
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 369"
+    server: zz.xn--mes91t7ofgnw.com
+    port: 8082
+    type: ss
+    cipher: 2022-blake3-aes-128-gcm
+    password: 'YTNkZmMwNDBhN2E1ZjE0ZA==:ZDZmMmRkOTUtOWRkNS00ZQ=='
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 370"
+    server: 167.68.4.223
+    port: 2096
+    type: trojan
+    password: Aimer
+    sni: epmk.ambercc.filegear-sg.me
+    alpn:
+      - h3
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /?ed=2560&proxyip=ts.hpc.tw
+      headers:
+        Host: epmk.ambercc.filegear-sg.me
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 371"
+    server: 104.16.114.221
+    port: 443
+    type: vless
+    uuid: 90d7db9b-972b-4073-8738-12cf42124260
+    tls: true
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: kawaiifreevpn.pages.dev
+    udp: true
+    servername: kawaiifreevpn.pages.dev
   - client-fingerprint: chrome
     name: "\U0001F1E8\U0001F1F7 机场推荐:dafei.de 哥斯达黎加 01"
     network: ws
@@ -5679,207 +5600,6 @@ proxies:
         Host: reedfree8mahsang2.redorg.ir
       path: /@ShadowProxy66?ed=2560
     client-fingerprint: chrome
-  - name: "\U0001F1F0\U0001F1FF 机场推荐:dafei.de 哈萨克斯坦 02"
-    network: ws
-    port: 8880
-    server: 31.43.179.177
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-    ws-opts:
-      headers:
-        Host: ip.langmanshanxi.top
-      path: /TelegramрЯЗ®рЯЗ≥ @WangCai2 /?ed=2560
-    client-fingerprint: chrome
-    servername: ip.langmanshanxi.top
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 01"
-    server: yapc-1.adamhayward.co.uk
-    port: 35000
-    type: hysteria2
-    password: Yet-Another-Public-Config-1
-    auth: Yet-Another-Public-Config-1
-    sni: YAPC-1.afshin.ir
-    obfs: salamander
-    obfs-password: Yet-Another-Public-Config-1
-    udp: true
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 02"
-    obfs: salamander
-    obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-    password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-    port: 35000
-    server: 206.71.158.40
-    skip-cert-verify: false
-    sni: pichondan.com
-    type: hysteria2
-    client-fingerprint: chrome
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 03"
-    network: ws
-    port: 80
-    server: 45.131.7.64
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    ws-opts:
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-      path: '/Channel id: @ShadowProxy66/?ed=2560'
-    client-fingerprint: chrome
-    servername: reedfree8mahsang2.redorg.ir
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 04"
-    network: ws
-    port: 8880
-    server: 45.131.208.208
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    ws-opts:
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-      path: /@ShadowProxy66?ed=2560
-    client-fingerprint: chrome
-    servername: reedfree8mahsang2.redorg.ir
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 05"
-    network: ws
-    port: 8880
-    server: 188.42.89.100
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    ws-opts:
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-      path: '/Channel id: @ShadowProxy66?ed=2560'
-    client-fingerprint: chrome
-    servername: reedfree8mahsang2.redorg.ir
-  - alterId: 0
-    cipher: chacha20-ietf-poly1305
-    name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 06"
-    password: qscavF5UviIL-8V-E4raBA
-    port: 2222
-    server: 91.84.104.133
-    skip-cert-verify: true
-    tls: true
-    type: ss
-    client-fingerprint: chrome
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 07"
-    network: ws
-    port: 80
-    server: 45.131.4.157
-    tls: false
-    type: vless
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    ws-opts:
-      headers:
-        Host: redfree8.pooriashop.ir
-      path: "/Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
-    client-fingerprint: chrome
-    servername: redfree8.pooriashop.ir
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 08"
-    network: ws
-    port: 8880
-    server: 45.131.208.108
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    ws-opts:
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-      path: /Telegram@ShadowProxy66/?ed=2560
-    client-fingerprint: chrome
-    servername: reedfree8mahsang2.redorg.ir
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 09"
-    network: ws
-    port: 8880
-    server: 45.131.6.68
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    ws-opts:
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-      path: '/Channel id: @ShadowProxy66?ed=2560'
-    client-fingerprint: chrome
-    servername: reedfree8mahsang2.redorg.ir
-  - cipher: chacha20-ietf-poly1305
-    name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 10"
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    port: 8080
-    server: 45.87.175.28
-    type: ss
-    client-fingerprint: chrome
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 11"
-    network: ws
-    port: 8880
-    server: 45.131.208.9
-    tls: false
-    type: vless
-    udp: true
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    ws-opts:
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-      path: /Telegram@ShadowProxy66/?ed=2560
-    client-fingerprint: chrome
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 12"
-    network: ws
-    port: 8880
-    server: 45.131.210.20
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    ws-opts:
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-      path: /?ed=2560
-    client-fingerprint: chrome
-    servername: reedfree8mahsang2.redorg.ir
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 13"
-    network: ws
-    port: 8880
-    server: 45.131.211.224
-    tls: false
-    type: vless
-    udp: true
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    ws-opts:
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-      path: /@ShadowProxy66?ed=2560
-    client-fingerprint: chrome
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 14"
-    server: 45.158.171.141
-    port: 8080
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 4a2rfixophdjffa8KVA4Aa
-    udp: true
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 15"
-    server: www.gov.ua
-    port: 443
-    type: trojan
-    password: vip
-    sni: heihu880.pages.dev
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: heihu880.pages.dev
-    udp: true
   - client-fingerprint: firefox
     name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 01"
     network: tcp
@@ -6035,117 +5755,26 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 13"
-    server: 103.186.154.38
+    server: 103.186.154.24
     port: 38388
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 01"
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 01"
     obfs: salamander
     obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
     password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
     port: 35000
-    server: 77.90.52.69
+    server: 206.71.158.40
     skip-cert-verify: false
     sni: pichondan.com
     type: hysteria2
     client-fingerprint: chrome
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 02"
-    server: 104.26.13.31
-    port: 443
-    type: vless
-    uuid: 3130e111-a06c-4388-aeda-4b43f6e8e51f
-    tls: true
-    alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: randomized
-    network: ws
-    ws-opts:
-      path: /Tel-@V2ray_Alpha/?ed=2560
-      headers:
-        Host: finland-a3r.pages.dev
-    udp: true
-    servername: FinLAnd-A3r.pAgES.dEv
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 03"
-    server: 104.25.32.118
-    port: 2083
-    type: vless
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: true
-    alpn:
-      - h2%2Chttp%2F1.1
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: jAEGBSEM36.CFD
-    udp: true
-    servername: jAEGBSEM36.CFD
-  - name: "\U0001F1E6\U0001F1FA 机场推荐:dafei.de 澳大利亚 01"
-    network: ws
-    port: 8880
-    server: 103.169.142.80
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    udp: true
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    ws-opts:
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-      path: '/Channel id: @ShadowProxy66?ed=2560'
-    client-fingerprint: chrome
-    servername: reedfree8mahsang2.redorg.ir
-  - name: "\U0001F1E6\U0001F1FA 机场推荐:dafei.de 澳大利亚 02"
-    server: console.03.aliyun.aq.kunlunaqs.com
-    port: 45934
-    type: ss
-    cipher: aes-128-gcm
-    password: ec39dd066cc142fbb81c
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 4be5dcc8d73c771e331b.microsoft.com
-    udp: true
-  - name: "\U0001F1E6\U0001F1FA 机场推荐:dafei.de 澳大利亚 03"
-    server: haa.dashuai.cyou
-    port: 45062
-    type: vmess
-    uuid: 7b04ad30-95c5-4ed3-8a74-34b805566161
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    udp: true
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 01"
-    network: ws
-    port: 8880
-    server: 185.174.138.0
-    tls: false
-    type: vless
-    udp: true
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    ws-opts:
-      headers:
-        Host: reedfree8mahsang2.redorg.ir
-      path: /@ShadowProxy66?ed=2560
-    client-fingerprint: chrome
-  - auth: dongtaiwang.com
-    name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 02"
-    password: dongtaiwang.com
-    port: 12904
-    server: 46.17.41.5
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria2
-    client-fingerprint: chrome
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 03"
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 02"
     network: ws
     port: 80
-    server: 185.174.138.6
+    server: 45.131.7.64
     skip-cert-verify: false
     tls: false
     type: vless
@@ -6157,39 +5786,249 @@ proxies:
       path: '/Channel id: @ShadowProxy66/?ed=2560'
     client-fingerprint: chrome
     servername: reedfree8mahsang2.redorg.ir
-  - client-fingerprint: chrome
-    name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 04"
+  - alterId: 0
+    cipher: chacha20-ietf-poly1305
+    name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 03"
+    password: qscavF5UviIL-8V-E4raBA
+    port: 2222
+    server: 91.84.104.133
+    skip-cert-verify: true
+    tls: true
+    type: ss
+    client-fingerprint: chrome
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 04"
+    network: ws
+    port: 80
+    server: 45.131.4.157
+    tls: false
+    type: vless
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    ws-opts:
+      headers:
+        Host: redfree8.pooriashop.ir
+      path: "/Telegram\U0001F1E8\U0001F1F3 @MxlShare @WangCai2 /?ed=2560"
+    client-fingerprint: chrome
+    servername: redfree8.pooriashop.ir
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 05"
+    server: 172.67.171.131
+    port: 2053
+    type: vless
+    uuid: 376734bc-4db8-4317-b451-af0262cb01c7
+    tls: true
+    alpn:
+      - http/1.1
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /yRVRnY2jDtjg67UV/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560
+      headers:
+        Host: inVINCIble.fAFA20.Shop
+    udp: true
+    servername: inVINCIble.fAFA20.Shop
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 06"
     network: ws
     port: 8880
-    server: 185.148.107.177
+    server: 45.131.208.108
     skip-cert-verify: false
     tls: false
     type: vless
     udp: true
-    uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
     ws-opts:
       headers:
-        Host: ip.langmanshanxi.top
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    servername: Telegram-channel-WangCai2
-  - fast-open: true
-    name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 05"
-    password: dongtaiwang.com
-    port: 50850
-    server: 45.129.2.108
-    skip-cert-verify: true
-    sni: www.bing.com
-    type: hysteria2
+        Host: reedfree8mahsang2.redorg.ir
+      path: /Telegram@ShadowProxy66/?ed=2560
     client-fingerprint: chrome
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 06"
-    server: 46.17.41.217
-    port: 30033
-    type: hysteria2
-    password: dongtaiwang.com
-    auth: dongtaiwang.com
-    sni: www.bing.com
-    skip-cert-verify: true
+    servername: reedfree8mahsang2.redorg.ir
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 07"
+    network: ws
+    port: 8880
+    server: 45.131.6.68
+    skip-cert-verify: false
+    tls: false
+    type: vless
     udp: true
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    ws-opts:
+      headers:
+        Host: reedfree8mahsang2.redorg.ir
+      path: '/Channel id: @ShadowProxy66?ed=2560'
+    client-fingerprint: chrome
+    servername: reedfree8mahsang2.redorg.ir
+  - cipher: chacha20-ietf-poly1305
+    name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 08"
+    password: oZIoA69Q8yhcQV8ka3Pa3A
+    port: 8080
+    server: 45.87.175.28
+    type: ss
+    client-fingerprint: chrome
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 09"
+    server: 188.114.99.16
+    port: 2053
+    type: vless
+    uuid: 54f6e78c-b497-4db7-ba48-38c4cf81d5ef
+    tls: true
+    alpn:
+      - http/1.1
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /YzeJFTQqvmhtzTlE?ed=2560
+      headers:
+        Host: 019309b7.xyz0.pages.dev
+    udp: true
+    servername: 019309B7.XyZ0.PaGeS.dEV
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 10"
+    network: ws
+    port: 8880
+    server: 45.131.208.9
+    tls: false
+    type: vless
+    udp: true
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    ws-opts:
+      headers:
+        Host: reedfree8mahsang2.redorg.ir
+      path: /Telegram@ShadowProxy66/?ed=2560
+    client-fingerprint: chrome
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 11"
+    server: 104.21.35.171
+    port: 443
+    type: vless
+    uuid: 252df5e8-0428-4345-b236-a6dae7b3457d
+    tls: true
+    alpn:
+      - h3
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /HcFmPxmQkiv44jMu?ed=2560
+      headers:
+        Host: MaIncrafT.dPdnS.OrG
+    udp: true
+    servername: MaIncrafT.dPdnS.OrG
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 12"
+    network: ws
+    port: 8880
+    server: 45.131.7.174
+    tls: false
+    type: vless
+    udp: true
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    ws-opts:
+      headers:
+        Host: reedfree8mahsang2.redorg.ir
+      path: /Telegram@ShadowProxy66/?ed=2560
+    client-fingerprint: chrome
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 13"
+    network: ws
+    port: 8880
+    server: 45.131.210.20
+    skip-cert-verify: false
+    tls: false
+    type: vless
+    udp: true
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    ws-opts:
+      headers:
+        Host: reedfree8mahsang2.redorg.ir
+      path: /?ed=2560
+    client-fingerprint: chrome
+    servername: reedfree8mahsang2.redorg.ir
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 14"
+    network: ws
+    port: 8880
+    server: 45.131.211.224
+    tls: false
+    type: vless
+    udp: true
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    ws-opts:
+      headers:
+        Host: reedfree8mahsang2.redorg.ir
+      path: /@ShadowProxy66?ed=2560
+    client-fingerprint: chrome
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 15"
+    server: www.ddwhm.com
+    port: 443
+    type: vless
+    uuid: b1a8ceea-6601-45b5-a674-7e5b64ab6f6f
+    tls: true
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: sub.divib.dynv6.net
+    udp: true
+    servername: sub.divib.dynv6.net
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 16"
+    server: www.gov.ua
+    port: 2096
+    type: vless
+    uuid: 0343e230-5132-4e98-844e-b42ad1a6a273
+    tls: true
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: nptian.xiaotianvpn.sbs
+    udp: true
+    servername: nptian.xiaotianvpn.sbs
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 01"
+    server: 77.90.52.69
+    port: 35000
+    type: hysteria2
+    password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
+    auth: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
+    sni: pichondan.com
+    skip-cert-verify: false
+    obfs: salamander
+    obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
+    udp: true
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 02"
+    network: ws
+    port: 80
+    server: 45.80.111.134
+    skip-cert-verify: false
+    tls: false
+    type: vless
+    udp: true
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    ws-opts:
+      headers:
+        Host: reedfree8mahsang2.redorg.ir
+      path: '/Channel id: @ShadowProxy66/?ed=2560'
+    client-fingerprint: chrome
+    servername: reedfree8mahsang2.redorg.ir
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 03"
+    server: 104.24.151.26
+    port: 443
+    type: vless
+    uuid: 8b5cf811-af1f-475a-9e61-28b93c38d309
+    tls: true
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: vpn.6662221.xyz
+    udp: true
+    servername: vpn.6662221.xyz
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 04"
+    server: 104.24.88.41
+    port: 443
+    type: vless
+    uuid: 8b5cf811-af1f-475a-9e61-28b93c38d309
+    tls: true
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: vpn.6662221.xyz
+    udp: true
+    servername: vpn.6662221.xyz
   - name: "\U0001F1E7\U0001F1EC 机场推荐:dafei.de 保加利亚 01"
     network: ws
     port: 8880
@@ -6266,8 +6105,8 @@ proxies:
     sni: www.baidu.com
     skip-cert-verify: true
   - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 06"
-    server: 121.85.55.59
-    port: 19842
+    server: 138.2.12.103
+    port: 14453
     type: vless
     uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
     tls: true
@@ -6280,41 +6119,41 @@ proxies:
     servername: steep.skyfigure.top
   - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 07"
     server: jp.xn--2vxn29amga.com
-    port: 21139
+    port: 21109
     type: hysteria2
-    password: ffd51f98-6553-43fe-b051-b86905d678f9
-    auth: ffd51f98-6553-43fe-b051-b86905d678f9
+    password: 048c89ec-1b7b-4e16-9739-6f9994a049c5
+    auth: 048c89ec-1b7b-4e16-9739-6f9994a049c5
     skip-cert-verify: false
     udp: true
     sni: jp.xn--2vxn29amga.com
   - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 08"
-    server: 8tv68qhq.slashdevslashnetslashtun.net
-    port: 18005
-    type: ss
-    cipher: aes-256-gcm
-    password: 3YLR6OICF4UMIWBN
+    server: 47.79.34.232
+    port: 25635
+    type: hysteria2
+    password: jyEWQRbJATgWMu3XQtRvxb2h0
+    auth: jyEWQRbJATgWMu3XQtRvxb2h0
+    sni: bing.com
+    skip-cert-verify: true
     udp: true
   - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 09"
-    server: jp.xn--mes91t7ofgnw.com
-    port: 20240
-    type: hysteria2
-    password: f18281b8-05c8-4eed-81b4-403d36b28741
-    auth: f18281b8-05c8-4eed-81b4-403d36b28741
-    skip-cert-verify: false
+    server: w72tapyb.slashdevslashnetslashtun.net
+    port: 18004
+    type: ss
+    cipher: aes-256-gcm
+    password: BI672NR4A16VUTUM
     udp: true
-    sni: jp.xn--mes91t7ofgnw.com
   - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 10"
-    server: jp.xn--mes91t7ofgnw.com
-    port: 20286
-    type: hysteria2
-    password: f18281b8-05c8-4eed-81b4-403d36b28741
-    auth: f18281b8-05c8-4eed-81b4-403d36b28741
-    skip-cert-verify: false
+    server: haa.dashuai.cyou
+    port: 45056
+    type: vmess
+    uuid: 9b960c64-5c8e-4792-b9a7-890effcd671b
+    alterId: 0
+    cipher: auto
+    tls: false
     udp: true
-    sni: jp.xn--mes91t7ofgnw.com
   - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 11"
-    server: 141.147.185.15
-    port: 443
+    server: 8.216.81.183
+    port: 3939
     type: vless
     uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
     tls: true
@@ -6325,6 +6164,45 @@ proxies:
         Host: steep.skyfigure.top
     udp: true
     servername: steep.skyfigure.top
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 12"
+    server: console.02.aliyun.aq.kunlunaqs.com
+    port: 45912
+    type: ss
+    cipher: aes-128-gcm
+    password: 97998add7bf4fea885ef
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 4be5dcc8d73c771e331b.microsoft.com
+    udp: true
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 13"
+    server: qh62onjn.slashdevslashnetslashtun.net
+    port: 18015
+    type: ss
+    cipher: aes-256-gcm
+    password: 14B4BU7A5RYD9H3H
+    udp: true
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 14"
+    server: flyrb.flylink.cyou
+    port: 10088
+    type: vless
+    uuid: 50ccead7-d0ee-44ec-9bb1-bf85796a4b87
+    tls: true
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: o0qeFNqPD24m-OTwXs_Bs7_FNcR-caK7lNP1-zcUIho
+      short-id: d31616e2
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+    servername: www.amazon.com
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 15"
+    server: zz.xn--mes91t7ofgnw.com
+    port: 8083
+    type: ss
+    cipher: 2022-blake3-aes-128-gcm
+    password: 'ZjIxMDg0ZWU0YjNjMTM1Zg==:N2NhNTFhYmYtNGE1Ny00Ng=='
+    udp: true
   - alpn:
       - h3
     auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
@@ -6347,6 +6225,26 @@ proxies:
     ws-opts:
       path: /oooo
     alterId: 2
+  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 03"
+    server: haa.dashuai.cyou
+    port: 45064
+    type: vmess
+    uuid: 88d1513c-59f2-4768-b028-772e27d0d985
+    alterId: 0
+    cipher: auto
+    tls: false
+    udp: true
+  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 04"
+    server: console.03.aliyun.aq.kunlunaqs.com
+    port: 45910
+    type: ss
+    cipher: aes-128-gcm
+    password: 3fb1d360ec0c4c7a5054
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 4be5dcc8d73c771e331b.microsoft.com
+    udp: true
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 01"
     password: a0f7a422-7867-469c-946b-190d8fbc2a5d
     port: 1531
@@ -6442,26 +6340,27 @@ proxies:
     password: 1a17b19d-4896-4531-af79-6e91d8ef8228
     tfo: false
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 09"
-    server: console.03.aliyun.aq.kunlunaqs.com
-    port: 45917
-    type: ss
-    cipher: aes-128-gcm
-    password: f4cd0a554e9d0558c581
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 4be5dcc8d73c771e331b.microsoft.com
+    server: haa.dashuai.cyou
+    port: 45054
+    type: vmess
+    uuid: a6944d98-38eb-4477-9dbd-7858c20b5698
+    alterId: 0
+    cipher: auto
+    tls: false
     udp: true
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 10"
-    server: qh62onjn.slashdevslashnetslashtun.net
-    port: 16015
-    type: ss
-    cipher: aes-256-gcm
-    password: Z4X6SHPOMSRSGHXA
+    server: 18.142.10.85
+    port: 36925
+    type: vless
+    uuid: a4d21171-29f4-4f62-f857-026921a26cc8
+    tls: false
+    network: ws
+    ws-opts:
+      path: /bing
     udp: true
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 11"
-    server: 91.192.81.154
-    port: 2053
+    server: 43.156.181.203
+    port: 443
     type: vless
     uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
     tls: true
@@ -6473,53 +6372,64 @@ proxies:
     udp: true
     servername: steep.skyfigure.top
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 12"
-    server: qh62onjn.slashdevslashnetslashtun.net
-    port: 16003
-    type: ss
-    cipher: aes-256-gcm
-    password: T06A73DK5SB0HXM1
-    udp: true
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 13"
-    server: flyxjp.flylink.cyou
-    port: 10087
+    server: 194.36.179.17
+    port: 2053
     type: vless
-    uuid: 50ccead7-d0ee-44ec-9bb1-bf85796a4b87
+    uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
     tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: o0qeFNqPD24m-OTwXs_Bs7_FNcR-caK7lNP1-zcUIho
-      short-id: d31616e2
-    client-fingerprint: chrome
-    network: tcp
+    network: ws
+    ws-opts:
+      path: "/Telegram\U0001F1E8\U0001F1F3 @pgkj666 /?ed=2560"
+      headers:
+        Host: steep.skyfigure.top
     udp: true
-    servername: www.amazon.com
-  - name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 01"
-    server: kr2.qiangdong.xyz
-    port: 1052
-    type: ss
-    cipher: aes-128-gcm
-    password: VXPipi29nxMO
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 182039459a34f64238143cd31ddebbc914362.taobao.com
-    udp: true
-  - name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 02"
-    server: 36.151.192.27
-    port: 4448
-    client-fingerprint: chrome
-    type: trojan
-    password: d0d08cddacc3190ea81b1b792e1b5fde
-    sni: www.baidu.com
+    servername: steep.skyfigure.top
+  - auth: dongtaiwang.com
+    name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 01"
+    password: dongtaiwang.com
+    port: 12904
+    server: 46.17.41.5
     skip-cert-verify: true
-  - name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 03"
-    server: haa.dashuai.cyou
-    port: 45076
-    type: vmess
-    uuid: 03e3dac4-db99-4d1b-a378-c65f663944b1
-    alterId: 0
-    cipher: auto
+    sni: apple.com
+    type: hysteria2
+    client-fingerprint: chrome
+  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 02"
+    network: ws
+    port: 80
+    server: 185.174.138.6
+    skip-cert-verify: false
     tls: false
+    type: vless
+    udp: true
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    ws-opts:
+      headers:
+        Host: reedfree8mahsang2.redorg.ir
+      path: '/Channel id: @ShadowProxy66/?ed=2560'
+    client-fingerprint: chrome
+    servername: reedfree8mahsang2.redorg.ir
+  - fast-open: true
+    name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 03"
+    password: dongtaiwang.com
+    port: 50850
+    server: 45.129.2.108
+    skip-cert-verify: true
+    sni: www.bing.com
+    type: hysteria2
+    client-fingerprint: chrome
+  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 04"
+    server: 176.32.35.226
+    port: 62003
+    type: hysteria
+    auth_str: dongtaiwang.com
+    auth-str: dongtaiwang.com
+    up: 100
+    down: 100
+    protocol: udp
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
     udp: true
   - name: "\U0001F1E8\U0001F1FF 机场推荐:dafei.de 捷克 01"
     network: ws
@@ -6556,31 +6466,6 @@ proxies:
     server: 62.133.63.212
     type: ss
     client-fingerprint: chrome
-  - name: "\U0001F1F9\U0001F1F7 机场推荐:dafei.de 土耳其 02"
-    server: console.03.aliyun.aq.kunlunaqs.com
-    port: 45926
-    type: ss
-    cipher: aes-128-gcm
-    password: 7452c550383bf60ac9d3
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 4be5dcc8d73c771e331b.microsoft.com
-    udp: true
-  - type: ss
-    server: beesyar.org
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: 1RWwXhwfAB5gAEozU4G2Pg
-    name: "\U0001F1EE\U0001F1F7 机场推荐:dafei.de 伊朗 01"
-  - name: "\U0001F1EE\U0001F1E9 机场推荐:dafei.de 印尼 01"
-    type: vmess
-    server: dgyt.xinglian.site
-    port: 45296
-    cipher: auto
-    uuid: 3bb7e826-6bc8-43ec-a22b-c65d8f30c4e5
-    alterId: 0
-    tls: false
   - name: "\U0001F1E8\U0001F1F3 机场推荐:dafei.de 台湾 01"
     server: 185.189.160.98
     port: 64759
@@ -6589,67 +6474,92 @@ proxies:
     cipher: aes-256-cfb
     password: qwerREWQ@@
     tfo: false
-  - name: "\U0001F1EA\U0001F1F8 机场推荐:dafei.de 西班牙 01"
-    type: ss
-    server: uk.opensocks.site
-    port: 8388
-    cipher: chacha20-ietf-poly1305
-    password: MjJhY
-  - name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 01"
+  - name: "\U0001F1E8\U0001F1F3 机场推荐:dafei.de 台湾 02"
     server: haa.dashuai.cyou
-    port: 45074
+    port: 45078
     type: vmess
     uuid: a6944d98-38eb-4477-9dbd-7858c20b5698
     alterId: 0
     cipher: auto
     tls: false
     udp: true
-  - name: "\U0001F1E7\U0001F1F7 机场推荐:dafei.de 巴西 01"
-    server: console.03.aliyun.aq.kunlunaqs.com
-    port: 45589
+  - name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 01"
+    server: 36.151.192.27
+    port: 4448
+    client-fingerprint: chrome
+    type: trojan
+    password: d0d08cddacc3190ea81b1b792e1b5fde
+    sni: www.baidu.com
+    skip-cert-verify: true
+  - name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 02"
+    server: console.02.aliyun.aq.kunlunaqs.com
+    port: 45921
     type: ss
-    cipher: chacha20-ietf-poly1305
-    password: e3d6f327d91656f89f07
+    cipher: aes-128-gcm
+    password: d7577ca6729babe0790f
     plugin: obfs
     plugin-opts:
       mode: http
       host: 4be5dcc8d73c771e331b.microsoft.com
     udp: true
-  - name: "\U0001F1E6\U0001F1EA 机场推荐:dafei.de 阿联酋 01"
-    server: sg.xn--mes91t7ofgnw.com
-    port: 20254
-    type: hysteria2
-    password: f18281b8-05c8-4eed-81b4-403d36b28741
-    auth: f18281b8-05c8-4eed-81b4-403d36b28741
-    skip-cert-verify: false
+  - name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 03"
+    server: 13.124.67.0
+    port: 38531
+    type: vless
+    uuid: 839dc192-9840-4516-9eb5-22264d6da862
+    tls: false
+    network: ws
+    ws-opts:
+      path: /bing
     udp: true
-    sni: sg.xn--mes91t7ofgnw.com
-  - name: "\U0001F1E6\U0001F1EA 机场推荐:dafei.de 阿联酋 02"
-    server: zz.xn--2vxn29amga.com
-    port: 8094
+  - name: "\U0001F1EA\U0001F1F8 机场推荐:dafei.de 西班牙 01"
+    type: ss
+    server: uk.opensocks.site
+    port: 8388
+    cipher: chacha20-ietf-poly1305
+    password: MjJhY
+  - name: "\U0001F1E6\U0001F1EA 机场推荐:dafei.de 阿联酋 01"
+    server: zz.xn--mes91t7ofgnw.com
+    port: 8084
     type: ss
     cipher: 2022-blake3-aes-128-gcm
-    password: 'ODI0ZTkxZDkxM2E0Y2UwMQ==:Yjg2NmQwM2EtNGY1OC00Yw=='
+    password: 'NTkxZDRjNjQ1YTNjOGU3ZQ==:ZDZmMmRkOTUtOWRkNS00ZQ=='
     udp: true
-  - name: "\U0001F1E6\U0001F1EA 机场推荐:dafei.de 阿联酋 03"
-    server: uk.xn--mes91t7ofgnw.com
-    port: 20214
+  - name: "\U0001F1E6\U0001F1EA 机场推荐:dafei.de 阿联酋 02"
+    server: sg.xn--2vxn29amga.com
+    port: 21115
+    type: hysteria2
+    password: ffd51f98-6553-43fe-b051-b86905d678f9
+    auth: ffd51f98-6553-43fe-b051-b86905d678f9
+    skip-cert-verify: false
+    udp: true
+    sni: sg.xn--2vxn29amga.com
+  - name: "\U0001F1E6\U0001F1FA 机场推荐:dafei.de 澳大利亚 01"
+    server: haa.dashuai.cyou
+    port: 45062
+    type: vmess
+    uuid: 88d1513c-59f2-4768-b028-772e27d0d985
+    alterId: 0
+    cipher: auto
+    tls: false
+    udp: true
+  - name: "\U0001F1FA\U0001F1E6 机场推荐:dafei.de 乌克兰 01"
+    server: jp.xn--mes91t7ofgnw.com
+    port: 20276
     type: hysteria2
     password: 20688ae5-c727-4ce9-92dd-d9b3fe80b054
     auth: 20688ae5-c727-4ce9-92dd-d9b3fe80b054
     skip-cert-verify: false
     udp: true
-    sni: uk.xn--mes91t7ofgnw.com
-  - name: "\U0001F1F9\U0001F1ED 机场推荐:dafei.de 泰国 01"
-    server: console.03.aliyun.aq.kunlunaqs.com
-    port: 45925
-    type: ss
-    cipher: aes-128-gcm
-    password: 1a402babc02465f45bea
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 4be5dcc8d73c771e331b.microsoft.com
+    sni: jp.xn--mes91t7ofgnw.com
+  - name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 01"
+    server: haa.dashuai.cyou
+    port: 45074
+    type: vmess
+    uuid: 9e600bb2-5e2b-435b-a9a7-a35e8d0cd0d9
+    alterId: 0
+    cipher: auto
+    tls: false
     udp: true
 proxy-groups:
   - name: "\U0001F680 节点选择"
