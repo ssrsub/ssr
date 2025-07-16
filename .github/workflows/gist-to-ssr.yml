@@ -2,8 +2,8 @@ name: Push Gist to SSR Repo
 
 on:
   schedule:
-    - cron: '0 * * * *'  # 每小时同步
-  workflow_dispatch:      # 支持手动触发
+    - cron: '0 0,12 * * *'  # 每天北京时间 08:00 和 20:00 执行
+  workflow_dispatch:        # 支持手动触发
 
 jobs:
   push-to-ssr-repo:
