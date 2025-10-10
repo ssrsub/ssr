@@ -10,14 +10,9 @@ proxies:
     tls: false
     tfo: false
     skip-cert-verify: false
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 02"
-    type: ss
-    server: 103.103.245.158
-    port: 443
+  - cipher: aes-256-gcm
+    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 02"
     password: ccf426f1fe78
-    tfo: false
-    cipher: aes-256-gcm
-    client-fingerprint: chrome
     plugin: v2ray-plugin
     plugin-opts:
       host: newroot2v1.dsjsapp.com
@@ -26,6 +21,11 @@ proxies:
       path: /zksuapgx
       skip-cert-verify: false
       tls: true
+    port: 443
+    server: 103.103.245.158
+    tfo: false
+    type: ss
+    client-fingerprint: chrome
   - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 03"
     server: 60.84.23.102
     port: 443
@@ -79,38 +79,40 @@ proxies:
       path: /arki?ed=2048
     client-fingerprint: chrome
   - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 08"
-    type: http
-    server: 47.76.175.67
-    port: 10862
     password: '123'
+    port: 10862
+    server: 47.76.175.67
+    type: http
     username: '123'
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 09"
-    type: vmess
-    network: http
-    uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
-    server: 47.242.90.210
-    port: 31212
-    skip-cert-verify: false
-    tls: false
-    udp: true
-    alterId: 0
+    client-fingerprint: chrome
+  - alterId: 0
     cipher: auto
     http-opts:
       method: GET
       path:
         - /
+    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 09"
+    network: http
+    port: 31212
+    server: 47.242.90.210
+    tls: false
+    type: vmess
+    uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
+    client-fingerprint: chrome
   - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 10"
-    type: http
-    server: 172.93.165.193
-    port: 36855
     password: 76nlxJLO35
-    username: xZedCGy2A5
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 11"
+    port: 36855
+    server: 172.93.165.193
     type: http
-    server: 43.252.229.243
-    port: 3000
+    username: xZedCGy2A5
+    client-fingerprint: chrome
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 11"
     password: wanghui1
+    port: 3000
+    server: 43.252.229.243
+    type: http
     username: wanghui1
+    client-fingerprint: chrome
   - client-fingerprint: chrome
     name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 12"
     port: 8080
@@ -125,77 +127,6 @@ proxies:
     uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
     network: tcp
     servername: yandex.com
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 13"
-    type: vless
-    network: tcp
-    uuid: 52aae58a-1d54-45a4-9d05-c36d16a6dd12
-    server: 143.14.189.181
-    port: 443
-    security: reality
-    tls: true
-    udp: false
-    ws-opts: {}
-    reality-opts:
-      public-key: Q0aLm5f1x8Sh0jWnBWneusXUWeKTw9d8AcP4oEIkgwc
-      short-id: '86'
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    fp: chrome
-    pbk: Q0aLm5f1x8Sh0jWnBWneusXUWeKTw9d8AcP4oEIkgwc
-    sid: '86'
-    servername: icloud.com
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 14"
-    type: vmess
-    network: none
-    uuid: 06e10e0b-57ae-48db-a37a-f2fd207e3b11
-    server: 47.243.245.143
-    port: 11455
-    skip-cert-verify: true
-    tls: false
-    alterId: 0
-    cipher: auto
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 15"
-    type: vmess
-    network: http
-    uuid: 084928cf-ed55-42e8-b686-b8e271dfb0ce
-    server: 103.30.78.138
-    port: 35436
-    udp: true
-    alterId: 0
-    cipher: auto
-    http-opts:
-      path:
-        - /
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 16"
-    type: ss
-    server: 103.149.183.154
-    port: 8388
-    password: asd123456
-    cipher: chacha20-ietf
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 17"
-    type: ss
-    server: 103.149.182.191
-    port: 8388
-    password: asd123456
-    cipher: chacha20-ietf
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 18"
-    type: hysteria2
-    server: 156.226.173.59
-    port: 34237
-    password: 60824dd4-77f6-413e-89da-8325e259219f
-    skip-cert-verify: true
-    udp: true
-    sni: anycast.us.kg
-    auth: 60824dd4-77f6-413e-89da-8325e259219f
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 19"
-    type: hysteria2
-    server: 45.149.186.188
-    port: 34237
-    password: 60824dd4-77f6-413e-89da-8325e259219f
-    skip-cert-verify: true
-    udp: true
-    sni: anycast.us.kg
-    auth: 60824dd4-77f6-413e-89da-8325e259219f
   - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 01"
     server: 160.16.63.16
     port: 3271
@@ -237,78 +168,61 @@ proxies:
         Host: www.alibaba.com
     udp: true
   - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 05"
-    type: http
-    server: 47.79.91.19
-    port: 21897
     password: hMzd6764
-    username: kZXMC3Z1
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 06"
+    port: 21897
+    server: 47.79.91.19
     type: http
-    server: 47.79.148.189
-    port: 56977
-    password: DIp64gZ6
     username: kZXMC3Z1
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 07"
-    type: vless
-    network: tcp
-    uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
-    server: 147.45.49.17
+    client-fingerprint: chrome
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 06"
+    password: DIp64gZ6
+    port: 56977
+    server: 47.79.148.189
+    type: http
+    username: kZXMC3Z1
+    client-fingerprint: chrome
+  - client-fingerprint: chrome
+    name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 07"
     port: 8080
-    tls: true
-    udp: true
-    xudp: true
-    http-opts:
-      path:
-        - /
     reality-opts:
       public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
       short-id: 27cfa05000c23cc4
-    client-fingerprint: chrome
+    server: 147.45.49.17
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
+    network: tcp
     servername: yandex.com
   - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 08"
-    type: http
-    server: 47.79.94.28
-    port: 37469
     password: 6bRDEuy
-    username: kZXMC3Z1
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 09"
+    port: 37469
+    server: 47.79.94.28
     type: http
-    server: 47.79.41.4
-    port: 40262
-    password: gk2HOfA
     username: kZXMC3Z1
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 10"
-    type: http
-    server: 47.79.151.191
-    port: 48453
-    password: ka1roO
-    username: kZXMC3Z1
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 11"
-    type: http
-    server: 47.79.151.130
-    port: 53855
-    password: 9ixjDF
-    username: kZXMC3Z1
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 12"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 140.83.56.110
-    port: 56417
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17
-          (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443'
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
     client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 09"
+    password: gk2HOfA
+    port: 40262
+    server: 47.79.41.4
+    type: http
+    username: kZXMC3Z1
+    client-fingerprint: chrome
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 10"
+    password: ka1roO
+    port: 48453
+    server: 47.79.151.191
+    type: http
+    username: kZXMC3Z1
+    client-fingerprint: chrome
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 11"
+    password: 9ixjDF
+    port: 53855
+    server: 47.79.151.130
+    type: http
+    username: kZXMC3Z1
+    client-fingerprint: chrome
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 01"
     server: 153.121.51.29
     port: 5041
@@ -326,75 +240,19 @@ proxies:
     sni: www.nintendogames.net
     skip-cert-verify: false
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 03"
-    type: http
-    server: 101.32.245.58
-    port: 52871
     password: yunxi8848
+    port: 52871
+    server: 101.32.245.58
+    type: http
     username: yunxi8848
+    client-fingerprint: chrome
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 04"
-    type: http
-    server: 47.237.20.174
-    port: 45235
     password: tXA14Qlh
-    username: kZXMC3Z1
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 05"
+    port: 45235
+    server: 47.237.20.174
     type: http
-    server: 164.152.167.94
-    port: 52302
-    password: 1nLWx0UVnJ
-    username: 7waHp6NRjR
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 06"
-    type: ss
-    server: 5.44.249.42
-    port: 2377
-    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-    udp: true
-    cipher: chacha20-ietf-poly1305
-    plugin: obfs
-    plugin-opts:
-      host: '(TG @WangCai2)4fa101a:48723'
-      mode: tls
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 07"
-    type: trojan
-    network: ws
-    server: 92.243.75.49
-    port: 2087
-    password: wb6368
-    skip-cert-verify: false
-    udp: true
-    tfo: true
-    sni: hsdgbuys.pages.dev
-    ws-opts:
-      headers:
-        Host: hsdgbuys.pages.dev
-      path: /
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 08"
-    type: hysteria2
-    server: 129.150.40.3
-    port: 23587
-    password: 60824dd4-77f6-413e-89da-8325e259219f
-    skip-cert-verify: true
-    udp: true
-    sni: anycast.us.kg
-    auth: 60824dd4-77f6-413e-89da-8325e259219f
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 09"
-    type: hysteria2
-    server: 168.138.179.174
-    port: 34512
-    password: 60824dd4-77f6-413e-89da-8325e259219f
-    skip-cert-verify: true
-    udp: true
-    sni: anycast.us.kg
-    auth: 60824dd4-77f6-413e-89da-8325e259219f
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 10"
-    type: hysteria2
-    server: 178.128.55.224
-    port: 34512
-    password: 60824dd4-77f6-413e-89da-8325e259219f
-    skip-cert-verify: true
-    udp: true
-    sni: anycast.us.kg
-    auth: 60824dd4-77f6-413e-89da-8325e259219f
+    username: kZXMC3Z1
+    client-fingerprint: chrome
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 01"
     server: 23.227.194.19
     port: 443
@@ -471,6 +329,20 @@ proxies:
       path: /
     udp: true
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 08"
+    server: 5.10.215.43
+    port: 2096
+    type: vless
+    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /snippets&freecodes@节点狂魔/
+      headers:
+        Host: kejiland.freewarp.eu.org
+    udp: true
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 09"
     server: 212.192.15.176
     port: 80
     type: hysteria2
@@ -482,7 +354,7 @@ proxies:
     obfs: salamander
     obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 09"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 10"
     server: 198.177.57.61
     port: 2096
     type: vless
@@ -495,7 +367,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 10"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 11"
     server: 89.116.46.61
     port: 2096
     type: vless
@@ -508,7 +380,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 11"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 12"
     server: 74c5a9-20-2.9966661.xyz
     port: 3000
     type: hysteria2
@@ -517,7 +389,7 @@ proxies:
     sni: 74c5a9-20.9966661.xyz
     skip-cert-verify: false
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 12"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 13"
     server: 6a471e-20-4.9966661.xyz
     port: 3000
     type: hysteria2
@@ -526,27 +398,21 @@ proxies:
     sni: 6a471e-20.9966661.xyz
     skip-cert-verify: false
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 13"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 14"
     server: 192.200.160.43
     port: 2096
+    type: vless
+    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
     tls: true
-    udp: true
-    xudp: true
+    client-fingerprint: chrome
+    network: ws
     ws-opts:
+      path: /snippets&freecodes@节点狂魔/
       headers:
         Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7
-          (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
+    udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 14"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 15"
     server: 192.200.160.61
     port: 2096
     type: vless
@@ -559,7 +425,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 15"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 16"
     server: 00fd98-20.9966661.xyz
     port: 3000
     type: hysteria2
@@ -568,7 +434,34 @@ proxies:
     sni: 00fd98-20.9966661.xyz
     skip-cert-verify: false
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 16"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 17"
+    server: 185.207.196.44
+    port: 2096
+    type: vless
+    uuid: 12345678-1234-1234-1234-123456789123
+    tls: true
+    network: ws
+    ws-opts:
+      path: /snippets
+      headers:
+        Host: kejiland.freewarp.eu.org
+    udp: true
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 18"
+    server: 154.197.108.32
+    port: 2096
+    type: vless
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /snippets
+      headers:
+        Host: kejiland.freewarp.eu.org
+    udp: true
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 19"
     server: f0ba91-20-3.9966661.xyz
     port: 3000
     type: hysteria2
@@ -577,25 +470,35 @@ proxies:
     sni: f0ba91-20.9966661.xyz
     skip-cert-verify: false
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 17"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 159.242.242.43
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 20"
+    server: 193.227.99.43
     port: 2096
+    type: vless
+    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
     tls: true
-    udp: true
-    xudp: true
+    client-fingerprint: chrome
+    network: ws
     ws-opts:
+      path: /snippets&freecodes@节点狂魔/
       headers:
         Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7
-          (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
-      path: /snippets
-    client-fingerprint: chrome
+    udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 18"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 21"
+    server: 159.242.242.43
+    port: 2096
+    type: vless
+    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /snippets
+      headers:
+        Host: kejiland.freewarp.eu.org
+    udp: true
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 22"
     server: 57bf2d-20.9966661.xyz
     port: 3000
     type: hysteria2
@@ -604,7 +507,7 @@ proxies:
     sni: 57bf2d-20.9966661.xyz
     skip-cert-verify: false
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 19"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 23"
     server: 212.192.15.176
     port: 31008
     type: hysteria2
@@ -616,7 +519,7 @@ proxies:
     obfs: salamander
     obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 20"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 24"
     server: 209.94.90.61
     port: 2096
     type: vless
@@ -629,7 +532,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 21"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 25"
     server: 1036a5-330-co-2.9966661.xyz
     port: 3000
     type: hysteria2
@@ -638,7 +541,7 @@ proxies:
     sni: 1036a5-330-co.9966661.xyz
     skip-cert-verify: false
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 22"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 26"
     server: 92.243.75.61
     port: 2096
     type: vless
@@ -651,25 +554,21 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 23"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 27"
     server: 141.193.27.32
     port: 2096
+    type: vless
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
     tls: true
-    udp: true
-    xudp: true
+    client-fingerprint: chrome
+    network: ws
     ws-opts:
+      path: /snippets
       headers:
         Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.77 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
+    udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 24"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 28"
     server: 156.243.246.61
     port: 2096
     type: vless
@@ -682,27 +581,48 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 25"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 103.116.7.43
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 29"
+    server: 94.247.142.44
     port: 2096
+    type: vless
+    uuid: 12345678-1234-1234-1234-123456789123
     tls: true
-    udp: true
-    xudp: true
+    client-fingerprint: chrome
+    network: ws
     ws-opts:
+      path: /snippets&freecodes@节点狂魔/
       headers:
         Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
-          (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
+    udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 26"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 30"
+    server: 154.219.5.43
+    port: 2096
+    type: vless
+    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
+    tls: true
+    network: ws
+    ws-opts:
+      path: /snippets&freecodes @节点狂魔 /
+      headers:
+        Host: kejiland.freewarp.eu.org
+    udp: true
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 31"
+    server: 103.116.7.43
+    port: 2096
+    type: vless
+    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /snippets&freecodes@节点狂魔/
+      headers:
+        Host: kejiland.freewarp.eu.org
+    udp: true
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 32"
     server: ce044a-330-2.9966661.xyz
     port: 3000
     type: hysteria2
@@ -711,37 +631,33 @@ proxies:
     sni: ce044a-330.9966661.xyz
     skip-cert-verify: false
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 27"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 33"
     server: 160.153.137.32
     port: 2096
-    skip-cert-verify: true
+    type: vless
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
     tls: true
-    udp: true
+    network: ws
     ws-opts:
+      path: /snippets
       headers:
         Host: kejiland.freewarp.eu.org
-      path: /snippets
+    udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 28"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 34"
     server: 167.68.4.44
     port: 2096
-    skip-cert-verify: true
+    type: vless
+    uuid: 12345678-1234-1234-1234-123456789123
     tls: true
-    udp: true
+    network: ws
     ws-opts:
+      path: /snippets&freecodes @节点狂魔 /
       headers:
         Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
+    udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 29"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 35"
     server: 195.13.44.61
     port: 2096
     type: vless
@@ -754,7 +670,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 30"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 36"
     server: 5f6a56-20-5.9966661.xyz
     port: 3000
     type: hysteria2
@@ -763,7 +679,7 @@ proxies:
     sni: 5f6a56-20.9966661.xyz
     skip-cert-verify: false
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 31"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 37"
     server: d88df6-20-3.9966661.xyz
     port: 3000
     type: hysteria2
@@ -772,7 +688,7 @@ proxies:
     sni: d88df6-20.9966661.xyz
     skip-cert-verify: false
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 32"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 38"
     server: 167.68.42.32
     port: 2096
     type: vless
@@ -786,7 +702,7 @@ proxies:
         Host: kejiland.freewarp.eu.org
     udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 33"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 39"
     server: 216.24.57.32
     port: 2096
     type: vless
@@ -800,7 +716,7 @@ proxies:
         Host: kejiland.freewarp.eu.org
     udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 34"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 40"
     server: fd0017-20-2.9966661.xyz
     port: 3000
     type: hysteria2
@@ -809,7 +725,20 @@ proxies:
     sni: fd0017-20.9966661.xyz
     skip-cert-verify: false
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 35"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 41"
+    server: 141.11.203.32
+    port: 2096
+    type: vless
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    tls: true
+    network: ws
+    ws-opts:
+      path: /snippets
+      headers:
+        Host: kejiland.freewarp.eu.org
+    udp: true
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 42"
     server: 03e37e-330-co-5.9966661.xyz
     port: 3000
     type: hysteria2
@@ -818,7 +747,7 @@ proxies:
     sni: 03e37e-330-co.9966661.xyz
     skip-cert-verify: false
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 36"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 43"
     server: 5.10.245.43
     port: 2096
     type: vless
@@ -831,7 +760,7 @@ proxies:
         Host: kejiland.freewarp.eu.org
     udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 37"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 44"
     server: 37.153.171.43
     port: 2096
     type: vless
@@ -845,7 +774,7 @@ proxies:
         Host: kejiland.freewarp.eu.org
     udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 38"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 45"
     server: 104.21.42.42
     port: 80
     type: vless
@@ -858,7 +787,7 @@ proxies:
       headers:
         Host: aio.zipzap.biz.id
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 39"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 46"
     server: 190.93.247.61
     port: 2096
     type: vless
@@ -871,46 +800,49 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 40"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 47"
     server: 199.181.197.43
     port: 2096
+    type: vless
+    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
     tls: true
-    udp: true
-    xudp: true
+    client-fingerprint: chrome
+    network: ws
     ws-opts:
+      path: /snippets&freecodes@节点狂魔/
       headers:
         Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/51.0.2704.106 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
+    udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 41"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 48"
     server: 161.145.150.32
     port: 2096
+    type: vless
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
     tls: true
-    udp: true
-    xudp: true
+    client-fingerprint: chrome
+    network: ws
     ws-opts:
+      path: /snippets
       headers:
         Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile
-          Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
+    udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 42"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 49"
+    server: 185.7.240.44
+    port: 2096
+    type: vless
+    uuid: 12345678-1234-1234-1234-123456789123
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /snippets&freecodes@节点狂魔/
+      headers:
+        Host: kejiland.freewarp.eu.org
+    udp: true
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 50"
     server: 74.49.215.61
     port: 2096
     type: vless
@@ -923,7 +855,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 43"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 51"
     server: 185.207.199.61
     port: 2096
     type: vless
@@ -936,7 +868,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 44"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 52"
     server: 104.238.71.61
     port: 2096
     type: vless
@@ -949,7 +881,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 45"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 53"
     server: 185.162.231.61
     port: 2096
     type: vless
@@ -962,7 +894,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 46"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 54"
     server: 164.38.155.61
     port: 2096
     type: vless
@@ -975,7 +907,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 47"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 55"
     server: 185.149.135.43
     port: 2096
     type: vless
@@ -988,7 +920,33 @@ proxies:
         Host: kejiland.freewarp.eu.org
     udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 48"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 56"
+    server: 94.140.0.32
+    port: 2096
+    type: vless
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    tls: true
+    network: ws
+    ws-opts:
+      path: /snippets
+      headers:
+        Host: kejiland.freewarp.eu.org
+    udp: true
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 57"
+    server: 45.196.29.44
+    port: 2096
+    type: vless
+    uuid: 12345678-1234-1234-1234-123456789123
+    tls: true
+    network: ws
+    ws-opts:
+      path: /snippets&freecodes @节点狂魔 /
+      headers:
+        Host: kejiland.freewarp.eu.org
+    udp: true
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 58"
     server: 14.102.228.43
     port: 2096
     type: vless
@@ -1002,7 +960,34 @@ proxies:
         Host: kejiland.freewarp.eu.org
     udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 49"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 59"
+    server: 92.53.189.43
+    port: 2096
+    type: vless
+    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /snippets&freecodes@节点狂魔/
+      headers:
+        Host: kejiland.freewarp.eu.org
+    udp: true
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 60"
+    server: 195.85.59.32
+    port: 2096
+    type: vless
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    tls: true
+    network: ws
+    ws-opts:
+      path: /snippets
+      headers:
+        Host: kejiland.freewarp.eu.org
+    udp: true
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 61"
     server: 140.99.233.61
     port: 2096
     type: vless
@@ -1015,7 +1000,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 50"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 62"
     server: 88.216.69.61
     port: 2096
     type: vless
@@ -1028,7 +1013,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 51"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 63"
     server: us1-3.9966662.xyz
     port: 20133
     type: vless
@@ -1042,21 +1027,20 @@ proxies:
     network: tcp
     udp: true
     servername: www.cloudflare.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 52"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 64"
     server: 198.71.232.32
     port: 2096
-    skip-cert-verify: true
+    type: vless
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
     tls: true
-    udp: true
+    network: ws
     ws-opts:
+      path: /snippets
       headers:
         Host: kejiland.freewarp.eu.org
-      path: /snippets
+    udp: true
     servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 53"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 65"
     server: 114.129.43.61
     port: 2096
     type: vless
@@ -1069,7 +1053,35 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 54"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 66"
+    server: 104.239.72.43
+    port: 2096
+    type: vless
+    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /snippets&freecodes@节点狂魔/
+      headers:
+        Host: kejiland.freewarp.eu.org
+    udp: true
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 67"
+    server: 45.80.110.44
+    port: 2096
+    type: vless
+    uuid: 12345678-1234-1234-1234-123456789123
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /snippets&freecodes
+      headers:
+        Host: kejiland.freewarp.eu.org
+    udp: true
+    servername: kejiland.freewarp.eu.org
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 68"
     server: hsmg.huasuan666.top
     port: 22151
     type: hysteria2
@@ -1078,7 +1090,7 @@ proxies:
     sni: hsmg.huasuan666.top
     skip-cert-verify: true
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 55"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 69"
     server: 185.7.240.61
     port: 2096
     type: vless
@@ -1091,7 +1103,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 56"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 70"
     server: 193.9.49.61
     port: 2096
     type: vless
@@ -1104,7 +1116,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 57"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 71"
     server: 204.93.210.61
     port: 2096
     type: vless
@@ -1118,7 +1130,7 @@ proxies:
         Host: vless.hubp.de
     udp: true
     servername: vless.hubp.de
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 58"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 72"
     server: 104.129.166.61
     port: 2096
     type: vless
@@ -1132,7 +1144,7 @@ proxies:
     udp: true
     servername: vless.hubp.de
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 59"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 73"
     network: ws
     port: 443
     server: 172.66.45.24
@@ -1147,13 +1159,29 @@ proxies:
         Host: reAl-madrID9248.pagEs.dEv
       path: /
     servername: reAl-madrID9248.pagEs.dEv
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 60"
-    type: http
-    server: 154.26.192.123
-    port: 10988
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 74"
     password: gs4BXwT6SW
+    port: 10988
+    server: 154.26.192.123
+    type: http
     username: fQ67Dpe5dU
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 61"
+    client-fingerprint: chrome
+  - encryption: none
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 75"
+    network: ws
+    port: 443
+    server: 172.67.203.89
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    uuid: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+    ws-opts:
+      headers:
+        Host: backus1.dh03.shop
+      path: /higate
+    client-fingerprint: chrome
+    servername: backus1.dh03.shop
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 76"
     password: 9772ecf2-6732-4bfb-a8b1-f48af577c76c
     port: 63979
     server: 113.192.61.19
@@ -1163,7 +1191,7 @@ proxies:
     client-fingerprint: chrome
   - alterId: 0
     cipher: auto
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 62"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 77"
     network: ws
     port: 443
     server: 172.67.209.79
@@ -1180,7 +1208,7 @@ proxies:
   - alpn:
       - h3
     client-fingerprint: random
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 63"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 78"
     network: ws
     port: 2083
     server: 162.159.142.252
@@ -1194,7 +1222,7 @@ proxies:
         Host: fei.634676.xyz
       path: /?ed=2560
     servername: fei.634676.xyz
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 64"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 79"
     password: c232f411-96b5-4b07-b2f7-66a434725ffb
     port: 23891
     server: 108.165.213.197
@@ -1203,7 +1231,7 @@ proxies:
     type: hysteria2
     client-fingerprint: chrome
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 65"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 80"
     network: ws
     port: 443
     server: 104.21.36.57
@@ -1222,7 +1250,7 @@ proxies:
       path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
     servername: mirror.fullmargintraders.com
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 66"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 81"
     network: ws
     port: 8443
     server: 104.21.3.219
@@ -1242,7 +1270,7 @@ proxies:
     servername: ovhwuxian.pai50288.uk
   - alpn:
       - http/1.1
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 67"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 82"
     network: ws
     port: 2087
     server: 172.66.45.4
@@ -1256,667 +1284,14 @@ proxies:
       path: /Z0R9Nb1Hgd7OEULT?ed=2560fp=randomized
     client-fingerprint: chrome
     servername: WeekNDJOoN.PAgES.DEv
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 68"
-    type: hysteria
-    server: 208.87.243.151
-    port: 38845
-    skip-cert-verify: true
-    udp: true
-    sni: www.bing.com
-    alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    auth_str: dongtaiwang.com
-    down: 100
-    protocol: udp
-    up: 100
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 69"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 103.133.1.32
-    port: 2096
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 70"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 216.24.57.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/66.0.3359.139 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 71"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 209.94.90.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.77 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 72"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 139.64.235.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/46.0.2490.71 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 73"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 166.62.115.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 74"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 160.153.136.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 75"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 155.46.167.43
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 76"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 192.169.221.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 77"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 198.71.188.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 78"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 108.165.216.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 79"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 103.116.7.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.77 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 80"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 45.159.217.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile
-          Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 81"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 209.46.30.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/67.0.3396.99 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 82"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 199.34.228.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/47.0.2526.111 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 83"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 159.246.55.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 84"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 192.0.54.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/58.0.3029.110 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 85"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 192.200.160.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/68.0.3440.106 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 86"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 159.242.242.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/46.0.2490.80 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 87"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 167.68.42.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/60.0.3112.90 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 88"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 159.246.55.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.102 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 89"
-    type: hysteria
-    server: 208.87.243.187
-    port: 15823
-    skip-cert-verify: true
-    sni: apple.com
-    alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    auth_str: dongtaiwang.com
-    down: '100'
-    up: '100'
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 90"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 130.250.137.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.0; SM-G610M) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 91"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 198.62.62.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 92"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 170.114.46.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 93"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 142.171.192.140
-    port: 10001
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/59.0.3071.115 Safari/537.36
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560'
-    client-fingerprint: chrome
-    encryption: none
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 94"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 199.181.197.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    tfo: false
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    encryption: none
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 95"
-    type: vless
-    network: raw
-    uuid: 9a54bad8-538d-4744-b7bc-640629840490
-    server: 216.133.149.235
-    port: 30227
-    skip-cert-verify: false
-    security: reality
-    tls: true
-    udp: false
-    ws-opts: {}
-    reality-opts:
-      public-key: y0QO-mD8hrDE3rV7C8BX-gQiCANoasGKQlq2ReIVXkI
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    fp: chrome
-    pbk: y0QO-mD8hrDE3rV7C8BX-gQiCANoasGKQlq2ReIVXkI
-    servername: aws.amazon.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 96"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 209.46.30.44
-    port: 2096
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 97"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 155.248.214.92
-    port: 52580
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/49.0.2623.112 Safari/537.36
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443'
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 98"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 135.84.76.43
-    port: 2096
-    tls: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    encryption: none
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 99"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 156.225.72.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
-          (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 100"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 166.62.113.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.0; SM-G610M) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 101"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 199.181.197.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/53.0.2785.143 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 102"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 198.177.57.43
-    port: 2096
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 103"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 205.233.181.32
-    port: 2096
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 104"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 104.254.140.44
-    port: 2096
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 105"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 155.46.213.44
-    port: 2096
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes@节点狂魔/?ed=2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 106"
-    type: vless
-    network: ws
-    uuid: 88538870-5626-4cd7-9cda-1e0b6253c9ce
-    server: 170.114.46.175
-    port: 443
-    tls: true
-    udp: true
-    alpn:
-      - h2
-      - http/1.1
-    ws-opts:
-      headers:
-        Host: nareni.rtxiran.info
-      path: /
-    client-fingerprint: chrome
-    servername: nareni.rtxiran.info
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 107"
-    type: hysteria2
-    server: 192.3.60.176
-    port: 41951
-    password: c6bccea3-2f03-4f3e-80f4-d6757f1f3f46
-    skip-cert-verify: true
-    sni: www.bing.com
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 01"
-    type: ss
     server: 103.186.154.182
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 02"
     server: 103.186.154.239
     port: 38388
@@ -1949,19 +1324,19 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 06"
-    type: ss
     server: 103.186.155.26
     port: 38388
+    type: ss
+    cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 07"
-    type: ss
     server: 103.186.154.43
     port: 38388
+    type: ss
+    cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 08"
     server: 103.186.154.76
     port: 38388
@@ -2025,13 +1400,12 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 16"
-    type: ss
     server: 103.186.154.42
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
+    type: ss
     cipher: aes-256-cfb
-    client-fingerprint: chrome
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 17"
     server: 103.186.154.189
     port: 38388
@@ -2041,12 +1415,12 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 18"
-    type: ss
     server: 103.186.155.65
     port: 38388
+    type: ss
+    cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 19"
     server: 103.186.154.167
     port: 38388
@@ -2086,12 +1460,13 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 24"
-    type: ss
     server: 103.186.154.9
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 25"
     server: 103.186.154.12
     port: 38388
@@ -2181,12 +1556,13 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 36"
-    type: ss
     server: 103.186.154.39
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 37"
     server: 103.186.154.40
     port: 38388
@@ -2292,12 +1668,13 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 50"
-    type: ss
     server: 103.186.154.65
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 51"
     server: 103.186.154.66
     port: 38388
@@ -2339,12 +1716,13 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 56"
-    type: ss
     server: 103.186.154.74
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 57"
     server: 103.186.154.77
     port: 38388
@@ -2634,11 +2012,13 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 93"
-    type: ss
     server: 103.186.154.223
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 94"
     server: 103.186.154.227
     port: 38388
@@ -2944,12 +2324,13 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 132"
-    type: ss
     server: 103.186.155.55
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 133"
     server: 103.186.155.60
     port: 38388
@@ -3191,11 +2572,13 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 163"
-    type: ss
     server: 103.186.155.137
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 164"
     server: 103.186.155.138
     port: 38388
@@ -3396,436 +2779,21 @@ proxies:
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 189"
-    type: ss
-    server: 103.186.154.11
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 190"
-    type: ss
-    server: 103.186.155.18
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 191"
-    type: ss
-    server: 103.186.155.145
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 192"
-    type: ss
-    server: 103.186.154.173
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 193"
-    type: ss
-    server: 103.186.154.215
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 194"
-    type: ss
-    server: 103.186.155.228
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 195"
-    type: ss
-    server: 103.186.155.103
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 196"
-    type: ss
-    server: 103.186.155.141
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 197"
-    type: ss
-    server: 103.186.155.2
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 198"
-    type: ss
-    server: 103.186.155.117
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 199"
-    type: ss
-    server: 103.186.155.153
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 200"
-    type: ss
-    server: 103.186.154.250
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 201"
-    type: ss
-    server: 103.186.154.214
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 202"
-    type: ss
-    server: 103.186.155.236
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 203"
-    type: ss
-    server: 103.186.154.244
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 204"
-    type: ss
-    server: 103.186.154.73
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 205"
-    type: ss
-    server: 103.186.155.122
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 206"
-    type: ss
-    server: 103.186.154.168
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 207"
-    type: ss
-    server: 103.186.155.33
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 208"
-    type: ss
-    server: 103.186.154.163
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 209"
-    type: ss
-    server: 103.186.155.235
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 210"
-    type: ss
-    server: 103.186.155.45
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 211"
-    type: ss
-    server: 103.186.155.240
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 212"
-    type: ss
-    server: 103.186.155.56
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 213"
-    type: ss
-    server: 103.186.155.183
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 214"
-    type: ss
-    server: 103.186.155.4
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 215"
-    type: ss
-    server: 103.186.154.205
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 216"
-    type: ss
-    server: 103.186.154.246
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 217"
-    type: ss
-    server: 103.186.154.75
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 218"
-    type: ss
-    server: 103.186.154.155
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 219"
-    type: ss
-    server: 103.186.154.47
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 220"
-    type: ss
-    server: 103.186.154.159
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 221"
-    type: ss
-    server: 103.186.154.208
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 222"
-    type: ss
-    server: 103.186.154.191
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 223"
-    type: ss
-    server: 103.186.155.133
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 224"
-    type: ss
-    server: 103.186.154.144
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 225"
-    type: ss
-    server: 103.186.155.230
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 226"
-    type: ss
-    server: 103.186.155.130
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1F8\U0001F1EE 机场推荐:dafei.de 斯洛文尼亚 01"
-    type: ss
-    server: 91.132.94.200
-    port: 989
+  - cipher: aes-256-cfb
+    name: "\U0001F1F2\U0001F1E9 机场推荐:dafei.de 摩尔多瓦 01"
     password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: "\U0001F1F8\U0001F1EE 机场推荐:dafei.de 斯洛文尼亚 02"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 92.53.189.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile
-          Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1EE 机场推荐:dafei.de 斯洛文尼亚 03"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 92.53.189.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/66.0.3359.181 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1EE 机场推荐:dafei.de 斯洛文尼亚 04"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 92.53.189.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1EE 机场推荐:dafei.de 斯洛文尼亚 05"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 92.53.190.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.0; SM-G570M) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1EE 机场推荐:dafei.de 斯洛文尼亚 06"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 92.60.74.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/55.0.2883.87 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1EE 机场推荐:dafei.de 斯洛文尼亚 07"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 92.53.188.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/69.0.3497.100 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1EE 机场推荐:dafei.de 斯洛文尼亚 08"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 92.53.190.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.110 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    encryption: none
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1EE 机场推荐:dafei.de 斯洛文尼亚 09"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 92.60.74.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1EE 机场推荐:dafei.de 斯洛文尼亚 10"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 92.53.191.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    tfo: false
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F2\U0001F1E9 机场推荐:dafei.de 摩尔多瓦 01"
-    type: ss
+    port: 989
     server: 185.153.197.5
-    port: 989
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: "\U0001F1F5\U0001F1FE 机场推荐:dafei.de 巴拉圭 01"
     type: ss
-    server: 38.165.233.93
-    port: 989
+    client-fingerprint: chrome
+  - cipher: aes-256-cfb
+    country: "\U0001F1FA\U0001F1F8 US"
+    name: "\U0001F1F5\U0001F1FE 机场推荐:dafei.de 巴拉圭 01"
     password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
+    port: 989
+    server: 38.165.233.93
+    type: ss
+    client-fingerprint: chrome
   - cipher: aes-256-cfb
     name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 01"
     password: f8f7aCzcPKbsF8p3
@@ -3843,26 +2811,6 @@ proxies:
     skip-cert-verify: true
     udp: true
   - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 03"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 94.247.142.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/70.0.3538.102 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 04"
     server: 104.128.190.65
     port: 443
     type: vless
@@ -3875,263 +2823,22 @@ proxies:
         Host: 01.91md.fun
     udp: true
     servername: 01.91md.fun
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 05"
-    type: vless
+  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 04"
     network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 104.239.72.43
     port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/36.0.1985.125 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 06"
-    type: vless
-    network: ws
-    uuid: 2456f90c-5183-476d-b069-16ae74ce120f
     server: 185.193.31.253
-    port: 2096
     skip-cert-verify: false
-    tls: true
-    udp: true
     tfo: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: 2456f90c-5183-476d-b069-16ae74ce120f
     ws-opts:
       headers:
         Host: fast01.0860852.xyz
-      path: /Telegram
+      path: "/Telegram\U0001F1E8\U0001F1F3"
+    client-fingerprint: chrome
     servername: fast01.0860852.xyz
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 07"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 185.170.166.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 08"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 185.162.228.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 09"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 109.176.239.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/56.0.2924.87 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 10"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 25.129.196.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/66.0.3359.117 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 11"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 77.75.199.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv)
-          AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0
-          Chrome/63.0.3239.111 Mobile Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 12"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 94.247.142.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    xudp: true
-    tfo: false
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like
-          Gecko) Chrome/26.0.1410.64 Safari/537.31
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 13"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 185.193.29.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 14"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 109.176.239.32
-    port: 2096
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 15"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 25.25.25.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.67 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 16"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 25.129.197.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/57.0.2987.133 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 17"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 154.197.121.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 18"
-    type: vless
-    network: ws
-    uuid: 01996549-6892-dbf0-0453-f700236936bd
-    server: 159.65.94.176
-    port: 8080
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443'
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 19"
-    type: vless
-    network: grpc
-    uuid: 769774c9-8eb7-4ee4-8093-d56c92ed9e69
-    server: 51.89.176.242
-    port: 3479
-    security: none
-    tls: false
-    udp: false
-    ws-opts: {}
-    grpc-opts:
-      grpc-service-name: >-
-        @Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
-    mode: gun
-    serviceName: >-
-      @Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
   - cipher: aes-256-cfb
     name: "\U0001F1EE\U0001F1F8 机场推荐:dafei.de 冰岛 01"
     password: f8f7aCzcPKbsF8p3
@@ -4140,504 +2847,61 @@ proxies:
     type: ss
     udp: true
     client-fingerprint: chrome
-  - name: "\U0001F1E7\U0001F1F7 机场推荐:dafei.de 巴西 01"
-    type: ss
-    server: 38.54.57.90
-    port: 989
+  - cipher: aes-256-cfb
+    country: "\U0001F1FA\U0001F1F8 US"
+    name: "\U0001F1E7\U0001F1F7 机场推荐:dafei.de 巴西 01"
     password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: "\U0001F1E7\U0001F1F7 机场推荐:dafei.de 巴西 02"
-    type: vless
-    network: tcp
-    uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
-    server: 147.45.116.72
-    port: 8080
-    tls: true
-    udp: true
-    xudp: true
-    reality-opts:
-      public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
-      short-id: 27cfa05000c23cc4
-    client-fingerprint: chrome
-    servername: yandex.com
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 01"
+    port: 989
+    server: 38.54.57.90
     type: ss
+    client-fingerprint: chrome
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 01"
     server: 51.15.23.63
     port: 989
-    password: f8f7aCzcPKbsF8p3
+    type: ss
     cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
   - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 02"
-    type: hysteria
     server: 51.159.226.1
     port: 49003
-    skip-cert-verify: true
-    udp: true
+    type: hysteria
+    auth_str: dongtaiwang.com
+    auth-str: dongtaiwang.com
+    up: 11
+    down: 55
+    protocol: udp
     sni: apple.com
+    skip-cert-verify: true
     alpn:
       - h3
-    auth-str: dongtaiwang.com
-    auth_str: dongtaiwang.com
-    down: '55'
-    protocol: udp
-    up: '11'
+    udp: true
   - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 03"
-    type: vless
     network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 185.207.196.44
     port: 2096
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    encryption: none
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 04"
-    type: hysteria2
-    server: 206.71.158.37
-    port: 36600
-    password: Yet-Another-Public-Config-1
-    skip-cert-verify: false
-    sni: YAPC-1.afshin.ir
-    obfs: salamander
-    obfs-password: Yet-Another-Public-Config-1
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 05"
-    type: hysteria2
-    server: 206.71.158.37
-    port: 35200
-    password: Yet-Another-Public-Config-1
-    skip-cert-verify: true
-    sni: YAPC-1.afshin.ir
-    obfs: salamander
-    obfs-password: Yet-Another-Public-Config-1
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 06"
-    type: vless
-    network: ws
-    uuid: 2456f90c-5183-476d-b069-16ae74ce120f
     server: 45.131.211.253
-    port: 2096
     skip-cert-verify: false
-    tls: true
-    udp: true
     tfo: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: 2456f90c-5183-476d-b069-16ae74ce120f
     ws-opts:
       headers:
         Host: fast01.0860852.xyz
-      path: /Telegram
+      path: "/Telegram\U0001F1E8\U0001F1F3"
+    client-fingerprint: chrome
     servername: fast01.0860852.xyz
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 07"
-    type: hysteria2
-    server: 206.71.158.37
-    port: 36300
-    password: Yet-Another-Public-Config-1
-    skip-cert-verify: false
-    sni: YAPC-1.afshin.ir
-    obfs: salamander
-    obfs-password: Yet-Another-Public-Config-1
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 08"
-    type: hysteria2
-    server: 185.92.220.240
-    port: 30205
-    password: 8864aa9f-7517-4fd5-aef1-32050eb3095d
-    skip-cert-verify: true
-    sni: net2025.afsharidempire.uk
-    auth: 8864aa9f-7517-4fd5-aef1-32050eb3095d
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 04"
     obfs: salamander
     obfs-password: GdQ4bgvT8RFwuWi2
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 09"
-    type: hysteria
-    server: 109.104.153.91
-    port: 37519
+    password: 8864aa9f-7517-4fd5-aef1-32050eb3095d
+    port: 30205
+    server: 185.92.220.240
     skip-cert-verify: true
-    sni: apple.com
-    alpn:
-      - h3
-    auth_str: dongtaiwang.com
-    down: 1000
-    fast-open: true
-    ports: 10000-20000
-    protocol: udp
-    up: 1000
-    auth-str: dongtaiwang.com
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 10"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 185.18.184.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/41.0.2272.104 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 11"
+    sni: net2025.afsharidempire.uk
     type: hysteria2
-    server: 206.71.158.37
-    port: 36400
-    password: Yet-Another-Public-Config-1
-    skip-cert-verify: true
-    sni: YAPC-1.afshin.ir
-    obfs: salamander
-    obfs-password: Yet-Another-Public-Config-1
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 12"
-    type: vless
-    network: ws
-    uuid: 01996549-6892-dbf0-0453-f700236936bd
-    server: 146.103.33.38
-    port: 443
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560'
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 13"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 176.222.53.140
-    port: 8000
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443'
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 14"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 188.164.248.32
-    port: 2096
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    alterId: 0
-    cipher: auto
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 15"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 45.149.12.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/66.0.3359.181 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
     client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 16"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 89.110.125.45
-    port: 443
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/52.0.2743.116 Safari/537.36
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560'
-    client-fingerprint: chrome
-    encryption: none
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 17"
-    type: vless
-    network: ws
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    server: 185.18.184.66
-    port: 80
-    security: none
-    tls: false
-    udp: false
-    host: hello.96xckkzx.workers.dev
-    path: /?ed=2048@v2ray_configs_pools--@v2ray_configs_pools
-    ws-opts:
-      headers:
-        Host: hello.96xckkzx.workers.dev
-      path: /?ed=2048@v2ray_configs_pools--@v2ray_configs_pools
-    client-fingerprint: chrome
-    fp: chrome
-    servername: hello.96xckkzx.workers.dev
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 01"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 5.10.215.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/69.0.3497.100 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 02"
-    server: de1-3.9966662.xyz
-    port: 20133
-    type: vless
-    uuid: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: 65E6IjBrQMYqhrtISS0F2kUFIjT5aSxgNPKCf88fGFw
-      short-id: 3b03febe
-    client-fingerprint: chrome
-    network: tcp
-    udp: true
-    servername: www.cloudflare.com
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 03"
-    server: 89.22.227.239
-    port: 443
-    type: vless
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    tls: true
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443'
-      headers:
-        Host: kejiland.freewarp.eu.org
-    udp: true
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 04"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 185.158.133.43
-    port: 2096
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes@节点狂魔
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 05"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 188.244.122.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/42.0.2311.135 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 06"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 77.37.33.43
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 07"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 156.243.246.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 08"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 188.244.122.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 09"
-    type: vless
-    network: tcp
-    uuid: 494e4d9d-e1e6-42be-a9df-8a6fbd46b650
-    server: 84.201.4.247
-    port: 1591
-    tls: true
-    udp: true
-    xudp: true
-    reality-opts:
-      public-key: Q7B94qjnMk48_2054jmhOKdPbqRkyUbLIHSNLb8Zz2w
-      short-id: 90658dac0f08c239
-    client-fingerprint: chrome
-    servername: refersion.com
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 10"
-    type: vless
-    network: grpc
-    uuid: 494e4d9d-e1e6-42be-a9df-8a6fbd46b650
-    server: 84.201.4.247
-    port: 1598
-    security: none
-    tls: false
-    udp: false
-    ws-opts: {}
-    grpc-opts:
-      grpc-service-name: >-
-        EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-bia-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420
-    mode: gun
-    serviceName: >-
-      EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-bia-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420-EXPRESSVPN_420
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 11"
-    type: trojan
-    network: ws
-    server: 194.76.173.98
-    port: 2053
-    password: iwangjie
-    skip-cert-verify: true
-    udp: true
-    sni: nodes.830901.xyz
-    ws-opts:
-      headers:
-        Host: nodes.830901.xyz
-      path: /?ed=2560
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 12"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 5.175.141.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/62.0.3202.89 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 13"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 185.158.133.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36
-          (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 14"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 156.243.246.43
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 15"
-    type: vless
-    network: tcp
-    uuid: 812de504-f6a7-44a4-b322-2750954d4782
-    server: 91.99.166.94
-    port: 666
-    udp: true
-    xudp: true
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 16"
-    type: vmess
-    network: ws
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    server: 57.129.28.213
-    port: 443
-    skip-cert-verify: true
-    tls: true
-    alterId: 0
-    cipher: auto
-    ws-opts:
-      headers:
-        Host: fapeng.org
-      path: /linkvws
-    servername: fapeng.org
   - name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 01"
     server: qing-zz.mxtn.net
     port: 22037
@@ -4687,61 +2951,6 @@ proxies:
     cipher: 2022-blake3-aes-128-gcm
     password: 'NmE5YTM4ZmJhNjE4YWMyOA==:MWI2Mjg4YjgtYThhYy00OA=='
     udp: true
-  - name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 08"
-    type: ss
-    server: 154.90.62.168
-    port: 989
-    password: f8f7aCzcPKbsF8p3
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 09"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 132.145.84.148
-    port: 39567
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/46.0.2490.86 Safari/537.36
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560'
-    client-fingerprint: chrome
-    encryption: none
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 10"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 112.156.154.95
-    port: 30067
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/56.0.2924.87 Safari/537.36
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443'
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 11"
-    type: hysteria2
-    server: 129.154.196.206
-    port: 34512
-    password: 60824dd4-77f6-413e-89da-8325e259219f
-    skip-cert-verify: true
-    udp: true
-    sni: anycast.us.kg
-    auth: 60824dd4-77f6-413e-89da-8325e259219f
   - name: "\U0001F1EA\U0001F1EC 机场推荐:dafei.de 埃及 01"
     server: 38.54.59.180
     port: 990
@@ -4750,269 +2959,82 @@ proxies:
     password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
     udp: true
   - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 01"
-    type: vless
-    network: grpc
-    uuid: 9eecee32-1abb-42db-b296-af0168c17412
     server: 141.227.134.241
     port: 13905
-    udp: true
-    xudp: true
-    grpc-opts:
-      grpc-service-name: >-
-        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 02"
     type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 141.11.203.32
-    port: 2096
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    encryption: none
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 03"
-    type: vless
-    network: grpc
-    uuid: 5e0eddef-95cd-4109-9807-0f32062939f3
-    server: 141.227.170.178
-    port: 21232
-    udp: true
-    xudp: true
-    grpc-opts:
-      grpc-service-name: >-
-        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 04"
-    type: vless
-    network: tcp
-    uuid: 9f4b9824-df02-49c3-a976-d4f9a31f81fe
-    server: 38.54.122.118
-    port: 443
-    skip-cert-verify: false
-    tls: true
-    tfo: false
-    reality-opts:
-      public-key: 21MNt-O8tq9gP9o7yeT9iVQslHPdNVHtqI9Kg5p-lHo
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    servername: dash.cloudflare.com
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 05"
-    type: hysteria
-    server: 195.154.200.40
-    port: 15010
-    skip-cert-verify: true
-    sni: apple.com
-    alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    auth_str: dongtaiwang.com
-    down: '100'
-    up: '100'
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 06"
-    type: hysteria
-    server: 62.210.127.217
-    port: 35511
-    skip-cert-verify: true
-    udp: true
-    sni: apple.com
-    alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    auth_str: dongtaiwang.com
-    down: 55
-    protocol: udp
-    up: 11
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 07"
-    type: hysteria
-    server: 62.210.127.217
-    port: 50011
-    skip-cert-verify: true
-    udp: true
-    sni: apple.com
-    alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    down: 55 Mbps
-    protocol: udp
-    up: 11 Mbps
-    auth_str: dongtaiwang.com
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 08"
-    type: vless
-    network: grpc
-    uuid: 5dd4bf42-5df0-49ff-bd5b-3a4fb6f7f1db
-    server: 141.227.174.234
-    port: 47765
-    udp: true
-    xudp: true
-    grpc-opts:
-      grpc-service-name: >-
-        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 09"
-    type: vless
-    network: grpc
-    uuid: f7df6c83-e527-4bb2-bae1-ea743edaffcd
-    server: 141.227.132.199
-    port: 42817
-    udp: true
-    xudp: true
-    grpc-opts:
-      grpc-service-name: >-
-        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 10"
-    type: vless
-    network: grpc
-    uuid: 713f6b9e-6200-405d-9ca8-77bc45be625b
-    server: 51.178.253.133
-    port: 22808
-    udp: true
-    xudp: true
-    grpc-opts:
-      grpc-service-name: >-
-        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 11"
-    type: vless
-    network: grpc
-    uuid: 6016845b-61d0-49c5-b20c-d61e860778d4
-    server: 141.227.134.240
-    port: 54983
-    udp: true
-    xudp: true
-    grpc-opts:
-      grpc-service-name: >-
-        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 12"
-    type: vless
-    network: grpc
-    uuid: 7467739e-fe86-43a4-93ae-1669886e80d5
-    server: 141.227.162.18
-    port: 59995
-    udp: true
-    xudp: true
-    grpc-opts:
-      grpc-service-name: >-
-        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 13"
-    type: vless
-    network: grpc
-    uuid: 30198cba-c828-4b34-8165-25942bad201e
-    server: 141.94.210.231
-    port: 23279
-    udp: true
-    xudp: true
-    grpc-opts:
-      grpc-service-name: >-
-        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 14"
-    type: hysteria2
-    server: 51.159.111.32
-    port: 5355
-    password: dongtaiwang.com
-    skip-cert-verify: true
-    sni: www.bing.com
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 15"
-    type: trojan
-    network: ws
-    server: 141.94.68.216
-    port: 2053
-    password: iwangjie
-    skip-cert-verify: true
-    udp: true
-    sni: nodes.830901.xyz
-    ws-opts:
-      headers:
-        Host: nodes.830901.xyz
-      path: /?ed=2560
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 16"
-    type: trojan
-    network: ws
-    server: 135.125.232.253
-    port: 2053
-    password: iwangjie
-    skip-cert-verify: true
-    udp: true
-    sni: nodes.830901.xyz
-    ws-opts:
-      headers:
-        Host: nodes.830901.xyz
-      path: /?ed=2560
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 17"
-    type: trojan
-    network: ws
-    server: 62.60.156.205
-    port: 2443
-    password: iwangjie
-    skip-cert-verify: true
-    udp: true
-    sni: nodes.830901.xyz
-    ws-opts:
-      headers:
-        Host: nodes.830901.xyz
-      path: /?ed=2560
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 18"
-    type: vless
-    network: ws
-    uuid: 01998846-8a17-c5bf-5b2f-6e85f5964400
-    server: 188.130.207.158
-    port: 2053
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/63.0.3239.132 Safari/537.36
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560'
-    client-fingerprint: chrome
-    encryption: none
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 19"
-    type: vless
-    network: grpc
-    uuid: 98b988ba-fe55-402e-824a-6f7bb3436f22
-    server: 141.227.136.11
-    port: 11716
+    uuid: 9eecee32-1abb-42db-b296-af0168c17412
     tls: false
-    udp: true
+    network: grpc
     grpc-opts:
       grpc-mode: gun
       grpc-service-name: >-
         ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  - name: "\U0001F1E8\U0001F1ED 机场推荐:dafei.de 瑞士 01"
-    type: vless
-    network: grpc
-    uuid: 49ffd741-9736-40fb-9217-76a8fcfb3ffd
-    server: 141.227.138.82
-    port: 18541
     udp: true
-    xudp: true
+  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 02"
+    server: 141.227.170.178
+    port: 21232
+    type: vless
+    uuid: 5e0eddef-95cd-4109-9807-0f32062939f3
+    tls: false
+    network: grpc
     grpc-opts:
+      grpc-mode: gun
       grpc-service-name: >-
         ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  - name: "\U0001F1E8\U0001F1ED 机场推荐:dafei.de 瑞士 02"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 83.173.198.77
-    port: 8443
-    tls: true
     udp: true
-    xudp: true
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 03"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: 21MNt-O8tq9gP9o7yeT9iVQslHPdNVHtqI9Kg5p-lHo
+    server: 38.54.122.118
+    skip-cert-verify: false
+    tfo: false
+    tls: true
+    type: vless
+    uuid: 9f4b9824-df02-49c3-a976-d4f9a31f81fe
+    servername: dash.cloudflare.com
+  - name: "\U0001F1E8\U0001F1ED 机场推荐:dafei.de 瑞士 01"
+    server: 141.227.138.82
+    port: 18541
+    type: vless
+    uuid: 49ffd741-9736-40fb-9217-76a8fcfb3ffd
+    tls: false
+    network: grpc
+    grpc-opts:
+      grpc-mode: gun
+      grpc-service-name: >-
+        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    udp: true
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 01"
+    server: de1-3.9966662.xyz
+    port: 20133
+    type: vless
+    uuid: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
+    tls: true
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: 65E6IjBrQMYqhrtISS0F2kUFIjT5aSxgNPKCf88fGFw
+      short-id: 3b03febe
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+    servername: www.cloudflare.com
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 02"
+    server: 89.22.227.239
+    port: 443
+    type: vless
+    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+    tls: true
+    client-fingerprint: chrome
+    network: ws
     ws-opts:
+      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443'
       headers:
         Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.1.1; CPH1723 Build/N6F26Q)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile
-          Safari/537.36
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560'
-    client-fingerprint: chrome
-    encryption: none
+    udp: true
     servername: kejiland.freewarp.eu.org
   - name: "\U0001F1EE\U0001F1F1 机场推荐:dafei.de 以色列 01"
     server: 89.46.239.231
@@ -5028,282 +3050,6 @@ proxies:
     cipher: chacha20-ietf-poly1305
     password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
     udp: true
-  - name: "\U0001F1F0\U0001F1FF 机场推荐:dafei.de 哈萨克斯坦 02"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 194.76.18.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 6.0; CAM-L21 Build/HUAWEICAM-L21; wv)
-          AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84
-          Mobile Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F0\U0001F1FF 机场推荐:dafei.de 哈萨克斯坦 03"
-    type: vless
-    uuid: c80bbc09-837d-495f-bebc-3e8ac5dede41
-    server: 91.147.92.153
-    port: 443
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    reality-opts:
-      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-      short-id: f79448a30d
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    network: tcp
-    servername: hls-svod.itunes.apple.com
-  - name: "\U0001F1F0\U0001F1FF 机场推荐:dafei.de 哈萨克斯坦 04"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 185.176.26.43
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F0\U0001F1FF 机场推荐:dafei.de 哈萨克斯坦 05"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 185.176.26.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/70.0.3538.67 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F0\U0001F1FF 机场推荐:dafei.de 哈萨克斯坦 06"
-    type: vless
-    network: tcp
-    uuid: ed97e008-2b8d-4415-94c7-3da4919d361a
-    server: 194.31.157.238
-    port: 443
-    security: reality
-    tls: true
-    udp: false
-    ws-opts: {}
-    reality-opts:
-      public-key: V6i1V9804ZfgT8nutUwDs5IDQdcY9pK5uO075SW4ml4
-      short-id: 2d46a79deebf50fd
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    fp: chrome
-    pbk: V6i1V9804ZfgT8nutUwDs5IDQdcY9pK5uO075SW4ml4
-    sid: 2d46a79deebf50fd
-    servername: deepl.com
-  - name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 01"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 154.197.108.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/69.0.3497.100 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 02"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 154.219.5.43
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 03"
-    type: vless
-    uuid: 192ea2c7-d7d0-6676-2929-b04a072b387d
-    server: 178.20.215.2
-    port: 443
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    reality-opts:
-      public-key: GfTzhy59k9CXlAdF819OUVeBdrqIILaDIWa1bddjGnA
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    network: tcp
-    servername: speed.cloudflare.com
-  - name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 04"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 154.194.0.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/62.0.3202.89 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 05"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 154.81.141.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 06"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 45.130.125.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/56.0.2924.87 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 07"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 156.243.83.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.110 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 08"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 154.197.88.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile
-          Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 09"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 154.218.15.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    tfo: false
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 10"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 154.197.64.43
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    tfo: false
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F2\U0001F1F9 机场推荐:dafei.de 马耳他 01"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 193.227.99.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/40.0.2214.111 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
   - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 01"
     server: 217.30.10.70
     port: 9050
@@ -5332,95 +3078,6 @@ proxies:
     cipher: aes-256-cfb
     password: BNmAXXxAHYpTRdzu
     udp: true
-  - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 05"
-    type: ss
-    server: 217.30.10.70
-    port: 9094
-    password: rpgbNnU9rDDU4aWZ
-    cipher: aes-256-cfb
-  - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 06"
-    type: ss
-    server: 217.30.10.70
-    port: 9040
-    password: p9z5BVADH2YFs3MN
-    cipher: aes-256-cfb
-  - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 07"
-    type: ss
-    server: 217.30.10.70
-    port: 9073
-    password: daFYagqDdBdA6VTX
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 08"
-    type: ss
-    server: 217.30.10.70
-    port: 9032
-    password: UWZQeLRWnkqgkseq
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 09"
-    type: ss
-    server: 217.30.10.70
-    port: 9053
-    password: SBM7R883jBmnqe6C
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 10"
-    type: ss
-    server: 217.30.10.70
-    port: 9008
-    password: y9VURyNzJWNRYEGQ
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 11"
-    type: ss
-    server: 217.30.10.70
-    port: 9046
-    password: NvS8N4Vf8qAGPSCL
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 12"
-    type: ss
-    server: 217.30.10.70
-    port: 9045
-    password: Lp27rqyJq72bZsqX
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 13"
-    type: ss
-    server: 217.30.10.70
-    port: 9000
-    password: a3GFYt36Sm82Vys9
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 14"
-    type: ss
-    server: 217.30.10.70
-    port: 9010
-    password: f63gg8EruDnUrmz4
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 15"
-    type: ss
-    server: 217.30.10.70
-    port: 9064
-    password: cp8pRSUAyLhTfVWH
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 16"
-    type: ss
-    server: 217.30.10.70
-    port: 9093
-    password: wfLC2y7rzZyCmuyt
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 17"
-    type: ss
-    server: 217.30.10.70
-    port: 9025
-    password: XPtzA9sCug3SPR4c
-    udp: true
-    cipher: aes-256-cfb
   - name: "\U0001F1E8\U0001F1F1 机场推荐:dafei.de 智利 01"
     server: qing-zz.mxtn.net
     port: 22036
@@ -5428,105 +3085,6 @@ proxies:
     cipher: 2022-blake3-aes-128-gcm
     password: 'NmE5YTM4ZmJhNjE4YWMyOA==:MWI2Mjg4YjgtYThhYy00OA=='
     udp: true
-  - name: "\U0001F1F9\U0001F1F7 机场推荐:dafei.de 土耳其 01"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 185.7.240.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
-          Slackware/Chrome/12.0.742.100 Safari/534.30
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F9\U0001F1F7 机场推荐:dafei.de 土耳其 02"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 185.7.240.32
-    port: 2096
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F9\U0001F1F7 机场推荐:dafei.de 土耳其 03"
-    type: vless
-    network: tcp
-    uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34
-    server: 62.133.63.138
-    port: 443
-    tls: true
-    udp: true
-    xudp: true
-    reality-opts:
-      public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
-      short-id: '50'
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    servername: tr.eu-ffast.com
-  - name: "\U0001F1F9\U0001F1F7 机场推荐:dafei.de 土耳其 04"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 91.206.71.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko)
-          Chrome/11.0.696.3 Safari/534.24
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F9\U0001F1F7 机场推荐:dafei.de 土耳其 05"
-    type: vless
-    network: tcp
-    uuid: 6d9a7312-5021-40b0-9e2b-d08b6ef0d917
-    server: 45.136.5.109
-    port: 3030
-    security: none
-    tls: false
-    udp: false
-    ws-opts: {}
-    grpc-opts:
-      grpc-service-name: >-
-        Telegram--FILTERK0SH--Telegram--FILTERK0SH--Telegram--FILTERK0SH--Telegram--FILTERK0SH--Telegram--FILTERK0SH--Telegram--FILTERK0SH--Telegram--FILTERK0SH
-    serviceName: >-
-      Telegram--FILTERK0SH--Telegram--FILTERK0SH--Telegram--FILTERK0SH--Telegram--FILTERK0SH--Telegram--FILTERK0SH--Telegram--FILTERK0SH--Telegram--FILTERK0SH
-  - name: "\U0001F1F9\U0001F1F7 机场推荐:dafei.de 土耳其 06"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 91.206.71.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    tfo: false
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
   - name: "\U0001F1EB\U0001F1EE 机场推荐:dafei.de 芬兰 01"
     server: fi1-1.9966662.xyz
     port: 20223
@@ -5541,598 +3099,34 @@ proxies:
     network: tcp
     udp: true
     servername: www.cloudflare.com
-  - name: "\U0001F1EB\U0001F1EE 机场推荐:dafei.de 芬兰 02"
-    type: vless
-    network: ws
-    uuid: 01999036-500a-f27f-ee32-ee78844f2e4d
-    server: 139.28.221.213
-    port: 48004
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17
-          (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560'
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EB\U0001F1EE 机场推荐:dafei.de 芬兰 03"
-    type: trojan
-    network: ws
-    server: 138.124.118.34
-    port: 443
-    password: iwangjie
-    skip-cert-verify: true
-    udp: true
-    sni: nodes.830901.xyz
-    ws-opts:
-      headers:
-        Host: nodes.830901.xyz
-      path: /proxyip=proxyip.fxxk.dedyn.io
-  - name: "\U0001F1EB\U0001F1EE 机场推荐:dafei.de 芬兰 04"
-    type: vless
-    network: ws
-    uuid: 557ae2a8-23bb-4386-b220-7387c4b2108f
-    server: 65.109.208.115
-    port: 443
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.67 Safari/537.36
-      path: >-
-        /fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip?ed=2048
-    encryption: none
-  - name: "\U0001F1EB\U0001F1EE 机场推荐:dafei.de 芬兰 05"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 77.91.78.97
-    port: 2053
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile
-          Safari/537.36
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443'
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EB\U0001F1EE 机场推荐:dafei.de 芬兰 06"
-    type: vless
-    network: ws
-    uuid: 01996549-6892-dbf0-0453-f700236936bd
-    server: 159.255.33.66
-    port: 2053
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/43.0.2357.65 Safari/537.36
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560'
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EB\U0001F1EE 机场推荐:dafei.de 芬兰 07"
-    type: vless
-    network: tcp
-    uuid: fe837fd0-840d-4cee-9334-0dc6c2b15c1c
-    server: 5.181.20.219
-    port: 17422
-    tls: true
-    udp: true
-    xudp: true
-    reality-opts:
-      public-key: 0r5rlmvACX09qUTPuxrbuKWSAn66NnNyHIfIMwalYAA
-      short-id: '33'
-    client-fingerprint: chrome
-    servername: yahoo.com
-  - name: "\U0001F1E6\U0001F1EA 机场推荐:dafei.de 阿联酋 01"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 94.140.0.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E6\U0001F1EA 机场推荐:dafei.de 阿联酋 02"
-    type: vless
-    uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
-    server: 5.44.42.60
+  - client-fingerprint: chrome
+    name: "\U0001F1EB\U0001F1EE 机场推荐:dafei.de 芬兰 02"
     port: 8080
-    skip-cert-verify: false
-    tls: true
-    udp: true
     reality-opts:
       public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
       short-id: 27cfa05000c23cc4
-    client-fingerprint: chrome
-    network: tcp
-    servername: yandex.com
-  - name: "\U0001F1E6\U0001F1EA 机场推荐:dafei.de 阿联酋 03"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 193.124.224.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E6\U0001F1EA 机场推荐:dafei.de 阿联酋 04"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 193.124.224.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/70.0.3538.102 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F2\U0001F1FA 机场推荐:dafei.de 毛里求斯 01"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 45.196.29.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F2\U0001F1FA 机场推荐:dafei.de 毛里求斯 02"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 45.192.224.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile
-          Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F2\U0001F1FA 机场推荐:dafei.de 毛里求斯 03"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 45.194.11.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/41.0.2272.101 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F2\U0001F1FA 机场推荐:dafei.de 毛里求斯 04"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 45.192.223.44
-    port: 2096
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E8\U0001F1FE 机场推荐:dafei.de 塞浦路斯 01"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 195.85.59.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EA\U0001F1EA 机场推荐:dafei.de 爱沙尼亚 01"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 45.80.110.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    tfo: false
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 01"
-    type: vless
-    uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
     server: 84.22.150.195
-    port: 8080
     skip-cert-verify: false
     tls: true
+    type: vless
     udp: true
-    reality-opts:
-      public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
-      short-id: 27cfa05000c23cc4
-    client-fingerprint: chrome
+    uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
     network: tcp
     servername: yandex.com
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 02"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 185.148.107.32
-    port: 2096
-    skip-cert-verify: true
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: "\U0001F1EB\U0001F1EE 机场推荐:dafei.de 芬兰 03"
+    port: 443
+    reality-opts:
+      public-key: GfTzhy59k9CXlAdF819OUVeBdrqIILaDIWa1bddjGnA
+    server: 178.20.215.2
+    skip-cert-verify: false
     tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 03"
     type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 185.221.160.43
-    port: 2096
-    tls: true
     udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36
-          (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 04"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 185.221.160.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 05"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 185.59.218.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/49.0.2623.112 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 06"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 213.219.247.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/48.0.2564.109 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 07"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 45.142.120.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/46.0.2490.80 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 08"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 185.174.138.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 09"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 185.148.104.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 10"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 185.148.104.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (X11; U; Linux i586; en-US) AppleWebKit/533.2 (KHTML, like
-          Gecko) Chrome/5.0.342.1 Safari/533.2
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 11"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 185.148.105.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/69.0.3497.100 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 12"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 185.148.105.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 13"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 185.59.218.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/60.0.3112.113 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 14"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 85.193.91.193
-    port: 8443
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/46.0.2490.86 Safari/537.36
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560'
-    client-fingerprint: chrome
-    encryption: none
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 15"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 77.232.140.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/44.0.2403.157 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    encryption: none
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 16"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 193.233.132.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/60.0.3112.101 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 17"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 81.200.158.206
-    port: 8443
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/64.0.3282.186 Safari/537.36
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443'
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 18"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 45.8.211.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 19"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 213.241.198.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    tfo: false
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
+    uuid: 192ea2c7-d7d0-6676-2929-b04a072b387d
+    network: tcp
+    servername: speed.cloudflare.com
   - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 01"
     password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
     port: 47262
@@ -6141,152 +3135,97 @@ proxies:
     sni: www.bing.com
     type: hysteria2
     client-fingerprint: chrome
-  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 02"
-    type: vless
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 02"
     network: tcp
-    uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
-    server: 132.145.108.97
     port: 42557
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    tfo: false
     reality-opts:
       public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
       short-id: f430927d
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    servername: www.yahoo.com
-  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 03"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 74.49.215.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 04"
-    type: vless
-    uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-    server: 150.230.28.100
-    port: 26113
+    server: 132.145.108.97
     skip-cert-verify: false
+    tfo: false
     tls: true
-    udp: true
-    reality-opts:
-      public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
-      short-id: 1fbd20fd
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    network: tcp
+    type: vless
+    uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
     servername: www.yahoo.com
-  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 05"
-    type: vless
-    network: grpc
-    uuid: b0ff01b1-04d3-4b01-8ba9-b1dc47416c07
-    server: 15.235.45.229
-    port: 40853
-    udp: true
-    xudp: true
-    grpc-opts:
-      grpc-service-name: >-
-        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 06"
-    type: vless
-    network: tcp
-    uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-    server: 40.233.81.116
-    port: 59303
-    tls: true
-    udp: true
-    xudp: true
-    http-opts:
-      path:
-        - /
-    reality-opts:
-      public-key: FHm9vc9hi1aK9jz8CqCjhJvT0bxzsD470FvOyubB6EA
-      short-id: bbe06294
-    client-fingerprint: chrome
-    encryption: none
+  - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    servername: www.yahoo.com
-  - name: "\U0001F1EE\U0001F1F7 机场推荐:dafei.de 伊朗 01"
-    type: vless
-    uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
-    server: 193.151.135.21
+    name: "\U0001F1EE\U0001F1F7 机场推荐:dafei.de 伊朗 01"
     port: 44443
-    skip-cert-verify: false
-    tls: true
-    udp: true
     reality-opts:
       public-key: XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
+    server: 193.151.135.21
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
     network: tcp
     servername: www.speedtest.net
-  - name: "\U0001F1EE\U0001F1F7 机场推荐:dafei.de 伊朗 02"
-    type: vless
-    network: http
-    uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee
-    server: 94.182.137.12
-    port: 20532
-    skip-cert-verify: false
-    tls: false
-    udp: true
-    http-opts:
+  - http-opts:
       headers:
         Host:
           - Telewebion.com
       method: GET
       path:
         - /
-    servername: Telewebion.com
-  - name: "\U0001F1F2\U0001F1FE 机场推荐:dafei.de 马来 01"
-    type: vmess
-    network: tcp
-    uuid: 2d978341-a391-4b54-8623-12284dc24525
-    server: 38.60.195.254
-    port: 1037
-    skip-cert-verify: true
-    tls: true
-    alterId: 0
-    cipher: auto
-    servername: ml0605.ysds168.shop
-  - name: "\U0001F1F2\U0001F1FE 机场推荐:dafei.de 马来 02"
-    type: vmess
-    network: none
-    uuid: 665d9b8f-153d-4907-adac-de12afd9c851
-    server: 38.54.98.110
-    port: 2052
-    skip-cert-verify: true
-    tls: true
-    alterId: 0
-    cipher: auto
-    servername: ml0724.ysds168.shop
-  - name: "\U0001F1F5\U0001F1F9 机场推荐:dafei.de 葡萄牙 01"
-    type: ss
-    server: 185.231.233.112
-    port: 989
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: "\U0001F1F5\U0001F1F9 机场推荐:dafei.de 葡萄牙 02"
-    type: vless
-    uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
-    server: 31.129.22.117
-    port: 8080
+    name: "\U0001F1EE\U0001F1F7 机场推荐:dafei.de 伊朗 02"
+    network: http
+    port: 20532
+    server: 94.182.137.12
     skip-cert-verify: false
-    tls: true
+    tls: false
+    type: vless
     udp: true
+    uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee
+    client-fingerprint: chrome
+    servername: Telewebion.com
+  - alterId: 0
+    cipher: auto
+    name: "\U0001F1F2\U0001F1FE 机场推荐:dafei.de 马来 01"
+    network: none
+    port: 1037
+    server: 38.60.195.254
+    skip-cert-verify: true
+    tls: true
+    type: vmess
+    uuid: 2d978341-a391-4b54-8623-12284dc24525
+    client-fingerprint: chrome
+    servername: ml0605.ysds168.shop
+  - alterId: 0
+    cipher: auto
+    name: "\U0001F1F2\U0001F1FE 机场推荐:dafei.de 马来 02"
+    network: none
+    port: 2052
+    server: 38.54.98.110
+    skip-cert-verify: true
+    tls: true
+    type: vmess
+    uuid: 665d9b8f-153d-4907-adac-de12afd9c851
+    client-fingerprint: chrome
+    servername: ml0724.ysds168.shop
+  - cipher: aes-256-cfb
+    country: "\U0001F3C1 ZZ"
+    name: "\U0001F1F5\U0001F1F9 机场推荐:dafei.de 葡萄牙 01"
+    password: f8f7aCzcPKbsF8p3
+    port: 989
+    server: 185.231.233.112
+    type: ss
+    client-fingerprint: chrome
+  - client-fingerprint: chrome
+    name: "\U0001F1F5\U0001F1F9 机场推荐:dafei.de 葡萄牙 02"
+    port: 8080
     reality-opts:
       public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
       short-id: 27cfa05000c23cc4
-    client-fingerprint: chrome
+    server: 31.129.22.117
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
     network: tcp
     servername: yandex.com
   - name: "\U0001F1EA\U0001F1F8 机场推荐:dafei.de 西班牙 01"
@@ -6305,592 +3244,30 @@ proxies:
       path: "/Telegram\U0001F1E8\U0001F1F3"
     client-fingerprint: chrome
     servername: fast01.0860852.xyz
-  - name: "\U0001F1EA\U0001F1F8 机场推荐:dafei.de 西班牙 02"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 185.251.83.43
-    port: 2096
+  - client-fingerprint: chrome
+    name: "\U0001F1E6\U0001F1EA 机场推荐:dafei.de 阿联酋 01"
+    port: 8080
+    reality-opts:
+      public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+      short-id: 27cfa05000c23cc4
+    server: 5.44.42.60
+    skip-cert-verify: false
     tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.102 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EA\U0001F1F8 机场推荐:dafei.de 西班牙 03"
     type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 185.251.82.43
-    port: 2096
-    skip-cert-verify: true
-    tls: true
     udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EA\U0001F1F8 机场推荐:dafei.de 西班牙 04"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 185.238.228.43
-    port: 2096
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EA\U0001F1F8 机场推荐:dafei.de 西班牙 05"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 185.251.83.32
-    port: 2096
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EA\U0001F1F8 机场推荐:dafei.de 西班牙 06"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 185.251.80.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/51.0.2704.103 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
+    uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
+    network: tcp
+    servername: yandex.com
   - name: "\U0001F1F8\U0001F1EA 机场推荐:dafei.de 瑞典 01"
-    type: hysteria2
-    server: 70.34.215.221
-    port: 20335
-    password: 80747420-96c4-4a2f-83e6-eea4e46beb09
-    skip-cert-verify: true
-    sni: drhystuichdfy.samanidempire.org
     obfs: salamander
     obfs-password: U1wBrYQyFm
-  - name: "\U0001F1F8\U0001F1EA 机场推荐:dafei.de 瑞典 02"
-    type: trojan
-    network: ws
-    server: 83.147.254.185
-    port: 443
-    password: iwangjie
+    password: 80747420-96c4-4a2f-83e6-eea4e46beb09
+    port: 20335
+    server: 70.34.215.221
     skip-cert-verify: true
-    udp: true
-    sni: nodes.830901.xyz
-    ws-opts:
-      headers:
-        Host: nodes.830901.xyz
-      path: /?ed=2560
-  - name: "\U0001F1F8\U0001F1EA 机场推荐:dafei.de 瑞典 03"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 77.221.142.186
-    port: 2053
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/66.0.3359.117 Safari/537.36
-      path: '/snippets/ip=proxyip.fxxk.dedyn.io:443'
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F1\U0001F1F9 机场推荐:dafei.de 立陶宛 01"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 89.116.250.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F1\U0001F1F9 机场推荐:dafei.de 立陶宛 02"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 88.216.69.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/69.0.3497.100 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F1\U0001F1F9 机场推荐:dafei.de 立陶宛 03"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 86.38.214.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F1\U0001F1F9 机场推荐:dafei.de 立陶宛 04"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 89.116.250.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPPS25.137-93-14)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
-          Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F1\U0001F1F9 机场推荐:dafei.de 立陶宛 05"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 89.117.112.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 6.0.1; SM-J700M Build/MMB29K)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
-          Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F1\U0001F1F9 机场推荐:dafei.de 立陶宛 06"
-    type: ss
-    server: 45.87.175.166
-    port: 443
-    password: 1RWwXhwfAB5gAEozU4G2Pg
-    cipher: chacha20-ietf-poly1305
-  - name: "\U0001F1F1\U0001F1F9 机场推荐:dafei.de 立陶宛 07"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 45.146.201.44
-    port: 2096
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F1\U0001F1F9 机场推荐:dafei.de 立陶宛 08"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 45.146.201.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/57.0.2987.133 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F1\U0001F1F9 机场推荐:dafei.de 立陶宛 09"
+    sni: drhystuichdfy.samanidempire.org
     type: hysteria2
-    server: 77.83.254.122
-    port: 34512
-    password: 60824dd4-77f6-413e-89da-8325e259219f
-    skip-cert-verify: true
-    udp: true
-    sni: anycast.us.kg
-    auth: 60824dd4-77f6-413e-89da-8325e259219f
-  - name: "\U0001F1FA\U0001F1E6 机场推荐:dafei.de 乌克兰 01"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 91.124.127.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FA\U0001F1E6 机场推荐:dafei.de 乌克兰 02"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 91.124.127.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/46.0.2490.86 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
     client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E6\U0001F1FA 机场推荐:dafei.de 澳大利亚 01"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 103.169.142.43
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E7\U0001F1EC 机场推荐:dafei.de 保加利亚 01"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 147.78.140.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EE\U0001F1EA 机场推荐:dafei.de 爱尔兰 01"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 37.0.6.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/36.0.1985.143 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 01"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 103.245.228.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4
-          (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 02"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 154.198.173.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/46.0.2490.80 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 03"
-    type: hysteria2
-    server: 152.67.162.57
-    port: 23848
-    password: 60824dd4-77f6-413e-89da-8325e259219f
-    skip-cert-verify: true
-    udp: true
-    sni: anycast.us.kg
-    auth: 60824dd4-77f6-413e-89da-8325e259219f
-  - name: "\U0001F1F8\U0001F1E6 机场推荐:dafei.de 沙特阿拉伯 01"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 91.209.253.32
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/31.0.1650.57 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F8\U0001F1E6 机场推荐:dafei.de 沙特阿拉伯 02"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 91.209.253.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/41.0.2272.104 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FF\U0001F1E6 机场推荐:dafei.de 南非 01"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 102.132.188.43
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets&freecodes @节点狂魔 /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FF\U0001F1E6 机场推荐:dafei.de 南非 02"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 102.177.176.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1FF\U0001F1E6 机场推荐:dafei.de 南非 03"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 102.132.188.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1EE\U0001F1F9 机场推荐:dafei.de 意大利 01"
-    type: vless
-    network: grpc
-    uuid: 7fe2935c-0b1a-4bff-a392-79081b23d820
-    server: 141.227.140.55
-    port: 51079
-    tls: false
-    udp: true
-    grpc-opts:
-      grpc-mode: gun
-      grpc-service-name: >-
-        ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  - name: "\U0001F1F1\U0001F1FA 机场推荐:dafei.de 卢森堡 01"
-    type: ss
-    server: 109.61.46.43
-    port: 990
-    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-    udp: true
-    cipher: chacha20-ietf-poly1305
-  - name: "\U0001F1F1\U0001F1FA 机场推荐:dafei.de 卢森堡 02"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 188.42.89.44
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F1\U0001F1FA 机场推荐:dafei.de 卢森堡 03"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 188.42.145.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    tfo: false
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-      path: /snippets
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1F1\U0001F1FB 机场推荐:dafei.de 拉脱维亚 01"
-    type: ss
-    server: 46.183.217.204
-    port: 990
-    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-    udp: true
-    cipher: chacha20-ietf-poly1305
-  - name: "\U0001F1E6\U0001F1F9 机场推荐:dafei.de 奥地利 01"
-    type: vless
-    network: ws
-    uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-    server: 212.183.88.32
-    port: 2096
-    skip-cert-verify: true
-    tls: true
-    udp: true
-    xudp: true
-    tfo: false
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/46.0.2490.80 Safari/537.36
-      path: /snippets
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E6\U0001F1F2 机场推荐:dafei.de 亚美尼亚 01"
-    type: vless
-    network: ws
-    uuid: 01997b9d-a1f7-e188-981a-c665b723cfef
-    server: 188.164.159.43
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.0; SM-G610M) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
-  - name: "\U0001F1E6\U0001F1F2 机场推荐:dafei.de 亚美尼亚 02"
-    type: vless
-    network: ws
-    uuid: 12345678-1234-1234-1234-123456789123
-    server: 188.164.159.44
-    port: 2096
-    tls: true
-    udp: true
-    xudp: true
-    ws-opts:
-      headers:
-        Host: kejiland.freewarp.eu.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/57.0.2987.133 Safari/537.36
-      path: /snippets&freecodes@节点狂魔/
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: kejiland.freewarp.eu.org
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
