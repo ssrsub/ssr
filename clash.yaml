@@ -40,59 +40,27 @@ proxies:
     sni: www.baidu.com
     skip-cert-verify: true
   - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 05"
-    server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-    port: 26004
-    type: trojan
-    password: e531d1bc-a56f-4e1a-a295-1442369a19c1
-    sni: www.bilibili.com
-    skip-cert-verify: true
-    udp: true
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 06"
-    password: vdjRvIu3BJ
-    port: 18996
-    server: 47.83.15.118
-    type: http
-    username: ZcuRjQTHkV
-    client-fingerprint: chrome
-  - alterId: 0
-    cipher: auto
-    client-fingerprint: chrome
-    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 07"
-    network: ws
-    port: 443
-    server: 46.3.26.12
-    skip-cert-verify: false
-    tfo: false
+    server: 59.36.143.125
+    port: 35248
+    type: vless
+    uuid: 823e8b29-7d63-4af6-92f0-f94623b7030c
     tls: true
-    type: vmess
-    uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
-    ws-opts:
-      headers:
-        Host: hk.nbee.pp.ua
-      path: /aa
-    servername: hk.nbee.pp.ua
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 08"
-    type: http
-    server: 43.252.229.243
-    port: 3000
-    password: wanghui1
-    username: wanghui1
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 09"
-    password: '123'
-    port: 10862
-    server: 47.76.175.67
-    type: http
-    username: '123'
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: IGsSxC0wgn7wLy0NM0QN_yOREDKT_814Y_3_rbgDoTc
+      short-id: c8c0f951
     client-fingerprint: chrome
-  - cipher: chacha20-ietf
-    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 10"
-    password: asd123456
-    port: 8388
-    server: 154.197.26.237
-    type: ss
+    network: tcp
     udp: true
-    client-fingerprint: chrome
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 11"
+    servername: www.lamer.com.hk
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 06"
+    server: ss.009.node-for-bigairport.win
+    port: 11688
+    type: ss
+    cipher: aes-256-gcm
+    password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 07"
     type: vmess
     network: http
     uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
@@ -107,33 +75,105 @@ proxies:
       method: GET
       path:
         - /
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 12"
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 08"
+    server: 192.238.204.48
+    port: 11648
+    type: vless
+    uuid: 46092c5c-0f13-4242-8eb0-7d794d33e818
+    tls: true
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: yHonIAdN6vFOc2iJYla5ICMfgJx537AA9GPG7EEI93w
+      short-id: ae4d6be4
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+    servername: apple.com
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 09"
+    server: namemc.com
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: freedom.pusytroller.cf
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 10"
+    type: ss
+    server: 103.149.183.154
+    port: 8388
+    password: asd123456
+    cipher: chacha20-ietf
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 11"
+    password: vdjRvIu3BJ
+    port: 18996
+    server: 47.83.15.118
+    type: http
+    username: ZcuRjQTHkV
+    client-fingerprint: chrome
+  - alterId: 0
+    cipher: auto
+    client-fingerprint: chrome
+    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 12"
+    network: ws
+    port: 443
+    server: 46.3.26.12
+    skip-cert-verify: false
+    tfo: false
+    tls: true
+    type: vmess
+    uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e
+    ws-opts:
+      headers:
+        Host: hk.nbee.pp.ua
+      path: /aa
+    servername: hk.nbee.pp.ua
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 13"
+    type: http
+    server: 43.252.229.243
+    port: 3000
+    password: wanghui1
+    username: wanghui1
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 14"
+    password: '123'
+    port: 10862
+    server: 47.76.175.67
+    type: http
+    username: '123'
+    client-fingerprint: chrome
+  - cipher: chacha20-ietf
+    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 15"
+    password: asd123456
+    port: 8388
+    server: 154.197.26.237
+    type: ss
+    udp: true
+    client-fingerprint: chrome
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 16"
     password: 76nlxJLO35
     port: 36855
     server: 172.93.165.193
     type: http
     username: xZedCGy2A5
     client-fingerprint: chrome
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 13"
-    type: ss
-    server: 103.149.183.154
-    port: 8388
-    password: asd123456
-    cipher: chacha20-ietf
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 14"
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 17"
     type: trojan
     server: 46.3.36.215
     port: 52155
     password: 15387474-c50e-4eab-ae51-47f60436fb46
     skip-cert-verify: true
     sni: 0.0.0.0
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 15"
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 18"
     type: ss
     server: 103.149.182.191
     port: 8388
     password: asd123456
     cipher: chacha20-ietf
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 16"
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 19"
     type: trojan
     server: 58.152.53.162
     port: 443
@@ -159,6 +199,16 @@ proxies:
     sni: www.baidu.com
     skip-cert-verify: true
   - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 03"
+    server: tls.20.node-for-bigairport.win
+    port: 23211
+    type: vmess
+    uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 04"
     type: vmess
     network: ws
     uuid: 0b6a563a-7bee-4740-82ff-3d8126251ed9
@@ -169,13 +219,13 @@ proxies:
     cipher: auto
     ws-opts:
       path: /telegram_@sswia
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 04"
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 05"
     type: http
     server: 47.79.151.130
     port: 53855
     password: 9ixjDF
     username: kZXMC3Z1
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 05"
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 06"
     type: trojan
     server: 60.82.70.104
     port: 443
@@ -183,7 +233,7 @@ proxies:
     skip-cert-verify: false
     sni: www.nintendogames.net
     client-fingerprint: chrome
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 06"
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 07"
     type: ss
     server: 137.220.142.139
     port: 443
@@ -238,53 +288,30 @@ proxies:
     tfo: false
     skip-cert-verify: false
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 05"
-    server: sg008.421421.xyz
-    port: 20230
-    type: trojan
-    password: 1b26d982-fd68-44f4-bf6d-22fe17a9249a
-    sni: www.alibaba.com
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: www.alibaba.com
-    udp: true
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 06"
-    server: openai.com
-    port: 2095
-    type: vless
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    client-fingerprint: randomized
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: freedom.pusytroller.cf
-    udp: true
-  - alterId: 0
+    server: 161.118.233.204
+    port: 80
+    type: vmess
+    uuid: bcb7c581-3c95-4569-a4e7-918141e91ea3
+    alterId: 0
     cipher: auto
+    tls: false
+    network: http
     http-opts:
       method: GET
       path:
         - /
-    name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 07"
-    network: http
-    port: 22525
-    server: 47.245.106.193
-    tls: false
-    type: vmess
-    uuid: cabe905a-28ea-4e7e-c34d-2fa38604001f
-    client-fingerprint: chrome
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 08"
+      headers:
+        Host:
+          - a.189.cn
+    udp: true
+  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 06"
     type: ss
     server: 103.36.91.32
     port: 8388
     password: asd123456
     udp: true
     cipher: chacha20-ietf
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 09"
+  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 07"
     type: ss
     server: 5.44.249.42
     port: 2377
@@ -296,6 +323,35 @@ proxies:
       host: '(TG @WangCai2)26af988:57468'
       mode: tls
       tls: false
+  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 08"
+    server: v12.heduian.link
+    port: 30812
+    type: vmess
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /oooo
+      headers:
+        Host: ocbc.com
+    udp: true
+  - alterId: 0
+    cipher: auto
+    http-opts:
+      method: GET
+      path:
+        - /
+    name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 09"
+    network: http
+    port: 22525
+    server: 47.245.106.193
+    tls: false
+    type: vmess
+    uuid: cabe905a-28ea-4e7e-c34d-2fa38604001f
+    client-fingerprint: chrome
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 10"
     type: ss
     server: 5.44.249.43
@@ -350,22 +406,33 @@ proxies:
         Host: v8.heduian.link
     alterId: 2
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 06"
-    server: e352dd24-t4a9s0-tb36ag-1jfq7.us.hyhuawei.com
-    port: 443
-    type: hysteria2
-    password: baa46fd6-63c1-11ed-8ea9-f23c913c8d2b
-    auth: baa46fd6-63c1-11ed-8ea9-f23c913c8d2b
+    server: linux.do
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: freedom.pusytroller.cf
     udp: true
-    sni: e352dd24-t4a9s0-tb36ag-1jfq7.us.hyhuawei.com
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 07"
-    server: 34.201.50.141
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
+    server: www.epicgames.com
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: freedom.pusytroller.cf
     udp: true
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 08"
-    server: support.cloudflare.com
+    server: www.wto.org
     port: 2095
     type: vless
     uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
@@ -378,13 +445,32 @@ proxies:
         Host: freedom.pusytroller.cf
     udp: true
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 09"
-    server: 54.157.30.50
-    port: 80
-    type: ss
-    cipher: aes-256-gcm
-    password: dada0801
+    server: 172.66.47.63
+    port: 443
+    type: vless
+    uuid: 2836c061-ea09-45e5-a98e-4ca478e744b0
+    tls: true
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /f2GYY0YixkpPeMtx/Y2RuLWIxMDAueG4tLWI2Z2FjLmV1Lm9yZw
+      headers:
+        Host: aDD-1cV.pAGeS.Dev
     udp: true
+    servername: aDD-1cV.pAGeS.Dev
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 10"
+    server: itarmy.com.ua
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snippets.pusytroller.cf
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 11"
     type: vless
     network: tcp
     uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
@@ -400,78 +486,206 @@ proxies:
     flow: xtls-rprx-vision
     encryption: none
     servername: vk.cc
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 11"
-    server: 03e37e-330-co.9966661.xyz
-    port: 3000
-    type: hysteria2
-    password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d
-    auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d
-    sni: 03e37e-330-co.9966661.xyz
-    skip-cert-verify: false
-    udp: true
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 12"
-    network: ws
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 12"
+    server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     port: 443
-    server: 104.21.36.57
+    type: vmess
+    uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    tfo: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: 6c11247b-6078-461a-93d5-22e4df284e6d
+    network: ws
     ws-opts:
+      path: /azumase.ren
       headers:
-        Host: mirror.fullmargintraders.com
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/120.0.0.0 Safari/537.36
-      path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
-    servername: mirror.fullmargintraders.com
+        Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+    udp: true
+    servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 13"
-    server: 104.16.253.83
-    port: 443
+    server: blog.cloudflare.com
+    port: 2095
     type: vless
-    uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-    tls: true
-    client-fingerprint: chrome
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    client-fingerprint: randomized
     network: ws
     ws-opts:
       path: /
       headers:
-        Host: vless7-7a1.pages.dev
+        Host: freedom.pusytroller.cf
     udp: true
-    servername: vless7-7a1.pages.dev
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 14"
-    server: 54.242.126.43
+    server: developers.cloudflare.com
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: freedom.pusytroller.cf
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 15"
+    server: join-raiv2mmr-telegram.koyeb.app
+    port: 443
+    type: vless
+    uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: >-
+        /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
+      headers:
+        Host: join-raiv2mmr-telegram.koyeb.app
+    udp: true
+    servername: join-raiv2mmr-telegram.koyeb.app
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 16"
+    server: www.visa.com.sg
+    port: 8443
+    type: trojan
+    password: trojan
+    sni: pangpi.pages.dev
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: pangpi.pages.dev
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 17"
+    server: openai.com
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: freedom.pusytroller.cf
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 18"
+    server: www.fbi.gov
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: freedom.pusytroller.cf
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 19"
+    server: www.udemy.com
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: freedom.pusytroller.cf
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 20"
+    server: 107.173.37.52
+    port: 22154
+    type: hysteria2
+    password: 571ec94e-613c-430a-93de-397d3d237475
+    auth: 571ec94e-613c-430a-93de-397d3d237475
+    sni: hsxjp.huasuan666.top
+    skip-cert-verify: true
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 21"
+    server: support.cloudflare.com
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: freedom.pusytroller.cf
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 22"
+    type: hysteria
+    server: 208.87.243.151
+    port: 38845
+    skip-cert-verify: true
+    udp: true
+    sni: www.bing.com
+    alpn:
+      - h3
+    auth-str: dongtaiwang.com
+    auth_str: dongtaiwang.com
+    down: 55 Mbps
+    up: 11 Mbps
+    protocol: udp
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 23"
+    server: 172.66.40.99
+    port: 443
+    type: vless
+    uuid: ba5d4a8a-43c0-4c2c-b1de-42f7e807d149
+    tls: true
+    alpn:
+      - h2%2Chttp%2F1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: >-
+        /@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7?ed=2048
+      headers:
+        Host: www.dollardoon.com
+    udp: true
+    servername: www.dollardoon.com
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 24"
+    server: www.speedtest.net
+    port: 443
+    type: vless
+    uuid: db8b1cf8-c339-4bbb-9520-d78de52cda8e
+    tls: true
+    alpn:
+      - http%2F1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: >-
+        /--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY
+      headers:
+        Host: TEstS-9qX.pAges.DEv
+    udp: true
+    servername: TEstS-9qX.pAges.DEv
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 25"
+    server: 54.90.199.180
     port: 443
     type: ss
     cipher: aes-256-cfb
     password: amazonskr05
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 15"
-    server: www.visa.com.hk
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 26"
+    server: 104.21.9.71
     port: 443
     type: vless
-    uuid: 256a7d5f-ebc9-4bcb-b51c-5adea596a35d
+    uuid: c226ac5d-65e9-4379-95c3-fb542bc242d8
     tls: true
-    client-fingerprint: random
+    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: /freev2.net?ed=2048
+      path: /OjdW89Bpg4ykd4O
       headers:
-        Host: do-sfo3.258526.xyz
+        Host: ddDDdDDdDDF.777198.XyZ
     udp: true
-    servername: do-sfo3.258526.xyz
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 16"
-    server: 3.85.144.122
-    port: 80
-    type: ss
-    cipher: aes-256-gcm
-    password: dada0801
-    udp: true
+    servername: ddDDdDDdDDF.777198.XyZ
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 17"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 27"
     network: ws
     port: 443
     server: 198.62.62.229
@@ -490,7 +704,7 @@ proxies:
       path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
     servername: mirror.fullmargintraders.com
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 18"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 28"
     network: ws
     port: 8443
     server: 104.21.3.219
@@ -508,8 +722,27 @@ proxies:
           like Gecko) Chrome/120.0.0.0 Safari/537.36
       path: /57ba2ab1
     servername: ovhwuxian.pai50288.uk
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 29"
+    network: ws
+    port: 443
+    server: 104.21.36.57
+    skip-cert-verify: true
+    tfo: true
+    tls: true
+    type: vless
+    udp: true
+    uuid: 6c11247b-6078-461a-93d5-22e4df284e6d
+    ws-opts:
+      headers:
+        Host: mirror.fullmargintraders.com
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/120.0.0.0 Safari/537.36
+      path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
+    servername: mirror.fullmargintraders.com
   - encryption: none
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 19"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 30"
     network: ws
     port: 443
     server: 172.67.160.44
@@ -522,14 +755,14 @@ proxies:
       path: /0SCvfqSaeeB74kgXZ
     client-fingerprint: chrome
     servername: 8dbc269c-38ed-0d38-7a26-970a14604a96.huangshang.site
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 20"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 31"
     type: http
     server: 154.26.192.123
     port: 10988
     password: gs4BXwT6SW
     username: fQ67Dpe5dU
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 21"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 32"
     network: ws
     port: 443
     server: 104.21.48.1
@@ -546,7 +779,7 @@ proxies:
   - alpn:
       - http%2F1.1
     client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 22"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 33"
     network: ws
     port: 443
     server: 104.21.71.83
@@ -560,21 +793,7 @@ proxies:
         Host: a32e1893-496a-5d3e-d34f-a8674b22b993.777162.xyz
       path: /GJuqYfsZSA3HxKLVmdalbjJm7kb1B
     servername: a32e1893-496a-5d3e-d34f-a8674b22b993.777162.xyz
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 23"
-    type: hysteria
-    server: 208.87.243.151
-    port: 38845
-    skip-cert-verify: true
-    udp: true
-    sni: www.bing.com
-    alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    auth_str: dongtaiwang.com
-    down: 55 Mbps
-    up: 11 Mbps
-    protocol: udp
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 24"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 34"
     type: vless
     network: ws
     uuid: 47e9a0db-50c6-4522-8819-502c55b06dde
@@ -591,7 +810,7 @@ proxies:
       path: /?ed=2048
     encryption: none
     servername: workerr.schodog1.workers.dev
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 25"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 35"
     type: vmess
     network: ws
     uuid: a68840da-f202-4ab5-9c4a-237bff985814
@@ -601,7 +820,7 @@ proxies:
     cipher: auto
     ws-opts:
       path: /a68840da-f202-4ab5-9c4a-237bff985814
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 26"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 36"
     type: vless
     network: ws
     uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
@@ -618,7 +837,7 @@ proxies:
           Safari/537.36
       path: "/Telegram\U0001F1E8\U0001F1F3"
     servername: ex.sue.x10.mx
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 27"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 37"
     type: vless
     network: ws
     uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
@@ -634,7 +853,7 @@ proxies:
           like Gecko) Chrome/5.0.342.1 Safari/533.2
       path: "/Telegram\U0001F1E8\U0001F1F3"
     servername: ex.sue.x10.mx
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 28"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 38"
     type: vless
     network: tcp
     uuid: 9a54bad8-538d-4744-b7bc-640629840490
@@ -648,7 +867,7 @@ proxies:
     client-fingerprint: chrome
     flow: xtls-rprx-vision
     servername: aws.amazon.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 29"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 39"
     type: vless
     network: ws
     uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
@@ -664,7 +883,7 @@ proxies:
           like Gecko) Chrome/60.0.3112.113 Safari/537.36
       path: "/Telegram\U0001F1E8\U0001F1F3"
     servername: ex.sue.x10.mx
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 30"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 40"
     type: vless
     network: ws
     uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
@@ -680,21 +899,21 @@ proxies:
           Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
       path: "/Telegram\U0001F1E8\U0001F1F3"
     servername: ex.sue.x10.mx
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 31"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 41"
     type: ss
     server: 52.87.250.198
     port: 443
     password: amazonskr05
     udp: true
     cipher: aes-256-cfb
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 32"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 42"
     type: ss
     server: 54.209.249.254
     port: 443
     password: amazonskr05
     udp: true
     cipher: aes-256-cfb
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 33"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 43"
     type: vless
     network: ws
     uuid: 5590a2f6-9703-4bd9-8861-6bd5d20d93c1
@@ -714,7 +933,7 @@ proxies:
       path: /?ed=2560
     client-fingerprint: random
     servername: ok-7t5.pages.dev
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 34"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 44"
     type: hysteria
     server: 208.87.243.187
     port: 15823
@@ -742,20 +961,25 @@ proxies:
     password: amazonskr05
     cipher: aes-256-cfb
   - name: "\U0001F1E6\U0001F1FA 机场推荐:dafei.de 澳大利亚 03"
-    server: 3.107.178.116
-    port: 80
-    type: ss
-    cipher: aes-256-gcm
-    password: dada0801
+    server: ct.877774.xyz
+    port: 443
+    type: vless
+    uuid: 2293054d-04c3-4e11-8252-d052b912a491
+    tls: true
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /freev2.net?ed=2048
+      headers:
+        Host: do-syd1.258526.xyz
     udp: true
+    servername: do-syd1.258526.xyz
   - name: "\U0001F1E6\U0001F1FA 机场推荐:dafei.de 澳大利亚 04"
-    server: c94442-20-1-3.9966661.xyz
-    port: 3000
-    type: hysteria2
-    password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d
-    auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d
-    sni: c94442-20-1.9966661.xyz
-    skip-cert-verify: false
+    server: 3.25.243.255
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
     udp: true
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 01"
     server: 103.186.154.48
@@ -774,7 +998,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 03"
-    server: 103.186.155.30
+    server: 103.186.154.149
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -782,35 +1006,36 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 04"
-    server: 103.186.154.20
-    port: 38388
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.154.153
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 05"
     type: ss
-    server: 103.186.155.149
+    server: 103.186.154.191
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 06"
-    server: 103.186.154.64
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 07"
-    server: 103.186.155.31
+    cipher: aes-256-cfb
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 06"
+    server: 103.186.155.80
     port: 38388
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 07"
+    server: 103.186.154.16
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 08"
-    server: 103.186.155.71
+    server: 103.186.155.202
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -818,34 +1043,35 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 09"
-    server: vnvnnian-u-do-vn2-4.9966661.xyz
-    port: 3000
-    type: hysteria2
-    password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d
-    auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d
-    sni: vnvnnian-u-do-vn2.9966661.xyz
-    skip-cert-verify: false
-    udp: true
+    server: 103.186.155.127
+    port: 38388
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 10"
-    type: ss
-    server: 103.186.154.238
+    server: 103.186.154.64
     port: 38388
+    type: ss
+    cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 11"
-    server: 103.186.154.143
-    port: 38388
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.155.45
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 12"
-    type: ss
-    server: 103.186.154.240
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 12"
+    server: 103.186.155.38
+    port: 38388
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 13"
     type: ss
     server: 103.186.155.137
@@ -854,13 +1080,15 @@ proxies:
     udp: true
     cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 14"
-    type: ss
-    server: 103.186.154.62
+    server: 103.186.154.36
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 15"
-    server: 103.186.155.154
+    server: 103.186.154.25
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -868,27 +1096,30 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 16"
-    type: ss
-    server: 103.186.154.41
+    server: 103.186.155.67
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 17"
-    type: ss
-    server: 103.186.155.214
+    server: 103.186.155.231
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 18"
-    server: 103.186.155.121
-    port: 38388
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.155.211
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 19"
-    server: 103.186.154.245
+    server: 103.186.155.48
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -896,21 +1127,23 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 20"
-    type: ss
-    server: 103.186.155.111
+    server: 103.186.154.180
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 21"
-    type: ss
-    server: 103.186.155.61
+    server: 103.186.154.188
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 22"
-    server: 103.186.155.108
+    server: 103.186.154.234
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -918,7 +1151,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 23"
-    server: 103.186.154.71
+    server: 103.186.155.134
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -926,13 +1159,15 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 24"
-    type: ss
-    server: 103.186.155.105
+    server: 103.186.154.56
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 25"
-    server: 103.186.154.69
+    server: 103.186.154.186
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -941,32 +1176,33 @@ proxies:
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 26"
     type: ss
-    server: 103.186.155.126
+    server: 103.186.154.203
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 27"
-    type: http
-    server: 160.30.54.67
-    port: 54679
-    password: 4xdfi6v
-    username: kZXMC3Z1
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 28"
-    type: http
-    server: 160.30.54.67
-    port: 8900
-    password: '1234'
-    username: '1234'
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 29"
-    server: 103.186.154.4
+    server: 103.186.155.106
     port: 38388
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 28"
+    type: ss
+    server: 103.186.155.239
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 29"
+    server: 103.186.155.36
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 30"
-    server: 103.186.154.9
+    server: 103.186.155.47
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -974,15 +1210,14 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 31"
-    server: 103.186.154.12
+    server: 103.186.155.9
     port: 38388
-    client-fingerprint: chrome
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
+    udp: true
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 32"
-    server: 103.186.154.14
+    server: 103.186.154.218
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -990,15 +1225,13 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 33"
-    server: 103.186.154.17
-    port: 38388
-    client-fingerprint: chrome
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.155.23
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 34"
-    server: 103.186.154.22
+    server: 103.186.154.71
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1006,13 +1239,15 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 35"
-    type: ss
-    server: 103.186.154.24
+    server: 103.186.155.213
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 36"
-    server: 103.186.154.25
+    server: 103.186.154.242
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1020,15 +1255,13 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 37"
-    server: 103.186.154.28
-    port: 38388
-    client-fingerprint: chrome
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.155.109
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 38"
-    server: 103.186.154.30
+    server: 103.186.155.52
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1036,110 +1269,6 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 39"
-    server: 103.186.154.34
-    port: 38388
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 40"
-    server: 103.186.154.35
-    port: 38388
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 41"
-    server: 103.186.154.36
-    port: 38388
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 42"
-    server: 103.186.154.39
-    port: 38388
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 43"
-    server: 103.186.154.40
-    port: 38388
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 44"
-    server: 103.186.154.46
-    port: 38388
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 45"
-    server: 103.186.154.50
-    port: 38388
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 46"
-    server: 103.186.154.52
-    port: 38388
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 47"
-    server: 103.186.154.53
-    port: 38388
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 48"
-    server: 103.186.154.55
-    port: 38388
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 49"
-    server: 103.186.154.56
-    port: 38388
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 50"
-    server: 103.186.154.58
-    port: 38388
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 51"
-    server: 103.186.154.59
-    port: 38388
-    client-fingerprint: chrome
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 52"
     server: 103.186.154.63
     port: 38388
     client-fingerprint: chrome
@@ -1147,8 +1276,103 @@ proxies:
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 40"
+    server: 103.186.155.143
+    port: 38388
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 41"
+    server: 103.186.154.151
+    port: 38388
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 42"
+    server: 103.186.155.84
+    port: 38388
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 43"
+    server: 103.186.154.174
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 44"
+    server: 103.186.154.232
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 45"
+    server: 103.186.154.212
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 46"
+    type: ss
+    server: 103.186.155.147
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 47"
+    server: 103.186.155.135
+    port: 38388
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 48"
+    server: 103.186.155.22
+    port: 38388
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 49"
+    type: http
+    server: 160.30.54.67
+    port: 54679
+    password: 4xdfi6v
+    username: kZXMC3Z1
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 50"
+    type: http
+    server: 160.30.54.67
+    port: 8900
+    password: '1234'
+    username: '1234'
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 51"
+    server: 103.186.154.4
+    port: 38388
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 52"
+    server: 103.186.154.9
+    port: 38388
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 53"
-    server: 103.186.154.65
+    server: 103.186.154.12
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1156,7 +1380,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 54"
-    server: 103.186.154.66
+    server: 103.186.154.14
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1164,7 +1388,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 55"
-    server: 103.186.154.70
+    server: 103.186.154.17
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1172,7 +1396,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 56"
-    server: 103.186.154.72
+    server: 103.186.154.22
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1181,13 +1405,12 @@ proxies:
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 57"
     type: ss
-    server: 103.186.154.74
+    server: 103.186.154.24
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
     cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 58"
-    server: 103.186.154.76
+    server: 103.186.154.28
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1195,7 +1418,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 59"
-    server: 103.186.154.77
+    server: 103.186.154.30
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1203,7 +1426,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 60"
-    server: 103.186.154.80
+    server: 103.186.154.34
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1211,7 +1434,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 61"
-    server: 103.186.154.139
+    server: 103.186.154.35
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1219,7 +1442,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 62"
-    server: 103.186.154.141
+    server: 103.186.154.39
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1227,7 +1450,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 63"
-    server: 103.186.154.145
+    server: 103.186.154.40
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1235,15 +1458,13 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 64"
-    server: 103.186.154.146
-    port: 38388
-    client-fingerprint: chrome
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.154.41
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 65"
-    server: 103.186.154.149
+    server: 103.186.154.46
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1251,7 +1472,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 66"
-    server: 103.186.154.150
+    server: 103.186.154.50
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1259,7 +1480,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 67"
-    server: 103.186.154.151
+    server: 103.186.154.52
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1267,7 +1488,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 68"
-    server: 103.186.154.152
+    server: 103.186.154.53
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1275,7 +1496,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 69"
-    server: 103.186.154.156
+    server: 103.186.154.55
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1283,7 +1504,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 70"
-    server: 103.186.154.158
+    server: 103.186.154.58
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1291,7 +1512,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 71"
-    server: 103.186.154.161
+    server: 103.186.154.59
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1299,22 +1520,21 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 72"
-    server: 103.186.154.162
+    type: ss
+    server: 103.186.154.62
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 73"
+    server: 103.186.154.65
     port: 38388
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 73"
-    type: ss
-    server: 103.186.154.165
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 74"
-    server: 103.186.154.166
+    server: 103.186.154.66
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1322,7 +1542,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 75"
-    server: 103.186.154.167
+    server: 103.186.154.69
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1330,7 +1550,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 76"
-    server: 103.186.154.170
+    server: 103.186.154.70
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1338,7 +1558,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 77"
-    server: 103.186.154.172
+    server: 103.186.154.72
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1346,15 +1566,14 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 78"
-    server: 103.186.154.175
-    port: 38388
-    client-fingerprint: chrome
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.154.74
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
+    udp: true
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 79"
-    server: 103.186.154.180
+    server: 103.186.154.76
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1362,7 +1581,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 80"
-    server: 103.186.154.183
+    server: 103.186.154.77
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1370,7 +1589,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 81"
-    server: 103.186.154.184
+    server: 103.186.154.80
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1378,14 +1597,15 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 82"
-    type: ss
-    server: 103.186.154.185
+    server: 103.186.154.139
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 83"
-    server: 103.186.154.186
+    server: 103.186.154.141
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1393,7 +1613,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 84"
-    server: 103.186.154.188
+    server: 103.186.154.145
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1401,7 +1621,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 85"
-    server: 103.186.154.189
+    server: 103.186.154.146
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1409,7 +1629,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 86"
-    server: 103.186.154.194
+    server: 103.186.154.150
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1417,7 +1637,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 87"
-    server: 103.186.154.196
+    server: 103.186.154.152
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1425,7 +1645,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 88"
-    server: 103.186.154.197
+    server: 103.186.154.156
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1433,7 +1653,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 89"
-    server: 103.186.154.199
+    server: 103.186.154.158
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1441,13 +1661,15 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 90"
-    type: ss
-    server: 103.186.154.203
+    server: 103.186.154.161
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 91"
-    server: 103.186.154.206
+    server: 103.186.154.162
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1455,15 +1677,14 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 92"
-    server: 103.186.154.207
-    port: 38388
-    client-fingerprint: chrome
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.154.165
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
+    udp: true
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 93"
-    server: 103.186.154.209
+    server: 103.186.154.166
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1471,7 +1692,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 94"
-    server: 103.186.154.216
+    server: 103.186.154.167
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1479,7 +1700,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 95"
-    server: 103.186.154.217
+    server: 103.186.154.170
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1487,7 +1708,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 96"
-    server: 103.186.154.218
+    server: 103.186.154.172
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1495,7 +1716,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 97"
-    server: 103.186.154.220
+    server: 103.186.154.175
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1503,7 +1724,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 98"
-    server: 103.186.154.221
+    server: 103.186.154.183
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1511,7 +1732,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 99"
-    server: 103.186.154.223
+    server: 103.186.154.184
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1519,15 +1740,14 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 100"
-    server: 103.186.154.227
-    port: 38388
-    client-fingerprint: chrome
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.154.185
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
+    udp: true
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 101"
-    server: 103.186.154.230
+    server: 103.186.154.189
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1535,7 +1755,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 102"
-    server: 103.186.154.231
+    server: 103.186.154.194
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1543,7 +1763,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 103"
-    server: 103.186.154.234
+    server: 103.186.154.196
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1551,7 +1771,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 104"
-    server: 103.186.154.236
+    server: 103.186.154.197
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1559,7 +1779,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 105"
-    server: 103.186.154.237
+    server: 103.186.154.199
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1567,7 +1787,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 106"
-    server: 103.186.154.239
+    server: 103.186.154.206
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1575,7 +1795,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 107"
-    server: 103.186.154.242
+    server: 103.186.154.207
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1583,7 +1803,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 108"
-    server: 103.186.154.247
+    server: 103.186.154.209
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1591,7 +1811,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 109"
-    server: 103.186.154.249
+    server: 103.186.154.216
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1599,7 +1819,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 110"
-    server: 103.186.154.253
+    server: 103.186.154.217
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1607,7 +1827,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 111"
-    server: 103.186.155.5
+    server: 103.186.154.220
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1615,7 +1835,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 112"
-    server: 103.186.155.8
+    server: 103.186.154.221
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1623,7 +1843,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 113"
-    server: 103.186.155.12
+    server: 103.186.154.223
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1631,7 +1851,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 114"
-    server: 103.186.155.15
+    server: 103.186.154.227
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1639,7 +1859,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 115"
-    server: 103.186.155.16
+    server: 103.186.154.230
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1647,7 +1867,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 116"
-    server: 103.186.155.21
+    server: 103.186.154.231
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1655,7 +1875,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 117"
-    server: 103.186.155.22
+    server: 103.186.154.236
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1663,13 +1883,15 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 118"
-    type: ss
-    server: 103.186.155.23
+    server: 103.186.154.237
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 119"
-    server: 103.186.155.27
+    server: 103.186.154.239
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1677,7 +1899,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 120"
-    server: 103.186.155.28
+    server: 103.186.154.245
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1685,7 +1907,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 121"
-    server: 103.186.155.32
+    server: 103.186.154.247
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1693,7 +1915,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 122"
-    server: 103.186.155.34
+    server: 103.186.154.249
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1701,7 +1923,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 123"
-    server: 103.186.155.35
+    server: 103.186.154.253
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1709,7 +1931,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 124"
-    server: 103.186.155.37
+    server: 103.186.155.5
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1717,7 +1939,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 125"
-    server: 103.186.155.38
+    server: 103.186.155.8
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1725,14 +1947,15 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 126"
-    type: ss
-    server: 103.186.155.39
+    server: 103.186.155.12
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 127"
-    server: 103.186.155.40
+    server: 103.186.155.15
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1740,7 +1963,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 128"
-    server: 103.186.155.41
+    server: 103.186.155.16
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1748,7 +1971,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 129"
-    server: 103.186.155.42
+    server: 103.186.155.21
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1756,7 +1979,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 130"
-    server: 103.186.155.44
+    server: 103.186.155.27
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1764,7 +1987,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 131"
-    server: 103.186.155.46
+    server: 103.186.155.28
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1772,7 +1995,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 132"
-    server: 103.186.155.47
+    server: 103.186.155.30
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1780,7 +2003,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 133"
-    server: 103.186.155.48
+    server: 103.186.155.31
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1788,7 +2011,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 134"
-    server: 103.186.155.49
+    server: 103.186.155.32
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1796,7 +2019,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 135"
-    server: 103.186.155.51
+    server: 103.186.155.34
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1804,7 +2027,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 136"
-    server: 103.186.155.52
+    server: 103.186.155.35
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1812,7 +2035,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 137"
-    server: 103.186.155.55
+    server: 103.186.155.37
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1820,22 +2043,22 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 138"
-    server: 103.186.155.60
+    type: ss
+    server: 103.186.155.39
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    cipher: aes-256-cfb
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 139"
+    server: 103.186.155.40
     port: 38388
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 139"
-    type: ss
-    server: 103.186.155.62
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 140"
-    server: 103.186.155.67
+    server: 103.186.155.41
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1843,7 +2066,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 141"
-    server: 103.186.155.68
+    server: 103.186.155.42
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1851,7 +2074,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 142"
-    server: 103.186.155.69
+    server: 103.186.155.44
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1859,7 +2082,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 143"
-    server: 103.186.155.77
+    server: 103.186.155.46
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1867,13 +2090,15 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 144"
-    type: ss
-    server: 103.186.155.78
+    server: 103.186.155.49
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 145"
-    server: 103.186.155.80
+    server: 103.186.155.51
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1881,7 +2106,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 146"
-    server: 103.186.155.81
+    server: 103.186.155.55
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1889,7 +2114,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 147"
-    server: 103.186.155.82
+    server: 103.186.155.60
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1897,15 +2122,14 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 148"
-    server: 103.186.155.83
-    port: 38388
-    client-fingerprint: chrome
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.155.62
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
+    udp: true
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 149"
-    server: 103.186.155.84
+    server: 103.186.155.68
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1913,7 +2137,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 150"
-    server: 103.186.155.101
+    server: 103.186.155.69
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1921,7 +2145,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 151"
-    server: 103.186.155.102
+    server: 103.186.155.71
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1929,7 +2153,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 152"
-    server: 103.186.155.106
+    server: 103.186.155.77
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1937,15 +2161,13 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 153"
-    server: 103.186.155.107
-    port: 38388
-    client-fingerprint: chrome
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.155.78
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 154"
-    server: 103.186.155.112
+    server: 103.186.155.81
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1953,7 +2175,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 155"
-    server: 103.186.155.114
+    server: 103.186.155.82
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1961,7 +2183,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 156"
-    server: 103.186.155.115
+    server: 103.186.155.83
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1969,7 +2191,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 157"
-    server: 103.186.155.116
+    server: 103.186.155.101
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1977,7 +2199,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 158"
-    server: 103.186.155.119
+    server: 103.186.155.102
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -1985,15 +2207,13 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 159"
-    server: 103.186.155.123
-    port: 38388
-    client-fingerprint: chrome
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.155.105
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 160"
-    server: 103.186.155.124
+    server: 103.186.155.107
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2001,7 +2221,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 161"
-    server: 103.186.155.125
+    server: 103.186.155.108
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2009,7 +2229,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 162"
-    server: 103.186.155.127
+    server: 103.186.155.112
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2017,7 +2237,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 163"
-    server: 103.186.155.128
+    server: 103.186.155.114
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2025,7 +2245,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 164"
-    server: 103.186.155.134
+    server: 103.186.155.115
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2033,7 +2253,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 165"
-    server: 103.186.155.135
+    server: 103.186.155.116
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2041,7 +2261,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 166"
-    server: 103.186.155.138
+    server: 103.186.155.119
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2049,7 +2269,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 167"
-    server: 103.186.155.140
+    server: 103.186.155.123
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2057,7 +2277,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 168"
-    server: 103.186.155.143
+    server: 103.186.155.124
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2065,7 +2285,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 169"
-    server: 103.186.155.144
+    server: 103.186.155.125
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2073,28 +2293,29 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 170"
-    server: 103.186.155.146
+    type: ss
+    server: 103.186.155.126
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 171"
+    server: 103.186.155.128
     port: 38388
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 171"
-    type: ss
-    server: 103.186.155.147
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 172"
-    type: ss
-    server: 103.186.155.150
+    server: 103.186.155.138
     port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
+    client-fingerprint: chrome
+    type: ss
     cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 173"
-    server: 103.186.155.156
+    server: 103.186.155.140
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2102,7 +2323,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 174"
-    server: 103.186.155.202
+    server: 103.186.155.144
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2110,27 +2331,28 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 175"
-    type: ss
-    server: 103.186.155.206
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 176"
-    type: ss
-    server: 103.186.155.207
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 177"
-    server: 103.186.155.209
+    server: 103.186.155.146
     port: 38388
     client-fingerprint: chrome
     type: ss
     cipher: aes-256-cfb
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 176"
+    type: ss
+    server: 103.186.155.149
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 177"
+    type: ss
+    server: 103.186.155.150
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 178"
-    server: 103.186.155.213
+    server: 103.186.155.154
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2138,7 +2360,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 179"
-    server: 103.186.155.215
+    server: 103.186.155.156
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2146,23 +2368,19 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 180"
-    server: 103.186.155.221
-    port: 38388
-    client-fingerprint: chrome
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.155.206
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 181"
-    server: 103.186.155.223
-    port: 38388
-    client-fingerprint: chrome
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.155.207
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 182"
-    server: 103.186.155.224
+    server: 103.186.155.209
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2171,12 +2389,13 @@ proxies:
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 183"
     type: ss
-    server: 103.186.155.226
+    server: 103.186.155.214
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
     cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 184"
-    server: 103.186.155.227
+    server: 103.186.155.215
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2184,7 +2403,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 185"
-    server: 103.186.155.229
+    server: 103.186.155.221
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2192,7 +2411,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 186"
-    server: 103.186.155.231
+    server: 103.186.155.223
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2200,7 +2419,7 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 187"
-    server: 103.186.155.233
+    server: 103.186.155.224
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2208,15 +2427,13 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 188"
-    server: 103.186.155.234
-    port: 38388
-    client-fingerprint: chrome
     type: ss
-    cipher: aes-256-cfb
+    server: 103.186.155.226
+    port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    tfo: false
+    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 189"
-    server: 103.186.155.237
+    server: 103.186.155.227
     port: 38388
     client-fingerprint: chrome
     type: ss
@@ -2224,51 +2441,83 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     tfo: false
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 190"
+    server: 103.186.155.229
+    port: 38388
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 191"
+    server: 103.186.155.233
+    port: 38388
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 192"
+    server: 103.186.155.234
+    port: 38388
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 193"
+    server: 103.186.155.237
+    port: 38388
+    client-fingerprint: chrome
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    tfo: false
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 194"
     type: ss
     server: 103.186.154.49
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 191"
-    type: ss
-    server: 103.186.155.211
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 192"
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 195"
     type: ss
     server: 103.186.154.254
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
     cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 193"
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 196"
     type: ss
     server: 103.186.155.20
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 194"
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 197"
+    type: ss
+    server: 103.186.154.240
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 198"
     type: ss
     server: 103.186.155.104
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 195"
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 199"
     type: ss
-    server: 103.186.155.109
+    server: 103.186.155.61
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
     cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 196"
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 200"
     type: ss
     server: 103.186.154.178
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
     cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 197"
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 201"
     type: ss
     server: 103.186.154.51
     port: 38388
@@ -2277,98 +2526,85 @@ proxies:
     tfo: false
     cipher: aes-256-cfb
     client-fingerprint: chrome
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 198"
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 202"
     type: ss
     server: 103.186.154.15
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 199"
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 203"
     type: ss
     server: 103.186.154.192
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 200"
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 204"
     type: ss
     server: 103.186.155.129
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 201"
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 205"
     type: ss
     server: 103.186.155.25
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 202"
-    type: ss
-    server: 103.186.154.153
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 203"
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 206"
     type: ss
     server: 103.186.155.139
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
     cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 204"
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 207"
     type: ss
     server: 103.186.155.76
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
     cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 205"
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 208"
     type: ss
     server: 103.186.155.59
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 206"
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 209"
     type: ss
     server: 103.186.155.148
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 207"
-    type: ss
-    server: 103.186.155.3
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 208"
-    type: ss
-    server: 103.186.154.181
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 209"
-    type: ss
-    server: 103.186.155.239
-    port: 38388
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 210"
     type: ss
-    server: 103.186.155.45
+    server: 103.186.154.238
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
     cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 211"
     type: ss
-    server: 103.186.155.13
+    server: 103.186.155.111
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
     cipher: aes-256-cfb
   - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 212"
     type: ss
-    server: 103.186.154.191
+    server: 103.186.155.3
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 213"
+    type: ss
+    server: 103.186.154.181
+    port: 38388
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    cipher: aes-256-cfb
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 214"
+    type: ss
+    server: 103.186.155.13
     port: 38388
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     udp: true
@@ -2382,13 +2618,19 @@ proxies:
     password: k1v5g9FefdoO
     tfo: false
   - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 02"
-    server: 83.147.17.147
-    port: 22156
-    type: hysteria2
-    password: 571ec94e-613c-430a-93de-397d3d237475
-    auth: 571ec94e-613c-430a-93de-397d3d237475
-    sni: hsyg.huasuan666.top
+    server: v36.heduian.link
+    port: 30836
+    type: vmess
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
     skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /oooo
+      headers:
+        Host: ocbc.com
     udp: true
   - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 03"
     type: ss
@@ -2476,21 +2718,33 @@ proxies:
     cipher: aes-256-cfb
     client-fingerprint: chrome
   - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 02"
-    server: 13.38.71.74
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
+    type: hysteria
+    server: 62.210.127.217
+    port: 50011
+    skip-cert-verify: true
     udp: true
+    sni: apple.com
+    alpn:
+      - h3
+    auth-str: dongtaiwang.com
+    down: 55 Mbps
+    protocol: udp
+    up: 11 Mbps
+    auth_str: dongtaiwang.com
   - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 03"
-    server: 6a471e-20.9966661.xyz
-    port: 3000
-    type: hysteria2
-    password: a24c6851-2055-42c1-9c20-2d3bad97334f
-    auth: a24c6851-2055-42c1-9c20-2d3bad97334f
-    sni: 6a471e-20.9966661.xyz
-    skip-cert-verify: false
+    type: hysteria
+    server: 62.210.127.217
+    port: 35511
+    skip-cert-verify: true
     udp: true
+    sni: apple.com
+    alpn:
+      - h3
+    auth-str: dongtaiwang.com
+    auth_str: dongtaiwang.com
+    down: 55
+    protocol: udp
+    up: 11
   - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 04"
     type: vless
     network: ws
@@ -2510,34 +2764,6 @@ proxies:
     servername: ex.sue.x10.mx
   - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 05"
     type: hysteria
-    server: 62.210.127.217
-    port: 35511
-    skip-cert-verify: true
-    udp: true
-    sni: apple.com
-    alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    auth_str: dongtaiwang.com
-    down: 55
-    protocol: udp
-    up: 11
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 06"
-    type: hysteria
-    server: 62.210.127.217
-    port: 50011
-    skip-cert-verify: true
-    udp: true
-    sni: apple.com
-    alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    down: 55 Mbps
-    protocol: udp
-    up: 11 Mbps
-    auth_str: dongtaiwang.com
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 07"
-    type: hysteria
     server: 195.154.200.40
     port: 15010
     skip-cert-verify: true
@@ -2548,7 +2774,7 @@ proxies:
     auth_str: dongtaiwang.com
     down: '100'
     up: '100'
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 08"
+  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 06"
     type: vmess
     network: ws
     uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
@@ -2563,7 +2789,7 @@ proxies:
         HOST: glweidf.sbs
       path: /linkws
     servername: glweidf.sbs
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 09"
+  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 07"
     type: vless
     network: tcp
     uuid: c2ec47f4-873f-573f-7d8d-d79d7ad452e6
@@ -2592,6 +2818,20 @@ proxies:
     udp: true
     cipher: aes-256-cfb
   - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 02"
+    server: 45.87.175.177
+    port: 8080
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: cvII85TrW6n0OGyfpHVS1u
+    udp: true
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 03"
+    server: 178.208.78.170
+    port: 23822
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: 6hWNCD6EzQuP3V2aEFURwS
+    udp: true
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 04"
     type: hysteria2
     server: 185.92.220.240
     port: 30205
@@ -2600,7 +2840,7 @@ proxies:
     sni: net2025.afsharidempire.uk
     obfs: salamander
     obfs-password: GdQ4bgvT8RFwuWi2
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 03"
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 05"
     type: hysteria
     server: 51.159.226.1
     port: 49003
@@ -2614,7 +2854,7 @@ proxies:
     down: 55
     up: 11
     protocol: udp
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 04"
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 06"
     type: hysteria
     server: 109.104.153.91
     port: 37519
@@ -2629,7 +2869,7 @@ proxies:
     protocol: udp
     up: 1000
     auth-str: dongtaiwang.com
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 05"
+  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 07"
     type: vless
     network: tcp
     uuid: 2e23b585-a486-4541-83d8-5832a1409c6e
@@ -2697,39 +2937,18 @@ proxies:
     fingerprint: ''
     alterId: 0
   - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 02"
-    type: ss
-    server: 45.87.175.177
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: cvII85TrW6n0OGyfpHVS1u
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 03"
-    server: de1-1.9966662.xyz
-    port: 20133
+    server: mstr.fastly80.hosting-ip.com
+    port: 80
     type: vless
-    uuid: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: 65E6IjBrQMYqhrtISS0F2kUFIjT5aSxgNPKCf88fGFw
-      short-id: 3b03febe
-    client-fingerprint: chrome
-    network: tcp
-    udp: true
-    servername: www.cloudflare.com
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 04"
-    server: cdnjs.com
-    port: 2095
-    type: vless
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    uuid: 77a07419-394a-4e46-b64b-a4ca2bd295f4
     tls: false
-    client-fingerprint: randomized
     network: ws
     ws-opts:
-      path: /
+      path: /admin
       headers:
-        Host: freedom.pusytroller.cf
+        Host: Gn8656.io
     udp: true
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 05"
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 03"
     type: vless
     network: tcp
     uuid: c2ec47f4-873f-573f-7d8d-d79d7ad452e6
@@ -2744,7 +2963,7 @@ proxies:
     encryption: none
     flow: xtls-rprx-vision
     servername: store.steampowered.com
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 06"
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 04"
     type: vmess
     network: tcp
     uuid: 00451b7a-e0a9-4e19-a6e9-7e38693e3f1f
@@ -2752,14 +2971,14 @@ proxies:
     port: 80
     alterId: 0
     cipher: auto
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 07"
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 05"
     type: trojan
     server: 205.198.95.254
     port: 52312
     password: 15387474-c50e-4eab-ae51-47f60436fb46
     skip-cert-verify: true
     sni: 0.0.0.0
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 08"
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 06"
     type: vless
     uuid: 0abf9050-c7be-464d-80af-24094c2b97de
     server: 188.68.53.100
@@ -2773,7 +2992,7 @@ proxies:
     client-fingerprint: chrome
     network: tcp
     servername: Tgju.org
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 09"
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 07"
     type: vless
     network: tcp
     uuid: b5cb98c1-a6cd-440a-a326-2aaa1885d04b
@@ -2787,14 +3006,14 @@ proxies:
       short-id: b3
     client-fingerprint: chrome
     servername: miro.com
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 10"
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 08"
     type: trojan
     server: 139.162.180.57
     port: 52312
     password: 15387474-c50e-4eab-ae51-47f60436fb46
     skip-cert-verify: true
     sni: 0.0.0.0
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 11"
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 09"
     type: trojan
     server: 139.162.144.54
     port: 52312
@@ -2830,52 +3049,7 @@ proxies:
     password: k1dBOmOB4oqi7Ump37a1bQ
     udp: true
     cipher: chacha20-ietf-poly1305
-  - name: "\U0001F1EE\U0001F1F9 机场推荐:dafei.de 意大利 01"
-    server: 5f6a56-20-5.9966661.xyz
-    port: 3000
-    type: hysteria2
-    password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d
-    auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d
-    sni: 5f6a56-20.9966661.xyz
-    skip-cert-verify: false
-    udp: true
-  - name: "\U0001F1EE\U0001F1F9 机场推荐:dafei.de 意大利 02"
-    type: ss
-    server: 95.81.83.131
-    port: 8443
-    password: er4OuCwSlULPnJnC8YAIFA
-    udp: true
-    cipher: chacha20-ietf-poly1305
-  - name: "\U0001F1EE\U0001F1F9 机场推荐:dafei.de 意大利 03"
-    type: ss
-    server: 212.102.54.45
-    port: 990
-    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-    cipher: chacha20-ietf-poly1305
-  - name: "\U0001F1F0\U0001F1FF 机场推荐:dafei.de 哈萨克斯坦 01"
-    server: 836902-20-5.9966661.xyz
-    port: 3000
-    type: hysteria2
-    password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d
-    auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d
-    sni: 836902-20.9966661.xyz
-    skip-cert-verify: false
-    udp: true
   - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 01"
-    type: tuic
-    uuid: a13a6ce4-cafa-4b26-a710-a03aa91c5418
-    server: 40.233.77.57
-    port: 52434
-    password: a13a6ce4-cafa-4b26-a710-a03aa91c5418
-    skip-cert-verify: true
-    sni: www.bing.com
-    alpn:
-      - h3
-    disable-sni: false
-    reduce-rtt: false
-    request-timeout: 0
-    version: 5
-  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 02"
     server: 129.153.59.26
     port: 42557
     type: vless
@@ -2889,7 +3063,75 @@ proxies:
     network: tcp
     udp: true
     servername: www.yahoo.com
+  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 02"
+    type: hysteria2
+    server: 129.153.59.26
+    port: 30300
+    password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+    skip-cert-verify: true
+    udp: true
+    sni: www.bing.com
+    alpn:
+      - h3
+    auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
   - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 03"
+    type: tuic
+    uuid: a13a6ce4-cafa-4b26-a710-a03aa91c5418
+    server: 40.233.77.57
+    port: 52434
+    password: a13a6ce4-cafa-4b26-a710-a03aa91c5418
+    skip-cert-verify: true
+    sni: www.bing.com
+    alpn:
+      - h3
+    disable-sni: false
+    reduce-rtt: false
+    request-timeout: 0
+    version: 5
+  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 04"
+    server: 40.233.75.30
+    port: 13805
+    type: hysteria2
+    password: dcdd09ad-4519-46f7-8107-4c4290a9b2a3
+    auth: dcdd09ad-4519-46f7-8107-4c4290a9b2a3
+    sni: www.bing.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    udp: true
+  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 05"
+    server: 40.233.96.158
+    port: 45979
+    type: hysteria2
+    password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+    auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+    sni: www.bing.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    udp: true
+  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 06"
+    server: 40.233.96.158
+    port: 26113
+    type: vless
+    uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+    tls: true
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
+      short-id: 1fbd20fd
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+    servername: www.yahoo.com
+  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 07"
+    server: 137.184.174.93
+    port: 8080
+    type: ss
+    cipher: rc4-md5
+    password: 14fFPrbezE3HDZzsMOr6
+    udp: true
+  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 08"
     password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
     port: 47262
     server: 40.233.103.51
@@ -2897,7 +3139,7 @@ proxies:
     sni: www.bing.com
     type: hysteria2
     client-fingerprint: chrome
-  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 04"
+  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 09"
     type: vless
     network: ws
     uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
@@ -2913,18 +3155,7 @@ proxies:
           like Gecko) Chrome/58.0.3029.110 Safari/537.36
       path: "/Telegram\U0001F1E8\U0001F1F3"
     servername: ex.sue.x10.mx
-  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 05"
-    type: hysteria2
-    server: 129.153.59.26
-    port: 30300
-    password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-    skip-cert-verify: true
-    udp: true
-    sni: www.bing.com
-    alpn:
-      - h3
-    auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 06"
+  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 10"
     type: vless
     network: tcp
     uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
@@ -2940,34 +3171,6 @@ proxies:
     flow: xtls-rprx-vision
     encryption: none
     servername: vk.cc
-  - name: "\U0001F1F2\U0001F1F0 机场推荐:dafei.de 马其顿 01"
-    server: mk5.9966662.xyz
-    port: 51423
-    type: vless
-    uuid: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: aTmRClRKFCvNi6aFQnmKt3CJ2hrLG3wQJ5WgrbWk1Xs
-      short-id: b8ee759f
-    client-fingerprint: chrome
-    network: tcp
-    udp: true
-    servername: www.cloudflare.com
-  - name: "\U0001F1F8\U0001F1EA 机场推荐:dafei.de 瑞典 01"
-    server: 13.60.209.163
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    udp: true
-  - name: "\U0001F1F8\U0001F1EA 机场推荐:dafei.de 瑞典 02"
-    server: 51.21.251.108
-    port: 443
-    type: ss
-    cipher: aes-256-cfb
-    password: amazonskr05
-    udp: true
   - name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 01"
     type: ss
     server: 156.251.179.135
@@ -2981,7 +3184,21 @@ proxies:
       mode: websocket
       path: /aqwshiog
       tls: true
-  - name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 02"
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 02"
+    port: 443
+    reality-opts:
+      public-key: oE7ZEghzkaOUiw1q3PqBtpllP1NlPHLY8ydJRuICtko
+    server: 146.19.90.10
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: a0de1607-5b63-fab8-a759-9f98706b6125
+    network: tcp
+    servername: speed.cloudflare.com
+  - name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 03"
     type: vless
     network: tcp
     uuid: 192ea2c7-d7d0-6676-2929-b04a072b387d
@@ -2996,47 +3213,61 @@ proxies:
     client-fingerprint: chrome
     flow: xtls-rprx-vision
     servername: speed.cloudflare.com
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: "\U0001F1F8\U0001F1E8 机场推荐:dafei.de 塞舌尔 03"
-    port: 443
-    reality-opts:
-      public-key: oE7ZEghzkaOUiw1q3PqBtpllP1NlPHLY8ydJRuICtko
-    server: 146.19.90.10
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    udp: true
-    uuid: a0de1607-5b63-fab8-a759-9f98706b6125
-    network: tcp
-    servername: speed.cloudflare.com
-  - name: "\U0001F1F1\U0001F1FA 机场推荐:dafei.de 卢森堡 01"
-    type: vless
-    network: ws
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    server: 188.42.145.253
-    port: 2096
-    skip-cert-verify: false
-    tls: true
-    udp: true
-    xudp: true
-    tfo: false
-    ws-opts:
-      headers:
-        Host: gaosir.unfeeling.sbs
-      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
-    client-fingerprint: chrome
-    servername: gaosir.unfeeling.sbs
-  - name: "\U0001F1F2\U0001F1E9 机场推荐:dafei.de 摩尔多瓦 01"
+  - name: "\U0001F1F2\U0001F1E6 机场推荐:dafei.de 摩洛哥 01"
+    server: 188.214.157.30
+    port: 990
     type: ss
-    server: 185.153.197.5
+    cipher: chacha20-ietf-poly1305
+    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+    udp: true
+  - name: "\U0001F1F9\U0001F1ED 机场推荐:dafei.de 泰国 01"
+    server: 43.229.150.181
+    port: 80
+    type: vmess
+    uuid: bcb7c581-3c95-4569-a4e7-918141e91ea3
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+      headers:
+        Host:
+          - data.video.qiyi.com
+    udp: true
+  - name: "\U0001F1F8\U0001F1EA 机场推荐:dafei.de 瑞典 01"
+    server: 13.60.209.163
+    port: 443
+    type: ss
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+  - name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 01"
+    server: 134.209.147.198
     port: 989
+    type: ss
+    cipher: aes-256-cfb
     password: f8f7aCzcPKbsF8p3
     udp: true
-    cipher: aes-256-cfb
+  - name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 02"
+    server: freeyx.cloudflare88.eu.org
+    port: 443
+    type: vless
+    uuid: 2293054d-04c3-4e11-8252-d052b912a491
+    tls: true
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /freev2.net?ed=2048
+      headers:
+        Host: do-blr1.258526.xyz
+    udp: true
+    servername: do-blr1.258526.xyz
   - alterId: 0
     cipher: auto
-    name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 01"
+    name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 03"
     network: none
     port: 44829
     server: 163.223.52.61
@@ -3080,6 +3311,58 @@ proxies:
         Host: 01.91md.fun
       path: /%2F%3Fed%3D2048
     servername: 01.91md.fun
+  - name: "\U0001F1EE\U0001F1F9 机场推荐:dafei.de 意大利 01"
+    server: v5.heduian.link
+    port: 30805
+    type: vmess
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /oooo
+      headers:
+        Host: v5.heduian.link
+    udp: true
+  - name: "\U0001F1EE\U0001F1F9 机场推荐:dafei.de 意大利 02"
+    type: ss
+    server: 95.81.83.131
+    port: 8443
+    password: er4OuCwSlULPnJnC8YAIFA
+    udp: true
+    cipher: chacha20-ietf-poly1305
+  - name: "\U0001F1EE\U0001F1F9 机场推荐:dafei.de 意大利 03"
+    type: ss
+    server: 212.102.54.45
+    port: 990
+    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+    cipher: chacha20-ietf-poly1305
+  - name: "\U0001F1F2\U0001F1E9 机场推荐:dafei.de 摩尔多瓦 01"
+    type: ss
+    server: 185.153.197.5
+    port: 989
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+    cipher: aes-256-cfb
+  - name: "\U0001F1F1\U0001F1FA 机场推荐:dafei.de 卢森堡 01"
+    type: vless
+    network: ws
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    server: 188.42.145.253
+    port: 2096
+    skip-cert-verify: false
+    tls: true
+    udp: true
+    xudp: true
+    tfo: false
+    ws-opts:
+      headers:
+        Host: gaosir.unfeeling.sbs
+      path: "/Telegram\U0001F1E8\U0001F1F3 @WangCai2 /?ed=2560"
+    client-fingerprint: chrome
+    servername: gaosir.unfeeling.sbs
   - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 01"
     type: vless
     network: tcp
