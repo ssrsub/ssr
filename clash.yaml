@@ -1,11 +1,12 @@
 proxies:
-  - type: vless
-    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 01"
-    server: 43.161.253.78
-    port: 9527
-    uuid: d4a23188-85b0-4b46-b84b-f1d36d66c03e
-    skip-cert-verify: false
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 01"
     network: tcp
+    port: 9527
+    server: 43.161.253.78
+    type: vless
+    udp: true
+    uuid: d4a23188-85b0-4b46-b84b-f1d36d66c03e
+    xudp: true
   - cipher: 2022-blake3-aes-256-gcm
     name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 02"
     password: >-
@@ -263,14 +264,6 @@ proxies:
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
   - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 31"
-    server: 219.76.135.98
-    port: 443
-    type: trojan
-    password: BxceQaOe
-    sni: t.me%2Fripaojiedian
-    skip-cert-verify: true
-    udp: true
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 32"
     server: 154.211.8.18
     port: 443
     type: vless
@@ -287,6 +280,14 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 32"
+    server: 219.76.135.98
+    port: 443
+    type: trojan
+    password: BxceQaOe
+    sni: t.me%2Fripaojiedian
+    skip-cert-verify: true
+    udp: true
   - cipher: 2022-blake3-aes-256-gcm
     name: "\U0001F1E8\U0001F1F3 机场推荐:dafei.de 台湾 01"
     password: >-
@@ -852,6 +853,23 @@ proxies:
     server: cloudflare.182682.xyz
     port: 443
     type: vless
+    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: l.ayovo.netlib.re
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: l.ayovo.netlib.re
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 09"
+    server: cloudflare.182682.xyz
+    port: 443
+    type: vless
     uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
     tls: true
     skip-cert-verify: false
@@ -866,7 +884,7 @@ proxies:
     udp: true
     servername: snip.zrf.hidns.co
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 09"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 10"
     network: ws
     port: 443
     server: v1.dabache.top
@@ -885,25 +903,8 @@ proxies:
       max-early-data: 2560
     xudp: true
     servername: kb.as129394.me
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 10"
-    server: v2.dabache.top
-    port: 443
-    type: vless
-    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snip.zrfs.indevs.in
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    udp: true
-    servername: snip.zrfs.indevs.in
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 11"
-    server: v3.dabache.top
+    server: v2.dabache.top
     port: 443
     type: vless
     uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
@@ -923,6 +924,26 @@ proxies:
     name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 12"
     network: ws
     port: 443
+    server: v3.dabache.top
+    tls: true
+    type: vless
+    udp: true
+    uuid: b5dbd0aa-22f6-4a00-9bcc-3606fa8fc56d
+    ws-opts:
+      headers:
+        Host: kb.as129394.me
+        User-Agent: >-
+          Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7
+          (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    xudp: true
+    servername: kb.as129394.me
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 13"
+    network: ws
+    port: 443
     server: vip1.kaixincloud.top
     tls: true
     type: vless
@@ -939,7 +960,7 @@ proxies:
       max-early-data: 2560
     xudp: true
     servername: kb.as129394.me
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 13"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 14"
     server: 162.159.44.142
     port: 443
     type: vless
@@ -955,7 +976,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: l.ayovo.netlib.re
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 14"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 15"
     server: 162.159.16.63
     port: 443
     type: vless
@@ -971,7 +992,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: l.ayovo.netlib.re
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 15"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 16"
     server: 162.159.45.232
     port: 443
     type: vless
@@ -988,7 +1009,7 @@ proxies:
     udp: true
     servername: l.ayovo.netlib.re
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 16"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 17"
     network: ws
     port: 8443
     server: 172.64.157.136
@@ -1008,21 +1029,21 @@ proxies:
     xudp: true
     servername: kb.as129394.me
   - cipher: aes-256-cfb
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 17"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 18"
     password: amazonskr05
     port: 443
     server: 3.80.64.253
     type: ss
     udp: true
   - cipher: aes-256-cfb
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 18"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 19"
     password: amazonskr05
     port: 443
     server: 18.212.222.123
     type: ss
     udp: true
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 19"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 20"
     network: ws
     port: 2053
     server: convera.com
@@ -1037,23 +1058,6 @@ proxies:
       max-early-data: 2560
       path: /danfeng
     servername: snippet.danfeng.de5.net
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 20"
-    server: 104.16.250.22
-    port: 443
-    type: vless
-    uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: l.ayovo.netlib.re
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    udp: true
-    servername: l.ayovo.netlib.re
   - client-fingerprint: chrome
     name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 21"
     network: ws
@@ -1202,37 +1206,48 @@ proxies:
     xudp: true
   - alterId: 2
     cipher: auto
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 32"
+    port: 30804
+    server: 202.85.53.205
+    skip-cert-verify: true
+    tfo: true
+    tls: false
+    type: vmess
+    udp: true
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  - alterId: 2
+    cipher: auto
     h2-opts: {}
     http-opts: {}
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 32"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 33"
     network: tcp
     port: 30804
     server: v4.hdacd.com
     skip-cert-verify: true
     type: vmess
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 33"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 34"
     server: 160.16.132.38
     port: 5076
     type: trojan
     password: 869e9086806483ca4744a4cb0f3d6e16
     sni: www.nintendogames.net
     skip-cert-verify: false
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 34"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 35"
     server: 160.16.72.33
     port: 5076
     type: trojan
     password: 869e9086806483ca4744a4cb0f3d6e16
     sni: www.nintendogames.net
     skip-cert-verify: false
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 35"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 36"
     server: 43.198.102.247
     port: 3159
     type: trojan
     password: BxceQaOe
     sni: t.me%2Fripaojiedian
     skip-cert-verify: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 36"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 37"
     type: vmess
     server: v29.heduian.link
     port: 30829
@@ -1244,28 +1259,12 @@ proxies:
       headers:
         Host: ocbc.com
     alterId: 2
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 37"
-    server: cf.877774.xyz
-    port: 443
-    type: vless
-    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: random
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snip.zrf.hidns.co
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    udp: true
-    servername: snip.zrf.hidns.co
-  - sni: 64.94.95.118
+  - skip-cert-verify: true
+    sni: ads.x5.ru
     type: trojan
-    password: kkzh2prsyr2ik47as615
-    server: 64.94.95.118
-    port: 57142
+    password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+    server: 140.82.35.244
+    port: 20994
     name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 38"
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 39"
     server: gb.fasti.win
@@ -1326,6 +1325,23 @@ proxies:
     udp: true
     servername: snip.zrfs.indevs.in
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 43"
+    server: v3.dabache.top
+    port: 443
+    type: vless
+    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.zrfs.indevs.in
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: snip.zrfs.indevs.in
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 44"
     server: 108.162.198.70
     port: 443
     type: vless
@@ -1342,7 +1358,24 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 44"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 45"
+    server: cf.877774.xyz
+    port: 443
+    type: vless
+    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.zrfs.indevs.in
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: snip.zrfs.indevs.in
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 46"
     server: 172.64.52.157
     port: 443
     type: vless
@@ -1359,7 +1392,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 45"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 47"
     server: 104.17.47.68
     port: 443
     type: vless
@@ -1376,7 +1409,7 @@ proxies:
       max-early-data: 2048
     udp: true
     servername: ccffllyy.1412.me
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 46"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 48"
     server: 172.64.229.147
     port: 443
     type: vless
@@ -1393,7 +1426,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 47"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 49"
     server: 104.19.39.23
     port: 443
     type: vless
@@ -1410,7 +1443,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 48"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 50"
     server: 173.245.59.173
     port: 443
     type: vless
@@ -1427,7 +1460,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 49"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 51"
     server: 23.81.34.138
     port: 443
     type: vless
@@ -1444,7 +1477,7 @@ proxies:
           - bmw.co%F0%9F%9F%AA
     udp: true
     servername: bmw.co%F0%9F%9F%AA
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 50"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 52"
     server: 162.159.46.131
     port: 443
     type: vless
@@ -1461,7 +1494,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 51"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 53"
     server: 172.64.53.45
     port: 443
     type: vless
@@ -1478,7 +1511,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 52"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 54"
     server: 162.159.39.82
     port: 443
     type: vless
@@ -1495,7 +1528,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 53"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 55"
     server: 104.19.174.107
     port: 443
     type: vless
@@ -1512,7 +1545,7 @@ proxies:
       max-early-data: 2048
     udp: true
     servername: ccffllyy.1412.me
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 54"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 56"
     server: 104.16.111.93
     port: 443
     type: vless
@@ -1529,7 +1562,7 @@ proxies:
       max-early-data: 2048
     udp: true
     servername: ccffllyy.1412.me
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 55"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 57"
     server: 173.245.58.218
     port: 443
     type: vless
@@ -1546,7 +1579,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 56"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 58"
     server: 104.18.255.101
     port: 443
     type: vless
@@ -1563,7 +1596,7 @@ proxies:
       max-early-data: 2048
     udp: true
     servername: ccffllyy.1412.me
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 57"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 59"
     server: 104.16.223.28
     port: 443
     type: vless
@@ -1580,157 +1613,7 @@ proxies:
       max-early-data: 2048
     udp: true
     servername: ccffllyy.1412.me
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 58"
-    server: unicom.twitter.now.cc
-    port: 443
-    type: vless
-    uuid: 76636b35-e926-4b10-8336-c0d0c48a42b8
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: ccffllyy.1412.me
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2048
-    udp: true
-    servername: ccffllyy.1412.me
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 59"
-    server: 162.159.38.241
-    port: 443
-    type: vless
-    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snip.zrfs.indevs.in
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    udp: true
-    servername: snip.zrfs.indevs.in
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 60"
-    server: mobile.twitter.now.cc
-    port: 443
-    type: vless
-    uuid: 76636b35-e926-4b10-8336-c0d0c48a42b8
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: ccffllyy.1412.me
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2048
-    udp: true
-    servername: ccffllyy.1412.me
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 61"
-    server: 162.159.46.48
-    port: 443
-    type: vless
-    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snip.zrfs.indevs.in
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    udp: true
-    servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 62"
-    server: staticdelivery.nexusmods.com
-    port: 443
-    type: vless
-    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: random
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snip.zrfs.indevs.in
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    udp: true
-    servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 63"
-    server: 104.16.16.110
-    port: 443
-    type: vless
-    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: random
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snip.zrfs.indevs.in
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    udp: true
-    servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 64"
-    server: 149.115.110.173
-    port: 443
-    type: vless
-    uuid: cb33f36c-b531-4318-9be3-568e8d6c56c7
-    flow: xtls-rprx-vision
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
-    udp: true
-    network: tcp
-    servername: miui.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 65"
-    server: 104.16.111.235
-    port: 443
-    type: vless
-    uuid: 76636b35-e926-4b10-8336-c0d0c48a42b8
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: ccffllyy.1412.me
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2048
-    udp: true
-    servername: ccffllyy.1412.me
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 66"
-    server: 198.41.208.47
-    port: 443
-    type: vless
-    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: random
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snip.zrf.hidns.co
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    udp: true
-    servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 67"
     server: cf.twitter.now.cc
     port: 443
     type: vless
@@ -1747,8 +1630,124 @@ proxies:
       max-early-data: 2048
     udp: true
     servername: ccffllyy.1412.me
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 61"
+    server: 162.159.38.241
+    port: 443
+    type: vless
+    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.zrfs.indevs.in
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: snip.zrfs.indevs.in
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 62"
+    server: mobile.twitter.now.cc
+    port: 443
+    type: vless
+    uuid: 76636b35-e926-4b10-8336-c0d0c48a42b8
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ccffllyy.1412.me
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    udp: true
+    servername: ccffllyy.1412.me
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 63"
+    server: 162.159.46.48
+    port: 443
+    type: vless
+    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.zrfs.indevs.in
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: snip.zrfs.indevs.in
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 64"
+    server: staticdelivery.nexusmods.com
+    port: 443
+    type: vless
+    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.zrfs.indevs.in
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: snip.zrfs.indevs.in
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 65"
+    server: 104.16.16.110
+    port: 443
+    type: vless
+    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.zrfs.indevs.in
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: snip.zrfs.indevs.in
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 66"
+    server: 149.115.110.173
+    port: 443
+    type: vless
+    uuid: cb33f36c-b531-4318-9be3-568e8d6c56c7
+    flow: xtls-rprx-vision
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+    udp: true
+    network: tcp
+    servername: miui.com
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 67"
+    server: 104.16.111.235
+    port: 443
+    type: vless
+    uuid: 76636b35-e926-4b10-8336-c0d0c48a42b8
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ccffllyy.1412.me
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    udp: true
+    servername: ccffllyy.1412.me
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 68"
-    server: 198.41.208.186
+    server: 198.41.208.47
     port: 443
     type: vless
     uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
@@ -1765,6 +1764,23 @@ proxies:
     udp: true
     servername: snip.zrf.hidns.co
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 69"
+    server: 198.41.208.186
+    port: 443
+    type: vless
+    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.zrf.hidns.co
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: snip.zrf.hidns.co
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 70"
     server: 172.64.150.239
     port: 443
     type: vless
@@ -1781,7 +1797,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 70"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 71"
     server: 104.16.31.49
     port: 443
     type: vless
@@ -1798,7 +1814,7 @@ proxies:
       max-early-data: 2048
     udp: true
     servername: ccffllyy.1412.me
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 71"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 72"
     server: mfa.gov.ua
     port: 443
     type: vless
@@ -1815,7 +1831,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 72"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 73"
     server: www.speedtest.net
     port: 80
     type: vless
@@ -1828,9 +1844,11 @@ proxies:
         /-ViV2ry@V2RIRAN-TEL--@V2RIRAN-TEL--@V2RIRAN-TEL--@V2RIRAN-JOIN-@V2RIRAN-TEL--@V2RIRAN-JOIN-@V2RIRAN-TEL-@V2RIRAN-TEL--@V2RIRAN-JOIN-@V2RIRAN-TEL--@V2RIRAN
       headers:
         Host: Www.speedtest.net.sIgmasigmaboy.site.
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
     udp: true
     servername: Www.speedtest.net.sIgmasigmaboy.site.
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 73"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 74"
     server: 104.19.49.169
     port: 443
     type: vless
@@ -1847,7 +1865,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 74"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 75"
     server: 104.19.47.178
     port: 443
     type: vless
@@ -1864,7 +1882,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 75"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 76"
     server: 162.159.42.254
     port: 443
     type: vless
@@ -1881,7 +1899,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 76"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 77"
     server: 141.101.114.110
     port: 443
     type: vless
@@ -1898,7 +1916,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 77"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 78"
     server: 104.18.250.198
     port: 443
     type: vless
@@ -1915,7 +1933,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 78"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 79"
     server: 162.159.152.7
     port: 443
     type: vless
@@ -1932,7 +1950,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 79"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 80"
     server: 162.159.254.41
     port: 443
     type: vless
@@ -1949,7 +1967,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 80"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 81"
     server: 104.19.60.248
     port: 443
     type: vless
@@ -1966,7 +1984,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 81"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 82"
     server: 162.159.253.1
     port: 443
     type: vless
@@ -1983,7 +2001,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 82"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 83"
     server: 198.41.211.195
     port: 443
     type: vless
@@ -2000,7 +2018,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 83"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 84"
     server: 104.19.35.119
     port: 443
     type: vless
@@ -2017,7 +2035,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 84"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 85"
     server: 162.159.152.43
     port: 443
     type: vless
@@ -2034,7 +2052,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 85"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 86"
     server: 104.19.125.68
     port: 443
     type: vless
@@ -2051,7 +2069,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 86"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 87"
     server: 162.159.38.75
     port: 443
     type: vless
@@ -2068,7 +2086,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 87"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 88"
     server: 104.19.236.8
     port: 443
     type: vless
@@ -2085,7 +2103,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 88"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 89"
     server: 104.16.211.225
     port: 443
     type: vless
@@ -2102,7 +2120,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 89"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 90"
     server: 162.159.45.170
     port: 443
     type: vless
@@ -2119,7 +2137,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 90"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 91"
     server: 198.41.209.202
     port: 443
     type: vless
@@ -2136,7 +2154,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 91"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 92"
     server: 104.26.5.200
     port: 443
     type: vless
@@ -2153,7 +2171,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 92"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 93"
     server: 162.159.44.5
     port: 443
     type: vless
@@ -2170,7 +2188,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 93"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 94"
     server: 162.159.39.108
     port: 443
     type: vless
@@ -2187,7 +2205,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 94"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 95"
     server: 104.18.83.102
     port: 443
     type: vless
@@ -2204,7 +2222,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 95"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 96"
     server: 162.159.44.66
     port: 443
     type: vless
@@ -2221,7 +2239,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 96"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 97"
     server: 162.159.45.104
     port: 443
     type: vless
@@ -2238,7 +2256,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 97"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 98"
     server: 162.159.45.171
     port: 443
     type: vless
@@ -2255,7 +2273,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 98"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 99"
     server: 162.159.44.53
     port: 443
     type: vless
@@ -2272,7 +2290,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 99"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 100"
     server: 162.159.20.205
     port: 443
     type: vless
@@ -2289,7 +2307,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 100"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 101"
     server: 162.159.39.49
     port: 443
     type: vless
@@ -2306,7 +2324,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 101"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 102"
     server: 162.159.43.6
     port: 443
     type: vless
@@ -2323,7 +2341,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 102"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 103"
     server: 162.159.38.89
     port: 443
     type: vless
@@ -2340,7 +2358,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 103"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 104"
     server: 199.193.125.229
     port: 44000
     type: vless
@@ -2357,7 +2375,7 @@ proxies:
       max-early-data: 2048
     udp: true
     servername: ccffllyy.1412.me
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 104"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 105"
     server: 144.31.130.1
     port: 8443
     type: vless
@@ -2372,7 +2390,7 @@ proxies:
     udp: true
     network: tcp
     servername: neth.speedload.online
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 105"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 106"
     server: 162.159.38.74
     port: 443
     type: vless
@@ -2389,7 +2407,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 106"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 107"
     server: registry.cyou
     port: 443
     type: vless
@@ -2406,7 +2424,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 107"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 108"
     server: 162.159.42.72
     port: 443
     type: vless
@@ -2423,7 +2441,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 108"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 109"
     server: 162.159.35.39
     port: 443
     type: vless
@@ -2440,7 +2458,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 109"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 110"
     server: 38.244.145.50
     port: 443
     type: vless
@@ -2457,7 +2475,7 @@ proxies:
       max-early-data: 2048
     udp: true
     servername: ccffllyy.1412.me
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 110"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 111"
     server: 172.234.130.82
     port: 10001
     type: vless
@@ -2471,7 +2489,7 @@ proxies:
     udp: true
     network: tcp
     servername: yahoo.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 111"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 112"
     server: 162.159.153.6
     port: 443
     type: vless
@@ -2488,7 +2506,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 112"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 113"
     server: 104.19.45.93
     port: 443
     type: vless
@@ -2505,7 +2523,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 113"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 114"
     server: 162.159.249.42
     port: 443
     type: vless
@@ -2522,7 +2540,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 114"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 115"
     server: 104.16.144.148
     port: 443
     type: vless
@@ -2539,7 +2557,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 115"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 116"
     server: 104.18.152.235
     port: 443
     type: vless
@@ -2556,7 +2574,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 116"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 117"
     server: 104.19.42.101
     port: 443
     type: vless
@@ -2573,7 +2591,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 117"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 118"
     server: 104.19.52.176
     port: 443
     type: vless
@@ -2590,7 +2608,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 118"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 119"
     server: 162.159.152.146
     port: 443
     type: vless
@@ -2607,7 +2625,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 119"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 120"
     server: 104.19.56.47
     port: 443
     type: vless
@@ -2624,7 +2642,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 120"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 121"
     server: 104.19.40.244
     port: 443
     type: vless
@@ -2641,7 +2659,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 121"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 122"
     server: 108.162.198.122
     port: 443
     type: vless
@@ -2658,7 +2676,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 122"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 123"
     server: 108.162.198.155
     port: 443
     type: vless
@@ -2675,7 +2693,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 123"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 124"
     server: 173.245.59.205
     port: 443
     type: vless
@@ -2692,25 +2710,8 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 124"
-    server: 172.64.157.145
-    port: 443
-    type: vless
-    uuid: 76636b35-e926-4b10-8336-c0d0c48a42b8
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: ccffllyy.1412.me
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2048
-    udp: true
-    servername: ccffllyy.1412.me
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 125"
-    server: 104.26.4.239
+    server: zrf.cf.090227.xyz
     port: 443
     type: vless
     uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
@@ -2727,6 +2728,40 @@ proxies:
     udp: true
     servername: snip.zrf.hidns.co
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 126"
+    server: 172.64.157.145
+    port: 443
+    type: vless
+    uuid: 76636b35-e926-4b10-8336-c0d0c48a42b8
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ccffllyy.1412.me
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2048
+    udp: true
+    servername: ccffllyy.1412.me
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 127"
+    server: 104.26.4.239
+    port: 443
+    type: vless
+    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.zrf.hidns.co
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: snip.zrf.hidns.co
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 128"
     server: 172.64.229.186
     port: 443
     type: vless
@@ -2743,7 +2778,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 127"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 129"
     server: 172.64.145.31
     port: 443
     type: vless
@@ -2760,7 +2795,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 128"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 130"
     server: 172.67.70.108
     port: 443
     type: vless
@@ -2777,7 +2812,7 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 129"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 131"
     server: 65.49.205.213
     port: 443
     type: vless
@@ -2794,7 +2829,7 @@ proxies:
       max-early-data: 2048
     udp: true
     servername: ccffllyy.1412.me
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 130"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 132"
     server: 172.64.52.83
     port: 443
     type: vless
@@ -2811,42 +2846,8 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 131"
-    server: time.is
-    port: 443
-    type: vless
-    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: random
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snip.zrf.hidns.co
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    udp: true
-    servername: snip.zrf.hidns.co
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 132"
-    server: 172.64.53.38
-    port: 443
-    type: vless
-    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: random
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: snip.zrf.hidns.co
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    udp: true
-    servername: snip.zrf.hidns.co
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 133"
-    server: 172.64.229.211
+    server: cf.877774.xyz
     port: 443
     type: vless
     uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
@@ -2874,13 +2875,13 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: snip.zrfs.indevs.in
+        Host: snip.zrf.hidns.co
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     udp: true
-    servername: snip.zrfs.indevs.in
+    servername: snip.zrf.hidns.co
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 135"
-    server: 172.64.53.40
+    server: 172.64.53.38
     port: 443
     type: vless
     uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
@@ -2897,7 +2898,7 @@ proxies:
     udp: true
     servername: snip.zrf.hidns.co
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 136"
-    server: 104.26.4.35
+    server: 172.64.229.211
     port: 443
     type: vless
     uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
@@ -2914,7 +2915,7 @@ proxies:
     udp: true
     servername: snip.zrf.hidns.co
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 137"
-    server: 172.67.73.201
+    server: time.is
     port: 443
     type: vless
     uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
@@ -2925,13 +2926,13 @@ proxies:
     ws-opts:
       path: /
       headers:
-        Host: snip.zrf.hidns.co
+        Host: snip.zrfs.indevs.in
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     udp: true
-    servername: snip.zrf.hidns.co
+    servername: snip.zrfs.indevs.in
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 138"
-    server: 172.67.72.109
+    server: 172.64.53.40
     port: 443
     type: vless
     uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
@@ -2948,7 +2949,7 @@ proxies:
     udp: true
     servername: snip.zrf.hidns.co
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 139"
-    server: 172.64.52.179
+    server: 104.26.4.35
     port: 443
     type: vless
     uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
@@ -2965,6 +2966,57 @@ proxies:
     udp: true
     servername: snip.zrf.hidns.co
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 140"
+    server: 172.67.73.201
+    port: 443
+    type: vless
+    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.zrf.hidns.co
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: snip.zrf.hidns.co
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 141"
+    server: 172.67.72.109
+    port: 443
+    type: vless
+    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.zrf.hidns.co
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: snip.zrf.hidns.co
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 142"
+    server: 172.64.52.179
+    port: 443
+    type: vless
+    uuid: 0582626b-615b-49bc-aaea-5a88d3c6d03d
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: snip.zrf.hidns.co
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: snip.zrf.hidns.co
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 143"
     server: 172.67.67.105
     port: 443
     type: vless
@@ -2981,7 +3033,22 @@ proxies:
       max-early-data: 2560
     udp: true
     servername: snip.zrfs.indevs.in
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 141"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 144"
+    server: www.speedtest.net
+    port: 80
+    type: vless
+    uuid: 6b1348aa-43de-4c14-af6a-bcbe02b0c7d5
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: >-
+        /-ViV2ry@V2RIRAN-TEL--@V2RIRAN-TEL--@V2RIRAN-TEL--@V2RIRAN-JOIN-@V2RIRAN-TEL--@V2RIRAN-JOIN-@V2RIRAN-TEL-@V2RIRAN-TEL--@V2RIRAN-JOIN-@V2RIRAN-TEL--@V2RIRAN
+      headers:
+        Host: Www.speedtest.net.sIgmasigmaboy.site.
+    udp: true
+    servername: Www.speedtest.net.sIgmasigmaboy.site.
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 145"
     server: cf.zone-server-irani.ir
     port: 2053
     type: vless
@@ -3130,6 +3197,22 @@ proxies:
     grpc-opts:
       grpc-service-name: grpc
     name: "\U0001F1E6\U0001F1F9 机场推荐:dafei.de 奥地利 05"
+    network: grpc
+    port: 22955
+    reality-opts:
+      public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+      short-id: 6ba85179e30d4fc2
+    server: dfg.octopusss.net
+    tls: true
+    type: vless
+    udp: true
+    uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+    xudp: true
+    servername: one-piece.com
+  - client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: grpc
+    name: "\U0001F1E6\U0001F1F9 机场推荐:dafei.de 奥地利 06"
     network: grpc
     port: 22955
     reality-opts:
@@ -3432,20 +3515,14 @@ proxies:
     uuid: 35520d38-0cc1-4612-94fd-fb6e347849de
     xudp: true
     servername: sun6-21.userapi.com
-  - sni: ya.ru
-    type: trojan
-    password: ZblhWr0mqMakCPg.N
-    server: 212.193.18.144
-    port: 36158
-    name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 19"
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 20"
+  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 19"
     server: 5.129.219.21
     port: 8080
     type: ss
     cipher: aes-128-gcm
     password: tKko+YIAuuZ3d0hsPX2+D3NqepytG1Ha0VRLwBrf0Ak=
     udp: true
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 21"
+  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 20"
     server: 51.250.42.73
     port: 8443
     type: vless
@@ -3459,7 +3536,7 @@ proxies:
     udp: true
     network: tcp
     servername: api-maps.yandex.ru
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 22"
+  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 21"
     server: 51.250.45.183
     port: 4443
     type: vless
@@ -3473,7 +3550,7 @@ proxies:
     udp: true
     network: tcp
     servername: eh.vk.com
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 23"
+  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 22"
     server: 213.241.198.85
     port: 2096
     type: vless
@@ -3490,7 +3567,7 @@ proxies:
       max-early-data: 2048
     udp: true
     servername: ccffllyy.1412.me
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 24"
+  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 23"
     server: yc-178.appav.online
     port: 443
     type: vless
@@ -3505,7 +3582,7 @@ proxies:
     udp: true
     network: tcp
     servername: api-maps.yandex.ru
-  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 25"
+  - name: "\U0001F1F7\U0001F1FA 机场推荐:dafei.de 俄罗斯 24"
     server: 51.250.45.183
     port: 8443
     type: vless
@@ -4182,7 +4259,14 @@ proxies:
     uuid: b64ff004-ec17-4cbb-9f32-c4eb7f4660e8
     xudp: true
     servername: eh.vk.com
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 18"
+  - skip-cert-verify: true
+    sni: ads.x5.ru
+    type: trojan
+    password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+    server: 45.32.158.138
+    port: 20994
+    name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 18"
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 19"
     server: 45.145.43.147
     port: 443
     type: vless
@@ -4197,7 +4281,7 @@ proxies:
     udp: true
     network: tcp
     servername: apple.com
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 19"
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 20"
     server: 185.163.116.239
     port: 443
     type: vless
@@ -4213,7 +4297,7 @@ proxies:
     udp: true
     network: tcp
     servername: live.com
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 20"
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 21"
     server: 185.94.29.250
     port: 443
     type: vless
@@ -4620,21 +4704,13 @@ proxies:
     xudp: true
     servername: o00o.snip.qzz.io
   - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 02"
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    cipher: auto
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    tls: false
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 03"
     server: 82.38.31.208
     port: 8080
     type: ss
     cipher: chacha20-ietf-poly1305
     password: k1dBOmOB4oqi7Ump37a1bQ
     udp: true
-  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 04"
+  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 03"
     server: 132.145.29.208
     port: 443
     type: vless
@@ -4716,12 +4792,27 @@ proxies:
     sni: torontorm1.686911.xyz
     type: trojan
     udp: true
-  - type: trojan
-    password: a5inYFE=JGV89+hjxIqgDp1tcWBd6
-    server: 80.173.230.196
-    port: 26279
-    name: "\U0001F1EA\U0001F1F8 机场推荐:dafei.de 西班牙 01"
-  - name: "\U0001F1EA\U0001F1F8 机场推荐:dafei.de 西班牙 02"
+  - skip-cert-verify: true
+    type: trojan
+    password: RPyW62_b9aH.ztJKeArou
+    server: 83.143.87.9
+    port: 18581
+    name: "\U0001F1F3\U0001F1F4 机场推荐:dafei.de 挪威 01"
+  - name: "\U0001F1E7\U0001F1EC 机场推荐:dafei.de 保加利亚 01"
+    server: 87.120.165.175
+    port: 8443
+    type: vless
+    uuid: cc235335-34f0-4f1b-b3e3-5f32e2eeaa89
+    tls: true
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: llSF90j8PQdR0alqH2OGlh7fEtoxO-xfZW_B4bQ4eSw
+      short-id: 6ba85179e30d4fc2
+    udp: true
+    network: tcp
+    servername: monolithgate.xyz
+  - name: "\U0001F1EA\U0001F1F8 机场推荐:dafei.de 西班牙 01"
     server: sv20.farsdataco.top
     port: 7426
     type: vless
@@ -4738,7 +4829,7 @@ proxies:
           - P30afzar.com
     udp: true
     servername: P30afzar.com
-  - name: "\U0001F1EA\U0001F1F8 机场推荐:dafei.de 西班牙 03"
+  - name: "\U0001F1EA\U0001F1F8 机场推荐:dafei.de 西班牙 02"
     server: 193.17.183.157
     port: 2053
     type: vless
@@ -4755,20 +4846,6 @@ proxies:
       max-early-data: 2048
     udp: true
     servername: ccffllyy.1412.me
-  - name: "\U0001F1E7\U0001F1EC 机场推荐:dafei.de 保加利亚 01"
-    server: 87.120.165.175
-    port: 8443
-    type: vless
-    uuid: cc235335-34f0-4f1b-b3e3-5f32e2eeaa89
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: llSF90j8PQdR0alqH2OGlh7fEtoxO-xfZW_B4bQ4eSw
-      short-id: 6ba85179e30d4fc2
-    udp: true
-    network: tcp
-    servername: monolithgate.xyz
   - name: "\U0001F1EC\U0001F1F7 机场推荐:dafei.de 希腊 01"
     server: 185.126.238.239
     port: 50121
