@@ -1,69 +1,21 @@
 proxies:
-  - type: vless
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 01"
-    server: malaysia01.jumperservice.com
-    port: 19001
-    uuid: d13545be-5c06-4283-cdf3-a364201bf9fb
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: firefox
-    skip-cert-verify: false
-    reality-opts:
-      public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-    network: tcp
-    servername: www.speedtest.net
-  - skip-cert-verify: true
-    sni: t.me%2Fripaojiedian
-    type: trojan
-    password: BxceQaOe
-    server: 43.207.164.92
-    port: 37223
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 02"
-    network: tcp
-    client-fingerprint: chrome
-  - sni: www.nintendogames.net
-    type: trojan
-    password: 86e150eb21c6faee48e81d496d7f61c2
-    server: 13.231.19.155
-    port: 4920
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 03"
-    network: tcp
-    client-fingerprint: chrome
-  - type: vless
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 04"
-    server: 192.0.54.188
-    port: 443
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    skip-cert-verify: false
+  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 01"
+    type: vmess
+    server: m.cnmjin.net
+    port: 16618
+    cipher: auto
+    uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
+    alterId: 0
+    tls: false
     network: ws
     ws-opts:
+      path: /
       headers:
-        Host: snippet.danfeng.kozow.com
-      path: /danfeng
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
+        Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
     client-fingerprint: chrome
-    servername: snippet.danfeng.kozow.com
   - type: vless
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 05"
-    server: 192.0.63.134
-    port: 443
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: snippet.danfeng.kozow.com
-      path: /danfeng
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: snippet.danfeng.kozow.com
-  - type: vless
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 06"
-    server: 104.17.28.89
+    name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 02"
+    server: 104.18.40.56
     port: 443
     uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
     tls: true
@@ -74,115 +26,18 @@ proxies:
       headers:
         Host: r.icy.de5.net
       path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: r.icy.de5.net
-  - type: vless
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 07"
-    server: 104.19.58.74
-    port: 443
-    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-    tls: true
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: r.icy.de5.net
-      path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: r.icy.de5.net
-  - type: vless
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 08"
-    server: 192.0.54.131
-    port: 443
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: snippet.danfeng.kozow.com
-      path: /danfeng
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: snippet.danfeng.kozow.com
-  - type: vless
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 09"
-    server: 192.0.63.230
-    port: 443
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: snippet.danfeng.kozow.com
-      path: /danfeng
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     encryption: none
-    servername: snippet.danfeng.kozow.com
+    servername: r.icy.de5.net
   - type: vless
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 10"
-    server: 14.42.206.205
-    port: 16001
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: snippet.danfeng.kozow.com
-      path: /danfeng
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: snippet.danfeng.kozow.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 11"
-    network: ws
+    name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 03"
+    server: 104.18.41.43
     port: 443
-    server: 192.0.54.225
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    udp: true
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.danfeng.kozow.com
-      path: /danfeng
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: snippet.danfeng.kozow.com
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 12"
-    port: 21876
-    reality-opts:
-      public-key: 4SQmJ_vJw_UhDZ-sHlex6aJlYO0w7LndThtCaUDPYiI
-      short-id: 204673043ea9
-    server: 9kg.cumotech.com
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    udp: true
-    uuid: 7db4a03c-7616-42f1-a1e7-80ec822e1ed0
-    network: tcp
-    servername: tesla.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 13"
-    network: ws
-    port: 443
-    server: 193.9.49.65
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    udp: true
     uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+    tls: true
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       headers:
         Host: r.icy.de5.net
@@ -191,306 +46,8 @@ proxies:
       max-early-data: 2560
     client-fingerprint: chrome
     servername: r.icy.de5.net
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 14"
-    password: fe0fda62-79ff-467e-bef4-983322c1d21b
-    port: 30002
-    server: hkaws.ccwink.photos
-    skip-cert-verify: true
-    type: anytls
-    udp: true
-    sni: hkaws.ccwink.photos
-  - type: vless
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 15"
-    server: 192.0.63.56
-    port: 443
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: snippet.danfeng.kozow.com
-      path: /danfeng
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    client-fingerprint: chrome
-    servername: snippet.danfeng.kozow.com
-  - type: vless
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 16"
-    server: 157.254.223.44
-    port: 18959
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    tls: true
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    reality-opts:
-      public-key: '-hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA'
-      short-id: d557c6895d014075
-    network: tcp
-    servername: itunes.apple.com
-  - type: vless
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 17"
-    server: 192.0.63.78
-    port: 443
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    client-fingerprint: random
-    alpn:
-      - http/1.1
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: chinam.sylu.net
-      path: /danfeng
-    servername: chinam.sylu.net
-  - type: vless
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 18"
-    server: 76.223.33.155
-    port: 443
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    client-fingerprint: random
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: chinam.sylu.net
-      path: /danfeng
-    servername: chinam.sylu.net
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 19"
-    server: 69d3210c-tc7gg0-tdm5u7-1pr35.sjc.oshuawei.com
-    port: 443
-    type: http
-    username: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-    password: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-    tls: true
-    sni: 69d3210c-tc7gg0-tdm5u7-1pr35.sjc.oshuawei.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 20"
-    server: hb.seacloudmachinery.com
-    port: 2086
-    type: vmess
-    uuid: 82b0e3ab-e5ba-5fe0-bd05-df6f5d49a563
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /telegram id @rootface
-      headers:
-        Host: hb.seacloudmachinery.com
-    udp: true
-    client-fingerprint: chrome
-    servername: hb.seacloudmachinery.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 21"
-    server: 174.136.205.68
-    port: 443
-    type: vless
-    uuid: fea04a1f-06f1-4ef4-a7d4-ac4031b29b3b
-    tls: true
-    reality-opts:
-      public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-      short-id: 2da72ce6
-    client-fingerprint: chrome
-    network: tcp
-    udp: true
-    servername: navi.bankrate.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 22"
-    server: 9a7c661c-tc7gg0-tdm5u7-1pr35.jp4.oshuawei.com
-    port: 443
-    type: http
-    username: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-    password: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-    tls: true
-    sni: 9a7c661c-tc7gg0-tdm5u7-1pr35.jp4.oshuawei.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 23"
-    server: 216.106.185.141
-    port: 22324
-    type: vmess
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-    network: tcp
-    client-fingerprint: chrome
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 24"
-    server: 208.87.242.163
-    port: 50000
-    type: hysteria2
-    password: 1bce1f4a-3a17-4e13-8b47-9090b39297a4
-    auth: 1bce1f4a-3a17-4e13-8b47-9090b39297a4
-    sni: www.bing.com
-    skip-cert-verify: true
-    ports: 50000-53000
-    udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 25"
-    server: freea.glyphara.com
-    port: 30701
-    type: vless
-    uuid: 28261cc0-52c0-4223-a0c1-8d65cc4e4a0e
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: cgGav3P_PeaM4grdSECGj4Tt9IsCmSqhGo_EJ0_KdWY
-      short-id: e62db878
-    client-fingerprint: firefox
-    network: tcp
-    udp: true
-    servername: www.amd.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 26"
-    server: jry.izenny.com
-    port: 47831
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: e5adac46-f4e8-4e35-950c-c296db46d7f5
-    udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 27"
-    server: 104.16.150.198
-    port: 2087
-    type: vless
-    uuid: 13a567dd-7a07-45d1-970d-8db7f2e8a47d
-    tls: true
-    client-fingerprint: random
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 52yunwang.dpdns.org
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    udp: true
-    servername: 52yunwang.dpdns.org
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 28"
-    server: freea.glyphara.com
-    port: 30703
-    type: vless
-    uuid: 321d0474-2abf-4a6e-a756-fbee7e2c18b4
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: Fpcp8ed_KjL5rnn0gstMa0AQPL8GcYMtArb--r1AhnI
-      short-id: 845532fa
-    client-fingerprint: firefox
-    network: tcp
-    udp: true
-    servername: mensura.cdn-apple.com
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 29"
-    server: 172.64.156.0
-    port: 443
-    type: vless
-    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: r.icy.de5.net
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    udp: true
-    client-fingerprint: chrome
-    servername: r.icy.de5.net
-  - skip-cert-verify: true
-    sni: t.me%252Fripaojiedian
-    type: trojan
-    password: BxceQaOe
-    server: 52.198.90.187
-    port: 16919
-    name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 01"
-    network: tcp
-    client-fingerprint: chrome
-  - type: vless
-    name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 02"
-    server: 162.159.38.78
-    port: 443
-    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-    tls: true
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: r.icy.de5.net
-      path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: r.icy.de5.net
-  - type: vless
-    name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 03"
-    server: 162.159.45.232
-    port: 443
-    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-    tls: true
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: r.icy.de5.net
-      path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: r.icy.de5.net
-  - sni: www.nintendogames.net
-    type: trojan
-    password: 86e150eb21c6faee48e81d496d7f61c2
-    server: 13.230.254.47
-    port: 4937
-    name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 04"
-    network: tcp
-    client-fingerprint: chrome
-  - client-fingerprint: chrome
-    name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 05"
-    network: ws
-    port: 443
-    server: 172.64.229.85
-    tls: true
-    type: vless
-    udp: true
-    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-    ws-opts:
-      headers:
-        Host: r.icy.de5.net
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.1; Mi A1 Build/N2G47H)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile
-          Safari/537.36
-      path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    xudp: true
-    servername: r.icy.de5.net
-  - down: ''
-    fingerprint: ''
-    name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 06"
-    obfs: ''
-    obfs-password: ''
-    password: 1bce1f4a-3a17-4e13-8b47-9090b39297a4
-    port: 50000
-    server: 131.186.42.162
-    skip-cert-verify: true
-    sni: www.microsoft.com
-    type: hysteria2
-    up: ''
-  - client-fingerprint: ios
-    flow: xtls-rprx-vision
-    name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 07"
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: DGzXhLIUE3NQXX-IVo5YCSeANn1vECVBdnw7dtC0sTQ
-      short-id: 92388f50ce26394f
-    server: c8217-b2a.h2.49d2.dje11.1.b297.djjsvip.cfd
-    tls: true
-    type: vless
-    udp: true
-    uuid: 1bce1f4a-3a17-4e13-8b47-9090b39297a4
-    xudp: true
-    servername: iosapps.itunes.apple.com
   - cipher: none
-    name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 08"
+    name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 04"
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
     plugin: v2ray-plugin
     plugin-opts:
@@ -503,415 +60,149 @@ proxies:
     server: cf.877774.xyz
     type: ss
     udp: true
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 09"
-    server: 37.114.50.157
-    port: 4002
-    type: vless
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: true
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /@Marisa_kristi
-      headers:
-        Host: a3b0hudm3kx8.makuyo.dpdns.org
-    udp: true
-    servername: a3b0hudm3kx8.makuyo.dpdns.org
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 10"
-    server: ea7b0d19-tc7gg0-tdktcz-ezjz.cm4.oshuawei.com
-    port: 27233
-    type: http
-    username: 591ac730-bd6f-11ed-a8bf-f23c91cfbbc9
-    password: 591ac730-bd6f-11ed-a8bf-f23c91cfbbc9
-    tls: true
-    sni: ea7b0d19-tc7gg0-tdktcz-ezjz.cm4.oshuawei.com
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 11"
-    server: jpyxvm.ccwink.cc
-    port: 56300
-    type: anytls
-    password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
-    udp: true
-    skip-cert-verify: true
-    sni: jpyxvm.ccwink.cc
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 12"
-    server: f3ab2280-tc7gg0-tdm5u7-1pr35.jp.oshuawei.com
-    port: 443
-    type: http
-    username: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-    password: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-    tls: true
-    sni: f3ab2280-tc7gg0-tdm5u7-1pr35.jp.oshuawei.com
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 13"
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 14625
-    type: ss
-    cipher: 2022-blake3-aes-256-gcm
-    password: >-
-      mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-    udp: true
-  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 14"
-    server: freea.glyphara.com
-    port: 30301
-    type: vless
-    uuid: a2b66b8f-2aa1-4c55-b50e-58a711460113
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: IoW1RqD-BzW9oxaM4KtHx5ap6haIENhYyZt_oMZqlCM
-      short-id: 950cee8a
-    client-fingerprint: firefox
-    network: tcp
-    udp: true
-    servername: lol.secure.dyn.riotcdn.net
-  - sni: www.nintendogames.net
-    type: trojan
-    password: 86e150eb21c6faee48e81d496d7f61c2
-    server: 43.207.153.203
-    port: 19256
-    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 01"
-    network: tcp
-    client-fingerprint: chrome
-  - cipher: chacha20-ietf-poly1305
-    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 02"
-    password: b02b9065-defa-495a-bef1-cd55c67dbdf6
-    port: 26478
-    server: ccoo1.whtjdasha.com
-    type: ss
-    udp: true
-  - down: ''
-    fingerprint: ''
-    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 03"
-    obfs: ''
-    obfs-password: ''
-    password: 1bce1f4a-3a17-4e13-8b47-9090b39297a4
-    port: 50000
-    server: 103.197.71.98
-    skip-cert-verify: true
-    sni: www.hoyoverse.com
-    type: hysteria2
-    up: ''
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 04"
-    password: <password>
-    port: 8443
-    server: 653502c4-ta1og0-tazlv3-11p9g.hkt.cdnhuawei.com
-    sni: 653502c4-ta1og0-tazlv3-11p9g.hkt.cdnhuawei.com
-    tls: true
-    type: http
-    username: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
-  - down: ''
-    fingerprint: ''
-    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 05"
-    obfs: ''
-    obfs-password: ''
-    password: 1bce1f4a-3a17-4e13-8b47-9090b39297a4
-    port: 50000
-    server: 103.197.71.97
-    skip-cert-verify: true
-    sni: www.hoyoverse.com
-    type: hysteria2
-    up: ''
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 06"
-    server: hkaws.ccwink.photos
-    port: 60005
-    type: anytls
-    password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
-    udp: true
-    skip-cert-verify: true
-    sni: hkaws.ccwink.photos
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 07"
-    password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
-    port: 501
-    server: 45.202.247.12
-    skip-cert-verify: true
-    type: anytls
-    udp: true
   - type: vless
-    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 08"
-    server: 222.113.144.175
-    port: 12473
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    client-fingerprint: random
-    alpn:
-      - http/1.1
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: chinam.sylu.net
-      path: /danfeng
-    servername: chinam.sylu.net
-  - skip-cert-verify: true
-    sni: t.me%2Fripaojiedian
-    type: trojan
-    password: BxceQaOe
-    server: 13.231.159.112
-    port: 921
-    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 09"
-    network: tcp
-    client-fingerprint: chrome
-  - type: vless
-    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 10"
-    server: 83.229.121.78
-    port: 8443
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    tls: true
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: ylnhh.cc.cd
-      path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2"
-    client-fingerprint: chrome
-    servername: ylnhh.cc.cd
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 11"
-    server: freea.glyphara.com
-    port: 30101
-    type: vless
-    uuid: 321d0474-2abf-4a6e-a756-fbee7e2c18b4
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: egnl0iFXY3IZYfvHwoNd72sCaULkoFRoL78wQiFwcDU
-      short-id: 176d4445
-    client-fingerprint: firefox
-    network: tcp
-    udp: true
-    servername: itunes.apple.com
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 12"
-    server: select-us.ddnskunlun.com
-    port: 9028
-    type: vmess
-    uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-    network: tcp
-    client-fingerprint: chrome
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 13"
-    server: d8d9aa85-tc7gg0-tdktcz-ezjz.hkt.gotochinatown.net
-    port: 80
-    type: vmess
-    uuid: 591ac730-bd6f-11ed-a8bf-f23c91cfbbc9
-    alterId: 2
-    cipher: auto
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: broadcastlv.chat.bilibili.com
-    udp: true
-    client-fingerprint: chrome
-  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 14"
-    server: 103.149.182.79
-    port: 8388
-    type: ss
-    cipher: chacha20-ietf
-    password: asd123456
-    udp: true
-  - skip-cert-verify: true
-    sni: t.me%252Fripaojiedian
-    type: trojan
-    password: BxceQaOe
-    server: 13.230.254.47
-    port: 41973
-    name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 01"
-    network: tcp
-    client-fingerprint: chrome
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 02"
-    server: 182.31.252.120
-    port: 10554
-    type: vless
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    client-fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /danfeng
-      headers:
-        Host: snippet.fgfw.ndjp.net
-    udp: true
-    servername: snippet.fgfw.ndjp.net
-  - cipher: chacha20-ietf-poly1305
-    name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 03"
-    password: b02b9065-defa-495a-bef1-cd55c67dbdf6
-    port: 54337
-    server: ccoo1.whtjdasha.com
-    type: ss
-    udp: true
-  - client-fingerprint: chrome
-    name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 04"
-    network: ws
-    port: 47112
-    server: 213.35.100.31
-    tls: true
-    type: vless
-    udp: true
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    ws-opts:
-      headers:
-        Host: ylnhh.cc.cd
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/54.0.2840.71 Safari/537.36
-      path: "/Telegram\U0001F1E8\U0001F1F3+@WangCai2"
-    xudp: true
-    servername: ylnhh.cc.cd
-  - client-fingerprint: chrome
     name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 05"
-    network: ws
-    port: 18658
-    server: 8.219.69.28
-    tls: true
-    type: vless
-    udp: true
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    ws-opts:
-      headers:
-        Host: ylnhh.cc.cd
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile
-          Safari/537.36
-      path: "/Telegram\U0001F1E8\U0001F1F3+@WangCai2"
-    xudp: true
-    servername: ylnhh.cc.cd
-  - client-fingerprint: chrome
-    name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 06"
-    network: ws
-    port: 37661
-    server: 211.228.64.93
-    tls: true
-    type: vless
-    udp: true
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.danfeng.kozow.com
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/46.0.2490.71 Safari/537.36
-      path: /danfeng
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    xudp: true
-    servername: snippet.danfeng.kozow.com
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 07"
-    server: 61.79.126.130
-    port: 15018
-    type: vless
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    alpn:
-      - http/1.1
-    client-fingerprint: random
-    network: ws
-    ws-opts:
-      path: /danfeng
-      headers:
-        Host: snippet.chinav.eu.cc
-    udp: true
-    servername: snippet.chinav.eu.cc
-  - client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 08"
-    network: ws
+    server: 162.159.7.2
     port: 443
-    server: 104.18.40.56
-    tls: true
-    type: vless
-    udp: true
     uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+    tls: true
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       headers:
         Host: r.icy.de5.net
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/46.0.2490.80 Safari/537.36
       path: /
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
-    xudp: true
-    servername: r.icy.de5.net
-  - sni: www.nintendogames.net
-    type: trojan
-    password: 86e150eb21c6faee48e81d496d7f61c2
-    server: 43.207.164.92
-    port: 3419
-    name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 09"
-    network: tcp
     client-fingerprint: chrome
-  - type: anytls
-    name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 10"
-    server: hkaws.ccwink.photos
-    port: 60003
-    sni: hkaws.ccwink.photos
-    skip-cert-verify: true
-    password: fe0fda62-79ff-467e-bef4-983322c1d21b
-    allowInsecure: '1'
+    servername: r.icy.de5.net
+  - type: vless
+    name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 06"
+    server: 108.162.195.58
+    port: 443
+    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: r.icy.de5.net
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    client-fingerprint: chrome
+    servername: r.icy.de5.net
+  - type: ss
+    skip-cert-verify: false
+    udp: false
+    server: cf.877774.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      tls: true
+      skip-cert-verify: false
+    name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 07"
+  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 08"
+    server: 20.67.254.104
+    port: 443
+    type: vless
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: true
+    alpn:
+      - http/1.1
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.chinat.eu.cc
     udp: true
+    servername: snippet.chinat.eu.cc
+  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 09"
+    server: 14.43.108.144
+    port: 11434
+    type: vless
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: true
+    alpn:
+      - http/1.1
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.chinav.eu.cc
+    udp: true
+    servername: snippet.chinav.eu.cc
+  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 10"
+    server: 121.174.43.148
+    port: 12345
+    type: vless
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: true
+    alpn:
+      - http/1.1
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.chinat.eu.cc
+    udp: true
+    servername: snippet.chinat.eu.cc
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 11"
-    server: 192.0.63.161
-    port: 443
-    type: vless
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    alpn:
-      - http/1.1
-    client-fingerprint: random
-    network: ws
-    ws-opts:
-      path: /danfeng
-      headers:
-        Host: snippet.chinav.eu.cc
-    udp: true
-    servername: snippet.chinav.eu.cc
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 12"
-    server: 43.164.133.86
-    port: 8443
-    type: vless
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    alpn:
-      - http/1.1
-    client-fingerprint: random
-    network: ws
-    ws-opts:
-      path: /danfeng
-      headers:
-        Host: chinam.sylu.net
-    udp: true
-    servername: chinam.sylu.net
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 13"
-    server: jpaws.ccwink.photos
-    port: 60003
+    server: isif1.kad520.uk
+    port: 57837
     type: anytls
-    password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
+    password: e2df6445-9126-432b-bebe-ebaff56ad72a
     udp: true
     skip-cert-verify: true
-    sni: jpaws.ccwink.photos
+    sni: isif1.kad520.uk
+  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 12"
+    server: ss.037.node-for-bigairport.win
+    port: 21888
+    type: ss
+    cipher: aes-256-gcm
+    password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+    udp: true
+  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 13"
+    server: 211.199.65.186
+    port: 18789
+    type: vless
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    tls: true
+    alpn:
+      - http/1.1
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.chinat.eu.cc
+    udp: true
+    servername: snippet.chinat.eu.cc
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 14"
-    server: 172.203.241.221
-    port: 4433
+    server: go2.lenovo.com
+    port: 2053
     type: vless
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
     tls: true
-    alpn:
-      - http/1.1
-    client-fingerprint: random
+    client-fingerprint: chrome
     network: ws
     ws-opts:
       path: /danfeng
       headers:
-        Host: chinam.sylu.net
+        Host: j07ih3wxowr5.gfw.hidns.co
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
     udp: true
-    servername: chinam.sylu.net
+    servername: j07ih3wxowr5.gfw.hidns.co
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 15"
-    server: 5.34.209.105
-    port: 8443
+    server: 198.23.160.207
+    port: 39738
     type: vless
     uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
     tls: true
@@ -922,42 +213,10 @@ proxies:
     ws-opts:
       path: /danfeng
       headers:
-        Host: chinam.sylu.net
+        Host: snippet.chinat.eu.cc
     udp: true
-    servername: chinam.sylu.net
+    servername: snippet.chinat.eu.cc
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 16"
-    server: 222.97.154.26
-    port: 23253
-    type: vless
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    alpn:
-      - http/1.1
-    client-fingerprint: random
-    network: ws
-    ws-opts:
-      path: /danfeng
-      headers:
-        Host: snippet.chinav.eu.cc
-    udp: true
-    servername: snippet.chinav.eu.cc
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 17"
-    server: 38.180.218.80
-    port: 443
-    type: vless
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    alpn:
-      - http/1.1
-    client-fingerprint: random
-    network: ws
-    ws-opts:
-      path: /danfeng
-      headers:
-        Host: snippet.fgfw.ndjp.net
-    udp: true
-    servername: snippet.fgfw.ndjp.net
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 18"
     server: 103.69.129.71
     port: 51198
     type: vless
@@ -973,23 +232,39 @@ proxies:
         Host: snippet.fgfw.ndjp.net
     udp: true
     servername: snippet.fgfw.ndjp.net
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 19"
-    server: freea.glyphara.com
-    port: 30403
+  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 17"
+    server: pages.cloudflare.com
+    port: 2053
     type: vless
-    uuid: 321d0474-2abf-4a6e-a756-fbee7e2c18b4
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: zu7rz41bbfz4.chinav.indevs.in
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: zu7rz41bbfz4.chinav.indevs.in
+  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 18"
+    server: freea.glyphara.com
+    port: 30401
+    type: vless
+    uuid: 9c0092ec-5b8f-45ac-acb1-01a3c84c00b0
     tls: true
     flow: xtls-rprx-vision
     reality-opts:
-      public-key: avy1Z524LLGhXuHyCYV_k_hqi_fnHPCNSdNE85Z4qDo
-      short-id: 1b3f5a2e
+      public-key: ZeXA8rcM3TV466jK83J157gY7U2JTI9KP9nmn_Nbawk
+      short-id: 105a652c
     client-fingerprint: firefox
     network: tcp
     udp: true
-    servername: www.samsung.com
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 20"
-    server: 121.146.206.172
-    port: 35342
+    servername: learn.microsoft.com
+  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 19"
+    server: 192.0.54.251
+    port: 443
     type: vless
     uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
     tls: true
@@ -1003,9 +278,25 @@ proxies:
         Host: snippet.fgfw.ndjp.net
     udp: true
     servername: snippet.fgfw.ndjp.net
+  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 20"
+    server: www.visa.cn
+    port: 2053
+    type: vless
+    uuid: 26524cce-d514-4014-a426-365fb266a14d
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: zu7rz41bbfz4.chinav.indevs.in
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: zu7rz41bbfz4.chinav.indevs.in
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 21"
-    server: 143.20.175.30
-    port: 347
+    server: 192.0.63.124
+    port: 443
     type: vless
     uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
     tls: true
@@ -1020,23 +311,21 @@ proxies:
     udp: true
     servername: snippet.chinat.eu.cc
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 22"
-    server: 45.159.79.118
-    port: 2053
+    server: 47.245.99.66
+    port: 11001
     type: vless
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    uuid: 00000000-0000-4000-8000-000000000000
     tls: true
-    alpn:
-      - http/1.1
-    client-fingerprint: random
+    client-fingerprint: chrome
     network: ws
     ws-opts:
-      path: /danfeng
+      path: /
       headers:
-        Host: chinam.sylu.net
+        Host: sub.mot.ip-ddns.com
     udp: true
-    servername: chinam.sylu.net
+    servername: sub.mot.ip-ddns.com
   - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 23"
-    server: nrt.xxxxxxxx.nyc.mn
+    server: legion.lenovo.com
     port: 2053
     type: vless
     uuid: 26524cce-d514-4014-a426-365fb266a14d
@@ -1046,408 +335,121 @@ proxies:
     ws-opts:
       path: /danfeng
       headers:
-        Host: j07ih3wxowr5.gfw.hidns.co
+        Host: zu7rz41bbfz4.chinav.indevs.in
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     udp: true
-    servername: j07ih3wxowr5.gfw.hidns.co
-  - name: "\U0001F1F8\U0001F1EC 机场推荐:dafei.de 新加坡 24"
-    server: 192.0.63.244
-    port: 443
-    type: vless
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    tls: true
-    alpn:
-      - http/1.1
-    client-fingerprint: random
-    network: ws
-    ws-opts:
-      path: /danfeng
-      headers:
-        Host: snippet.chinat.eu.cc
-    udp: true
-    servername: snippet.chinat.eu.cc
-  - type: ss
-    skip-cert-verify: false
-    udp: false
-    server: 222.104.182.54
-    port: 12360
-    cipher: none
-    password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      tls: true
-      skip-cert-verify: false
-    name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 01"
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 02"
-    network: tcp
-    port: 19001
-    reality-opts:
-      public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
-      short-id: ''
-    server: krp01.jumperservice.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: 6eeb820e-89ef-4b60-9060-ddcaea0580f0
-    xudp: true
-    servername: addons.mozilla.org
-  - client-fingerprint: chrome
-    name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 03"
-    network: ws
-    port: 10960
-    server: 183.101.23.138
-    tls: true
-    type: vless
-    udp: true
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-    ws-opts:
-      headers:
-        Host: ylnhh.cc.cd
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/70.0.3538.102 Safari/537.36
-      path: "/Telegram\U0001F1E8\U0001F1F3+@WangCai2"
-    xudp: true
-    servername: ylnhh.cc.cd
-  - alpn:
-      - http/1.1
-    client-fingerprint: random
-    name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 04"
-    network: ws
-    port: 10035
-    server: 220.124.151.123
-    tls: true
-    type: vless
-    udp: true
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.chinat.eu.cc
-      path: /danfeng
-    servername: snippet.chinat.eu.cc
-  - alpn:
-      - http/1.1
-    client-fingerprint: random
-    name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 05"
-    network: ws
-    port: 50001
-    server: 115.93.169.180
-    tls: true
-    type: vless
-    udp: true
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: chinam.sylu.net
-      path: /danfeng
-    servername: chinam.sylu.net
-  - alpn:
-      - http/1.1
-    client-fingerprint: random
-    name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 06"
-    network: ws
-    port: 10005
-    server: 121.147.157.249
-    tls: true
-    type: vless
-    udp: true
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.chinav.eu.cc
-      path: /danfeng
-    servername: snippet.chinav.eu.cc
-  - alpn:
-      - http/1.1
-    client-fingerprint: random
-    name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 07"
-    network: ws
-    port: 18081
-    server: 222.104.182.54
-    tls: true
-    type: vless
-    udp: true
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.chinav.eu.cc
-      path: /danfeng
-    servername: snippet.chinav.eu.cc
-  - alpn:
-      - http/1.1
-    client-fingerprint: random
-    name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 08"
-    network: ws
-    port: 18790
-    server: 222.104.159.112
-    tls: true
-    type: vless
-    udp: true
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.chinav.eu.cc
-      path: /danfeng
-    servername: snippet.chinav.eu.cc
-  - name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 09"
-    server: new-kr01.monet.mom
-    port: 25000
-    type: anytls
-    password: dd4b5754-dd1b-4b13-8b7a-ff6dd2cdc545
-    udp: true
-    sni: new-kr01.monet.mom
-  - name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 10"
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 14630
-    type: ss
-    cipher: 2022-blake3-aes-256-gcm
-    password: >-
-      mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-    udp: true
-  - cipher: aes-256-cfb
-    delay: 582
-    name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 01"
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    port: 38388
-    server: 103.186.155.33
-    type: ss
-    udp: true
-  - type: ss
-    skip-cert-verify: false
-    udp: false
-    server: 103.186.155.220
-    port: 38388
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 02"
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 03"
-    server: 103.186.155.234
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
+    servername: zu7rz41bbfz4.chinav.indevs.in
   - type: vless
-    name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 04"
-    server: s226.okgg.top
+    name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 01"
+    server: 162.159.44.142
     port: 443
-    uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
+    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
     tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: random
     skip-cert-verify: false
-    network: tcp
-    encryption: none
-    servername: u710948u3491s226.okgg.top
-  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 05"
-    server: 103.186.154.190
-    port: 38388
-    type: ss
-    cipher: aes-256-cfb
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    udp: true
-  - client-fingerprint: chrome
-    name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 01"
     network: ws
-    port: 8005
-    server: 45.145.42.170
-    tls: true
-    type: vless
-    uuid: 00000000-0000-4000-8000-000000000000
     ws-opts:
       headers:
-        Host: sub.mot.ip-ddns.com
+        Host: r.icy.de5.net
       path: /
-    servername: sub.mot.ip-ddns.com
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 02"
-    port: 443
-    reality-opts:
-      public-key: EdEtwDL3a_V9midkIqik19C3xo7VvefseGkDM5jBWGM
-      short-id: ba34cbf836e99bf6
-    server: 89.185.85.107
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    udp: true
-    uuid: 658786e5-f302-48e2-b321-f4dc6da2a398
-    network: tcp
-    servername: cdnv-img.perekrestok.ru
-  - client-fingerprint: chrome
-    name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 03"
-    network: ws
-    port: 8082
-    server: 77.221.154.62
-    tls: true
-    type: vless
-    uuid: 00000000-0000-4000-8000-000000000000
-    ws-opts:
-      headers:
-        Host: sub.mot.ip-ddns.com
-      path: /
-    servername: sub.mot.ip-ddns.com
-  - type: vless
-    name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 04"
-    server: 162.159.152.4
-    port: 443
-    uuid: f2a73750-3087-48ff-a763-1348c15dce68
-    tls: true
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: rAyAn-007.mAxImA.DpDnS.OrG
-      path: /
-    encryption: none
-    servername: rAyAn-007.mAxImA.DpDnS.OrG
-  - type: vless
-    name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 05"
-    server: 62.60.156.158
-    port: 8085
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: true
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: sub.mot.ip-ddns.com
-      path: /
-    servername: sub.mot.ip-ddns.com
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 06"
-    server: 63.141.128.188
-    port: 443
-    type: vless
-    uuid: 1bce1f4a-3a17-4e13-8b47-9090b39297a4
-    tls: true
-    client-fingerprint: ios
-    network: ws
-    ws-opts:
-      path: /djjc/de1
-      headers:
-        Host: d2-de1.djwstlsweb.top
-    udp: true
-    servername: d2-de1.djwstlsweb.top
-  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 07"
-    server: 89ab11b0-tc7gg0-tdktcz-ezjz.de.oshuawei.com
-    port: 443
-    type: http
-    username: 591ac730-bd6f-11ed-a8bf-f23c91cfbbc9
-    password: 591ac730-bd6f-11ed-a8bf-f23c91cfbbc9
-    tls: true
-    sni: 89ab11b0-tc7gg0-tdktcz-ezjz.de.oshuawei.com
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: "\U0001F1F8\U0001F1EA 机场推荐:dafei.de 瑞典 01"
-    port: 8443
-    reality-opts:
-      public-key: qJHmudCfwVqVt8M5g3JHxeI_IKUUIrfb0PIVFG_NJU4
-      short-id: 60e0c27fcabb
-    server: sub.himikvpn.online
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    udp: true
-    uuid: f7f18360-fbdf-45b5-93f4-4e47a29e595b
-    network: tcp
-    servername: pimg.mycdn.me
-  - cipher: chacha20-ietf-poly1305
-    name: "\U0001F1F2\U0001F1FE 机场推荐:dafei.de 马来 01"
-    password: b02b9065-defa-495a-bef1-cd55c67dbdf6
-    port: 33339
-    server: ddnn2.whtjdasha.com
-    type: ss
-    udp: true
-  - name: "\U0001F1F2\U0001F1FE 机场推荐:dafei.de 马来 02"
-    server: db76181b-tc7gg0-tdktcz-ezjz.my.oshuawei.com
-    port: 31233
-    type: http
-    username: 591ac730-bd6f-11ed-a8bf-f23c91cfbbc9
-    password: 591ac730-bd6f-11ed-a8bf-f23c91cfbbc9
-    tls: true
-    sni: db76181b-tc7gg0-tdktcz-ezjz.my.oshuawei.com
-  - alpn:
-      - h3
-    congestion-controller: bbr
-    name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 01"
-    password: afa31ea7-0b97-4bc9-b043-daaeca4aef70
-    port: 1443
-    server: 87.229.95.140
-    sni: dk1.587458.xyz
-    type: tuic
-    udp: true
-    uuid: afa31ea7-0b97-4bc9-b043-daaeca4aef70
-    udp-relay-mode: native
-    version: 5
-  - alterId: '0'
-    cipher: auto
-    name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 02"
-    network: ws
-    port: 443
-    server: cg1d05.waimaojd.com
-    skip-cert-verify: false
-    tls: true
-    type: vmess
-    udp: true
-    uuid: 6abe3ac8-e1f8-4b24-bb67-191bc23b5fab
-    ws-opts:
-      headers:
-        Host: cg1d05.waimaojd.com
-      path: /api/v1/graphql
-    xudp: true
-    client-fingerprint: chrome
-    servername: cg1d05.waimaojd.com
-  - type: vless
-    name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 03"
-    server: 138.226.240.199
-    port: 4433
-    uuid: 00000000-0000-4000-8000-000000000000
-    tls: true
-    client-fingerprint: chrome
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers:
-        Host: sub.mot.ip-ddns.com
-      path: /
-    servername: sub.mot.ip-ddns.com
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 04"
-    server: 37.220.86.14
-    port: 443
-    type: vless
-    uuid: 932130c7-197b-4b37-af26-d550c47ba8f4
-    tls: false
-    network: tcp
-    udp: true
-    client-fingerprint: chrome
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 05"
-    server: 172.66.44.230
-    port: 8443
-    type: trojan
-    password: '8r<[9''l6hAO#8ZQi'
-    sni: Koma-YT.PAGeS.Dev
-    network: ws
-    ws-opts:
-      path: /tro8sFW1S91B6sZrM1
-      headers:
-        Host: Koma-YT.PAGeS.Dev
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
-    udp: true
     client-fingerprint: chrome
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 06"
-    server: 195.133.38.175
-    port: 2053
+    servername: r.icy.de5.net
+  - type: vless
+    name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 02"
+    server: 172.64.52.81
+    port: 443
+    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: r.icy.de5.net
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    client-fingerprint: chrome
+    servername: r.icy.de5.net
+  - type: vless
+    name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 03"
+    server: 172.64.229.85
+    port: 443
+    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: r.icy.de5.net
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    servername: r.icy.de5.net
+  - type: vless
+    name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 04"
+    server: 172.64.229.165
+    port: 443
+    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: r.icy.de5.net
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    client-fingerprint: chrome
+    servername: r.icy.de5.net
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 05"
+    server: 162.62.120.236
+    port: 20443
+    type: vless
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristi
+      headers:
+        Host: fh9bq8zuds8hha4uxrf6yuh.myto.ip-ddns.com
+    udp: true
+    servername: fh9bq8zuds8hha4uxrf6yuh.myto.ip-ddns.com
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 06"
+    server: 169.211.169.147
+    port: 22609
+    type: vless
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristi
+      headers:
+        Host: fh9bq8zuds8hha4uxrf6yuh.myto.ip-ddns.com
+    udp: true
+    servername: fh9bq8zuds8hha4uxrf6yuh.myto.ip-ddns.com
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 07"
+    server: 178.239.124.84
+    port: 29803
+    type: vless
+    uuid: 00000000-0000-4000-8000-000000000000
+    tls: true
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristi
+      headers:
+        Host: fh9bq8zuds8hha4uxrf6yuh.myto.ip-ddns.com
+    udp: true
+    servername: fh9bq8zuds8hha4uxrf6yuh.myto.ip-ddns.com
+  - name: "\U0001F1EF\U0001F1F5 机场推荐:dafei.de 日本 08"
+    server: cf.090227.xyz
+    port: 443
     type: ss
     cipher: none
     password: 3e96ef7d-8637-42c2-ac73-75182196e755
@@ -1455,112 +457,548 @@ proxies:
     plugin-opts:
       mode: websocket
       host: mfvpn.fuchen.indevs.in
-      path: 3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
       tls: true
       mux: false
     udp: true
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 07"
-    server: apt-magpie.rooster465.autos
+  - type: vless
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 01"
+    server: 172.64.52.210
     port: 443
-    type: trojan
-    password: IL37892054
-    sni: apt-magpie.rooster465.autos
-    skip-cert-verify: false
-    udp: true
-    network: tcp
-    client-fingerprint: chrome
-  - name: "\U0001F1F3\U0001F1F1 机场推荐:dafei.de 荷兰 08"
-    server: nl-4.tr202513.com
-    port: 443
-    type: trojan
-    password: s7R5MgmN6UrFWjxwYh
-    sni: nl-4.tr202513.com
-    skip-cert-verify: true
-    udp: true
-    network: tcp
-    client-fingerprint: chrome
-  - down: ''
-    fingerprint: ''
-    name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 01"
-    obfs: ''
-    obfs-password: ''
-    password: 1bce1f4a-3a17-4e13-8b47-9090b39297a4
-    port: 53
-    server: 144.24.146.216
-    skip-cert-verify: true
-    sni: www.hoyoverse.com
-    type: hysteria2
-    up: ''
-  - down: ''
-    fingerprint: ''
-    name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 02"
-    obfs: ''
-    obfs-password: ''
-    password: 1bce1f4a-3a17-4e13-8b47-9090b39297a4
-    port: 53
-    server: 144.24.99.141
-    skip-cert-verify: true
-    sni: www.hoyoverse.com
-    type: hysteria2
-    up: ''
-  - alpn:
-      - http/1.1
-    client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 01"
-    network: ws
-    port: 443
-    server: 192.200.160.20
+    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
     tls: true
-    type: vless
-    udp: true
-    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
+    skip-cert-verify: false
+    network: ws
     ws-opts:
       headers:
-        Host: 639073677243557970.camry-perma.info
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/47.0.2526.106 Safari/537.36
-      path: /yaeungws
+        Host: r.icy.de5.net
+      path: /
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
-    xudp: true
-    servername: 639073677243557970.camry-perma.info
-  - sni: just-alpaca.rooster465.autos
-    type: trojan
-    password: IL37892054
-    server: just-alpaca.rooster465.autos
-    port: 443
-    name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 01"
-    network: tcp
     client-fingerprint: chrome
-  - type: vless
-    name: "\U0001F1E8\U0001F1F3 机场推荐:dafei.de 台湾 01"
-    server: 114.33.57.170
+    servername: r.icy.de5.net
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 02"
+    server: 162.159.48.142
     port: 443
-    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    type: vless
+    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: r.icy.de5.net
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    client-fingerprint: chrome
+    servername: r.icy.de5.net
+  - type: vless
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 03"
+    server: 162.159.24.111
+    port: 443
+    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: r.icy.de5.net
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    client-fingerprint: chrome
+    servername: r.icy.de5.net
+  - type: vless
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 04"
+    server: 166.117.184.30
+    port: 443
+    uuid: 69b9d375-c6c1-64f9-c4a9-f409c8586e5b
+    tls: true
+    client-fingerprint: random
+    alpn:
+      - h3
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers:
+        Host: 5fcf0b95.mfree.ccwu.cc
+      path: '/socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433'
+    servername: 5fcf0b95.mfree.ccwu.cc
+  - type: vless
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 05"
+    server: 172.64.156.0
+    port: 443
+    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
     tls: true
     client-fingerprint: chrome
     skip-cert-verify: false
     network: ws
     ws-opts:
       headers:
-        Host: ylnhh.cc.cd
-      path: "/Telegram\U0001F1E8\U0001F1F3+@WangCai2"
-    servername: ylnhh.cc.cd
-  - name: "\U0001F1E8\U0001F1F3 机场推荐:dafei.de 台湾 02"
+        Host: r.icy.de5.net
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    encryption: none
+    servername: r.icy.de5.net
+  - type: vless
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 06"
+    server: malaysia01.jumperservice.com
+    port: 19001
+    uuid: e675787a-48db-45f9-9902-13b1b941446c
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    reality-opts:
+      public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+    network: tcp
+    servername: www.speedtest.net
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 07"
+    server: 174.136.205.68
+    port: 443
+    type: vless
+    uuid: 7e84aacd-0d09-436e-ae2d-7831d23df654
+    tls: true
+    reality-opts:
+      public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+      short-id: 2da72ce6
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+    servername: navi.bankrate.com
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 08"
     server: jpaws.ccwink.photos
-    port: 60002
+    port: 30002
     type: anytls
     password: fe0fda62-79ff-467e-bef4-983322c1d21b
     udp: true
     skip-cert-verify: true
     sni: jpaws.ccwink.photos
-  - name: "\U0001F1E8\U0001F1F3 机场推荐:dafei.de 台湾 03"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 09"
+    server: 162.159.45.232
+    port: 443
+    type: vless
+    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: r.icy.de5.net
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    client-fingerprint: chrome
+    servername: r.icy.de5.net
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 10"
+    server: 59.5.26.71
+    port: 12146
+    type: vless
+    uuid: 69b9d375-c6c1-64f9-c4a9-f409c8586e5b
+    tls: true
+    alpn:
+      - h3
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: '/socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433'
+      headers:
+        Host: 5fcf0b95.mfree.ccwu.cc
+    udp: true
+    servername: 5fcf0b95.mfree.ccwu.cc
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 11"
+    server: cloudflare-dns.com
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnmfangbinxing.cnmfangbinxing-e.workers.dev
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 12"
+    server: support.cloudflare.com
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnmfangbinxing.cnmfangbinxing-e.workers.dev
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 13"
+    server: 88.210.36.107
+    port: 2377
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: '817aa69.default.nintendo.com:112719'
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 14"
+    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
+    port: 12742
+    type: ss
+    cipher: 2022-blake3-aes-256-gcm
+    password: >-
+      mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 15"
+    server: 220.128.110.108
+    port: 43
+    type: vless
+    uuid: 69b9d375-c6c1-64f9-c4a9-f409c8586e5b
+    tls: true
+    alpn:
+      - h3
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: '/socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433'
+      headers:
+        Host: 5fcf0b95.mfree.ccwu.cc
+    udp: true
+    servername: 5fcf0b95.mfree.ccwu.cc
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 16"
+    server: 69.84.182.16
+    port: 443
+    type: ss
+    cipher: none
+    password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\
+      tls: true
+      mux: false
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 17"
+    server: cf.cloudflare.182682.xyz
+    port: 443
+    type: vless
+    uuid: 69b9d375-c6c1-64f9-c4a9-f409c8586e5b
+    tls: true
+    alpn:
+      - h3
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: '/socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433'
+      headers:
+        Host: 5fcf0b95.mfree.ccwu.cc
+    udp: true
+    servername: 5fcf0b95.mfree.ccwu.cc
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 18"
+    server: 203.69.248.40
+    port: 10443
+    type: vless
+    uuid: 69b9d375-c6c1-64f9-c4a9-f409c8586e5b
+    tls: true
+    alpn:
+      - h3
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: '/socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433'
+      headers:
+        Host: 5fcf0b95.mfree.ccwu.cc
+    udp: true
+    servername: 5fcf0b95.mfree.ccwu.cc
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 19"
+    server: cdnjs.com
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnmfangbinxing.cnmfangbinxing-e.workers.dev
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 20"
+    server: cf.090227.xyz
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnmfangbinxing.cnmfangbinxing-e.workers.dev
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 21"
+    server: openai.com
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnmfangbinxing.cnmfangbinxing-e.workers.dev
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 22"
+    server: www.udemy.com
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnmfangbinxing.cnmfangbinxing-e.workers.dev
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 23"
+    server: developers.cloudflare.com
+    port: 2095
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    client-fingerprint: randomized
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cnmfangbinxing.cnmfangbinxing-e.workers.dev
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 24"
+    server: 43.162.108.172
+    port: 60002
+    type: anytls
+    password: fe0fda62-79ff-467e-bef4-983322c1d21b
+    udp: true
+    skip-cert-verify: true
+  - name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 01"
+    server: planb.mojcn.com
+    port: 16626
+    type: vmess
+    uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
+    udp: true
+    client-fingerprint: chrome
+  - name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 02"
+    server: in.xn--ehqa22b.site
+    port: 21664
+    type: hysteria2
+    password: a279220e-d641-424c-aa1e-068afe292f16
+    auth: a279220e-d641-424c-aa1e-068afe292f16
+    skip-cert-verify: false
+    ports: 21001-21999
+    udp: true
+    sni: in.xn--ehqa22b.site
+  - name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 03"
+    server: in.xn--ehqa22b.site
+    port: 21360
+    type: hysteria2
+    password: 8c342ddc-74b0-48d8-b2fb-886c6060bfa1
+    auth: 8c342ddc-74b0-48d8-b2fb-886c6060bfa1
+    skip-cert-verify: false
+    ports: 21001-21999
+    udp: true
+    sni: in.xn--ehqa22b.site
+  - name: "\U0001F1EE\U0001F1F3 机场推荐:dafei.de 印度 04"
+    server: in.xn--ehqa22b.site
+    port: 21014
+    type: hysteria2
+    password: df314131-ee4a-4857-a84e-e39c3eeac89d
+    auth: df314131-ee4a-4857-a84e-e39c3eeac89d
+    skip-cert-verify: false
+    ports: 21001-21999
+    udp: true
+    sni: in.xn--ehqa22b.site
+  - type: hysteria2
+    name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 01"
+    server: hkt.ccwink.cc
+    port: 56309
+    password: fe0fda62-79ff-467e-bef4-983322c1d21b
+    sni: hkt.ccwink.cc
+    skip-cert-verify: true
+    tfo: false
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 02"
+    server: m.cnmjin.net
+    port: 16632
+    type: vmess
+    uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
+    udp: true
+    client-fingerprint: chrome
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 03"
+    server: planb.mojcn.com
+    port: 16622
+    type: vmess
+    uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
+    udp: true
+    client-fingerprint: chrome
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 04"
+    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
+    port: 12361
+    type: ss
+    cipher: 2022-blake3-aes-256-gcm
+    password: >-
+      mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 05"
+    server: isif1.kad520.uk
+    port: 52512
+    type: anytls
+    password: e2df6445-9126-432b-bebe-ebaff56ad72a
+    udp: true
+    skip-cert-verify: true
+    sni: isif1.kad520.uk
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 06"
+    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
+    port: 13154
+    type: ss
+    cipher: 2022-blake3-aes-256-gcm
+    password: >-
+      mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 07"
+    server: 43.161.240.193
+    port: 60002
+    type: anytls
+    password: fe0fda62-79ff-467e-bef4-983322c1d21b
+    udp: true
+    skip-cert-verify: true
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 08"
+    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
+    port: 13144
+    type: ss
+    cipher: 2022-blake3-aes-256-gcm
+    password: >-
+      mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
+    udp: true
+  - name: "\U0001F1ED\U0001F1F0 机场推荐:dafei.de 香港 09"
+    server: jpaws.ccwink.photos
+    port: 60001
+    type: anytls
+    password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
+    udp: true
+    skip-cert-verify: true
+    sni: jpaws.ccwink.photos
+  - name: "\U0001F1E6\U0001F1FA 机场推荐:dafei.de 澳大利亚 01"
+    server: enhanced-crayfish.rooster465.autos
+    port: 443
+    type: trojan
+    password: IL37892054
+    sni: enhanced-crayfish.rooster465.autos
+    skip-cert-verify: false
+    udp: true
+    network: tcp
+    client-fingerprint: chrome
+  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 01"
+    server: planb.mojcn.com
+    port: 16641
+    type: vmess
+    uuid: 3f8ef9b2-efd9-4fbd-8893-fe50ff4e4369
+    alterId: 0
+    cipher: auto
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: cb02248ddc6c0fd6c5be014bebb73797.mobgslb.tbcache.com
+    udp: true
+    client-fingerprint: chrome
+  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 02"
+    server: c63s5.portablesubmarines.com
+    port: 5662
+    type: vmess
+    uuid: 7ea5536b-73ac-478a-9729-fc61222ca6f8
+    alterId: 0
+    cipher: auto
+    tls: false
+    udp: true
+    network: tcp
+    client-fingerprint: chrome
+  - name: "\U0001F1E8\U0001F1E6 机场推荐:dafei.de 加拿大 03"
+    server: hjnd.0101.pw
+    port: 8444
+    type: hysteria2
+    password: 69d424bd-3093-4c6f-ad4f-cbe1fee3235d
+    auth: 69d424bd-3093-4c6f-ad4f-cbe1fee3235d
+    sni: hjnd.0101.pw
+    skip-cert-verify: false
+    udp: true
+  - name: "\U0001F1E9\U0001F1EA 机场推荐:dafei.de 德国 01"
+    server: ip1.758733.xyz
+    port: 10088
+    type: tuic
+    password: dongtaiwang.com
+    uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    disable-sni: false
+    reduce-rtt: false
+    request-timeout: 0
+    udp-relay-mode: native
+    congestion-controller: bbr
+    version: 5
+  - name: "\U0001F1F5\U0001F1F1 机场推荐:dafei.de 波兰 01"
+    server: pl234.mechvpn.online
+    port: 443
+    type: vless
+    uuid: 729764b1-149c-49f2-b170-322544df7b5b
+    tls: true
+    alpn:
+      - h3%2ch2%2chttp/1.1
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+    servername: pl234.mechvpn.online
+  - name: "\U0001F1E8\U0001F1F3 机场推荐:dafei.de 台湾 01"
     server: freea.glyphara.com
     port: 30202
     type: vless
-    uuid: a2b66b8f-2aa1-4c55-b50e-58a711460113
+    uuid: 9c0092ec-5b8f-45ac-acb1-01a3c84c00b0
     tls: true
     flow: xtls-rprx-vision
     reality-opts:
@@ -1570,81 +1008,104 @@ proxies:
     network: tcp
     udp: true
     servername: www.samsung.com
-  - name: "\U0001F1E8\U0001F1F3 机场推荐:dafei.de 台湾 04"
-    server: jry.izenny.com
-    port: 27689
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 804e6aad-0d47-46fa-9513-582a9d08985a
-    udp: true
-  - type: vless
-    name: "\U0001F1EA\U0001F1EA 机场推荐:dafei.de 爱沙尼亚 01"
-    server: 69.12.83.251
-    port: 443
-    uuid: ccd85f23-9105-37fd-96b9-9dcbc89ff3eb
+  - name: "\U0001F1E8\U0001F1F3 机场推荐:dafei.de 台湾 02"
+    server: freea.glyphara.com
+    port: 30201
+    type: vless
+    uuid: 6d262201-5d31-4131-be2d-db44934a5471
     tls: true
     flow: xtls-rprx-vision
-    client-fingerprint: random
-    skip-cert-verify: false
+    reality-opts:
+      public-key: kb5IP7-mBUXwW7zszu-grmOgNEWmqDiCvf1NRfbF3AQ
+      short-id: c1e12817
+    client-fingerprint: firefox
     network: tcp
-    encryption: none
-    servername: u710948u1d55s473.ccgfw.top
-  - name: "\U0001F1F2\U0001F1E9 机场推荐:dafei.de 摩尔多瓦 01"
-    server: slur.izenny.com
-    port: 32009
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: b1c90af3-2de8-4d2a-86eb-30e01d79922b
     udp: true
-  - name: "\U0001F1EB\U0001F1F7 机场推荐:dafei.de 法国 01"
-    server: v35.hdacd.com
-    port: 30835
-    type: vmess
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
+    servername: lol.secure.dyn.riotcdn.net
+  - name: "\U0001F1E8\U0001F1F3 机场推荐:dafei.de 台湾 03"
+    server: 183.240.252.165
+    port: 8654
+    type: vless
+    uuid: f6ddddaf-dfd6-4134-9dae-03b93b03d145
     tls: false
-    skip-cert-verify: true
-    udp: true
     network: tcp
+    udp: true
     client-fingerprint: chrome
-  - name: "\U0001F1E7\U0001F1F7 机场推荐:dafei.de 巴西 01"
-    server: 144.22.129.240
-    port: 50000
-    type: hysteria2
-    password: 1bce1f4a-3a17-4e13-8b47-9090b39297a4
-    auth: 1bce1f4a-3a17-4e13-8b47-9090b39297a4
-    sni: www.microsoft.com
+  - name: "\U0001F1E8\U0001F1F3 机场推荐:dafei.de 台湾 04"
+    server: jpaws.ccwink.photos
+    port: 60002
+    type: anytls
+    password: fe0fda62-79ff-467e-bef4-983322c1d21b
+    udp: true
     skip-cert-verify: true
-    ports: 50000-53000
-    udp: true
-  - name: "\U0001F1EE\U0001F1F9 机场推荐:dafei.de 意大利 01"
-    server: 45.92.70.236
-    port: 22324
-    type: vmess
-    uuid: 04621bae-ab36-11ec-b909-0242ac120002
-    alterId: 0
-    cipher: auto
-    tls: false
-    udp: true
-    network: tcp
-    client-fingerprint: chrome
-  - name: "\U0001F1F9\U0001F1F7 机场推荐:dafei.de 土耳其 01"
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    port: 13156
+    sni: jpaws.ccwink.photos
+  - name: "\U0001F1F0\U0001F1F7 机场推荐:dafei.de 韩国 01"
+    server: 116.93.199.28
+    port: 21036
     type: ss
-    cipher: 2022-blake3-aes-256-gcm
-    password: >-
-      mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
+    cipher: none
+    password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: 14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\
+      tls: true
+      mux: false
     udp: true
-  - name: "\U0001F1F9\U0001F1ED 机场推荐:dafei.de 泰国 01"
-    server: ce5240d4-tc7gg0-tdktcz-ezjz.id.oshuawei.com
-    port: 32232
-    type: http
-    username: 591ac730-bd6f-11ed-a8bf-f23c91cfbbc9
-    password: 591ac730-bd6f-11ed-a8bf-f23c91cfbbc9
+  - name: "\U0001F1EC\U0001F1E7 机场推荐:dafei.de 英国 01"
+    server: 192.200.160.20
+    port: 443
+    type: vless
+    uuid: ee248e40-9468-4ef6-81b7-707a1e47c54a
     tls: true
-    sni: ce5240d4-tc7gg0-tdktcz-ezjz.id.oshuawei.com
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /yaeungws
+      headers:
+        Host: 639073677243557970.camry-perma.info
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    udp: true
+    servername: 639073677243557970.camry-perma.info
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 01"
+    server: 103.186.155.154
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 02"
+    server: 103.186.154.58
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: "\U0001F1FB\U0001F1F3 机场推荐:dafei.de 越南 03"
+    server: 103.186.155.50
+    port: 38388
+    type: ss
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: "\U0001F1FA\U0001F1E6 机场推荐:dafei.de 乌克兰 01"
+    server: md-kiv-2.blook.network
+    port: 443
+    type: vless
+    uuid: aa167bb9-4882-417e-a9d1-676250111f70
+    tls: true
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: SqYAVrG01Mk0KXzlkmckO6lxvv6iZBJJvxE6PvD2vD0
+      short-id: 3c2f8f52
+    client-fingerprint: chrome
+    network: tcp
+    udp: true
+    servername: md-kiv-2.blook.network
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
