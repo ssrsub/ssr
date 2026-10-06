@@ -1238,13 +1238,11 @@ proxies:
     udp: true
   - alterId: 0
     cipher: auto
-    client-fingerprint: chrome
     name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 01"
     network: ws
     port: 443
     server: guanwang.awsno.com
     skip-cert-verify: true
-    sub_tag: noCache
     tls: true
     type: vmess
     uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
@@ -1252,6 +1250,7 @@ proxies:
       headers:
         Host: guanwang.awsno.com
       path: /hls/cctv5phd.m3u8
+    client-fingerprint: chrome
     servername: guanwang.awsno.com
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 02"
     password: gs4BXwT6SW
@@ -1612,13 +1611,13 @@ proxies:
     udp: true
     username: 'null'
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 49"
-    password: ''
+    password: 'null'
     port: 443
     server: kimberlymilano.icu
-    skip-cert-verify: true
+    sub_tag: noCache
     tls: true
     type: http
-    username: ''
+    username: 'null'
     sni: kimberlymilano.icu
   - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 50"
     password: 'null'
@@ -1768,7 +1767,24 @@ proxies:
     sub_tag: noCache
     tls: true
     type: http
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 68"
+  - alterId: 0
+    cipher: auto
+    client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 68"
+    network: ws
+    port: 443
+    server: guanwang.awsno.com
+    skip-cert-verify: true
+    sub_tag: noCache
+    tls: true
+    type: vmess
+    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+    ws-opts:
+      headers:
+        Host: guanwang.awsno.com
+      path: /hls/cctv5phd.m3u8
+    servername: guanwang.awsno.com
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 69"
     port: 52683
     server: jp.sofast.live
     skip-cert-verify: true
@@ -1779,7 +1795,7 @@ proxies:
     network: tcp
     client-fingerprint: chrome
   - auth: 'https://xship.best'
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 69"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 70"
     password: 'https://xship.best'
     port: 443
     server: starlink-ft.251313.xyz
@@ -1787,7 +1803,7 @@ proxies:
     sni: xship.top
     type: hysteria2
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 70"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 71"
     port: 443
     server: fullmanfirm.icu
     skip-cert-verify: true
@@ -1795,13 +1811,13 @@ proxies:
     type: http
     sni: fullmanfirm.icu
   - cipher: aes-256-cfb
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 71"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 72"
     password: amazonskr05
     port: 443
     server: 18.208.223.39
     type: ss
   - cipher: none
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 72"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 73"
     password: ODI4ZjAwZGMtNDQz
     plugin: obfs
     plugin-opts:
@@ -1811,7 +1827,7 @@ proxies:
     server: 103.11.76.248
     type: ss
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 73"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 74"
     password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
     port: 1002
     server: vltl28mf.zf-mix.9999231.xyz
@@ -1819,14 +1835,24 @@ proxies:
     sni: iosapps.itunes.apple.com
     type: anytls
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 74"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 75"
     port: 443
     server: 167.88.60.242
     skip-cert-verify: true
     sub_tag: noCache
     tls: true
     type: http
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 75"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 76"
+    password: None
+    port: 443
+    server: fullmanfirm.icu
+    skip-cert-verify: true
+    sni: fullmanfirm.icu
+    sub_tag: noCache
+    tls: true
+    type: http
+    udp: true
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 77"
     password: 'null'
     port: 443
     server: webdrone.club
@@ -1836,42 +1862,33 @@ proxies:
     type: http
     udp: true
     username: 'null'
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 76"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 78"
     port: 8090
     server: 209.148.53.153
     skip-cert-verify: true
     sub_tag: noCache
     tls: true
     type: http
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 77"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 79"
     port: 8090
     server: 50.76.211.251
     skip-cert-verify: true
     sub_tag: noCache
     tls: true
     type: http
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 78"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 80"
     port: 443
     server: crosscards.site
     sni: crosscards.site
     sub_tag: noCache
     tls: true
     type: http
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 79"
-    password: 'null'
-    port: 443
-    server: kimberlymilano.icu
-    sub_tag: noCache
-    tls: true
-    type: http
-    username: 'null'
-    sni: kimberlymilano.icu
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 80"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 81"
     port: 1080
     server: 129.153.11.56
     sub_tag: noCache
     type: socks5
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 81"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 82"
     port: 443
     server: fan.365747.xyz
     skip-cert-verify: true
@@ -1879,7 +1896,7 @@ proxies:
     tls: true
     type: http
     udp: true
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 82"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 83"
     port: 443
     server: jewelscollecti.icu
     skip-cert-verify: true
@@ -1888,7 +1905,7 @@ proxies:
     type: http
   - alterId: 2
     cipher: auto
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 83"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 84"
     port: 30829
     server: v29.hdacd.com
     skip-cert-verify: true
@@ -1899,7 +1916,7 @@ proxies:
     network: tcp
     client-fingerprint: chrome
   - fingerprint: ''
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 84"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 85"
     password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
     port: 1008
     server: 3eqhzekn.zf-mix.9999231.xyz
@@ -1910,7 +1927,7 @@ proxies:
     username: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 85"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 86"
     network: tcp
     port: 443
     server: s880.gogocs.xyz
@@ -1921,7 +1938,7 @@ proxies:
     xudp: true
     servername: u695098u07fcba7ds79.kukuss.top
   - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 86"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 87"
     network: tcp
     password: b837a998138d4c0a
     port: 20019
