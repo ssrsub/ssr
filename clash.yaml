@@ -581,15 +581,15 @@ proxies:
     uuid: 399b6b23-cc40-4831-a494-61948e2df133
     xudp: true
     client-fingerprint: chrome
-  - encryption: none
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 36"
-    network: tcp
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 36"
     port: 58011
     server: us22.sofast.live
+    skip-cert-verify: true
+    tls: false
     type: vless
     udp: true
     uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-    xudp: true
+    network: tcp
     client-fingerprint: chrome
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
@@ -660,18 +660,8 @@ proxies:
     sub_tag: noCache
     tls: true
     type: http
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 44"
-    port: 58011
-    server: us22.sofast.live
-    skip-cert-verify: true
-    tls: false
-    type: vless
-    udp: true
-    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-    network: tcp
-    client-fingerprint: chrome
   - client-fingerprint: firefox
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 45"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 44"
     network: tcp
     port: 443
     reality-opts:
@@ -683,7 +673,7 @@ proxies:
     udp: true
     uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
     servername: a0688bt.us4.h1clayd.click
-  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 46"
+  - name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 45"
     network: ws
     port: 8080
     server: 208.84.100.209
@@ -702,7 +692,7 @@ proxies:
     servername: 208.84.100.209
   - client-fingerprint: edge
     flow: xtls-rprx-vision
-    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 47"
+    name: "\U0001F1FA\U0001F1F8 机场推荐:dafei.de 美国 46"
     network: tcp
     port: 443
     reality-opts:
